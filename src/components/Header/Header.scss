@@ -1,0 +1,35 @@
+.wrapper-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 56px;
+
+    .navbar {
+        padding-top: 20px;
+        width: 100%;
+        background-color: transparent !important;
+        z-index: 10;
+        max-width: 1370px;
+
+        .navbar-brand {
+            margin-right: 30px;
+        }
+
+        .navbar-nav {
+            .btn-login:hover {
+                color: #212529;
+                background-color: rgba(22, 24, 35, 0.05);
+            }
+
+            .nav-link {
+                color: rgb(38, 38, 39) !important;
+                font-size: 16px;
+
+                &.active {
+                    // dấu & để sử dụng là chung 1 class
+                    color: red !important;
+                }
+            }
+        }
+    }
+}
