@@ -1,50 +1,47 @@
 .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    .container-home {
-        width: 100%;
-        position: relative;
-        top: -56px;
-
-        video {
-            object-fit: contain;
-            height: 100%;
+    .home-container {
+        .content {
             width: 100%;
-        }
+            position: relative;
+            top: -60px;
 
-        .home-content-box {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 45%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
+            video {
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+            }
 
-            .content-title {
-                width: 74%;
+            .content-box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 45%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
 
-                .content-title-h1 {
-                    font-size: 64px;
-                    font-weight: 350;
-                    margin-bottom: 24px;
-                    color: #000;
-                }
+                .content-title {
+                    width: 74%;
 
-                .content-title-p {
-                    font-size: 24px;
-                    font-weight: 350;
-                    margin-bottom: 40px;
-                    padding-right: 28px;
-                    text-align: justify;
-                }
+                    .content-title-h1 {
+                        font-size: 64px;
+                        font-weight: 350;
+                        margin-bottom: 24px;
+                        color: #000;
+                    }
 
-                .content-title-btn {
-                    padding: 12px 24px;
+                    .content-title-p {
+                        font-size: 24px;
+                        font-weight: 350;
+                        margin-bottom: 40px;
+                        padding-right: 28px;
+                        text-align: justify;
+                    }
+
+                    .content-title-btn {
+                        padding: 12px 24px;
+                    }
                 }
             }
         }

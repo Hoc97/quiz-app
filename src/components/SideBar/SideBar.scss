@@ -1,0 +1,116 @@
+.sidebar {
+    display: flex;
+
+    .sidebar-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .sidebar-header {
+            padding: 24px 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 1px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #e91e63;
+            text-align: center;
+            display: flex;
+            align-items: center;
+
+            .img-sidebar-header {
+                height: 30px;
+                padding-left: 9px;
+                margin-right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .menu {
+            flex: 1;
+        }
+
+        .account {
+            height: 100px;
+            font-size: 18px;
+            padding: 16px 12px 0 12px !important;
+            white-space: nowrap;
+        }
+
+        .sidebar-content {
+            padding: 0 24px;
+            padding-top: 16px;
+            margin-bottom: 12px;
+        }
+
+        .css-honxw6 {
+            width: 10px;
+            height: 10px;
+        }
+
+        .css-jn69v9 {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .css-16jesut > .ps-menu-button:hover,
+    .css-16jkw2k > .ps-menu-button:hover,
+    .css-12vkui9 > .ps-menu-button:hover,
+    .css-1ffbfs > .ps-menu-button:hover,
+    .css-1k7xar7 > .ps-menu-button:hover {
+        background-color: rgb(0, 69, 139);
+        color: #fff;
+    }
+
+    .css-dip3t8 {
+        background-color: rgb(21, 32, 43);
+        color: #a0a0a0;
+        height: 100vh;
+        font-weight: 500;
+    }
+
+    .css-z5rm24 {
+        background-color: rgba(43, 48, 60, 0.4);
+        font-weight: 350;
+    }
+
+    .ps-menu-suffix.css-b3iwgq {
+        .circle {
+            background-color: rgb(251, 57, 57);
+            color: #fff;
+            border-radius: 50%;
+            height: 20px;
+            padding: 0 8px;
+            line-height: 20px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .arounded {
+            background-color: rgb(12, 187, 52);
+            color: #fff;
+            border-radius: 50%;
+            height: 20px;
+            padding: 0 8px;
+            line-height: 20px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .ps-submenu-expand-icon {
+        display: flex;
+        align-items: center;
+    }
+    .css-1l5fxv3 {
+        background-color: rgb(21, 32, 43);
+        color: #c4c4c4;
+    }
+}

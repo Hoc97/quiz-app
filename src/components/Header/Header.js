@@ -2,9 +2,10 @@ import { Link, NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Header.scss';
 import { Button } from 'react-bootstrap';
+import logoBg from '../../assets/img/logo-react.svg';
 
 function Header() {
     return (
@@ -12,7 +13,8 @@ function Header() {
             <Navbar expand='lg'>
                 <Container>
                     <Link to={'/'} className='navbar-brand'>
-                        Học Làm Dev
+                        <img src={logoBg} alt='' height={30} />
+                        <span>HỌC ĐI CODE DẠO</span>
                     </Link>
                     <Navbar.Toggle aria-controls='basic-navbar-nav' />
                     <Navbar.Collapse id='basic-navbar-nav'>
