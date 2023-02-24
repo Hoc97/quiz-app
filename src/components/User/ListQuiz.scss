@@ -1,0 +1,27 @@
+.listquiz-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+        margin: 10px;
+        .img {
+            height: 286px;
+            width: 100%;
+            object-fit: contain;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            .card-text {
+                flex: 1;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+
+    .no-quiz {
+        margin-top: 20px;
+    }
+}

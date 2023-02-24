@@ -6,6 +6,10 @@
         flex-direction: column;
         height: 100%;
 
+        a {
+            text-decoration: none;
+        }
+
         .sidebar-header {
             padding: 24px 12px;
             text-transform: uppercase;

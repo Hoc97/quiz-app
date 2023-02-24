@@ -2,13 +2,11 @@
     display: flex;
     width: 100%;
     justify-content: center;
-
     .navbar {
         padding: 10px 0;
         width: 100%;
         background-color: transparent !important;
         z-index: 10;
-        max-width: 1370px;
 
         .navbar-brand {
             margin-right: 30px;

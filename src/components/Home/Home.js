@@ -3,7 +3,11 @@ import videoHomepage from '../../assets/video/video-homepage.mp4';
 import './Home.scss';
 import { Button } from 'react-bootstrap';
 // import SideBar from '../SideBar/SideBar';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 function Home() {
+    const isAuthenticated = useSelector((state) => state.userManage.isAuthenticated);
+    const navigate = useNavigate();
     return (
         <div className='wrapper'>
             <Header />
@@ -19,9 +23,19 @@ function Home() {
                                 You don't want to make a boring form. And your audience won't answer one. Create a
                                 typeform instead and make everyone happy.
                             </p>
-                            <Button className='content-title-btn' variant='dark'>
-                                Get started - it's free
-                            </Button>
+                            {isAuthenticated === false ? (
+                                <Button className='content-title-btn' variant='dark' onClick={() => navigate('/login')}>
+                                    Get started - it's free
+                                </Button>
+                            ) : (
+                                <Button
+                                    className='content-title-btn take-quiz'
+                                    variant='success'
+                                    onClick={() => navigate('/user')}
+                                >
+                                    Take the quiz now &gt;&gt;&gt;&gt;
+                                </Button>
+                            )}
                         </div>
                     </div>
                 </div>

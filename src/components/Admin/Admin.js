@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import SideBar from '../SideBar/SideBar';
 import './Admin.scss';
+import { Outlet } from 'react-router-dom';
+
 function Admin() {
     const [collapsed, setCollapsed] = useState(false);
     return (
@@ -14,7 +16,9 @@ function Admin() {
                 <div className='admin-header'>
                     <FaBars onClick={() => setCollapsed(!collapsed)} />
                 </div>
-                <div className='admin-main'>Content here</div>
+                <div className='admin-main'>
+                    <Outlet />
+                </div>
             </div>
         </div>
     );

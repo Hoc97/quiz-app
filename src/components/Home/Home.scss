@@ -6,7 +6,7 @@
             top: -60px;
 
             video {
-                object-fit: contain;
+                object-fit: cover;
                 height: 100%;
                 width: 100%;
             }
@@ -22,7 +22,7 @@
                 justify-content: flex-end;
 
                 .content-title {
-                    width: 74%;
+                    width: 58%;
 
                     .content-title-h1 {
                         font-size: 64px;
@@ -41,6 +41,10 @@
 
                     .content-title-btn {
                         padding: 12px 24px;
+
+                        &.take-quiz {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
