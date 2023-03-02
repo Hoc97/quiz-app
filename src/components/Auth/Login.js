@@ -10,6 +10,7 @@ import { toast } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { getDataLogin } from '../../redux/action/action';
 import { ImSpinner10 } from 'react-icons/im';
+import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 
 function Login() {
     const dispatch = useDispatch();
@@ -17,7 +18,7 @@ function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [isLoading, setIsLoading] = useState(false);
-
+    const [isShowPassword, setisShowPassword] = useState(false);
     const navigate = useNavigate();
 
     const validateEmail = (email) => {
@@ -53,7 +54,7 @@ function Login() {
             setIsLoading(false);
         }
     };
-    console.log(isLoading);
+
     return (
         <div className='login-container'>
             <div className='login-header'>
@@ -79,14 +80,23 @@ function Login() {
                                 />
                             </Form.Group>
 
-                            <Form.Group className='mb-4'>
+                            <Form.Group className='mb-4 password'>
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control
-                                    type='password'
+                                    type={isShowPassword ? 'text' : 'password'}
                                     placeholder='Password'
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                 />
+                                {isShowPassword ? (
+                                    <span className='eye' onClick={() => setisShowPassword(false)}>
+                                        <AiFillEyeInvisible />
+                                    </span>
+                                ) : (
+                                    <span className='eye' onClick={() => setisShowPassword(true)}>
+                                        <AiFillEye />
+                                    </span>
+                                )}
                                 <Form.Text className='text-password'>
                                     <a href='#a'>Forgot password?</a>
                                 </Form.Text>

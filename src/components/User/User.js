@@ -1,4 +1,3 @@
-import './User.scss';
 import Header from '../Header/Header';
 import ListQuiz from './ListQuiz';
 function User() {

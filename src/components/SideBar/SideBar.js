@@ -19,7 +19,7 @@ function SideBar({ collapsed }) {
         <div className='sidebar'>
             <Sidebar>
                 <div className='sidebar-container'>
-                    <Link to={'/admin'}>
+                    <Link to={'/'}>
                         <div className='sidebar-header'>
                             <img className='img-sidebar-header' src={logoBg} alt='' />
                             {collapsed ? '' : <span>HỌC ĐI CODE DẠO</span>}
@@ -34,9 +34,9 @@ function SideBar({ collapsed }) {
                             icon={<MdFeaturedPlayList />}
                             label='Features'
                         >
-                            <MenuItem component={<Link to='/admin/users-manage' />}> Users Management </MenuItem>
-                            <MenuItem component={<Link to='/admin/quiz-manages' />}> Quiz Management </MenuItem>
-                            <MenuItem component={<Link to='/admin/questions-manages' />}>Questions Management</MenuItem>
+                            <MenuItem component={<Link to='/admin/manage-users' />}> Users Management </MenuItem>
+                            <MenuItem component={<Link to='/admin/manage-quizzes' />}> Quizzes Management </MenuItem>
+                            <MenuItem component={<Link to='/admin/manage-questions' />}>Questions Management</MenuItem>
                         </SubMenu>
                         <SubMenu icon={<FaMapMarkedAlt />} label='Map'>
                             <MenuItem> Google maps </MenuItem>

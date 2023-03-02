@@ -5,14 +5,15 @@ import 'react-toastify/dist/ReactToastify.css';
 import Home from './components/Home/Home';
 import User from './components/User/User';
 import Admin from './components/Admin/Admin';
-import UserManage from './components/Admin/Content/UserManage';
+import ManageUser from './components/Admin/Content/ManageUser/ManageUser';
 import DashBoard from './components/Admin/Content/DashBoard';
-import QuizManage from './components/Admin/Content/QuizManage';
-import QuestionManage from './components/Admin/Content/QuestionManage';
+import ManageQuiz from './components/Admin/Content/ManageQuiz/ManageQuiz';
+import ManageQuestion from './components/Admin/Content/ManageQuestion/ManageQuestion';
 import Login from './components/Auth/Login';
 import SignUp from './components/Auth/SignUp';
-import DetailQuiz from './components/User/DetailQuiz';
+import DetailQuiz from './components/User/DetailQuiz/DetailQuiz';
 import NotFound from './components/NotFound/NotFound';
+import PrivateRoute from './routes/PrivateRoute';
 function App() {
     return (
         <div className='App-container'>
@@ -21,13 +22,21 @@ function App() {
                     <Routes>
                         {/* Phân bố route con tại vị trí này , phần động*/}
                         <Route path='/' element={<Home />} />
-                        <Route path='/user' element={<User />} />
+                        <Route path='/user' element={
+                            <PrivateRoute>
+                                <User />
+                            </PrivateRoute>
+                        } />
                         <Route path='/quiz/:id' element={<DetailQuiz />} />
-                        <Route path='/admin' element={<Admin />}>
+                        <Route path='/admin' element={
+                            <PrivateRoute>
+                                <Admin />
+                            </PrivateRoute>
+                        }>
                             <Route index element={<DashBoard />} />
-                            <Route path='users-manage' element={<UserManage />} />
-                            <Route path='quiz-manages' element={<QuizManage />} />
-                            <Route path='questions-manages' element={<QuestionManage />} />
+                            <Route path='manage-users' element={<ManageUser />} />
+                            <Route path='manage-quizzes' element={<ManageQuiz />} />
+                            <Route path='manage-questions' element={<ManageQuestion />} />
                         </Route>
                         <Route path='/login' element={<Login />} />
                         <Route path='/signup' element={<SignUp />} />

@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 
 function TableUsers({ listUsers, handleBtnUpdate, handleBtnView, handleBtnDelete }) {
     return (
-        <Table striped bordered hover>
+        <Table striped bordered hover className='ms-3'>
             <thead>
                 <tr>
                     <th>#</th>

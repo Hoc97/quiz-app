@@ -1,12 +1,14 @@
 .detail-quiz-container {
     margin-top: 30px;
-
     display: flex;
+
     .content {
+        flex: 1;
         padding: 15px;
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
         border-left: 1px solid #ccc;
+
         h2 {
             font-size: 30px;
         }
@@ -16,6 +18,7 @@
             margin: 25px 0px 15px;
             height: 50px;
             gap: 40px;
+
             .part-detail {
                 font-size: 18px;
                 border-radius: 5px;
@@ -47,6 +50,7 @@
         .question-container {
             display: flex;
             flex-direction: column;
+            min-height: 550px;
 
             .image {
                 height: 300px;
@@ -63,6 +67,7 @@
             .question {
                 margin: 20px 0 15px 0;
                 display: flex;
+
                 span {
                     font-weight: 700;
                     margin-right: 10px;
@@ -84,7 +89,11 @@
                 font-weight: 400;
                 padding-left: 30px;
 
-                span {
+                input[type=checkbox] {
+                    display: none;
+                }
+
+                .label-text {
                     font-size: 16px;
                     margin-right: 8px;
                     font-weight: 400;
@@ -101,27 +110,33 @@
                     cursor: pointer;
                 }
 
-                // .form-check-label {
-                // }
+                input[type=checkbox]:checked + .label-text {
+                    background: #151515;
+                    color: #fff;
+                }
             }
         }
 
         .move-page {
-            margin-top: 20px;
+            margin-top: 5px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
 
-            .move {
+
+
+            .move-button {
+                display: flex;
+                align-items: center;
                 font-size: 15px;
                 border: 1px solid #ccc;
                 border-radius: 4px;
                 padding: 8px 20px;
                 margin: 0 5px;
+                cursor: pointer;
 
                 &:hover {
                     background: #ee4046;
                     color: #fff;
-                    cursor: pointer;
                 }
 
                 &:disabled {
@@ -129,80 +144,178 @@
                     color: #afafaf;
                     cursor: default;
                 }
+
+                .move-icon {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    margin-top: -3px;
+                }
             }
+
+
 
             .check-point {
                 font-size: 15px;
-                border: 1px solid #ccc;
                 border-radius: 4px;
                 padding: 8px 20px;
-                margin: 0 5px;
-                color: #fff;
-                background-color: rgb(250, 60, 76);
+                margin-right: 15px;
+                border: 1px solid #ccc;
+                background-color: #ffbb01;
+                cursor: pointer;
+                text-align: right;
 
                 &:hover {
-                    background: #ff1a22;
-                    color: #fff;
+                    background: #ff6701;
                 }
             }
         }
     }
+
     .check-mark {
-        width: 300px;
+        width: 400px;
         border: 1px solid #ccc;
 
         .check-header {
             display: flex;
             background: #f66;
             color: #fff;
-            padding: 10px;
+            padding: 6px 15px;
             align-items: center;
+            justify-content: space-between;
+
             .check {
-                width: 30%;
-                float: left;
-                text-align: center;
-                color: #fff;
-                font-size: 14px;
-                margin-right: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+                background-color: #ffbb01;
+                color: #000;
+                padding: 0px 12px;
+                border-radius: 10px;
+                width: 89px;
+
+                .check-text {
+                    font-size: 20px;
+                    margin-top: -6px;
+                }
+
+                .check-icon {
+                    font-size: 24px;
+                    margin-top: -5px;
+                }
             }
+
             .time {
-                width: 45%;
-                float: left;
                 text-align: center;
-                font-size: 20px;
-                font-family: roboto, sans-serif;
-                font-weight: 300;
-                margin-top: 2px;
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .time-icon {
+                    margin-right: 5px;
+                    margin-top: -4px;
+                }
+
+
+
             }
 
             .refresh {
-                width: 25%;
-                float: right;
-                text-align: center;
-                color: #fff;
-                font-size: 14px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+                background-color: #2ecc71;
+                color: #000;
+                padding: 0px 12px;
+                border-radius: 10px;
+
+                .refresh-text {
+                    font-size: 20px;
+                    margin-top: -6px;
+                }
+
+                .refresh-icon {
+                    font-size: 24px;
+                    margin-top: -5px;
+                }
+
             }
         }
 
         .list-mark {
-            display: flex;
-            flex-wrap: wrap;
+            height: 600px;
 
-            .answer-mark {
-                width: 16.66%;
-                float: left;
-                text-align: center;
-                margin-top: 15px;
+            .list {
+                display: flex;
+                flex-wrap: wrap;
 
-                span {
-                    display: block;
-                    width: 30px;
-                    height: 30px;
-                    padding: 2px 0 0;
+                .mark-answer {
+                    width: 16.66%;
+                    float: left;
+                    text-align: center;
+                    margin-top: 15px;
+
+
+                    .number-detail {
+                        font-size: 22px;
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        padding-top: 3px;
+                        border-radius: 50%;
+                        border: 1px solid #999;
+                        margin: 0 auto;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: red;
+                        }
+
+                        &.selected {
+                            background-color: #c6c6c6;
+                        }
+
+                        &.clicked {
+                            color: red;
+                        }
+
+                    }
+
+
+                }
+            }
+        }
+
+
+        .note {
+            padding: 15px;
+            background-color: #afff99;
+
+            p {
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+
+                .note-number {
+                    font-size: 15px;
+                    display: inline-block;
+                    height: 25px;
+                    width: 25px;
                     border-radius: 50%;
                     border: 1px solid #999;
-                    margin: 0 auto;
-                    cursor: pointer;
+
+                    text-align: center;
+                    margin-right: 10px;
+
+                    &.isfocusing {
+                        color: red;
+                    }
+
+                    &.answered {
+                        background-color: #c6c6c6;
+                    }
                 }
             }
         }

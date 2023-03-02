@@ -14,7 +14,6 @@ function ListQuiz() {
     }, []);
     const getQuizData = async () => {
         const res = await getQuizByUser();
-        console.log(res);
         if (res.EC === 0) {
             setArrQuiz(res.DT);
         }

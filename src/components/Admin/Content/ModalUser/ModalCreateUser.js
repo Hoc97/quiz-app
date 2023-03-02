@@ -130,7 +130,7 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
                         <Form.Group className='mb-3'>
                             <Form.Label className='label-upload' htmlFor='labelUpload'>
                                 <FiUpload color='009688' size={20} />
-                                Upload File Image
+                                Upload Image
                             </Form.Label>
                             <Form.Control type='file' id='labelUpload' hidden onChange={handleUpload} />
                         </Form.Group>
@@ -141,6 +141,10 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
                                 <span>Preview Image</span>
                             )}
                         </Form.Group>
+                        <label>
+                            <input type="checkbox" />
+                            <span class="label">Check me</span>
+                        </label>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>

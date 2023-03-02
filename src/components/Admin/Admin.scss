@@ -1,13 +1,14 @@
 .admin-container {
     display: flex;
+    height: 100%;
 
     .admin-sidebar {
-        .sidebar {
-        }
+        .sidebar {}
     }
 
     .admin-content {
         width: 100%;
+
 
         .admin-header {
             height: 40px;
@@ -15,7 +16,8 @@
         }
 
         .admin-main {
-            // border: 1px solid red;
+            height: calc(100vh - 40px);
+            overflow-y: overlay;
         }
     }
 }

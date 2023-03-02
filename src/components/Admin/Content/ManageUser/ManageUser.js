@@ -1,15 +1,15 @@
 import { Button } from 'react-bootstrap';
-import ModalCreateUser from './ModalUser/ModalCreateUser';
 import { FcPlus } from 'react-icons/fc';
 import { useEffect, useState } from 'react';
-import { getAllUsers, getUsersPaginate } from '../../../services/apiService';
-// import TableUsers from './TableUsers';
-import TableUsersPaginate from './TableUsersPaginate';
-import ModalUpdateUser from './ModalUser/ModalUpdateUser';
-import ModalViewUser from './ModalUser/ModalViewUser';
-import ModalDeleteUser from './ModalUser/ModalDeleteUser';
+import { getAllUsers, getUsersPaginate } from '../../../../services/apiService';
+// import TableUsers from './TableUser/TableUsersPaginate';
+import TableUsersPaginate from './TableUser/TableUsersPaginate';
+import ModalCreateUser from '../ModalUser/ModalCreateUser';
+import ModalUpdateUser from '../ModalUser/ModalUpdateUser';
+import ModalViewUser from '../ModalUser/ModalViewUser';
+import ModalDeleteUser from '../ModalUser/ModalDeleteUser';
 
-function UserManage() {
+function ManageUser() {
     const limitUser = 7;
     const [showModalCreate, setShowModalCreate] = useState(false);
     const [showModalUpdate, setShowModalUpdate] = useState(false);
@@ -65,7 +65,8 @@ function UserManage() {
     };
     return (
         <div className='user-manage-container'>
-            <h3 className='title'>Users Management</h3>
+            <div className='title'>Users Management</div>
+            <hr />
             <div className='user-content'>
                 <div className='add-new'>
                     <Button className='btn-add' variant='primary' onClick={() => setShowModalCreate(true)}>
@@ -123,4 +124,4 @@ function UserManage() {
     );
 }
 
-export default UserManage;
+export default ManageUser;

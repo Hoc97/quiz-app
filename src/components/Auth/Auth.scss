@@ -50,6 +50,17 @@
                 text-align: center;
             }
             .content {
+                .password {
+                    position: relative;
+                    .eye {
+                        position: absolute;
+                        right: 30px;
+                        bottom: 55px;
+                        height: 0px;
+                        width: 0px;
+                        cursor: pointer;
+                    }
+                }
                 .text-password {
                     a {
                         color: #777;

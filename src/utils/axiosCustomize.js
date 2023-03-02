@@ -16,6 +16,7 @@ instance.interceptors.request.use(
         // Do something before request is sent
         // console.log('get state store>>', store.getState().userManage.account.access_token);
         const access_token = store?.getState()?.userManage?.account?.access_token;
+        // console.log('access_token', access_token);
         config.headers['Authorization'] = 'Bearer ' + access_token;
         NProgress.start();
         return config;
