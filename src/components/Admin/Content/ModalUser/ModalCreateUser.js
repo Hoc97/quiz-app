@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 // import logoBg from '../../../assets/img/logo-react.svg';
-import '../Content.scss';
+import './ModalUser.scss';
 import { FiUpload } from 'react-icons/fi';
 import { toast } from 'react-toastify';
 import { postCreateNewUser } from '../../../../services/apiService';
@@ -143,7 +143,7 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
                         </Form.Group>
                         <label>
                             <input type="checkbox" />
-                            <span class="label">Check me</span>
+                            <span className="label">Check me</span>
                         </label>
                     </Form>
                 </Modal.Body>

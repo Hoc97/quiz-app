@@ -4,6 +4,7 @@ import _ from 'lodash';
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs';
 
 function Content({ dataQuiz, setDataQuiz, handleFinishQuiz, currentQuestion, setCurrentQuestion }) {
+    console.log('dataQuiz', dataQuiz);
     const location = useLocation();
     const params = useParams();
     const quizId = params.id;

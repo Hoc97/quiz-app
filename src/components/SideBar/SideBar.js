@@ -3,13 +3,15 @@ import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from 'react-pro-sideb
 import { FaMapMarkedAlt, FaMoon } from 'react-icons/fa';
 import { IoDiamondSharp, IoCalendarClear, IoDocument } from 'react-icons/io5';
 import { MdFeaturedPlayList, MdAccountCircle } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { RiDashboardLine } from 'react-icons/ri';
+import { Link, useNavigate } from 'react-router-dom';
 
 // import sidebarBg from '../../assets/img/bg2.jpg';
 import logoBg from '../../assets/img/logo-react.svg';
 import { useEffect } from 'react';
 function SideBar({ collapsed }) {
     const { collapseSidebar } = useProSidebar();
+    const navigate = useNavigate();
     // console.log(collapsed);
     useEffect(() => {
         collapseSidebar(collapsed);
@@ -26,9 +28,16 @@ function SideBar({ collapsed }) {
                         </div>
                     </Link>
                     <Menu className='menu'>
+
+
                         <div className='sidebar-content hr'>
                             <div style={{ opacity: collapsed ? 0 : 1, letterSpacing: '0.5px' }}> General</div>
                         </div>
+                        <MenuItem className='dashboard'
+                            onClick={() => navigate('/admin')}
+                            icon={<RiDashboardLine className='icon-dashboard' />}>
+                            Dashboard
+                        </MenuItem>
                         <SubMenu
                             suffix={<span className='circle'>6</span>}
                             icon={<MdFeaturedPlayList />}

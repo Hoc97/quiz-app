@@ -134,6 +134,7 @@ function UpdateQAQuiz() {
             let answers = questionsClone[index].answers;
             questionsClone[index].answers = [...answers, newAnswer];
             setQuestions(questionsClone);
+            console.log('questionsClone', questionsClone);
         }
         if (type === 'REMOVE') {
             let index = questionsClone.findIndex((item) => item.id === questionId);

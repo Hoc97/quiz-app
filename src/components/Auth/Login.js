@@ -11,6 +11,7 @@ import { useDispatch } from 'react-redux';
 import { getDataLogin } from '../../redux/action/action';
 import { ImSpinner10 } from 'react-icons/im';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
+import Languages from '../Languages/Languages';
 
 function Login() {
     const dispatch = useDispatch();
@@ -63,6 +64,7 @@ function Login() {
                     Sign up
                 </Link>
                 <a href='#a'>Need help?</a>
+                <Languages />
             </div>
             <div className='login-content'>
                 <div className='form'>

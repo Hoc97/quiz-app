@@ -36,10 +36,18 @@ function DetailQuiz() {
                             questionDescription = item.description;
                             image = item.image;
                         }
+
                         item.answers.isSelected = false;
                         answers.push(item.answers);
                     });
-                    return { questionID: key, answers, questionDescription, image };
+                    // sắp xếp thứ tự theo ID
+                    answers = _.orderBy(answers, ['id'], ['asc']);
+                    return {
+                        questionID: key,
+                        answers,
+                        questionDescription,
+                        image
+                    };
                 })
                 .value();
             setDataQuiz(data);

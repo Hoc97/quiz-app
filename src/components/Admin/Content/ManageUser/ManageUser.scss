@@ -1,0 +1,23 @@
+.user-manage-container {
+    padding: 15px;
+
+    .title {
+        font-weight: 600;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .user-content {
+        .add-new {
+            margin: 15px 0;
+
+            .btn-add {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+
+        // .table-users {}
+    }
+}

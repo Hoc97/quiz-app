@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
@@ -60,4 +61,10 @@ function App() {
     );
 }
 
-export default App;
+export default function WrappedApp() {
+    return (
+        <Suspense fallback="...is loading">
+            <App />
+        </Suspense>
+    );
+}

@@ -1,0 +1,54 @@
+.dashboard-container {
+    padding: 15px;
+
+    .title {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        display: flex;
+        height: 350px;
+
+        .c-left {
+            width: 50%;
+            border: 1px solid green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 10px;
+
+            .total {
+                height: calc(50% - 10px);
+                width: calc(50% - 10px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid red;
+                border-radius: 20px;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+
+
+                .text-2 {
+                    font-size: 30px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .c-right {
+            width: 50%;
+            border: 1px solid green;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+
+
+        }
+    }
+}

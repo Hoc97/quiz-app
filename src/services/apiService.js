@@ -92,7 +92,11 @@ const getQuizWithQA = (quizId) => {
 };
 
 const postUpsertQA = (data) => {
-    return instance.post(`api/v1/quiz-upsert-qa`, { ...data });
+    return instance.post(`/api/v1/quiz-upsert-qa`, { ...data });
+};
+
+const getOverview = () => {
+    return instance.get(`/api/v1/overview`);
 };
 
 
@@ -114,5 +118,6 @@ export {
     postCreateNewAnswerForQuestion,
     postAssignQuiz,
     getQuizWithQA,
-    postUpsertQA
+    postUpsertQA,
+    getOverview
 };

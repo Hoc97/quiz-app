@@ -111,3 +111,25 @@
     width: 370px;
 
 }
+
+.img-preview-small {
+    color: #ccc;
+    border-radius: 5px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    .image {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .previewImage {
+        color: red;
+        border: 1px solid black;
+        padding: 3px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

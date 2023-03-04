@@ -10,6 +10,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { postLogout } from '../../services/apiService';
 import { toast } from 'react-toastify';
 import { doLogout } from '../../redux/action/action';
+import Languages from '../Languages/Languages';
+
 function Header() {
     const dispatch = useDispatch();
     const isAuthenticated = useSelector((state) => state.userManage.isAuthenticated);
@@ -73,6 +75,7 @@ function Header() {
                                     </Button>
                                 </>
                             )}
+                            <Languages />
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

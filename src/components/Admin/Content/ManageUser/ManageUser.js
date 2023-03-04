@@ -8,6 +8,7 @@ import ModalCreateUser from '../ModalUser/ModalCreateUser';
 import ModalUpdateUser from '../ModalUser/ModalUpdateUser';
 import ModalViewUser from '../ModalUser/ModalViewUser';
 import ModalDeleteUser from '../ModalUser/ModalDeleteUser';
+import './ManageUser.scss';
 
 function ManageUser() {
     const limitUser = 7;

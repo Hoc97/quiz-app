@@ -3,7 +3,7 @@
     height: 100%;
 
     .admin-sidebar {
-        .sidebar {}
+        // .sidebar {}
     }
 
     .admin-content {
@@ -11,8 +11,22 @@
 
 
         .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             height: 40px;
-            border: 1px solid green;
+            border-bottom: 1px solid #ccc;
+            padding: 0 20px 0 10px;
+
+            .admin-header-left {
+                cursor: pointer;
+                font-size: 20px;
+                color: red;
+            }
+
+            .admin-header-right {
+                display: flex;
+            }
         }
 
         .admin-main {

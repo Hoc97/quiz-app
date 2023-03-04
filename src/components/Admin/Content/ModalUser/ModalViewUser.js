@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 // import logoBg from '../../../assets/img/logo-react.svg';
 import noImage from '../../../../assets/img/no image.jpg';
-import '../Content.scss';
+import './ModalUser.scss';
 import _ from 'lodash';
 
 function ModalViewUser({ show, setShow, userView }) {

@@ -3,31 +3,35 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+
     .login-header {
         height: 44px;
         margin: 0px 24px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        gap: 10px;
 
         .login-header-signup {
-            margin-left: 5px;
-            margin-right: 8px;
             padding: 5px 10px;
             border: 1px solid black;
             font-size: 14px;
             display: inline-flex;
             align-items: center;
+
             text-decoration: none;
             border-radius: 3px;
+
             &:hover {
                 background-color: #f9f9f9;
             }
         }
+
         a {
             color: black;
         }
     }
+
     .login-content {
         flex: 1;
         // height: calc(100% - 44px);
@@ -35,13 +39,16 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 150px;
+
         .form {
             width: 300px;
+
             .logo {
                 text-align: center;
                 font-size: 28px;
                 margin-bottom: 20px;
             }
+
             .welcome {
                 margin: 10px 0 20px 0;
                 font-size: 20px;
@@ -49,9 +56,11 @@
                 font-weight: 400;
                 text-align: center;
             }
+
             .content {
                 .password {
                     position: relative;
+
                     .eye {
                         position: absolute;
                         right: 30px;
@@ -61,11 +70,13 @@
                         cursor: pointer;
                     }
                 }
+
                 .text-password {
                     a {
                         color: #777;
                     }
                 }
+
                 .text {
                     cursor: pointer;
                     margin-top: 10px;
@@ -76,15 +87,18 @@
                     margin-right: 5px;
                     color: #00d4ff;
                     animation: spin 1s infinite linear;
+
                     @keyframes spin {
                         from {
                             transform: scale(1) rotate(0deg);
                         }
+
                         to {
                             transform: scale(1) rotate(360deg);
                         }
                     }
                 }
+
                 .btn-login {
                     width: 100%;
                     background: #262627;
@@ -113,6 +127,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+
     .signup-header {
         height: 44px;
         margin: 0px 24px;
@@ -130,14 +145,17 @@
             align-items: center;
             text-decoration: none;
             border-radius: 3px;
+
             &:hover {
                 background-color: #f9f9f9;
             }
         }
+
         a {
             color: black;
         }
     }
+
     .signup-content {
         flex: 1;
         // height: calc(100% - 44px);
@@ -145,13 +163,16 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 150px;
+
         .form {
             width: 300px;
+
             .logo {
                 text-align: center;
                 font-size: 28px;
                 margin-bottom: 20px;
             }
+
             .welcome {
                 margin: 10px 0 20px 0;
                 font-size: 20px;
@@ -159,9 +180,11 @@
                 font-weight: 400;
                 text-align: center;
             }
+
             .content {
                 .password {
                     position: relative;
+
                     .eye {
                         position: absolute;
                         right: 25px;
@@ -176,12 +199,14 @@
                     cursor: pointer;
                     margin-top: 10px;
                 }
+
                 .btn-signup {
                     width: 100%;
                     background: #18c451;
                     outline: none;
                     border: none;
                     color: #fff;
+
                     &:hover {
                         background-color: #1ad257;
                         box-shadow: 0 0 3px 0.5px #1bdb5a;
