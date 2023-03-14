@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
@@ -15,14 +15,21 @@ import SignUp from './components/Auth/SignUp';
 import DetailQuiz from './components/User/DetailQuiz/DetailQuiz';
 import NotFound from './components/NotFound/NotFound';
 import PrivateRoute from './routes/PrivateRoute';
+import PreLoad from './assets/css/PreLoad';
 function App() {
+    const [load, setLoad] = useState(true);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoad(false);
+        }, 13000);
+    }, []);
     return (
         <div className='App-container'>
             <div className='App-content'>
                 <BrowserRouter>
                     <Routes>
                         {/* Phân bố route con tại vị trí này , phần động*/}
-                        <Route path='/' element={<Home />} />
+                        <Route path='/' element={load ? <PreLoad /> : <Home />} />
                         <Route path='/user' element={
                             <PrivateRoute>
                                 <User />

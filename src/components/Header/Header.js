@@ -39,8 +39,7 @@ function Header() {
             <Navbar expand='lg'>
                 <Container>
                     <Link to={'/'} className='navbar-brand'>
-                        <img src={logoBg} alt='' height={30} />
-                        <span>HỌC ĐI CODE DẠO</span>
+                        <img src='https://design.duolingo.com/7d3b95abf67001cde6ea.svg' alt='' height={30} />
                     </Link>
                     <Navbar.Toggle aria-controls='basic-navbar-nav' />
                     <Navbar.Collapse id='basic-navbar-nav'>
