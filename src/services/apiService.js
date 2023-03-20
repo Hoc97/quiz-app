@@ -105,6 +105,13 @@ const postUpdateProfile = (username, image) => {
     return instance.post('/api/v1/profile', data);
 };
 
+const postChangePassword = (current_password, new_password) => {
+    return instance.post('/api/v1/change-password', { current_password, new_password });
+};
+
+const getQuizHistory = () => {
+    return instance.get('/api/v1/history');
+};
 
 export {
     postCreateNewUser,
@@ -126,5 +133,7 @@ export {
     getQuizWithQA,
     postUpsertQA,
     getOverview,
-    postUpdateProfile
+    postUpdateProfile,
+    postChangePassword,
+    getQuizHistory
 };

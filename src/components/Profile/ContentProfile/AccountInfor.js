@@ -10,6 +10,7 @@ import noImage from '../../../assets/img/no image.jpg';
 import { postUpdateProfile } from '../../../services/apiService';
 import { useDispatch } from 'react-redux';
 import { userUpdate } from '../../../redux/action/action';
+import { blobToBase64, urltoFile } from '../../../utils/commonFunction';
 
 function AccountInfor() {
     const dispatch = useDispatch();
@@ -22,7 +23,6 @@ function AccountInfor() {
         image: accountData.image,
         previewImage: accountData.image ? `data:image/jpeg;base64,${accountData.image}` : noImage
     });
-    console.log('acc', account);
     const handleInput = (e) => {
         setAccount({
             ...account,
@@ -30,25 +30,21 @@ function AccountInfor() {
         });
     };
 
-    const handleUpload = (e) => {
-        console.log('image', e.target.files[0], URL.createObjectURL(e.target.files[0]));
+    const handleUpload = async (e) => {
+        //slice from comma ',' to end 
+        const ToStringBase64 = blob => blobToBase64(blob).then(text => text.slice(text.indexOf(",") + 1));
         if (e.target.files[0]) {
             setAccount({
                 ...account,
-                previewImage: URL.createObjectURL(e.target.files[0]),
-                image: e.target.files[0]
+                previewImage: await blobToBase64(e.target.files[0]),
+                image: await ToStringBase64(e.target.files[0])
             });
 
-        } else {
-            // setPreviewImage('');
         }
     };
 
-
-
     const handleUpdateInfo = async () => {
         //validate
-
         if (!account.username) {
             toast.error('Invalid Username');
             return;
@@ -56,12 +52,11 @@ function AccountInfor() {
 
         //call API
         // Bên axiosCustom phần interceptor return response.data rồi nên nó sẽ lấy đc data lun
-        let data = await postUpdateProfile(account.username, account.image);
-        console.log(data);
+        const imageFile = await urltoFile(account.previewImage, `${account.username}.png`, 'image/png');
+        let data = await postUpdateProfile(account.username, imageFile);
         if (data.EC === 0) {
-            dispatch(userUpdate(data));
+            dispatch(userUpdate(data, account.image));
             toast.success(data.EM);
-            // await fetchListUsers();
         } else {
             toast.warning(data.EM);
         }

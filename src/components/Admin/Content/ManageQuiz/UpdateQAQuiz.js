@@ -16,6 +16,7 @@ import {
     getQuizWithQA,
     postUpsertQA
 } from '../../../../services/apiService';
+import { urltoFile } from '../../../../utils/commonFunction';
 
 function UpdateQAQuiz() {
     const initQuestions = [
@@ -55,14 +56,6 @@ function UpdateQAQuiz() {
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedQuiz]);
-
-    //return a promise that resolves with a File instance
-    function urltoFile(url, filename, mimeType) {
-        return (fetch(url)
-            .then(function (res) { return res.arrayBuffer(); })
-            .then(function (buf) { return new File([buf], filename, { type: mimeType }); })
-        );
-    }
 
     const fetchQuizWithQA = async () => {
         let res = await getQuizWithQA(selectedQuiz.value);

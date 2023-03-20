@@ -38,7 +38,8 @@ const rdcReducer = (state = intialState, { type, payload }) => {
                 ...state,
                 account: {
                     ...state.account,
-                    username: payload.DT,
+                    username: payload.data.DT.username,
+                    image: payload.image
                 },
             };
         default:

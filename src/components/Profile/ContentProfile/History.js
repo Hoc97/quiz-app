@@ -1,5 +1,38 @@
+import { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
+import { getQuizHistory } from '../../../services/apiService';
+import { toast } from 'react-toastify';
+import moment from 'moment';
 function History() {
+    const [listHistory, setListHistory] = useState([]);
+    useEffect(() => {
+        fetchHistory();
+    }, []);
+    const fetchHistory = async () => {
+        let res = await getQuizHistory();
+
+        if (res.EC === 0) {
+            let list = res.DT.data;
+
+            let newData = list.map(item => {
+                console.log('item.updatedAt', item);
+                return {
+                    total_correct: item.total_correct,
+                    total_questions: item.total_questions,
+                    quiz_name: item.quizHistory.name,
+                    id: item.id,
+                    date: moment(item.updatedAt).format('DD/MM/YYYY hh:mm:ss A')
+                };
+            });
+            // if (newData.length > 7) {
+            //     newData = newData.slice(newData.length - 7, newData.length);
+            // }
+            setListHistory(newData);
+        } else {
+            toast.success(res.EC);
+        }
+
+    };
     return (
         <Table bordered hover>
             <thead>
@@ -12,34 +45,17 @@ function History() {
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>55</td>
-                    <td>học</td>
-                    <td>10 </td>
-                    <td>20</td>
-                    <td>8/8/2023 09:25:23 PM</td>
-                </tr>
-                <tr>
-                    <td>55</td>
-                    <td>học</td>
-                    <td>10 </td>
-                    <td>20</td>
-                    <td>8/8/2023 09:25:23 PM</td>
-                </tr>
-                <tr>
-                    <td>55</td>
-                    <td>học</td>
-                    <td>10 </td>
-                    <td>20</td>
-                    <td>8/8/2023 09:25:23 PM</td>
-                </tr>
-                <tr>
-                    <td>55</td>
-                    <td>học</td>
-                    <td>10 </td>
-                    <td>20</td>
-                    <td>8/8/2023 09:25:23 PM</td>
-                </tr>
+                {listHistory.length > 0 && listHistory.map((n, index) => {
+                    return (
+                        <tr key={index}>
+                            <td>{n.id}</td>
+                            <td>{n.quiz_name} </td>
+                            <td>{n.total_questions}</td>
+                            <td>{n.total_correct}</td>
+                            <td>{n.date}</td>
+                        </tr>
+                    );
+                })}
             </tbody>
         </Table>
     );

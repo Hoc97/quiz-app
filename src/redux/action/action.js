@@ -15,8 +15,9 @@ export const doLogout = () => {
     };
 };
 
-export const userUpdate = () => {
+export const userUpdate = (data, image) => {
     return {
-        type: USER_LOGOUT,
+        type: USER_UPDATE,
+        payload: { data, image },
     };
 };

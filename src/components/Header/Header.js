@@ -64,21 +64,27 @@ function Header() {
                         </Nav>
                         <div className='nav-group'>
                             <Fade bottom>
-                                <span className='pointer' onClick={() => scrollTo('feature')}>
+                                <span className='pointer intro' onClick={() => scrollTo('feature')}>
                                     FEATURES
                                 </span>
-                                <span className='pointer' onClick={() => scrollTo('aboutus')}>
+                                <span className='pointer intro' onClick={() => scrollTo('aboutus')}>
                                     ABOUT US
                                 </span>
-                                <span className=' pointer' onClick={() => scrollTo('contact')}>
+                                <span className=' pointer intro' onClick={() => scrollTo('contact')}>
                                     CONTACT
                                 </span>
-                                <span className='pointer' onClick={() => scrollTo('')}>
+                                <span className='pointer intro' onClick={() => scrollTo('')}>
                                     COMPETION
                                 </span>
                                 <Nav className='settings'>
                                     {isAuthenticated ? (
-                                        <NavDropdown title={account.username} >
+                                        <NavDropdown title={
+                                            <span className='username-avatar'>
+                                                <img src={`data:image/jpeg;base64,${account.image}`} className='avatar' alt='' />
+                                                <span>{account.username}</span>
+                                            </span>
+
+                                        } >
                                             <NavDropdown.Item onClick={() => navigate('/profile')}>Profile</NavDropdown.Item>
                                             <NavDropdown.Item onClick={() => handleLogout()}>Log out</NavDropdown.Item>
                                         </NavDropdown>

@@ -30,7 +30,7 @@
             justify-content: center;
             align-items: center;
 
-            span {
+            .intro {
                 margin-left: 40px;
 
                 &:active,
@@ -41,6 +41,23 @@
 
             .settings {
                 margin-left: 40px;
+
+                .username-avatar {
+
+
+                    .avatar {
+                        height: 30px;
+                        width: 30px;
+                        object-fit: cover;
+                        margin-top: -3px;
+                        margin-right: 5px;
+                        border-radius: 50%;
+                    }
+                }
+
+
+
+
             }
         }
 
