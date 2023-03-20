@@ -1,0 +1,18 @@
+.btn-scroll {
+    width: 55px;
+    height: 55px;
+    right: 40px;
+    bottom: 20px;
+    position: fixed;
+    border-radius: 100%;
+    background-image: linear-gradient(-45deg, #e511e6 32%, #6b2c94 100%);
+    outline: none;
+    padding: 0;
+    border: none;
+    transition: 0.5s all ease-in-out;
+
+    svg {
+        color: #fff;
+        font-size: 20px;
+    }
+}

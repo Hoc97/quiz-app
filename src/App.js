@@ -16,6 +16,10 @@ import DetailQuiz from './components/User/DetailQuiz/DetailQuiz';
 import NotFound from './components/NotFound/NotFound';
 import PrivateRoute from './routes/PrivateRoute';
 import PreLoad from './assets/css/PreLoad';
+import ScrollButton from './components/ScrollButton/ScrollButton';
+import Profile from './components/Profile/Profile';
+import Header from './components/Header/Header';
+
 function App() {
     const [load, setLoad] = useState(true);
     useEffect(() => {
@@ -24,12 +28,14 @@ function App() {
         }, 13000);
     }, []);
     return (
-        <div className='App-container'>
+        <div className='App-container' id="App-container">
             <div className='App-content'>
                 <BrowserRouter>
                     <Routes>
-                        {/* Phân bố route con tại vị trí này , phần động*/}
-                        <Route path='/' element={load ? <PreLoad /> : <Home />} />
+                        <Route path='/' element={false ? <PreLoad /> : <Header />}>
+                            <Route index element={<Home />} />
+                            <Route path='profile' element={<Profile />} />
+                        </Route>
                         <Route path='/user' element={
                             <PrivateRoute>
                                 <User />
@@ -62,7 +68,9 @@ function App() {
                         pauseOnHover
                         theme='light'
                     />
+
                 </BrowserRouter>
+                <ScrollButton />
             </div>
         </div>
     );

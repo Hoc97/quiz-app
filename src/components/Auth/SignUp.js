@@ -9,9 +9,11 @@ import { toast } from 'react-toastify';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 
 function SignUp() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [username, setUsername] = useState('');
+    const [account, setAccount] = useState({
+        email: '',
+        password: '',
+        username: ''
+    });
     const [isShowPassword, setisShowPassword] = useState(false);
     const navigate = useNavigate();
 
@@ -22,18 +24,25 @@ function SignUp() {
                 /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
             );
     };
+
+    const handleInput = (e) => {
+        setAccount({
+            ...account,
+            [e.target.name]: e.target.value,
+        });
+    };
     const handleSignUp = async (e) => {
         e.preventDefault();
 
         //validate
-        const isValidEmail = validateEmail(email);
+        const isValidEmail = validateEmail(account.email);
         if (!isValidEmail) {
             toast.error('Invalid Email');
             return;
         }
         //Call API
 
-        let data = await postSignUp(email, password, username);
+        let data = await postSignUp(account.email, account.password, account.username);
         console.log(data);
         if (data.EC === 0) {
             toast.success(data.EM);
@@ -63,8 +72,8 @@ function SignUp() {
                                 <Form.Control
                                     type='email'
                                     placeholder='Enter email'
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    name='email'
+                                    onChange={handleInput}
                                 />
                             </Form.Group>
 
@@ -73,8 +82,8 @@ function SignUp() {
                                 <Form.Control
                                     type={isShowPassword ? 'text' : 'password'}
                                     placeholder='Password'
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
+                                    name='password'
+                                    onChange={handleInput}
                                 />
                                 {isShowPassword ? (
                                     <span className='eye' onClick={() => setisShowPassword(false)}>
@@ -90,8 +99,8 @@ function SignUp() {
                                 <Form.Label>Username</Form.Label>
                                 <Form.Control
                                     type='text'
-                                    value={username}
-                                    onChange={(e) => setUsername(e.target.value)}
+                                    name='username'
+                                    onChange={handleInput}
                                 />
                             </Form.Group>
                             <Button variant='primary' type='submit' className='btn-signup' onClick={handleSignUp}>

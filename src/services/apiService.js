@@ -15,10 +15,9 @@ const postCreateNewUser = (email, password, username, role, image) => {
     return instance.post('/api/v1/participant', data);
 };
 
-const putUpdateUser = (id, password, username, role, image) => {
+const putUpdateUser = (id, username, role, image) => {
     const data = new FormData();
     data.append('id', id);
-    data.append('password', password);
     data.append('username', username);
     data.append('role', role);
     data.append('userImage', image);
@@ -99,6 +98,13 @@ const getOverview = () => {
     return instance.get(`/api/v1/overview`);
 };
 
+const postUpdateProfile = (username, image) => {
+    const data = new FormData();
+    data.append('username', username);
+    data.append('userImage', image);
+    return instance.post('/api/v1/profile', data);
+};
+
 
 export {
     postCreateNewUser,
@@ -119,5 +125,6 @@ export {
     postAssignQuiz,
     getQuizWithQA,
     postUpsertQA,
-    getOverview
+    getOverview,
+    postUpdateProfile
 };

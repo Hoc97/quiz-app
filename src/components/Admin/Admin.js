@@ -40,7 +40,7 @@ function Admin() {
                     <div className='admin-header-right'>
                         <Languages />
                         <NavDropdown title='Settings' id='basic-nav-dropdown'>
-                            <NavDropdown.Item>Profile</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => navigate('/profile')}>Profile</NavDropdown.Item>
                             <NavDropdown.Item onClick={() => handleLogout()}>Log out</NavDropdown.Item>
                         </NavDropdown>
 

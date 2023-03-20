@@ -14,27 +14,26 @@ function ModalViewUser({ show, setShow, userView }) {
         setShow(false);
     };
 
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [username, setUsername] = useState('');
-    const [role, setRole] = useState('user');
-    const [previewImage, setPreviewImage] = useState('');
+    const [account, setAccount] = useState({
+        email: '',
+        username: '',
+        role: '',
+        image: '',
+        previewImage: ''
+    });
     useEffect(() => {
-        // console.log('effect');
         if (!_.isEmpty(userView)) {
             //update state
-            setEmail(userView.email);
-            setPassword(userView.email);
-            setUsername(userView.username);
-            setRole(userView.role);
-            if (userView.image) {
-                setPreviewImage(`data:image/jpeg;base64,${userView.image}`);
-            } else {
-                setPreviewImage(noImage);
-            }
+            setAccount({
+                email: userView.email,
+                username: userView.username,
+                role: userView.role,
+                image: userView.image,
+                previewImage: userView.image ? `data:image/jpeg;base64,${userView.image}` : noImage
+            });
         }
     }, [userView]);
-    // console.log('render');
+
 
     return (
         <>
@@ -51,8 +50,8 @@ function ModalViewUser({ show, setShow, userView }) {
                                     disabled
                                     type='email'
                                     placeholder='Enter email'
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    name='email'
+                                    value={account.email}
                                 />
                             </Form.Group>
 
@@ -62,8 +61,8 @@ function ModalViewUser({ show, setShow, userView }) {
                                     disabled
                                     type='password'
                                     placeholder='Password'
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
+                                    name='password'
+                                    value='password'
                                 />
                             </Form.Group>
                         </Row>
@@ -74,23 +73,23 @@ function ModalViewUser({ show, setShow, userView }) {
                                 <Form.Control
                                     disabled
                                     placeholder='Username'
-                                    value={username}
-                                    onChange={(e) => setUsername(e.target.value)}
+                                    name='username'
+                                    value={account.username}
                                 />
                             </Form.Group>
 
                             <Form.Group as={Col}>
                                 <Form.Label>Role</Form.Label>
-                                <Form.Select value={role} onChange={(e) => setRole(e.target.value)} disabled>
-                                    <option value='user'>User</option>
-                                    <option value='admin'>Admin</option>
+                                <Form.Select value={account.role} disabled>
+                                    <option value='USER'>USER</option>
+                                    <option value='ADMIN'>ADMIN</option>
                                 </Form.Select>
                             </Form.Group>
                         </Row>
 
                         <Form.Group className='mb-3 img-preview'>
-                            {previewImage ? (
-                                <img className='image' src={previewImage} alt='' />
+                            {account.previewImage ? (
+                                <img className='image' src={account.previewImage} alt='' />
                             ) : (
                                 <span>Preview Image</span>
                             )}

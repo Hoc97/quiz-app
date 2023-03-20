@@ -1,0 +1,67 @@
+.home-container {
+    height: 486px;
+    position: relative;
+
+
+    .content {
+        width: 100%;
+        height: 436px;
+        display: flex;
+        gap: 150px;
+
+        .text {
+            width: 45%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .title {
+                width: 70%;
+
+                .title-h1 {
+                    font-size: 35px;
+                    font-weight: 600;
+                    margin-bottom: 24px;
+                    color: #0849c9;
+                }
+
+                .title-p {
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 40px;
+                    padding-right: 28px;
+                    text-align: justify;
+                }
+
+                .title-btn {
+                    padding: 12px 24px;
+                    background: #ff4d00;
+                    font-size: 20px;
+                    border: none;
+
+                    span {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .image {
+            margin-top: 58px;
+        }
+    }
+
+    .home-footer {
+        height: 436px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #f1c59c;
+        z-index: -1;
+    }
+}

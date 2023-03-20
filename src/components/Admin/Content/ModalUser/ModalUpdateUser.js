@@ -24,50 +24,58 @@ function ModalUpdateUser({
     const handleClose = () => {
         setShow(false);
     };
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [username, setUsername] = useState('');
-    const [role, setRole] = useState('user');
-    const [image, setImage] = useState('');
-    const [previewImage, setPreviewImage] = useState('');
+
     useEffect(() => {
         if (!_.isEmpty(userUpdate)) {
             //update state
-            setEmail(userUpdate.email);
-            setPassword(userUpdate.email);
-            setUsername(userUpdate.username);
-            setRole(userUpdate.role);
-            if (userUpdate.image) {
-                setPreviewImage(`data:image/jpeg;base64,${userUpdate.image}`);
-            } else {
-                setPreviewImage(noImage);
-            }
+            setAccount({
+                email: userUpdate.email,
+                username: userUpdate.username,
+                role: userUpdate.role,
+                image: userUpdate.image,
+                previewImage: userUpdate.image ? `data:image/jpeg;base64,${userUpdate.image}` : noImage
+            });
         }
     }, [userUpdate]);
+
+    const [account, setAccount] = useState({
+        email: '',
+        username: '',
+        role: '',
+        image: '',
+        previewImage: ''
+    });
+
+    const handleInput = (e) => {
+        setAccount({
+            ...account,
+            [e.target.name]: e.target.value,
+        });
+    };
+
     const handleUpload = (e) => {
-        // console.log(e.target.files[0]);
         if (e.target.files[0]) {
-            setPreviewImage(URL.createObjectURL(e.target.files[0]));
-            setImage(e.target.files[0]);
+            setAccount({
+                ...account,
+                previewImage: URL.createObjectURL(e.target.files[0]),
+                image: e.target.files[0]
+            });
+
         } else {
             // setPreviewImage('');
         }
     };
 
-    const handleSubmitUser = async () => {
+    const handleUpdatetUser = async () => {
         //validate
-        if (!password) {
-            toast.error('Invalid Password');
-            return;
-        }
-        if (!username) {
+        if (!account.username) {
             toast.error('Invalid Username');
             return;
         }
 
         //call API
         // Bên axiosCustom phần interceptor return response.data rồi nên nó sẽ lấy đc data lun
-        let data = await putUpdateUser(userUpdate.id, password, username, role, image);
+        let data = await putUpdateUser(userUpdate.id, account.username, account.role, account.image);
         if (data.EC === 0) {
             toast.success(data.EM);
             handleClose();
@@ -97,18 +105,21 @@ function ModalUpdateUser({
                                     disabled
                                     type='email'
                                     placeholder='Enter email'
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    name='email'
+                                    value={account.email}
+                                    onChange={handleInput}
                                 />
                             </Form.Group>
 
                             <Form.Group as={Col}>
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control
+                                    disabled
                                     type='password'
                                     placeholder='Password'
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
+                                    name='password'
+                                    value='password'
+                                    onChange={handleInput}
                                 />
                             </Form.Group>
                         </Row>
@@ -118,16 +129,17 @@ function ModalUpdateUser({
                                 <Form.Label>Username</Form.Label>
                                 <Form.Control
                                     placeholder='Username'
-                                    value={username}
-                                    onChange={(e) => setUsername(e.target.value)}
+                                    name='username'
+                                    value={account.username}
+                                    onChange={handleInput}
                                 />
                             </Form.Group>
 
                             <Form.Group as={Col}>
                                 <Form.Label>Role</Form.Label>
-                                <Form.Select value={role} onChange={(e) => setRole(e.target.value)}>
-                                    <option value='user'>User</option>
-                                    <option value='admin'>Admin</option>
+                                <Form.Select value={account.role} onChange={handleInput} name='role'>
+                                    <option value='USER'>USER</option>
+                                    <option value='ADMIN'>ADMIN</option>
                                 </Form.Select>
                             </Form.Group>
                         </Row>
@@ -139,8 +151,8 @@ function ModalUpdateUser({
                             <Form.Control type='file' id='labelUpload' hidden onChange={handleUpload} />
                         </Form.Group>
                         <Form.Group className='mb-3 img-preview'>
-                            {previewImage ? (
-                                <img className='image' src={previewImage} alt='' />
+                            {account.previewImage ? (
+                                <img className='image' src={account.previewImage} alt='' />
                             ) : (
                                 <span>Preview Image</span>
                             )}
@@ -151,8 +163,8 @@ function ModalUpdateUser({
                     <Button variant='secondary' onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant='primary' onClick={handleSubmitUser}>
-                        Save
+                    <Button variant='primary' onClick={handleUpdatetUser}>
+                        Update
                     </Button>
                 </Modal.Footer>
             </Modal>

@@ -1,16 +1,16 @@
-import { Link, NavLink, useNavigate } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
+import './Header.scss';
+import { Link, NavLink, useNavigate, Outlet } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import './Header.scss';
 import { Button } from 'react-bootstrap';
-import logoBg from '../../assets/img/logo-react.svg';
 import { useDispatch, useSelector } from 'react-redux';
 import { postLogout } from '../../services/apiService';
 import { toast } from 'react-toastify';
 import { doLogout } from '../../redux/action/action';
+import Images from '../../assets/img/Image';
 import Languages from '../Languages/Languages';
+import Fade from 'react-reveal/Fade';
 
 function Header() {
     const dispatch = useDispatch();
@@ -34,52 +34,77 @@ function Header() {
             toast.error(res.EM);
         }
     };
+
+    const scrollTo = (id) => {
+        document.getElementById(id).scrollIntoView({
+            behavior: 'smooth',
+        });
+    };
     return (
-        <header className='wrapper-header'>
-            <Navbar expand='lg'>
-                <Container>
-                    <Link to={'/'} className='navbar-brand'>
-                        <img src='https://design.duolingo.com/7d3b95abf67001cde6ea.svg' alt='' height={30} />
-                    </Link>
-                    <Navbar.Toggle aria-controls='basic-navbar-nav' />
-                    <Navbar.Collapse id='basic-navbar-nav'>
+        <>
+            <header className='wrapper-header'>
+                <Navbar expand='lg' className='header'>
+
+                    <Fade bottom>
+                        <Link to={'/'} className='navbar-brand'>
+                            <img src={Images.Headers.logo} alt='' height={30} />
+                        </Link>
+                    </Fade>
+                    <Navbar.Toggle />
+                    <Navbar.Collapse>
                         <Nav className='me-auto'>
-                            <NavLink to={'/'} className='nav-link'>
-                                Home
-                            </NavLink>
-                            <NavLink to={'/user'} className='nav-link'>
-                                User
-                            </NavLink>
-                            <NavLink to={'/admin'} className='nav-link'>
-                                Admin
-                            </NavLink>
+                            <Fade bottom>
+                                <NavLink to={'/user'} className='nav-link'>
+                                    USER
+                                </NavLink>
+                                <NavLink to={'/admin'} className='nav-link'>
+                                    ADMIN
+                                </NavLink>
+                            </Fade>
                         </Nav>
-                        <Nav>
-                            {isAuthenticated ? (
-                                <NavDropdown title='Settings' id='basic-nav-dropdown'>
-                                    <NavDropdown.Item>Profile</NavDropdown.Item>
-                                    <NavDropdown.Item onClick={() => handleLogout()}>Log out</NavDropdown.Item>
-                                </NavDropdown>
-                            ) : (
-                                <>
-                                    <Button
-                                        variant='outline-dark'
-                                        className='me-3 btn-login'
-                                        onClick={() => handleLogin()}
-                                    >
-                                        Log in
-                                    </Button>
-                                    <Button variant='dark' className='me-1' onClick={() => handleSignUp()}>
-                                        Sign up
-                                    </Button>
-                                </>
-                            )}
-                            <Languages />
-                        </Nav>
+                        <div className='nav-group'>
+                            <Fade bottom>
+                                <span className='pointer' onClick={() => scrollTo('feature')}>
+                                    FEATURES
+                                </span>
+                                <span className='pointer' onClick={() => scrollTo('aboutus')}>
+                                    ABOUT US
+                                </span>
+                                <span className=' pointer' onClick={() => scrollTo('contact')}>
+                                    CONTACT
+                                </span>
+                                <span className='pointer' onClick={() => scrollTo('')}>
+                                    COMPETION
+                                </span>
+                                <Nav className='settings'>
+                                    {isAuthenticated ? (
+                                        <NavDropdown title={account.username} >
+                                            <NavDropdown.Item onClick={() => navigate('/profile')}>Profile</NavDropdown.Item>
+                                            <NavDropdown.Item onClick={() => handleLogout()}>Log out</NavDropdown.Item>
+                                        </NavDropdown>
+                                    ) : (
+                                        <>
+                                            <Button
+                                                variant='outline-dark'
+                                                className='me-3 btn-login'
+                                                onClick={() => handleLogin()}
+                                            >
+                                                LOG IN
+                                            </Button>
+                                            <Button variant='dark' className='me-1' onClick={() => handleSignUp()}>
+                                                SIGN UP
+                                            </Button>
+                                        </>
+                                    )}
+                                    <Languages />
+                                </Nav>
+                            </Fade>
+                        </div>
                     </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </header>
+                </Navbar>
+            </header>
+            <Outlet />
+        </>
     );
 }
 

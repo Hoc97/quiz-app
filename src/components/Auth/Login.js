@@ -16,12 +16,22 @@ import Languages from '../Languages/Languages';
 function Login() {
     const dispatch = useDispatch();
 
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [account, setAccount] = useState({
+        email: '',
+        password: '',
+
+    });
+
     const [isLoading, setIsLoading] = useState(false);
     const [isShowPassword, setisShowPassword] = useState(false);
     const navigate = useNavigate();
 
+    const handleInput = (e) => {
+        setAccount({
+            ...account,
+            [e.target.name]: e.target.value,
+        });
+    };
     const validateEmail = (email) => {
         return String(email)
             .toLowerCase()
@@ -33,7 +43,7 @@ function Login() {
         e.preventDefault();
 
         //validate
-        const isValidEmail = validateEmail(email);
+        const isValidEmail = validateEmail(account.email);
         if (!isValidEmail) {
             toast.error('Invalid Email');
             return;
@@ -42,7 +52,7 @@ function Login() {
 
         setIsLoading(true);
 
-        let data = await postLogin(email, password);
+        let data = await postLogin(account.email, account.password);
         console.log(data);
 
         if (data.EC === 0) {
@@ -77,8 +87,8 @@ function Login() {
                                 <Form.Control
                                     type='email'
                                     placeholder='Enter email'
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    name='email'
+                                    onChange={handleInput}
                                 />
                             </Form.Group>
 
@@ -87,8 +97,8 @@ function Login() {
                                 <Form.Control
                                     type={isShowPassword ? 'text' : 'password'}
                                     placeholder='Password'
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
+                                    name='password'
+                                    onChange={handleInput}
                                 />
                                 {isShowPassword ? (
                                     <span className='eye' onClick={() => setisShowPassword(false)}>

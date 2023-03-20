@@ -1,14 +1,22 @@
-export const GET_DATA_LOGIN_SUCCESS = 'GET_DATA_LOGIN_SUCCESS';
-export const USER_LOGOUT_SUCCESS = 'USER_LOGOUT_SUCCESS';
+export const GET_DATA_LOGIN = 'GET_DATA_LOGIN';
+export const USER_LOGOUT = 'USER_LOGOUT';
+export const USER_UPDATE = 'USER_UPDATE';
+
 export const getDataLogin = (data) => {
     return {
-        type: GET_DATA_LOGIN_SUCCESS,
+        type: GET_DATA_LOGIN,
         payload: data,
     };
 };
 
 export const doLogout = () => {
     return {
-        type: USER_LOGOUT_SUCCESS,
+        type: USER_LOGOUT,
+    };
+};
+
+export const userUpdate = () => {
+    return {
+        type: USER_LOGOUT,
     };
 };

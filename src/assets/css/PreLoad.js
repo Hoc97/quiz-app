@@ -1,19 +1,20 @@
 import './PreLoad.scss';
+import Images from '../img/Image';
 function PreLoad() {
     return (
         <div className='preload-container'>
             <div className='header'>
                 <div className='logo'>
-                    <img src='https://design.duolingo.com/7d3b95abf67001cde6ea.svg' alt='' />
+                    <img src={Images.PreLoad.logo} alt='' />
                 </div>
                 <div className='language'>
                     <span>Chọn ngôn ngữ hiển thị</span>
-                    <img src='https://learn.mochidemy.com/image/1b93d0e0dcc21b519b136dd948ec3e80.png' alt='' />
+                    <img src={Images.PreLoad.icon} alt='' />
                 </div>
             </div>
             <div className='content'>
                 <div className='image-content'>
-                    <img src='https://design.duolingo.com/fe225c25f1c6afe81424.svg' alt='' />
+                    <img src={Images.PreLoad.content} alt='' />
                 </div>
                 <div className='load-intro'>
                     <div className='load-intro__1'></div>

@@ -13,25 +13,40 @@ import { postCreateNewUser } from '../../../../services/apiService';
 function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate, currentPage, setCurrentPage }) {
     const handleClose = () => {
         setShow(false);
-        setEmail('');
-        setPassword('');
-        setUsername('');
-        setRole('user');
-        setImage('');
-        setPreviewImage('');
+        setAccount({
+            email: '',
+            password: '',
+            username: '',
+            role: 'USER',
+            image: '',
+            previewImage: ''
+        });
     };
 
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [username, setUsername] = useState('');
-    const [role, setRole] = useState('user');
-    const [image, setImage] = useState('');
-    const [previewImage, setPreviewImage] = useState('');
+    const [account, setAccount] = useState({
+        email: '',
+        password: '',
+        username: '',
+        role: 'USER',
+        image: '',
+        previewImage: ''
+    });
+
+    const handleInput = (e) => {
+        setAccount({
+            ...account,
+            [e.target.name]: e.target.value,
+        });
+    };
+
     const handleUpload = (e) => {
         // console.log(e.target.files[0]);
         if (e.target.files[0]) {
-            setPreviewImage(URL.createObjectURL(e.target.files[0]));
-            setImage(e.target.files[0]);
+            setAccount({
+                ...account,
+                previewImage: URL.createObjectURL(e.target.files[0]),
+                image: e.target.files[0]
+            });
         } else {
             // setPreviewImage('');
         }
@@ -45,25 +60,25 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
             );
     };
 
-    const handleSubmitUser = async () => {
+    const handleCreateUser = async () => {
         //validate
-        const isValidEmail = validateEmail(email);
+        const isValidEmail = validateEmail(account.email);
         if (!isValidEmail) {
             toast.error('Invalid Email');
             return;
         }
-        if (!password) {
+        if (!account.password) {
             toast.error('Invalid Password');
             return;
         }
-        if (!username) {
+        if (!account.username) {
             toast.error('Invalid Username');
             return;
         }
 
         //call API
         // Bên axiosCustom phần interceptor return response.data rồi nên nó sẽ lấy đc data lun
-        let data = await postCreateNewUser(email, password, username, role, image);
+        let data = await postCreateNewUser(account.email, account.password, account.username, account.role, account.image);
         console.log(data);
         if (data.EC === 0) {
             toast.success(data.EM);
@@ -77,10 +92,6 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
     };
     return (
         <>
-            {/* <Button variant='primary' onClick={handleShow}>
-                Launch demo modal
-            </Button> */}
-
             <Modal show={show} onHide={handleClose} backdrop='static' size='lg'>
                 <Modal.Header closeButton>
                     <Modal.Title>Add new user</Modal.Title>
@@ -93,8 +104,9 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
                                 <Form.Control
                                     type='email'
                                     placeholder='Enter email'
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    name='email'
+                                    value={account.email}
+                                    onChange={handleInput}
                                 />
                             </Form.Group>
 
@@ -103,8 +115,9 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
                                 <Form.Control
                                     type='password'
                                     placeholder='Password'
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
+                                    name='password'
+                                    value={account.password}
+                                    onChange={handleInput}
                                 />
                             </Form.Group>
                         </Row>
@@ -114,16 +127,17 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
                                 <Form.Label>Username</Form.Label>
                                 <Form.Control
                                     placeholder='Username'
-                                    value={username}
-                                    onChange={(e) => setUsername(e.target.value)}
+                                    name='username'
+                                    value={account.username}
+                                    onChange={handleInput}
                                 />
                             </Form.Group>
 
                             <Form.Group as={Col}>
                                 <Form.Label>Role</Form.Label>
-                                <Form.Select defaultValue={role} onChange={(e) => setRole(e.target.value)}>
-                                    <option value='user'>User</option>
-                                    <option value='admin'>Admin</option>
+                                <Form.Select value={account.role} onChange={handleInput} name='role'>
+                                    <option value='USER'>USER</option>
+                                    <option value='ADMIN'>ADMIN</option>
                                 </Form.Select>
                             </Form.Group>
                         </Row>
@@ -135,23 +149,19 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
                             <Form.Control type='file' id='labelUpload' hidden onChange={handleUpload} />
                         </Form.Group>
                         <Form.Group className='mb-3 img-preview'>
-                            {previewImage ? (
-                                <img className='image' src={previewImage} alt='' />
+                            {account.previewImage ? (
+                                <img className='image' src={account.previewImage} alt='' />
                             ) : (
                                 <span>Preview Image</span>
                             )}
                         </Form.Group>
-                        <label>
-                            <input type="checkbox" />
-                            <span className="label">Check me</span>
-                        </label>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant='secondary' onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant='primary' onClick={handleSubmitUser}>
+                    <Button variant='primary' onClick={handleCreateUser}>
                         Save
                     </Button>
                 </Modal.Footer>
