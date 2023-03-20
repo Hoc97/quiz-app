@@ -1,6 +1,6 @@
-import { GET_DATA_LOGIN_SUCCESS } from '../action/action';
-import { USER_LOGOUT_SUCCESS } from '../action/action';
-
+import { GET_DATA_LOGIN } from '../action/action';
+import { USER_LOGOUT } from '../action/action';
+import { USER_UPDATE } from '../action/action';
 const intialState = {
     account: {
         access_token: '',
@@ -15,13 +15,13 @@ const intialState = {
 
 const rdcReducer = (state = intialState, { type, payload }) => {
     switch (type) {
-        case GET_DATA_LOGIN_SUCCESS:
+        case GET_DATA_LOGIN:
             return {
                 ...state,
                 account: payload.DT,
                 isAuthenticated: true,
             };
-        case USER_LOGOUT_SUCCESS:
+        case USER_LOGOUT:
             return {
                 account: {
                     access_token: '',
@@ -32,6 +32,14 @@ const rdcReducer = (state = intialState, { type, payload }) => {
                     role: '',
                 },
                 isAuthenticated: false,
+            };
+        case USER_UPDATE:
+            return {
+                ...state,
+                account: {
+                    ...state.account,
+                    username: payload.DT,
+                },
             };
         default:
             return state;
