@@ -1,0 +1,318 @@
+[
+    {
+        "isMcqGroup": true,
+        "id": 1652,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">We asked 100 students, \"What is your favorite class?\" Here are their answers:</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><p  style=\"\"><table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:500px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center;\">\n\t\t\tMath<br />\n\t\t\t<span class=\"q508-1\">Science</span><br />\n\t\t\tEnglish<br />\n\t\t\tMusic\n\t\t\t</td>\n\t\t\t<td style=\"text-align: center;\">\n\t\t\t15<br />\n\t\t\t<span class=\"q508-2\">35</span><br />\n\t\t\t20<br />\n\t\t\t30\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">We also asked the reasons why these students preferred the class. These are the most popular answers:</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><p  style=\"\"><table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 400px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>1/ <span class=\"q509-1\">They liked the teacher.</span><br />\n\t\t\t2/ The class was easy.<br />\n\t\t\t3/ They had good friends in the class.</td>\n\t\t</tr>\n\t</tbody>\n</table></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">We then asked the students, \"What is your least favorite class?\" Here are their answers:</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><p  style=\"\"><table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:500px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\tMath<br />\n\t\t\t<span class=\"q510-1\">Physical education</span><br />\n\t\t\tHistory<br />\n\t\t\tGeography\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t25<br />\n\t\t\t<span class=\"q510-2\">45</span><br />\n\t\t\t15<br />\n\t\t\t15\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Chúng tôi hỏi 100 học sinh, \"Lớp học yêu thích của em là gì?\" Đây là câu trả lời của các em:</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:500px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center;\">\n\t\t\tToán<br />\n\t\t\tKhoa học<br />\n\t\t\tAnh văn<br />\n\t\t\tÂm nhạc\n\t\t\t</td>\n\t\t\t<td style=\"text-align: center;\">\n\t\t\t15<br />\n\t\t\t35<br />\n\t\t\t20<br />\n\t\t\t30\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table></p></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Chúng tôi còn hỏi lý do những học sinh này thích những lớp này. Đây là những câu trả lời thường gặp nhất:</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 400px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>1/ Các em thích giáo viên.<br />\n\t\t\t2/ Lớp học dễ.<br />\n\t\t\t3/ Các em có bạn tốt trong lớp.</td>\n\t\t</tr>\n\t</tbody>\n</table></p></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Sau đó chúng tôi hỏi các em \"Các em không thích nhất là lớp nào?\" Đây là câu trả lời của các em:</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:500px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\tToán<br />\n\t\t\tThể dục<br />\n\t\t\tLịch sử<br />\n\t\t\tĐịa lý\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t25<br />\n\t\t\t45<br />\n\t\t\t15<br />\n\t\t\t15\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table></p></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 17232,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What is the most popular class?", "Lớp học nào được yêu thích nhất?"],
+                "optionA": ["Math", "Toán"],
+                "optionB": ["Science", "Khoa học"],
+                "optionC": ["English", "Anh văn"],
+                "optionD": ["Music", "Âm nhạc"],
+                "answer": [
+                    "B",
+                    "Ta thấy số em học sinh thích \"<span class=\"quote quote-q508-1\">Science</span>\" là \"<span class=\"quote quote-q508-2\">35</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17233,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Why might students like their class?", "Tại sao các học sinh thích lớp học của họ?"],
+                "optionA": ["Their teacher is angry.", "Giáo viên của các em giận dữ."],
+                "optionB": ["The class is boring.", "Lớp học chán."],
+                "optionC": ["They don't like the class.", "Các em không thích lớp học này."],
+                "optionD": ["They like their teacher.", "Các em thích giáo viên của mình."],
+                "answer": [
+                    "D",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q509-1\">They liked the teacher. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17234,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "Which of these classes is most disliked by students?",
+                    "Lớp nào sau đây học sinh khoông thích nhất?"
+                ],
+                "optionA": ["Science", "Khoa học"],
+                "optionB": ["Physical education", "Thể dục"],
+                "optionC": ["Music", "Âm nhạc"],
+                "optionD": ["English", "Anh văn"],
+                "answer": [
+                    "B",
+                    "Ta thấy số em không thích \"<span class=\"quote quote-q510-1\">Physical education</span>\" là cao nhất \"<span class=\"quote quote-q510-2\">45</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 230,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1651,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Dear Michael,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">I am shopping for the day. I have to buy a new table and chairs. I won't be home until eight o'clock this evening. Please take the dog for a walk and don't forget to clean your room. Your dinner is in the microwave. There is some orange juice in the refrigerator, too.<br/></span>\n<span class=\"paragraph-sentence\">See you later!</span>\n<span class=\"paragraph-sentence\"><p><span class=\"q506-1\">-Mom</span></span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Michael thân mến,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Mẹ đang mua sắm cho hôm nay. Mẹ phải mua bán ghế mới. 8 giờ tối nay mẹ mới về nhà. Hãy dẫn con chó đi dạo và đừng quên dọn phòng của con. Bữa tối của con ở trong lò vi sóng. Trong tủ lạnh còn có một ít nước cam.<br/></span>\n<span class=\"paragraph-sentence\">Gặp lại con sau!<p></span>\n<span class=\"paragraph-sentence\">-Mẹ</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 17230,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Who wrote the note?", "Ai viết ghi chú này?"],
+                "optionA": ["Michael", "Michael"],
+                "optionB": ["Michael's mother", "Mẹ của Michael"],
+                "optionC": ["Michael's teacher", "Giáo viên của Michael"],
+                "optionD": ["Michael's sister", "Chị của Michael"],
+                "answer": ["B", "Ta thấy cuối ghi chú có ghi \"<span class=\"quote quote-q506-1\">-Mom</span>\""],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17231,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What should Michael do?", "Michael nên làm gì?"],
+                "optionA": ["Wash the dishes", "Rửa chén"],
+                "optionB": ["Feed the dog", "Cho chó ăn"],
+                "optionC": ["Clean his room", "Dọn phòng"],
+                "optionD": ["Clean the dog", "Làm vệ sinh cho chó"],
+                "answer": ["C", "Ta thấy ý này trong câu \"don't forget to clean you room. \""],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 153,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1564,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><p  style=\"\"><table class=\"has-borders\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><strong>Name</strong></td>\n\t\t\t<td><strong>Height</strong></td>\n\t\t\t<td><strong>Weight</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>John</td>\n\t\t\t<td>178 cm</td>\n\t\t\t<td>65 kg</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Andy</td>\n\t\t\t<td>175 cm</td>\n\t\t\t<td>67 kg</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Scott</td>\n\t\t\t<td>181 cm</td>\n\t\t\t<td>79 kg</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Bill</td>\n\t\t\t<td>179 cm</td>\n\t\t\t<td>77 kg</td>\n\t\t</tr>\n\t</tbody>\n</table></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><span class=\"q495-1\">John and his three friends decided to join the army.</span> When they went to the army office, <span class=\"q493-1\">the army doctor began checking their height and weight</span>. <span class=\"q494-1\">John was a bit embarrassed because he was thin and weighed only 65 kg</span>. <span class=\"q494-2\">Andy was also embarrassed because he was the shortest</span>. After the doctor's check up, the boys began training.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><table class=\"has-borders\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><strong>Tên</strong></td>\n\t\t\t<td><strong>Chiều cao</strong></td>\n\t\t\t<td><strong>Cân nặng</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>John</td>\n\t\t\t<td>178 cm</td>\n\t\t\t<td>65 kg</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Andy</td>\n\t\t\t<td>175 cm</td>\n\t\t\t<td>67 kg</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Scott</td>\n\t\t\t<td>181 cm</td>\n\t\t\t<td>79 kg</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Bill</td>\n\t\t\t<td>179 cm</td>\n\t\t\t<td>77 kg</td>\n\t\t</tr>\n\t</tbody>\n</table></p></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">John và 3 người bạn của anh ấy quyết định nhập ngũ. Khi họ đến văn phòng quân đội, vị bác sĩ quân đội bắt đầu đo chiều cao và cân nặng của họ. John hơi xấu hổ vì anh ấy ốm và chỉ nặng có 65 kg. Andy cũng xấu hổ vì anh ấy là người thấp nhất. Sau khi khám sức khỏe xong, họ bắt đầu huấn luyện.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 15270,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Who checked their height?", "Ai là người đo chiều cao của họ?"],
+                "optionA": ["John", "John"],
+                "optionB": ["Andy", "Andy"],
+                "optionC": ["The doctor", "Bác sĩ"],
+                "optionD": ["Bill", "Bill"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu: \"<span class=\"quote quote-q493-1\">the army doctor began checking their height and weight</span>\"."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 15271,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Who was embarrassed?", "Ai là người cảm thấy xấu hổ?"],
+                "optionA": ["John and Scott", "John và Scott"],
+                "optionB": ["Bill and Scott", "Bill và Scott"],
+                "optionC": ["Andy and the doctor", "Andy và bác sĩ"],
+                "optionD": ["Andy and John", "Andy và John"],
+                "answer": [
+                    "D",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q494-1\">John was a bit embarrassed because he was thin and weighed only 65 kg</span>\" và câu \"<span class=\"quote quote-q494-2\">Andy was also embarrassed because he was the shortest</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 15272,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "Why did John and his friends go for a check up?",
+                    "Vì sao John và bạn của anh ấy đi kiểm tra sức khỏe?"
+                ],
+                "optionA": ["Because John was sick", "Vì John bị bệnh"],
+                "optionB": ["Because they were sick", "Vì họ bị bệnh"],
+                "optionC": ["Because they wanted to join the army", "Vì họ muốn nhập ngũ"],
+                "optionD": ["Because John is a doctor", "Vì John là bác sĩ"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu: \"<span class=\"quote quote-q495-1\">John and his three friends decided to join the army. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 230,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1034,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">The Health Factory will introduce a new line of vitamins, a company spokesman said yesterday. <span class=\"q162-1\">The vitamins are intended for athletic men and women,</span> who are looking for a vitamin that will replace vital nutrients lost during strenuous exercise. Unlike regular vitamins, <span class=\"q163-2\">the Health Factory Active Essentials 2020 have more iron, calcium, and potassium.</span> <span class=\"q163-1\">The new vitamins have been tested on professional athletes, such as cyclist Luke Wilson, and are proven to increase athletic performance by up to 20 percent.</span> Of course, health products like the Active Essentials vitamins are not cheap. One month's supply of the new vitamins costs about $200. To promote the new product, however, <span class=\"q164-1\">the Health Factory is offering a special 30 percent discount to anyone who purchase the new vitamins with their Health Factory card.</span> For more information on the new product or to apply for a health Factory card, call the company's customer service hotline at 1-800-326-HEALTH.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Công ty Health Factory sẽ giới thiệu một dòng vitamin mới, phát ngôn viên của công ty cho biết ngày hôm qua. Các viatamin này được dành cho các vận động viên nam và nữ, những người đang tìm kiếm một loại vitamin thay thế cho các dưỡng chất quan trọng mất đi trong quá trình luyện tập cực khổ. Không giống như các loại vitamin thông thường, sản phẩm Health Factory Active Essentials 2020 chứa nhiều sắt, can-xi và ka-li hơn. Vitamin mới đã  được thử nghiệm trên các vận động viên chuyên nghiệp như vận động viên đạp xe Luke Wilson và đã chứng minh có thể tăng biểu hiện của vận động viên lên đến 20%. Tất nhiên, các sản phẩm dành cho sức khỏe như  Active Essentials vitamins thì không rẻ. Chi phí dành cho một tháng uống vitamin mới này là khoảng 200 đô. Tuy nhiên, để giới thiệu sản phẩm mới, công ty Health Factory đang cung cấp ưu đãi giảm 30% cho những khách hàng mua vitamin mới bằng thẻ của Health Factory. Để biết thêm thông tin về sản phẩm mới hoặc yêu cầu làm thẻ Health Factory, xin vui lòng gọi cho đường dây nóng chăm sóc khách hàng số 1-800-326-HEALTH.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 11943,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What can be inferred about the new vitamins?",
+                    "Có thể suy ra điều gì về loại vitamin mới?"
+                ],
+                "optionA": ["They are intended for athletes.", "Chúng được dành cho các vận động viên."],
+                "optionB": ["They are the most popular.", "Chúng là loại phổ biến nhất."],
+                "optionC": ["They are easy to swallow.", "Chúng thì dễ nuốt."],
+                "optionD": ["They are not sold in stores.", "Chúng không được bán ở cửa hàng."],
+                "answer": [
+                    "A",
+                    "Ta có thể thấy ý này trong câu: \"<span class=\"quote quote-q162-1\">The vitamins are intended for athletic men and women,</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 11944,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What is NOT mentioned about the new vitamins?",
+                    "Điều nào sau đây KHÔNG được đề cập về vitamin mới?"
+                ],
+                "optionA": ["They increase performance.", "Chúng giúp tăng hiệu suất."],
+                "optionB": ["They were tested on athletes.", "Chúng đã được thử nghiệm trên các vận động viên."],
+                "optionC": ["They are cheaper than other brands.", "Chúng rẻ hơn các nhãn hiệu khác."],
+                "optionD": ["They have more iron and calcium.", "Chúng có nhiều sắt và can-xi hơn."],
+                "answer": [
+                    "C",
+                    "Ta thấy đáp án A và B trong câu: \"<span class=\"quote quote-q163-1\">The new vitamins have been tested on professional athletes, such as cyclist Luke Wilson, and are proven to increase athletic performance by up to 20 percent. </span>\"<br/>Ta thấy đáp án D trong câu: \"<span class=\"quote quote-q163-2\">the Health Factory Active Essentials 2020 have more iron, calcium, and potassium. </span>\"<br/>Chỉ có đáp án C là không thấy đề cập đến trong bài."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 11945,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "According to the article, how can people receive a discount?",
+                    "Theo như bài viết, làm sao để mọi người nhận được giảm giá?"
+                ],
+                "optionA": ["Place an order online", "Đặt hàng trên mạng"],
+                "optionB": ["Apply for a membership card", "Yêu cầu làm thẻ thành viên"],
+                "optionC": ["Enter a contest", "Tham gia một cuộc thi"],
+                "optionD": ["Spend a certain amount", "Chi một khoản nhất định"],
+                "answer": [
+                    "B",
+                    "Trong bài có câu:\"<span class=\"quote quote-q164-1\">the Health Factory is offering a special 30 percent discount to anyone who purchase the new vitamins with their Health Factory card. </span>\"<br/>Health Factory chỉ giảm giá cho những ai mua bằng thẻ của Health Factory -> để được giảm giá phải có thẻ thành viên"
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 230,
+        "did_wrongly_the_last_time": false
+    }
+]

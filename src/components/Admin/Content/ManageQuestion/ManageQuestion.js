@@ -38,12 +38,10 @@ function ManageQuestion() {
         url: ''
     };
     const initSelectedQuiz = { value: '', label: 'Select quiz...' };
-
     const [listQuiz, setListQuiz] = useState([]);
     const [selectedQuiz, setSelectedQuiz] = useState(initSelectedQuiz);
-    const [previewImage, setPreviewImage] = useState(false);
-    const [showImage, setShowImage] = useState(false);
     const [questions, setQuestions] = useState(initQuestions);
+    const [previewImage, setPreviewImage] = useState(false);
     const [urlImagePreview, setUrlImagePreview] = useState(initUrlImagePreview);
 
     useEffect(() => {
@@ -210,10 +208,8 @@ function ManageQuestion() {
         setQuestions(initQuestions);
         setSelectedQuiz(initSelectedQuiz);
         setPreviewImage(false);
-        setShowImage(false);
         setUrlImagePreview(initUrlImagePreview);
     };
-
     return (
         <div className='question-container' >
             <div className='question-title'>Questions Management</div>
@@ -249,29 +245,25 @@ function ManageQuestion() {
                                             <Form.Label className='btn-upload' htmlFor={`${question.id}`}>
                                                 <RiImageAddFill />
                                             </Form.Label>
-
-                                            <div className='file-upload'>
-                                                {question.imageName ?
-                                                    <span className='preview-image'
-                                                        onClick={() =>
-                                                            handlePreviewImage(question.id)}>{question.imageName}</span>
-                                                    :
-                                                    '0 file is uploaded'}
-                                            </div>
                                             <Form.Control type='file' id={`${question.id}`} hidden
                                                 onChange={(e) => handleOnChangeFileQuestion(question.id, e)}
                                             />
+                                            <div className='file-upload'>
+                                                {question.imageName ?
+                                                    <span
+                                                        className='preview-image'
+                                                        onClick={() => handlePreviewImage(question.id)}
+                                                    >
+                                                        {question.imageName}
+                                                    </span>
+                                                    :
+                                                    '0 file is uploaded'}
+                                            </div>
                                         </Form.Group>
                                         <Form.Group className='img-preview-small'>
-                                            {showImage ? (
-                                                <img className='image' src={previewImage} alt='' />
-                                            ) : previewImage ? (
-                                                <span className='previewImage' onClick={() => setShowImage(true)}>
-                                                    Preview Image
-                                                </span>
-                                            ) : (
-                                                ''
-                                            )}
+                                            {question.imageFile ? (
+                                                <img className='image' src={question.imageFile ? URL.createObjectURL(question.imageFile) : ''} alt='' />
+                                            ) : <div className='image'></div>}
                                         </Form.Group>
                                         <div className='btn-add'>
                                             <span onClick={() => handleAddRemoveQuestion('ADD', '')}>
@@ -333,7 +325,7 @@ function ManageQuestion() {
                     >
                     </Lightbox>}
                 {questions.length > 0 &&
-                    <div onClick={() => handleSubmitQuestionQuiz()}>
+                    <div className='text-end' onClick={() => handleSubmitQuestionQuiz()}>
                         <Button variant="warning">Save question</Button>
                     </div>
                 }

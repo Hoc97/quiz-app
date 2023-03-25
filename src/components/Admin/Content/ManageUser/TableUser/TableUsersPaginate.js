@@ -16,7 +16,7 @@ function TableUsersPaginate({
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>Id</th>
                         <th>Username</th>
                         <th>Email</th>
                         <th>Role</th>
@@ -31,7 +31,7 @@ function TableUsersPaginate({
                                     <td>{user.id}</td>
                                     <td>{user.username}</td>
                                     <td>{user.email}</td>
-                                    <td>{user.role}</td>
+                                    <td>{user.role.toUpperCase()}</td>
                                     <td>
                                         <Button onClick={() => handleBtnView(user)} variant='primary'>
                                             View

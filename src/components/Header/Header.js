@@ -11,6 +11,8 @@ import { doLogout } from '../../redux/action/action';
 import Images from '../../assets/img/Image';
 import Languages from '../Languages/Languages';
 import Fade from 'react-reveal/Fade';
+import Clock from '../TimeDate/Clock';
+import ClockDate from '../TimeDate/ClockDate';
 
 function Header() {
     const dispatch = useDispatch();
@@ -44,7 +46,6 @@ function Header() {
         <>
             <header className='wrapper-header'>
                 <Navbar expand='lg' className='header'>
-
                     <Fade bottom>
                         <Link to={'/'} className='navbar-brand'>
                             <img src={Images.Headers.logo} alt='' height={30} />
@@ -52,7 +53,7 @@ function Header() {
                     </Fade>
                     <Navbar.Toggle />
                     <Navbar.Collapse>
-                        <Nav className='me-auto'>
+                        <Nav >
                             <Fade bottom>
                                 <NavLink to={'/user'} className='nav-link'>
                                     USER
@@ -62,6 +63,8 @@ function Header() {
                                 </NavLink>
                             </Fade>
                         </Nav>
+                        <Clock />
+                        <ClockDate />
                         <div className='nav-group'>
                             <Fade bottom>
                                 <span className='pointer intro' onClick={() => scrollTo('feature')}>
@@ -78,14 +81,21 @@ function Header() {
                                 </span>
                                 <Nav className='settings'>
                                     {isAuthenticated ? (
-                                        <NavDropdown title={
-                                            <span className='username-avatar'>
-                                                <img src={`data:image/jpeg;base64,${account.image}`} className='avatar' alt='' />
-                                                <span>{account.username}</span>
-                                            </span>
-
-                                        } >
-                                            <NavDropdown.Item onClick={() => navigate('/profile')}>Profile</NavDropdown.Item>
+                                        <NavDropdown
+                                            title={
+                                                <span className='username-avatar'>
+                                                    <img
+                                                        src={`data:image/jpeg;base64,${account.image}`}
+                                                        className='avatar'
+                                                        alt=''
+                                                    />
+                                                    <span>{account.username}</span>
+                                                </span>
+                                            }
+                                        >
+                                            <NavDropdown.Item onClick={() => navigate('/profile')}>
+                                                Profile
+                                            </NavDropdown.Item>
                                             <NavDropdown.Item onClick={() => handleLogout()}>Log out</NavDropdown.Item>
                                         </NavDropdown>
                                     ) : (

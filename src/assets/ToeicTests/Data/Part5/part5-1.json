@@ -1,0 +1,1807 @@
+[
+    {
+        "id": 10852,
+        "isMcqGroup": false,
+        "image": "",
+        "hintImage": null,
+        "audio": [
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/main_audios/68477f43da9475283615cd81ccd23207ad2e9d7d.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/signing.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/signed.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/signature.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/to_sign.mp3"
+        ],
+        "question": [
+            "In order to brand your business, you'd better include your _____ in every letter you send to customers, which helps remind them of whom they do business with.",
+            "Để tạo nên thương hiệu cho công ty, bạn nên bao gồm cả chữ ký của bạn trong mỗi lá thư gửi cho khách hàng để giúp nhắc họ nhớ đến người mà họ đang làm việc chung."
+        ],
+        "optionA": ["signing", "việc ký kết (danh từ)"],
+        "optionB": ["signed", "ký tên (động từ thêm -ed)"],
+        "optionC": ["signature", "chữ ký (danh từ)"],
+        "optionD": ["to sign", "ký tên (động từ có \"to\")"],
+        "answer": [
+            "C",
+            "<ul class=\"explanation\"><li><span class=\"arrow-right\"></span>Trước chỗ trống có tính từ sở hữu \"your\" -> chọn danh từ -> loại B và D.</li><li><span class=\"arrow-right\"></span>Xét theo nghĩa của câu -> chọn C.</li></ul>"
+        ],
+        "video_exp_url": "https://www.youtube.com/embed/8pS7OT9l9fM",
+        "grammar_links_info": [
+            [
+                "https://tienganhmoingay.com/ngu-phap-tieng-anh/vi-tri-danh-tu-trong-cau/",
+                "Các Vị Trí Của Danh Từ Trong Câu"
+            ]
+        ],
+        "annotatedVocabs": [
+            {
+                "id": 671,
+                "occurrence_data": {
+                    "occurrence_str": "include",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "bao gồm",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 4753,
+                    "vocab": "include",
+                    "pos": "v",
+                    "pos_vi": "động từ",
+                    "ipa_us": "ɪnˈkluːd",
+                    "ipa_uk": "ɪnˈkluːd",
+                    "audio_us": "/static/Vocabulary/audios/include_v.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/include_v.mp3",
+                    "level": 1,
+                    "cefr_level": 1
+                },
+                "meanings_data": [
+                    {
+                        "id": 4776,
+                        "content": "bao gồm",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [
+                            {
+                                "id": 2411,
+                                "content": "include doing something",
+                                "meaning": "bao gồm việc làm gì đó",
+                                "examples_data": [
+                                    {
+                                        "id": 15974,
+                                        "content": "Your job also includes typing letters.",
+                                        "trans": "Công việc của cô cũng bao gồm gõ thư từ.",
+                                        "audio": "/static/Vocabulary/audios/ex_e0311e3cdbb739637eaffd12c18b8aeacc9d39d0.mp3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "examples_data": [
+                            {
+                                "id": 5013,
+                                "content": "Does the price include breakfast?",
+                                "trans": "Giá này đã bao gồm bữa sáng chưa?",
+                                "audio": "/static/Vocabulary/audios/ex_9900e2ed12b8ce1fea8dba8f3c06a8b1ad537251.mp3"
+                            },
+                            {
+                                "id": 5014,
+                                "content": "We must include this chemical element in the group.",
+                                "trans": "Chúng ta phải thêm nguyên tố hóa học này vào nhóm.",
+                                "audio": "/static/Vocabulary/audios/ex_b3892296173cfcf001ac25a3ebb220a16d363510.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 672,
+                "occurrence_data": {
+                    "occurrence_str": "remind",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "nhắc",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 3052,
+                    "vocab": "remind",
+                    "pos": "v",
+                    "pos_vi": "động từ",
+                    "ipa_us": "rɪˈmaɪnd",
+                    "ipa_uk": "rɪˈmaɪnd",
+                    "audio_us": "http://www.oxfordlearnersdictionaries.com/media/english/us_pron/r/rem/remin/remind__us_1.mp3",
+                    "audio_uk": "http://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rem/remin/remind__gb_1.mp3",
+                    "level": 2,
+                    "cefr_level": 3
+                },
+                "meanings_data": [
+                    {
+                        "id": 3053,
+                        "content": "nhắc nhở, gợi nhớ",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": "/static/Vocabulary/images/word_images/remind.jpg",
+                        "usage_patterns_data": [
+                            {
+                                "id": 2743,
+                                "content": "remind somebody/yourself about/of something",
+                                "meaning": "nhắc [ai đó/bản thân] về chuyện gì",
+                                "examples_data": [
+                                    {
+                                        "id": 32373,
+                                        "content": "I called to remind him about the party.",
+                                        "trans": "Tôi gọi để nhắc anh ấy về buổi tiệc.",
+                                        "audio": "/static/Vocabulary/audios/ex_2db3e1b019ab2cf07b668cc5998effdb125c253a.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 2744,
+                                "content": "remind somebody/yourself to do something",
+                                "meaning": "nhắc [ai đó/bản thân] làm việc gì đó",
+                                "examples_data": [
+                                    {
+                                        "id": 32372,
+                                        "content": "Remind me to phone Alan before I go out.",
+                                        "trans": "Nhắc tôi gọi điện thoại cho Alan trước khi tôi ra ngoài nhé.",
+                                        "audio": "/static/Vocabulary/audios/ex_20672ccaccde160180fb2accb013042bf0b701f5.mp3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "examples_data": [
+                            {
+                                "id": 16603,
+                                "content": "I'm sorry, I've forgotten your name. Can you remind me?",
+                                "trans": "Tôi xin lỗi, tôi quên mất tên bạn. Bạn có thể nhắc tôi nhớ không?",
+                                "audio": "/static/Vocabulary/audios/exs_usage_pattern_remind_somebody.mp3"
+                            },
+                            {
+                                "id": 16604,
+                                "content": "Remind me to phone Alan before I go out.",
+                                "trans": "Nhắc tôi gọi cho Alan trước khi tôi ra ngoài.",
+                                "audio": "/static/Vocabulary/audios/exs_usage_pattern_remind_somebody_to_do_something.mp3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "learnerQuestionsCount": 1,
+        "testDuration": 45,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "id": 8563,
+        "isMcqGroup": false,
+        "image": "",
+        "hintImage": null,
+        "audio": [
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/main_audios/315fbba53b2e4b5a4b307e4d97186de996d5918c.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/him.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/his.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/himself.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/he.mp3"
+        ],
+        "question": [
+            "Because all members were busy doing their work, the sales manager had to finish the sales report by _____",
+            "Bởi vì tất cả các nhân viên đều bận rộn làm công việc của mình, quản lý bán hàng phải tự hoàn thành báo cáo doanh số bán hàng."
+        ],
+        "optionA": ["him", "anh ta (đại từ tân ngữ)"],
+        "optionB": ["his", "của anh ấy (tính từ sở hữu)"],
+        "optionC": ["himself", "tự anh ấy (đại từ phản thân)"],
+        "optionD": ["he", "anh ấy (đại từ nhân xưng)"],
+        "answer": ["C", "Ta có cụm \"by oneself\" là tự mình làm việc gì đó -> ta dùng himself."],
+        "video_exp_url": "https://www.youtube.com/embed/PtHQHZD6Xbo",
+        "grammar_links_info": [
+            ["https://tienganhmoingay.com/ngu-phap-tieng-anh/dai-tu-phan-than/", "Đại từ Phản thân"]
+        ],
+        "annotatedVocabs": [
+            {
+                "id": 2479,
+                "occurrence_data": {
+                    "occurrence_str": "manager",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "quản lý",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 4138,
+                    "vocab": "manager",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "ˈmænɪdʒər",
+                    "ipa_uk": "ˈmænɪdʒər",
+                    "audio_us": "/static/Vocabulary/audios/manager_n.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/manager_n.mp3",
+                    "level": 1,
+                    "cefr_level": 2
+                },
+                "meanings_data": [
+                    {
+                        "id": 4139,
+                        "content": "quản lý, giám đốc",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": "/static/Vocabulary/images/word_images/manager_n_1.jpg",
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 5864,
+                                "content": "I hate managing people but they appointed me manager of the branch.",
+                                "trans": "Tôi ghét quản lý người khác nhưng họ đã bổ nhiệm tôi làm quản lý của chi nhánh.",
+                                "audio": "/static/Vocabulary/audios/ex_c4a4cc5c2c4b2347186d981822be7d823ef99196.mp3"
+                            },
+                            {
+                                "id": 23053,
+                                "content": "What do you think of our new manager?",
+                                "trans": "Bạn nghĩ gì về người quản lý mới?",
+                                "audio": "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/o3ZR6_1.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2480,
+                "occurrence_data": {
+                    "occurrence_str": "report",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "báo cáo",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 7976,
+                    "vocab": "report",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "rɪˈpɔːt",
+                    "ipa_uk": "rɪˈpɔːt",
+                    "audio_us": "/static/Vocabulary/audios/report_n.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/report_n.mp3",
+                    "level": 1,
+                    "cefr_level": 1
+                },
+                "meanings_data": [
+                    {
+                        "id": 10143,
+                        "content": "bản báo cáo",
+                        "meaning_num": 2,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [
+                            {
+                                "id": 4159,
+                                "content": "report on something",
+                                "meaning": "bản báo cáo về cái gì",
+                                "examples_data": [
+                                    {
+                                        "id": 33378,
+                                        "content": "You need to write a report on your findings.",
+                                        "trans": "Bạn cần phải viết một bản báo cáo về những phát hiện của mình.",
+                                        "audio": "/static/Vocabulary/audios/ex_f22af80ab954f36eca7584dd3d99f2097676659d.mp3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "examples_data": [
+                            {
+                                "id": 26924,
+                                "content": "I can't remember when the report will be published.",
+                                "trans": "Tôi không thể nhớ khi nào báo cáo sẽ được công bố.",
+                                "audio": "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/hiktz_1.mp3"
+                            },
+                            {
+                                "id": 26927,
+                                "content": "Where should I put this weekly report?",
+                                "trans": "Tôi nên để báo cáo hàng tuần này ở đâu?",
+                                "audio": "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/oHPDI_1.mp3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "learnerQuestionsCount": 2,
+        "testDuration": 45,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "id": 7644,
+        "isMcqGroup": false,
+        "image": "",
+        "hintImage": null,
+        "audio": [
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/main_audios/d89c2aa6c51189dd7dd1cfc1d193255320fafb78.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/preparatory.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/preparation.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/prepared.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/prepares.mp3"
+        ],
+        "question": [
+            "The _____ of the forms took much less time than we expected.",
+            "Sự chuẩn bị các mẫu đơn mất ít thời gian hơn chúng tôi dự kiến."
+        ],
+        "optionA": ["preparatory", "chuẩn bị (tính từ)"],
+        "optionB": ["preparation", "sự chuẩn bị (danh từ)"],
+        "optionC": ["prepared", "chuẩn bị (động từ dạng V_ed)"],
+        "optionD": ["prepares", "chuẩn bị (động từ chia ở thì hiện tại đơn, ngôi thứ 3)"],
+        "answer": ["B", "Sau mạo từ \"the\" ta cần điền 1 danh từ hoặc cụm danh từ -> Chọn B."],
+        "video_exp_url": "https://www.youtube.com/embed/5XCmfiFBlwA",
+        "grammar_links_info": [
+            [
+                "https://tienganhmoingay.com/ngu-phap-tieng-anh/vi-tri-danh-tu-trong-cau/",
+                "Các Vị Trí Của Danh Từ Trong Câu"
+            ]
+        ],
+        "annotatedVocabs": [
+            {
+                "id": 1112,
+                "occurrence_data": {
+                    "occurrence_str": "expected",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "dự kiến",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 3236,
+                    "vocab": "expect",
+                    "pos": "v",
+                    "pos_vi": "động từ",
+                    "ipa_us": "ɪkˈspekt",
+                    "ipa_uk": "ɪkˈspekt",
+                    "audio_us": "http://www.oxfordlearnersdictionaries.com/media/english/us_pron/e/exp/expec/expect__us_1.mp3",
+                    "audio_uk": "http://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exp/expec/expect__gb_1.mp3",
+                    "level": 1,
+                    "cefr_level": 2
+                },
+                "meanings_data": [
+                    {
+                        "id": 3237,
+                        "content": "mong đợi",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": "/static/Vocabulary/images/word_images/expect.png",
+                        "usage_patterns_data": [
+                            {
+                                "id": 2839,
+                                "content": "expect something from somebody/something",
+                                "meaning": "mong đợi cái gì từ [ai/cái gì]",
+                                "examples_data": [
+                                    {
+                                        "id": 16699,
+                                        "content": "Don't expect sympathy from me!",
+                                        "trans": "Đừng mong đợi sự cảm thông từ tôi!",
+                                        "audio": "/static/Vocabulary/audios/exs_usage_pattern_expect_something_from_somebody_something.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 2840,
+                                "content": "expect somebody/something to do something",
+                                "meaning": "mong chờ [ai/cái gì] sẽ làm gì",
+                                "examples_data": [
+                                    {
+                                        "id": 16700,
+                                        "content": "Do you really expect me to believe you?",
+                                        "trans": "Bạn thật sự mong đợi tôi sẽ tin bạn sao?",
+                                        "audio": "/static/Vocabulary/audios/exs_usage_pattern_expect_somebody_something_to_do_something.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3163,
+                                "content": "expect something of somebody/something",
+                                "meaning": "kỳ vọng cái gì đó từ [ai/cái gì]",
+                                "examples_data": [
+                                    {
+                                        "id": 17532,
+                                        "content": "What is expected of a business graduate?",
+                                        "trans": "Người ta trông đợi điều gì ở một sinh viên kinh doanh?",
+                                        "audio": "/static/Vocabulary/audios/ex_6f36a32be306d3d7535c4afa7bb10aef7c859291.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3164,
+                                "content": "expect to do something",
+                                "meaning": "kỳ vọng sẽ làm gì đó",
+                                "examples_data": [
+                                    {
+                                        "id": 17527,
+                                        "content": "They expect to arrive tomorrow.",
+                                        "trans": "Họ tính là sẽ đến nơi ngày mai.",
+                                        "audio": "/static/Vocabulary/audios/ex_994ea779f1961659fae41a53ffbac612795253aa.mp3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "examples_data": [
+                            {
+                                "id": 16698,
+                                "content": "We are expecting a rise in food prices this month.",
+                                "trans": "Chúng tôi mong đợi sự tăng giá thực phẩm trong tháng này.",
+                                "audio": "/static/Vocabulary/audios/exs_usage_pattern_expect_something.mp3"
+                            },
+                            {
+                                "id": 17528,
+                                "content": "Do you really expect me to believe you?",
+                                "trans": "Bạn thực sự nghĩ rằng tôi sẽ tin bạn sao?",
+                                "audio": "/static/Vocabulary/audios/ex_be4c5e480be9b6798b2c8e98bbb5a5ec836db020.mp3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "learnerQuestionsCount": 1,
+        "testDuration": 45,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "id": 9061,
+        "isMcqGroup": false,
+        "image": "",
+        "hintImage": null,
+        "audio": [
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/main_audios/a33c0c3444eed8260077d3b92aa8badc34badc9a.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/any.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/some_of.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/no.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/many.mp3"
+        ],
+        "question": [
+            "Since they did not find _____ further evidence, the case is now considered closed.",
+            "Bởi vì họ không tìm được bất kì thêm chứng cứ nào, nên vụ án bây giờ được xem như là đã được đóng lại."
+        ],
+        "optionA": ["any", "bất kì, một ít"],
+        "optionB": ["some of", "một vài của"],
+        "optionC": ["no", "không"],
+        "optionD": ["many", "nhiều"],
+        "answer": [
+            "A",
+            "<ul class=\"explanation\"><li><span class=\"arrow-right\"></span>Evidence là danh từ không đếm được -> loại D.</li><li><span class=\"arrow-right\"></span>Đây là câu phủ định -> không dùng SOME -> loại B.</li><li><span class=\"arrow-right\"></span>Phía trước đã có NOT -> không dùng NO nữa.</li><li><span class=\"arrow-right\"></span>-> chọn A.</li></ul>"
+        ],
+        "video_exp_url": "",
+        "grammar_links_info": [
+            ["https://tienganhmoingay.com/ngu-phap-tieng-anh/tu-han-dinh/", "Các Từ Hạn Định Trong Tiếng Anh"]
+        ],
+        "annotatedVocabs": [
+            {
+                "id": 685,
+                "occurrence_data": {
+                    "occurrence_str": "evidence",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "chứng cứ",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 3757,
+                    "vocab": "evidence",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "ˈevɪdəns",
+                    "ipa_uk": "ˈevɪdəns",
+                    "audio_us": "http://www.oxfordlearnersdictionaries.com/media/english/us_pron/e/evi/evide/evidence__us_1.mp3",
+                    "audio_uk": "http://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/evi/evide/evidence__gb_1.mp3",
+                    "level": 1,
+                    "cefr_level": 2
+                },
+                "meanings_data": [
+                    {
+                        "id": 3758,
+                        "content": "chứng cứ, bằng chứng (cho việc gì đó)",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [
+                            {
+                                "id": 3099,
+                                "content": "evidence (of something)",
+                                "meaning": "chứng cứ cho việc gì",
+                                "examples_data": [
+                                    {
+                                        "id": 16999,
+                                        "content": "His flushed look was visible evidence of his fever.",
+                                        "trans": "Vẻ đỏ ửng là bằng chứng rõ ràng về cơn sốt của anh ta.",
+                                        "audio": "/static/Vocabulary/audios/ex_a8522af2e155b893cf192e1779a29d78964a9045.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3100,
+                                "content": "evidence for something",
+                                "meaning": "chứng cứ cho việc gì",
+                                "examples_data": [
+                                    {
+                                        "id": 17000,
+                                        "content": "Her bag on the table was the only evidence for her presence.",
+                                        "trans": "Túi xách trên bàn là bằng chứng duy nhất cho sự hiện diện của cô ấy.",
+                                        "audio": "/static/Vocabulary/audios/ex_20df07daa793382709a6a58675800140643158f5.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3404,
+                                "content": "evidence that...",
+                                "meaning": "chứng cứ rằng",
+                                "examples_data": [
+                                    {
+                                        "id": 31258,
+                                        "content": "There should be some tangible evidence that the economy is starting to recover.",
+                                        "trans": "Nên có một số chứng cứ hữu hình rằng nền kinh tế đang bắt đầu khôi phục.",
+                                        "audio": "/static/Vocabulary/audios/ex_fd64641a959052f5937fd3bc01ab7c676f062709.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3405,
+                                "content": "evidence to suggest, support, show...",
+                                "meaning": "chứng cứ để chỉ ra, hỗ trợ, cho thấy...",
+                                "examples_data": [
+                                    {
+                                        "id": 31259,
+                                        "content": "Has the woman had any evidence to support this accusation?",
+                                        "trans": "Người phụ nữ đã có bất kỳ chứng cứ nào để hỗ trợ cho lời cáo buộc của mình chưa?",
+                                        "audio": "/static/Vocabulary/audios/ex_09cc6c5cb810698f6c0fc16820a8e9ae8c36293e.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3406,
+                                "content": "on the evidence of something",
+                                "meaning": "với bằng chứng của việc gì",
+                                "examples_data": [
+                                    {
+                                        "id": 31260,
+                                        "content": "On the evidence of their recent matches, it is unlikely the Spanish team will win.",
+                                        "trans": "Với những bằng chứng của các trận đấu gần đây, khả năng cao đội tuyển Tây Ban Nha sẽ không giành chiến thắng.",
+                                        "audio": "/static/Vocabulary/audios/ex_b2e292987e9c5dd449108d7fe6f1eba8d93d4370.mp3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "examples_data": [
+                            {
+                                "id": 4318,
+                                "content": "The room bore evidence of a struggle.",
+                                "trans": "Căn phòng chứa những bằng chứng về một cuộc vật lộn.",
+                                "audio": "/static/Vocabulary/audios/exs_word_family_evidence.mp3"
+                            },
+                            {
+                                "id": 16998,
+                                "content": "There's no conclusive evidence that flying saucers exist.",
+                                "trans": "Không có bằng chứng thuyết phục rằng đĩa bay tồn tại.",
+                                "audio": "/static/Vocabulary/audios/ex_82856135aef6db8e945f13d95287aa952c86aa9b.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 686,
+                "occurrence_data": {
+                    "occurrence_str": "case",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "vụ án",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 7478,
+                    "vocab": "case",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "keɪs",
+                    "ipa_uk": "keɪs",
+                    "audio_us": "/static/Vocabulary/audios/case_n.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/case_n.mp3",
+                    "level": 1,
+                    "cefr_level": 2
+                },
+                "meanings_data": [
+                    {
+                        "id": 18879,
+                        "content": "vụ án",
+                        "meaning_num": 4,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 31002,
+                                "content": "Two detectives are sent to investigate a mysterious case.",
+                                "trans": "Hai thám tử được cử đi điều tra một vụ án bí ẩn.",
+                                "audio": "/static/Vocabulary/audios/ex_be92239b0997603a3737396bcdbfc15d7da5e2b1.mp3"
+                            },
+                            {
+                                "id": 31003,
+                                "content": "The investigators never solved the Jones murder case.",
+                                "trans": "Các nhà điều tra chưa bao giờ phá được vụ giết người nhà Jones.",
+                                "audio": "/static/Vocabulary/audios/ex_821c87e86efe23b615d21604c6b89fea764d9252.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 687,
+                "occurrence_data": {
+                    "occurrence_str": "considered",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "được xem là",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 2631,
+                    "vocab": "consider",
+                    "pos": "v",
+                    "pos_vi": "động từ",
+                    "ipa_us": "kənˈsɪdər",
+                    "ipa_uk": "",
+                    "audio_us": "http://www.oxfordlearnersdictionaries.com/media/english/us_pron/x/xco/xcons/xconsider__us_1.mp3",
+                    "audio_uk": "",
+                    "level": 1,
+                    "cefr_level": 2
+                },
+                "meanings_data": [
+                    {
+                        "id": 16023,
+                        "content": "xem như, coi như",
+                        "meaning_num": 2,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [
+                            {
+                                "id": 3357,
+                                "content": "consider somebody/something + noun",
+                                "meaning": "xem [ai/điều gì] là + danh từ",
+                                "examples_data": [
+                                    {
+                                        "id": 31005,
+                                        "content": "Receiving such an award is considered a great honour.",
+                                        "trans": "Nhận một giải thưởng như vậy được xem là một vinh dự lớn.",
+                                        "audio": "/static/Vocabulary/audios/ex_5f12c673cecf84bb5091a934ae9d4ab87ecbe384.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3358,
+                                "content": "consider somebody/something + adj",
+                                "meaning": "xem [ai/điều gì] là + tính từ",
+                                "examples_data": [
+                                    {
+                                        "id": 31006,
+                                        "content": "Certain subjects were not considered appropriate to discuss in public.",
+                                        "trans": "Một số vấn đề được xem là không phù hợp để bàn ở nơi công cộng.",
+                                        "audio": "/static/Vocabulary/audios/ex_7123cc5b58a251043e2718dfbc8f78e0462c3b27.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3359,
+                                "content": "consider somebody/something as something",
+                                "meaning": "xem [ai đó/điều gì đó] như là một điều gì",
+                                "examples_data": [
+                                    {
+                                        "id": 31007,
+                                        "content": "The public considered her as one of the greatest artists of all time.",
+                                        "trans": "Mọi người xem cô ấy như là một trong những nghệ sĩ vĩ đại nhất mọi thời đại.",
+                                        "audio": "/static/Vocabulary/audios/ex_d8e7b6cbb2a9bc7155a398399ec34dea7f6713e0.mp3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "examples_data": [
+                            {
+                                "id": 31008,
+                                "content": "She considers that it is too early to get married.",
+                                "trans": "Cô ấy nghĩ là vẫn còn quá sớm để kết hôn.",
+                                "audio": "/static/Vocabulary/audios/ex_dd4aab9cee4fc5dfdfa78d30f073fc26800dbb5e.mp3"
+                            },
+                            {
+                                "id": 31009,
+                                "content": "It is considered that these changes will create more jobs in the community.",
+                                "trans": "Người ta nghĩ là những thay đổi này sẽ tạo ra nhiều việc làm hơn trong cộng đồng.",
+                                "audio": "/static/Vocabulary/audios/ex_55c75c7f6d585831477555f1f743bb9400ce8ae2.mp3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "learnerQuestionsCount": 1,
+        "testDuration": 45,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "id": 9993,
+        "isMcqGroup": false,
+        "image": "",
+        "hintImage": null,
+        "audio": [
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/main_audios/1b21dd7ce8b1d717fe04844590399dfc4dd8e819.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/locate.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/to_locate.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/located.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/location.mp3"
+        ],
+        "question": [
+            "The new main office was housed in a bright and modern building, but its _____ was inconvenient for employees who didn't have a car.",
+            "Trụ sở chính mới được đặt trong một tòa nhà tươi sáng và hiện đại, nhưng vị trí của nó lại bất tiện cho những nhân viên không có xe hơi."
+        ],
+        "optionA": ["locate", "định vị (động từ nguyên mẫu BARE INF)"],
+        "optionB": ["to locate", "(TO + BARE INF)"],
+        "optionC": ["located", "(động từ dạng V_ed)"],
+        "optionD": ["location", "địa điểm (danh từ)"],
+        "answer": ["D", "Sau tính từ sở hữu ITS ta cần một danh từ -> chọn D."],
+        "video_exp_url": "https://www.youtube.com/embed/Us-ldVP3umQ",
+        "grammar_links_info": [
+            [
+                "https://tienganhmoingay.com/ngu-phap-tieng-anh/vi-tri-danh-tu-trong-cau/",
+                "Các Vị Trí Của Danh Từ Trong Câu"
+            ]
+        ],
+        "annotatedVocabs": [
+            {
+                "id": 659,
+                "occurrence_data": {
+                    "occurrence_str": "modern",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "hiện đại",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 6480,
+                    "vocab": "modern",
+                    "pos": "adj",
+                    "pos_vi": "tính từ",
+                    "ipa_us": "ˈmɒdən",
+                    "ipa_uk": "ˈmɒdən",
+                    "audio_us": "/static/Vocabulary/audios/modern_adj.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/modern_adj.mp3",
+                    "level": 1,
+                    "cefr_level": 1
+                },
+                "meanings_data": [
+                    {
+                        "id": 6620,
+                        "content": "hiện đại; dùng công nghệ, chất liệu, ý tưởng... mới nhất",
+                        "meaning_num": 3,
+                        "notes": null,
+                        "image": "/static/Vocabulary/images/word_images/modern_adj_1.jpg",
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 10310,
+                                "content": "Things change every day in the modern world.",
+                                "trans": "Các sự vật thay đổi mỗi ngày trong thế giới hiện đại.",
+                                "audio": "/static/Vocabulary/audios/ex_13bfe5393780c8242b524eddc7ac9ba2a534eeb4.mp3"
+                            },
+                            {
+                                "id": 10311,
+                                "content": "In modern times, advances in technology have made the world smaller.",
+                                "trans": "Trong thời hiện đại, những tiến bộ trong công nghệ đã khiến thế giới trở nên nhỏ bé hơn.",
+                                "audio": "/static/Vocabulary/audios/ex_11aff1d20e0fdcfaf48c1f4186adcaee9ced09d4.mp3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "learnerQuestionsCount": 1,
+        "testDuration": 45,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "id": 10640,
+        "isMcqGroup": false,
+        "image": "",
+        "hintImage": null,
+        "audio": [
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/main_audios/4a7c03b481157e7f83fda04acacf678c0565d8e3.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/repeat.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/repeatedly.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/repeater.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/repetition.mp3"
+        ],
+        "question": [
+            "Mr. Garry Noxon in accounting was _____ warned about having too many numerical errors in the budget report.",
+            "Garry Noxon, nhân viên phòng kế toán, bị nhắc nhở nhiều lần về việc có quá nhiều sai sót số liệu trong bản báo cáo ngân sách."
+        ],
+        "optionA": ["repeat", "lặp lại (động từ)"],
+        "optionB": ["repeatedly", "nhiều lần (trạng từ)"],
+        "optionC": ["repeater", "súng (danh từ)"],
+        "optionD": ["repetition", "sự lặp lại (danh từ)"],
+        "answer": ["B", "Chọn trạng từ để bổ nghĩa cho động từ thường \"warn\"."],
+        "video_exp_url": "https://www.youtube.com/embed/_VOLmqL8H_Y",
+        "grammar_links_info": [
+            [
+                "https://tienganhmoingay.com/ngu-phap-tieng-anh/trang-tu-cach-thuc-muc-do/",
+                "Trạng từ chỉ cách thức và mức độ"
+            ]
+        ],
+        "annotatedVocabs": [
+            {
+                "id": 698,
+                "occurrence_data": {
+                    "occurrence_str": "accounting",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "kế toán",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 3632,
+                    "vocab": "accounting",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "əˈkaʊntɪŋ",
+                    "ipa_uk": "əˈkaʊntɪŋ",
+                    "audio_us": "http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/acc/accou/accounting__us_1.mp3",
+                    "audio_uk": "http://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/acc/accou/accounting__gb_1.mp3",
+                    "level": 2,
+                    "cefr_level": 4
+                },
+                "meanings_data": [
+                    {
+                        "id": 3633,
+                        "content": "công việc kế toán, lĩnh vực kế toán",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": "/static/Vocabulary/images/word_images/accounting.jpg",
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 4175,
+                                "content": "Good accounting is needed in all business.",
+                                "trans": "Kế toán tốt là cần thiết trong mọi ngành kinh doanh.",
+                                "audio": "/static/Vocabulary/audios/exs_word_meaning_accounting.mp3"
+                            },
+                            {
+                                "id": 18158,
+                                "content": "Being able to work in a famous audit company like KPMG is a milestone in one's career in accounting.",
+                                "trans": "Có thể làm việc trong công ty kiểm toán nổi tiếng như KPMG là một cột mốc quan trọng trong sự nghiệp của một người trong ngành kế toán.",
+                                "audio": "/static/Vocabulary/audios/ex_eb9b330d9bd4d0432da6f44b56bb426f817fa07a.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 699,
+                "occurrence_data": {
+                    "occurrence_str": "numerical",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "số liệu",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 13128,
+                    "vocab": "numerical",
+                    "pos": "adj",
+                    "pos_vi": "tính từ",
+                    "ipa_us": "nuːˈmerɪkl",
+                    "ipa_uk": "njuːˈmerɪkl",
+                    "audio_us": "/static/Vocabulary/audios/numerical_adj.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/numerical_adj.mp3",
+                    "level": null,
+                    "cefr_level": null
+                },
+                "meanings_data": [
+                    {
+                        "id": 14415,
+                        "content": "thuộc số",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 31017,
+                                "content": "His work involves processing complex numerical data.",
+                                "trans": "Công việc của anh ấy liên quan đến việc xử lý những dữ liệu số phức tạp.",
+                                "audio": "/static/Vocabulary/audios/ex_b14a74775312c4328ac214d85a4b86d538bb6ab0.mp3"
+                            },
+                            {
+                                "id": 31018,
+                                "content": "The results of the research are expressed in descending numerical order.",
+                                "trans": "Các kết quả của nghiên cứu được thể hiện theo trình tự số giảm dần.",
+                                "audio": "/static/Vocabulary/audios/ex_8327339e64e9fa425bda8f71d9e1f2df231df96c.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 700,
+                "occurrence_data": {
+                    "occurrence_str": "budget",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "ngân sách",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 3644,
+                    "vocab": "budget",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "ˈbʌdʒɪt",
+                    "ipa_uk": "ˈbʌdʒɪt",
+                    "audio_us": "http://www.oxfordlearnersdictionaries.com/media/english/us_pron/b/bud/budge/budget__us_1.mp3",
+                    "audio_uk": "http://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bud/budge/budget__gb_1.mp3",
+                    "level": 2,
+                    "cefr_level": 4
+                },
+                "meanings_data": [
+                    {
+                        "id": 3645,
+                        "content": "ngân sách",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 4186,
+                                "content": "The work was finished on time and within budget.",
+                                "trans": "Công việc được hoàn thành đúng thời hạn và trong mức ngân sách.",
+                                "audio": "/static/Vocabulary/audios/exs_word_family_budget.mp3"
+                            },
+                            {
+                                "id": 17021,
+                                "content": "We have a monthly budget of $20,000.",
+                                "trans": "Chúng tôi có ngân sách hàng tháng là 20.000 đô-la.",
+                                "audio": "/static/Vocabulary/audios/ex_5696ff1dd685ad0e1bee93dd9c93c4ec60b6f800.mp3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "learnerQuestionsCount": 1,
+        "testDuration": 45,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "id": 18393,
+        "isMcqGroup": false,
+        "image": "",
+        "hintImage": "",
+        "audio": [
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/main_audios/ca5ea3c19040467ce857ee565a23555ed5d4bbd7.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/her.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/hers.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/herself.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/she.mp3"
+        ],
+        "question": [
+            "Ms.Nora decided to find a solution for the problem by _____.",
+            "Bà Nora quyết định tự tìm ra giải pháp cho vấn đề."
+        ],
+        "optionA": ["her", "(tính từ sở hữu)"],
+        "optionB": ["hers", "(danh từ sở hữu)"],
+        "optionC": ["herself", "(đại từ phản thân)"],
+        "optionD": ["she", "(đại từ làm chủ ngữ)"],
+        "answer": ["C", "Ta có cụm \"by oneself\" (một mình, tự mình) -> Chọn \"herself\"."],
+        "video_exp_url": "",
+        "grammar_links_info": [
+            ["https://tienganhmoingay.com/ngu-phap-tieng-anh/dai-tu-phan-than/", "Đại từ Phản thân"]
+        ],
+        "annotatedVocabs": [
+            {
+                "id": 2842,
+                "occurrence_data": {
+                    "occurrence_str": "decided",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "quyết định",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 3406,
+                    "vocab": "decide",
+                    "pos": "v",
+                    "pos_vi": "động từ",
+                    "ipa_us": "dɪˈsaɪd",
+                    "ipa_uk": "dɪˈsaɪd",
+                    "audio_us": "http://www.oxfordlearnersdictionaries.com/media/english/us_pron/d/dec/decid/decide__us_1.mp3",
+                    "audio_uk": "http://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/decid/decide__gb_1.mp3",
+                    "level": 1,
+                    "cefr_level": 1
+                },
+                "meanings_data": [
+                    {
+                        "id": 3407,
+                        "content": "quyết định",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": "/static/Vocabulary/images/word_images/decide.jpg",
+                        "usage_patterns_data": [
+                            {
+                                "id": 2734,
+                                "content": "decide to do something",
+                                "meaning": "quyết định làm gì đó",
+                                "examples_data": [
+                                    {
+                                        "id": 16594,
+                                        "content": "Why did you decide to look for a new job?",
+                                        "trans": "Tại sao bạn lại quyết định tìm một công việc mới?",
+                                        "audio": "/static/Vocabulary/audios/exs_usage_pattern_decide_to_do_something.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3312,
+                                "content": "decide between A and B",
+                                "meaning": "quyết định chọn A hoặc B",
+                                "examples_data": [
+                                    {
+                                        "id": 19164,
+                                        "content": "I couldn't decide between the blue dress and the red dress, so I bought both.",
+                                        "trans": "Tôi đã không thể quyết định chọn đầm xanh hay đầm đỏ, nên tôi đã mua cả hai.",
+                                        "audio": "/static/Vocabulary/audios/ex_61adfb1a77c937bdb8ffdca1e27fab1e7a178c3a.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 4245,
+                                "content": "decide against doing something",
+                                "meaning": "quyết định không làm gì đó",
+                                "examples_data": [
+                                    {
+                                        "id": 33566,
+                                        "content": "They decided against taking legal action.",
+                                        "trans": "Họ quyết định không khởi kiện.",
+                                        "audio": "/static/Vocabulary/audios/ex_2661e087daef95bc8e695a4a10de2c3ed7212407.mp3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "examples_data": [
+                            {
+                                "id": 16592,
+                                "content": "She finally decided against a career in medicine.",
+                                "trans": "Cuối cùng cô quyết định không phát triển một sự nghiệp ở ngành y.",
+                                "audio": "/static/Vocabulary/audios/ex_157a4eada175c990fa50f0f68e20a3d82e099a9c.mp3"
+                            },
+                            {
+                                "id": 16593,
+                                "content": "She decided that she wanted to live in France.",
+                                "trans": "Cô ấy quyết định rằng mình muốn sống ở Pháp.",
+                                "audio": "/static/Vocabulary/audios/exs_usage_pattern_decide_that.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2843,
+                "occurrence_data": {
+                    "occurrence_str": "solution",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "giải pháp",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 6604,
+                    "vocab": "solution",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "səˈluːʃn",
+                    "ipa_uk": "səˈluːʃn",
+                    "audio_us": "/static/Vocabulary/audios/solution_n.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/solution_n.mp3",
+                    "level": 1,
+                    "cefr_level": 2
+                },
+                "meanings_data": [
+                    {
+                        "id": 6764,
+                        "content": "giải pháp",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [
+                            {
+                                "id": 2645,
+                                "content": "solution to something",
+                                "meaning": "giải pháp cho cái gì",
+                                "examples_data": [
+                                    {
+                                        "id": 16469,
+                                        "content": "There's no easy solution to this problem.",
+                                        "trans": "Không có giải pháp dễ dàng nào cho vấn đề này.",
+                                        "audio": "/static/Vocabulary/audios/ex_b83bb479b0ce2898823b685cbc53a13a62be1f99.mp3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "examples_data": [
+                            {
+                                "id": 10917,
+                                "content": "They are looking for an ultimate solution to the city's traffic problem.",
+                                "trans": "Họ đang tìm kiếm một giải pháp triệt để cho vấn đề kẹt xe của thành phố.",
+                                "audio": "/static/Vocabulary/audios/ex_eea347c3643051ea07341d3bcf97b25dbb04b7dc.mp3"
+                            },
+                            {
+                                "id": 10919,
+                                "content": "We are trying to find a better a solution to this issue.",
+                                "trans": "Chúng tôi đang cố gắng tìm một giải pháp tốt hơn cho vấn đề này.",
+                                "audio": "/static/Vocabulary/audios/ex_1760708347e4a23a01397b4d17e8db6cc3c5b1da.mp3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "learnerQuestionsCount": 0,
+        "testDuration": 45,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "id": 7522,
+        "isMcqGroup": false,
+        "image": "",
+        "hintImage": null,
+        "audio": [
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/main_audios/2d229809a31a78d1cc8af1f2cab204dc2476be49.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/develop.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/development.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/developing.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/developer.mp3"
+        ],
+        "question": [
+            "While you are _____ your business plan, it is a good idea to keep a resource library of valuable materials.",
+            "Trong khi phát triển kế hoạch kinh doanh, lưu giữ thư viện tài nguyên về các tài liệu có giá trị là một ý kiến hay."
+        ],
+        "optionA": ["develop", "phát triển (động từ nguyên mẫu)"],
+        "optionB": ["development", "sự phát triển (danh từ)"],
+        "optionC": ["developing", "phát triển (động từ thêm -ing)"],
+        "optionD": ["developer", "nhà phát triển (danh từ)"],
+        "answer": [
+            "C",
+            "<ul class=\"explanation\"><li><span class=\"arrow-right\"></span>Chỗ trống đứng trước cụm danh từ \"your business plan\" nên chỗ trống không thể là danh từ được → loại B và D.</li><li><span class=\"arrow-right\"></span>Trước chỗ trống có động từ \"to be\" (are) nên ta cần điền vào chỗ trống động từ dạng V-ing để thể hiện thì hiện tại tiếp diễn → loại A, chọn C.</li></ul>"
+        ],
+        "video_exp_url": "https://www.youtube.com/embed/9jQrHzGs8mo",
+        "grammar_links_info": [
+            [
+                "https://tienganhmoingay.com/ngu-phap-tieng-anh/thi-hien-tai-qua-khu-tuong-lai-tiep-dien-tieng-anh/",
+                "Thì Hiện Tại Tiếp Diễn, Quá Khứ Tiếp Diễn, và Tương Lai Tiếp Diễn"
+            ],
+            ["https://tienganhmoingay.com/ngu-phap-tieng-anh/vi-tri-dong-tu-trong-cau/", "Vị trí của Động từ trong câu"]
+        ],
+        "annotatedVocabs": [
+            {
+                "id": 610,
+                "occurrence_data": {
+                    "occurrence_str": "resource",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "tài nguyên",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 3873,
+                    "vocab": "resource",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "ˈriːsɔːrs",
+                    "ipa_uk": "rɪˈsɔːs",
+                    "audio_us": "http://www.oxfordlearnersdictionaries.com/media/english/us_pron/r/res/resou/resource__us_1.mp3",
+                    "audio_uk": "http://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resou/resource__gb_1.mp3",
+                    "level": 2,
+                    "cefr_level": 3
+                },
+                "meanings_data": [
+                    {
+                        "id": 3874,
+                        "content": "tài nguyên, nguồn vốn, nguồn lực",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": "/static/Vocabulary/images/word_images/resource.png",
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 4451,
+                                "content": "We must make the most efficient use of the available financial resources.",
+                                "trans": "Chúng ta phải sử dụng hiệu quả nhất các nguồn tài chính hiện có.",
+                                "audio": "/static/Vocabulary/audios/exs_word_meaning_resource.mp3"
+                            },
+                            {
+                                "id": 17408,
+                                "content": "Be careful not to use up our limited resources.",
+                                "trans": "Cẩn thận không dùng cạn những tài nguyên có hạn của chúng ta.",
+                                "audio": "/static/Vocabulary/audios/ex_7a9579e3b8bfa722fca46c64bb0581ecdd4da40e.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 611,
+                "occurrence_data": {
+                    "occurrence_str": "valuable",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "có giá trị",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 3935,
+                    "vocab": "valuable",
+                    "pos": "adj",
+                    "pos_vi": "tính từ",
+                    "ipa_us": "ˈvæljuəbl",
+                    "ipa_uk": "ˈvæljuəbl",
+                    "audio_us": "http://www.oxfordlearnersdictionaries.com/media/english/us_pron/v/val/valua/valuable__us_1.mp3",
+                    "audio_uk": "http://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/val/valua/valuable__gb_1.mp3",
+                    "level": 2,
+                    "cefr_level": 3
+                },
+                "meanings_data": [
+                    {
+                        "id": 3936,
+                        "content": "quý giá, quan trọng",
+                        "meaning_num": 2,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [
+                            {
+                                "id": 3108,
+                                "content": "valuable to somebody/something",
+                                "meaning": "quý giá, có giá trị với [ai/thứ gì]",
+                                "examples_data": [
+                                    {
+                                        "id": 17073,
+                                        "content": "These ancient documents are enormously valuable to historians.",
+                                        "trans": "Những văn bản cổ này có giá trị cực kỳ lớn đối với các nhà sử học.",
+                                        "audio": "/static/Vocabulary/audios/ex_3b2cc79dbe9524818eaca7d59ae9f855df842070.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 4116,
+                                "content": "valuable for somebody/something",
+                                "meaning": "quý giá, có giá trị cho [ai/việc gì]",
+                                "examples_data": [
+                                    {
+                                        "id": 33314,
+                                        "content": "The data will be extremely valuable for medical research.",
+                                        "trans": "Dữ liệu sẽ cực kỳ có giá trị cho việc nghiên cứu y học.",
+                                        "audio": "/static/Vocabulary/audios/ex_4838b925ad62accf5b2644f8a0f789500538a412.mp3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "examples_data": [
+                            {
+                                "id": 4525,
+                                "content": "The book provides valuable information on recent trends.",
+                                "trans": "Cuốn sách cung cấp những thông tin quý giá về những xu hướng hiện nay.",
+                                "audio": "/static/Vocabulary/audios/ex_e7acccfdbaefa78c5a8a6a7c99ffe3e154f3fda8.mp3"
+                            },
+                            {
+                                "id": 17069,
+                                "content": "A valuable employee does not waste his employer's time and money.",
+                                "trans": "Một nhân viên có giá trị không lãng phí thời gian và tiền bạc của công ty.",
+                                "audio": "/static/Vocabulary/audios/ex_f246849ae8875d20cf3032cce7a1dbf024407068.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 612,
+                "occurrence_data": {
+                    "occurrence_str": "materials",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "các vật liệu",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 3959,
+                    "vocab": "material",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "məˈtɪriəl",
+                    "ipa_uk": "məˈtɪəriəl",
+                    "audio_us": "/static/Vocabulary/audios/material_n.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/material_n.mp3",
+                    "level": 1,
+                    "cefr_level": 2
+                },
+                "meanings_data": [
+                    {
+                        "id": 6757,
+                        "content": "tư liệu",
+                        "meaning_num": 3,
+                        "notes": null,
+                        "image": "/static/Vocabulary/images/word_images/material_n_3.jpg",
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 10873,
+                                "content": "The novelist is collecting material for her latest novel.",
+                                "trans": "Tiểu thuyết gia đang thu thập tư liệu để viết quyển tiểu thuyết mới nhất của mình.",
+                                "audio": "/static/Vocabulary/audios/ex_d3a2fe29cbdddfd2ca86aaed66075f8c65f5592e.mp3"
+                            },
+                            {
+                                "id": 10874,
+                                "content": "The letters were used as source material in this new biography.",
+                                "trans": "Những lá thư được sử dụng làm tài liệu nguồn trong cuốn tiểu sử mới này.",
+                                "audio": "/static/Vocabulary/audios/ex_ab596fa1ea2f8a35772b0a066334f7e205c33e1e.mp3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "learnerQuestionsCount": 3,
+        "testDuration": 45,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "id": 7207,
+        "isMcqGroup": false,
+        "image": "",
+        "hintImage": null,
+        "audio": [
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/main_audios/95df93a34e84423892c4d68dcafbd696bead0751.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/renovation.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/renovate.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/renovated.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/renovates.mp3"
+        ],
+        "question": [
+            "The scope of work included a complete _____ of the existing facility, including completely new electrical work and installation of Y2K compliant equipment.",
+            "Phạm vi công việc bao gồm sự tu sửa hoàn toàn về nhà máy đang có, bao gồm công việc lắp đặt điện hoàn toàn mới và việc lắp đặt thiết bị theo chuẩn Y2K."
+        ],
+        "optionA": ["renovation", "sự tu sửa, sự tân trang (danh từ)"],
+        "optionB": ["renovate", "tu sửa, tân trang (động từ nguyên mẫu)"],
+        "optionC": ["renovated", "tu sửa, tân trang (động từ dạng V3/V-ed)"],
+        "optionD": ["renovates", "tu sửa, tân trang (thì hiện tại đơn, ngôi thứ 3 số ít)"],
+        "answer": [
+            "A",
+            "<ul class=\"explanation\"><li><span class=\"arrow-right\"></span>Mạo từ \"a\" trước từ \"complete\" báo hiệu bắt đầu một cụm danh từ.</li><li><span class=\"arrow-right\"></span>-> \"a complete _____ of the existing facility\" là một cụm danh từ.</li><li><span class=\"arrow-right\"></span>Cụm danh từ này có \"complete\" là tính từ, \"of the existing facility\" là cụm giới từ.</li><li><span class=\"arrow-right\"></span>Cụm danh từ này chưa có danh từ chính --> điền danh từ vào chỗ trống.</li></ul>"
+        ],
+        "video_exp_url": "https://www.youtube.com/embed/CRMnH6SkcSk",
+        "grammar_links_info": [
+            [
+                "https://tienganhmoingay.com/ngu-phap-tieng-anh/vi-tri-danh-tu-trong-cau/",
+                "Các Vị Trí Của Danh Từ Trong Câu"
+            ]
+        ],
+        "annotatedVocabs": [
+            {
+                "id": 763,
+                "occurrence_data": {
+                    "occurrence_str": "scope",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "Phạm vi",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 6883,
+                    "vocab": "scope",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "skəʊp",
+                    "ipa_uk": "skəʊp",
+                    "audio_us": "/static/Vocabulary/audios/scope_n.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/scope_n.mp3",
+                    "level": 3,
+                    "cefr_level": 5
+                },
+                "meanings_data": [
+                    {
+                        "id": 7071,
+                        "content": "phạm vi, giới hạn",
+                        "meaning_num": 2,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 31056,
+                                "content": "The police are broadening the scope of their investigation.",
+                                "trans": "Cảnh sát đang mở rộng phạm vi điều tra của mình.",
+                                "audio": "/static/Vocabulary/audios/ex_4967f60dc0aca11225caef8d42761249c36e7db9.mp3"
+                            },
+                            {
+                                "id": 31057,
+                                "content": "Such sensitive subjects are not within the scope of this book.",
+                                "trans": "Những chủ đề nhạy cảm như vậy không được nhắc đến trong phạm vi của cuốn sách này.",
+                                "audio": "/static/Vocabulary/audios/ex_75419df79dad706a83585bd551d0bd59e2633d6d.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 764,
+                "occurrence_data": {
+                    "occurrence_str": "included",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "bao gồm",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 4753,
+                    "vocab": "include",
+                    "pos": "v",
+                    "pos_vi": "động từ",
+                    "ipa_us": "ɪnˈkluːd",
+                    "ipa_uk": "ɪnˈkluːd",
+                    "audio_us": "/static/Vocabulary/audios/include_v.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/include_v.mp3",
+                    "level": 1,
+                    "cefr_level": 1
+                },
+                "meanings_data": [
+                    {
+                        "id": 4776,
+                        "content": "bao gồm",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [
+                            {
+                                "id": 2411,
+                                "content": "include doing something",
+                                "meaning": "bao gồm việc làm gì đó",
+                                "examples_data": [
+                                    {
+                                        "id": 15974,
+                                        "content": "Your job also includes typing letters.",
+                                        "trans": "Công việc của cô cũng bao gồm gõ thư từ.",
+                                        "audio": "/static/Vocabulary/audios/ex_e0311e3cdbb739637eaffd12c18b8aeacc9d39d0.mp3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "examples_data": [
+                            {
+                                "id": 5013,
+                                "content": "Does the price include breakfast?",
+                                "trans": "Giá này đã bao gồm bữa sáng chưa?",
+                                "audio": "/static/Vocabulary/audios/ex_9900e2ed12b8ce1fea8dba8f3c06a8b1ad537251.mp3"
+                            },
+                            {
+                                "id": 5014,
+                                "content": "We must include this chemical element in the group.",
+                                "trans": "Chúng ta phải thêm nguyên tố hóa học này vào nhóm.",
+                                "audio": "/static/Vocabulary/audios/ex_b3892296173cfcf001ac25a3ebb220a16d363510.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 765,
+                "occurrence_data": {
+                    "occurrence_str": "facility",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "cơ sở",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 2841,
+                    "vocab": "facility",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "fəˈsɪləti",
+                    "ipa_uk": "fəˈsɪləti",
+                    "audio_us": "http://www.oxfordlearnersdictionaries.com/media/english/us_pron/f/fac/facil/facility__us_1.mp3",
+                    "audio_uk": "http://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fac/facil/facility__gb_1.mp3",
+                    "level": 2,
+                    "cefr_level": 4
+                },
+                "meanings_data": [
+                    {
+                        "id": 2842,
+                        "content": "cơ sở vật chất",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 3275,
+                                "content": "The school is upgrading its outdoor play facilities.",
+                                "trans": "Nhà trường đang nâng cấp cơ sở vật chất vui chơi ngoài trời.",
+                                "audio": "/static/Vocabulary/audios/ex_8b75986181fbb6ed2badbc3b76b22455e215725b.mp3"
+                            },
+                            {
+                                "id": 17560,
+                                "content": "I enjoyed the private facilities in my hotel room.",
+                                "trans": "Tôi thích những tiện nghi cá nhân trong phòng khách sạn của tôi.",
+                                "audio": "/static/Vocabulary/audios/ex_4586474bfad17c9e442396cda0e179a2623254a5.mp3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "learnerQuestionsCount": 1,
+        "testDuration": 45,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "id": 10000,
+        "isMcqGroup": false,
+        "image": "",
+        "hintImage": null,
+        "audio": [
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/main_audios/7623336cdcfdadff40513711b1ed06f83c4cbdf7.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/resigned.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/resignedly.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/resignation.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/resign.mp3"
+        ],
+        "question": [
+            "The _____ of the company's financial officer has left a vacancy that the CEO is trying to quickly fill.",
+            "Việc từ chức của cán bộ tài chính của công ty đã để lại một vị trí trống mà giám đốc điều hành đang cố gắng nhanh chóng lấp đầy."
+        ],
+        "optionA": ["resigned", "thôi việc (động từ dạng V_ed)"],
+        "optionB": ["resignedly", "một cách cam chịu (trạng từ)"],
+        "optionC": ["resignation", "sự thôi việc (danh từ)"],
+        "optionD": ["resign", "(động từ nguyên mẫu BARE INF)"],
+        "answer": ["C", "Sau mạo từ THE ta cần một (cụm) danh từ -> chọn C."],
+        "video_exp_url": "https://www.youtube.com/embed/CnH5aunG35I",
+        "grammar_links_info": [
+            [
+                "https://tienganhmoingay.com/ngu-phap-tieng-anh/vi-tri-danh-tu-trong-cau/",
+                "Các Vị Trí Của Danh Từ Trong Câu"
+            ]
+        ],
+        "annotatedVocabs": [
+            {
+                "id": 798,
+                "occurrence_data": {
+                    "occurrence_str": "financial",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "tài chính",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 4314,
+                    "vocab": "financial",
+                    "pos": "adj",
+                    "pos_vi": "tính từ",
+                    "ipa_us": "faɪˈnænʃl",
+                    "ipa_uk": "faɪˈnænʃl",
+                    "audio_us": "/static/Vocabulary/audios/financial_adj.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/financial_adj.mp3",
+                    "level": 2,
+                    "cefr_level": 3
+                },
+                "meanings_data": [
+                    {
+                        "id": 4318,
+                        "content": "(thuộc) tài chính",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 30294,
+                                "content": "Fifty people were made redundant when the company suffered severe financial difficulties.",
+                                "trans": "Năm mươi người đã bị cho nghỉ việc khi công ty gặp khó khăn  nghiêm trọng về tài chính.",
+                                "audio": "/static/Vocabulary/audios/ex_84c9bf05ca3c33827a0ce4b6736ba31374771f40.mp3"
+                            },
+                            {
+                                "id": 30403,
+                                "content": "How often do you have to turn in financial reports?",
+                                "trans": "Bạn thường phải nộp báo cáo tài chính bao lâu một lần?",
+                                "audio": "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/d14j2_1.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 799,
+                "occurrence_data": {
+                    "occurrence_str": "vacancy",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "vị trí trống",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 5013,
+                    "vocab": "vacancy",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "ˈveɪkənsi",
+                    "ipa_uk": "ˈveɪkənsi",
+                    "audio_us": "/static/Vocabulary/audios/vacancy_n.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/vacancy_n.mp3",
+                    "level": null,
+                    "cefr_level": null
+                },
+                "meanings_data": [
+                    {
+                        "id": 5093,
+                        "content": "vị trí trống (trong công việc)",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 31083,
+                                "content": "There’s a vacancy in the business department.",
+                                "trans": "Có một vị trí trống trong bộ phận kinh doanh.",
+                                "audio": "/static/Vocabulary/audios/ex_ce64f4e3f1aef45e33d25b8a8cbd212ab6abf44a.mp3"
+                            },
+                            {
+                                "id": 31084,
+                                "content": "The company will let you know if they have any suitable vacancies.",
+                                "trans": "Công ty sẽ cho bạn biết nếu họ có bất kỳ vị trí trống nào.",
+                                "audio": "/static/Vocabulary/audios/ex_cd60a74db85c9906c44ec2218361b80a159b47a2.mp3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "learnerQuestionsCount": 0,
+        "testDuration": 45,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "id": 10011,
+        "isMcqGroup": false,
+        "image": "",
+        "hintImage": null,
+        "audio": [
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/main_audios/cde475abff63aec404a6397f831fc46f6e61ff66.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/inspire.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/inspiring.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/inspired.mp3",
+            "/static/ToeicTests/audios/Practice_Tests/Part_5/inspiration.mp3"
+        ],
+        "question": [
+            "The artist, whose paintings are currently on exhibit at the Parkinson Art Center, gets his _____ from the works of Monet and Degas.",
+            "Người họa sĩ có bức tranh hiện đang được trưng bày tại Trung tâm Nghệ thuật Parkinson lấy cảm hứng từ các tác phẩm của Monet và Degas."
+        ],
+        "optionA": ["inspire", "truyền cảm hứng (động từ nguyên mẫu BARE INF)"],
+        "optionB": ["inspiring", "(động từ dạng V_ing)"],
+        "optionC": ["inspired", "(động từ dạng V_ed)"],
+        "optionD": ["inspiration", "cảm hứng (danh từ)"],
+        "answer": ["D", "Sau tính từ sở hữu HIS ta cần một danh từ -> chọn D."],
+        "video_exp_url": "https://www.youtube.com/embed/kyvQEBMzUXQ",
+        "grammar_links_info": [
+            [
+                "https://tienganhmoingay.com/ngu-phap-tieng-anh/vi-tri-danh-tu-trong-cau/",
+                "Các Vị Trí Của Danh Từ Trong Câu"
+            ]
+        ],
+        "annotatedVocabs": [
+            {
+                "id": 891,
+                "occurrence_data": {
+                    "occurrence_str": "on exhibit",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "đang được trưng bày",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 14023,
+                    "vocab": "on exhibit",
+                    "pos": "idiom",
+                    "pos_vi": "thành ngữ",
+                    "ipa_us": null,
+                    "ipa_uk": null,
+                    "audio_us": null,
+                    "audio_uk": null,
+                    "level": null,
+                    "cefr_level": null
+                },
+                "meanings_data": [
+                    {
+                        "id": 18902,
+                        "content": "đang được trưng bày",
+                        "meaning_num": 1,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [],
+                        "examples_data": [
+                            {
+                                "id": 31132,
+                                "content": "Many paintings from great artists all around the world will be on exhibit next week.",
+                                "trans": "Nhiều bức vẽ từ các nghệ sĩ nổi tiếng từ khắp nơi trên thế giới sẽ được trưng bày vào tuần tới.",
+                                "audio": "/static/Vocabulary/audios/ex_d31a6a201831752d035464311ef4008673036fc9.mp3"
+                            },
+                            {
+                                "id": 31133,
+                                "content": "The amazing photographs are on exhibit in the museum's west wing.",
+                                "trans": "Các bức ảnh tuyệt vời đang được trưng bày ở phía cánh tây của bảo tàng.",
+                                "audio": "/static/Vocabulary/audios/ex_3fb8673338863e2dc6a55dd861816aa86a7a8b4a.mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 892,
+                "occurrence_data": {
+                    "occurrence_str": "works",
+                    "occurrence_position": 1,
+                    "occurrence_notes": null,
+                    "occurrence_translation": "các tác phẩm",
+                    "occurrence_translation_position": 1
+                },
+                "vocab_data": {
+                    "id": 4943,
+                    "vocab": "work",
+                    "pos": "n",
+                    "pos_vi": "danh từ",
+                    "ipa_us": "wɜːk",
+                    "ipa_uk": "wɜːk",
+                    "audio_us": "/static/Vocabulary/audios/work_n.mp3",
+                    "audio_uk": "/static/Vocabulary/audios/work_n.mp3",
+                    "level": 1,
+                    "cefr_level": 1
+                },
+                "meanings_data": [
+                    {
+                        "id": 12193,
+                        "content": "tác phẩm",
+                        "meaning_num": 8,
+                        "notes": null,
+                        "image": null,
+                        "usage_patterns_data": [
+                            {
+                                "id": 4211,
+                                "content": "work by somebody",
+                                "meaning": "tác phẩm của ai",
+                                "examples_data": [
+                                    {
+                                        "id": 33491,
+                                        "content": "The gallery is exhibiting works by local artists.",
+                                        "trans": "Phòng tranh đang triển lãm những tác phẩm của những hoạ sĩ ở địa phương.",
+                                        "audio": "/static/Vocabulary/audios/ex_e7abd17aa9011caf8da02e933568934761916789.mp3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "examples_data": [
+                            {
+                                "id": 26546,
+                                "content": "Why doesn't this microphone work?",
+                                "trans": "Tại sao míc này không hoạt động?",
+                                "audio": "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/F1Z4X_1.mp3"
+                            },
+                            {
+                                "id": 26554,
+                                "content": "When is the new manager going to start work?",
+                                "trans": "Khi nào quản lý mới sẽ bắt đầu công việc?",
+                                "audio": "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/sWj3t_1.mp3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "learnerQuestionsCount": 0,
+        "testDuration": 45,
+        "did_wrongly_the_last_time": false
+    }
+]

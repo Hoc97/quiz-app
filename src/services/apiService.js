@@ -113,6 +113,21 @@ const getQuizHistory = () => {
     return instance.get('/api/v1/history');
 };
 
+const putUpdateQuiz = (id, description, name, difficulty, quizImage) => {
+    const data = new FormData();
+    data.append('id', id);
+    data.append('description', description);
+    data.append('name', name);
+    data.append('difficulty', difficulty);
+    data.append('quizImage', quizImage);
+
+    return instance.put('/api/v1/quiz', data);
+};
+
+const deleteQuiz = (id) => {
+    return instance.delete(`/api/v1/quiz/${id}`);
+};
+
 export {
     postCreateNewUser,
     getAllUsers,
@@ -135,5 +150,7 @@ export {
     getOverview,
     postUpdateProfile,
     postChangePassword,
-    getQuizHistory
+    getQuizHistory,
+    putUpdateQuiz,
+    deleteQuiz
 };

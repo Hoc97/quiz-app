@@ -4,7 +4,8 @@ import _ from 'lodash';
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs';
 
 function Content({ dataQuiz, setDataQuiz, handleFinishQuiz, currentQuestion, setCurrentQuestion }) {
-    console.log('dataQuiz', dataQuiz);
+    // console.log('data', dataQuiz);
+
     const location = useLocation();
     const params = useParams();
     const quizId = params.id;
@@ -48,9 +49,8 @@ function Content({ dataQuiz, setDataQuiz, handleFinishQuiz, currentQuestion, set
                 <div className='part-detail'>Part 5</div>
             </div>
             <p className='description'>
-                Look at the picture. Choose the sentence that best describes the picture:
+                Choose the answer that best describes
             </p>
-
             <Question
                 handleCheckBox={handleCheckBox}
                 index={currentQuestion}

@@ -2,12 +2,14 @@ import _ from 'lodash';
 import Form from 'react-bootstrap/Form';
 import Lightbox from "react-awesome-lightbox";
 import { useState } from 'react';
-function Question({ data, index, handleCheckBox }) {
+import ToeicTest from '../../../../assets/ToeicTests/ToeicTest';
 
+function Question({ data, index, handleCheckBox }) {
     const [previewImage, setPreviewImage] = useState(false);
-    if (_.isEmpty(data)) {
-        return <></>;
-    }
+    const handleImage = () => {
+        setPreviewImage(true);
+    };
+
     const genCharArray = (charA, charZ) => {
         let a = [];
         let i = `${charA}`.charCodeAt(0) + 17;
@@ -21,15 +23,26 @@ function Question({ data, index, handleCheckBox }) {
     const handleCheckAnswer = (e, ansID, quesID) => {
         handleCheckBox(ansID, quesID, e.target.checked);
     };
+
+    if (_.isEmpty(data)) {
+        return <div className='question-container'></div>;
+    }
+    const audio = ToeicTest.Practice_Tests.Part1.audio[data.audio];
+    console.log('data.image', data);
     return (
         <div className='question-container'>
             <div className='image'>{data.image ?
                 <img
                     style={{ cursor: 'pointer' }}
-                    onClick={() => setPreviewImage(true)}
+                    onClick={handleImage}
                     src={`data:image/jpeg;base64,${data.image}`} alt='' />
                 : ''}
             </div>
+            {data.audio?.includes('.mp3') && (
+                <div className='audio'>
+                    <audio src={audio} controls="play"></audio>
+                </div>
+            )}
             {previewImage &&
                 <Lightbox
 

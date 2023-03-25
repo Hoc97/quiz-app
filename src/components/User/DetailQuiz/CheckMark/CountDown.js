@@ -24,14 +24,16 @@ function CountDown({ handleFinishQuiz, setCurrentQuestion, dataQuiz, setDataQuiz
             return;
         }
         const timer = setInterval(() => {
-            setCount(count - 1);
+            if (dataQuiz.length > 0) {
+                setCount(count => count - 1);
+            }
         }, 1000);
 
         return () => {
             clearInterval(timer);
         };
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [count]);
+    }, [dataQuiz.length]);
 
     const handleRefresh = () => {
         setCurrentQuestion(0);

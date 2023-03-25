@@ -1,11 +1,11 @@
 .home-container {
-    height: 486px;
+    height: 750px;
     position: relative;
 
 
     .content {
         width: 100%;
-        height: 436px;
+        height: 700px;
         display: flex;
         gap: 150px;
 
@@ -17,10 +17,9 @@
             justify-content: flex-end;
 
             .title {
-                width: 70%;
+                width: 80%;
 
                 .title-h1 {
-                    font-size: 35px;
                     font-weight: 600;
                     margin-bottom: 24px;
                     color: #0849c9;
@@ -35,10 +34,33 @@
                 }
 
                 .title-btn {
-                    padding: 12px 24px;
+                    position: relative;
+                    padding: 12px 40px 12px 24px;
                     background: #ff4d00;
                     font-size: 20px;
                     border: none;
+
+
+
+
+
+                    .arrow-icon {
+                        position: absolute;
+                        font-size: 20px;
+                        font-weight: 900;
+                        opacity: 0;
+                        transition: 0.3s all ease-in-out;
+                        margin-left: 22px;
+                    }
+
+                    &:hover {
+
+                        .arrow-icon {
+                            transition-delay: 0.3s;
+                            opacity: 1;
+                            margin-left: 5px;
+                        }
+                    }
 
                     span {
                         font-weight: 700;
@@ -51,12 +73,48 @@
         }
 
         .image {
-            margin-top: 58px;
+            margin-top: 228.5px;
+            margin-left: 100px;
+
+            img {
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    .bg-infinite-text {
+        background: linear-gradient(228deg, rgba(21, 209, 252, 1) 14%, rgba(187, 48, 254, 1) 83%);
+        padding: 10px 0;
+        overflow: hidden;
+
+        .infinite-text {
+            display: flex;
+            flex-direction: row;
+            white-space: nowrap;
+
+            font-size: 24px;
+            animation: text-loop-left 45s reverse linear infinite;
+
+            p {
+                margin: 0 17px;
+                color: white;
+            }
+        }
+    }
+
+
+    @keyframes text-loop-left {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(-100%, 0);
         }
     }
 
     .home-footer {
-        height: 436px;
+        height: 700px;
         position: absolute;
         top: 0;
         right: 0;

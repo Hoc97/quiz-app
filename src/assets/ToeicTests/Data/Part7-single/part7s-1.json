@@ -1,0 +1,351 @@
+[
+    {
+        "isMcqGroup": true,
+        "id": 1648,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Do you want to learn to play the guitar? Now, you can do it in just one week! <span class=\"q498-1\">For only $35, you can get our new book with two CDs.</span> Learn to play the guitar quickly in your own home.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">If you are interested in lessons, <span class=\"q500-1\">we have classes at our school three times a week,</span> from 7 p.m. - 9 p.m. <span class=\"q499-1\">Our two experienced teachers have been teaching the guitar for over ten years.</span></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">For more information, call Michael at 335-4287.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Bạn có muốn học chơi đàn guitar? Giờ đây, bạn có thể làm được việc đó chỉ trong 1 tuần! Chỉ với 35 đô, bạn có thể nhận được quyển sách mới của chúng tôi cùng 2 đĩa CD. Học cách chơi guitar một cách nhanh chóng ngay tại nhà.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Nếu bạn có hứng thú với những buổi học, chúng tôi có mở lớp học tại trường 3 lần một tuần, từ 7 giờ đến 9 giờ tối. Hai giáo viên đầy kinh nghiệm của chúng tôi đã dạy guitar hơn 10 năm.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Để biết thêm thông tin, hãy gọi cho Michael theo số 335-4287.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 17222,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What do you get for $35?", "Với 35 đô, bạn nhận được gì?"],
+                "optionA": ["A book", "Một quyển sách"],
+                "optionB": ["One teacher", "Một giáo viên"],
+                "optionC": ["A book and two CDs", "Một quyển sách và hai đĩa CD"],
+                "optionD": ["A guitar", "Một cây guitar"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q498-1\">For only $35, you can get our new book with two CDs. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17223,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "How long have their teachers been teaching for?",
+                    "Giáo viên của họ đã dạy được bao lâu?"
+                ],
+                "optionA": ["Five years", "5 năm"],
+                "optionB": ["Two years", "2 năm"],
+                "optionC": ["Ten years", "10 năm"],
+                "optionD": ["Three years", "3 năm"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q499-1\">Our two experienced teachers have been teaching the guitar for over ten years. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17224,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "How often does the school have guitar classes?",
+                    "Trường học mở các lớp guitar bao lâu một lần?"
+                ],
+                "optionA": ["Once a week", "1 tuần 1 lần"],
+                "optionB": ["Twice a week", "1 tuần 2 lần"],
+                "optionC": ["Two hours", "2 tiếng"],
+                "optionD": ["Three times a week", "1 tuần 3 lần"],
+                "answer": [
+                    "D",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q500-1\">we have classes at our school three times a week,</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 230,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1654,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"text-align: center;\"><span class=\"paragraph-sentence\">ANNOUNCEMENT: TIME CHANGE</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><span class=\"q513-1\">Tuesday's Movie Club meeting at the Megaplex cinema will be moved to Friday at 3:00 p.m.</span> We will be watching the movie The Wizard of Oz. It is the 20th time we have shown it. During the movie, we will serve popcorn and drinks at our usual low prices. Remember, as part of our special offer, <span class=\"q514-1\">this week you can bring one friend for free.</span> <span class=\"q515-1\">We have seating for only 300 people.</span> This is one of our most popular movies, so don't be late. We hope to see you soon.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"text-align: center;\"><span class=\"paragraph-sentence\">THÔNG BÁO: THAY ĐỔI THỜI GIAN</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Buổi họp mặt câu lạc bộ điện ảnh vào thứ Ba tại rạp chiếu phim Megaplex sẽ được dời sang thứ Sáu lúc 3 giờ chiều. Chúng ta sẽ xem bộ phim Phù Thủy xứ Oz. Đây là lần thứ 20 chúng tôi chiếu bộ phim này. Trong lúc xem phim, chúng tôi sẽ phục vụ bắp rang và nước uống với giá thấp như thường lệ. Hãy nhớ rằng, là một phần của ưu đãi đặc biệt của chúng tôi, tuần này bạn có thể dẫn theo một người bạn miễn phí. Chúng tôi chỉ có chỗ ngồi cho 300 người. Đây là một trong những bộ phim được yêu thích nhất cả chúng tôi, vì thế đừng đến trễ. Chúng tôi hy vọng sẽ sớm được gặp lại các bạn.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 17237,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Which of the following is true?", "Câu nào sau đây đúng?"],
+                "optionA": ["The meeting will be on Tuesday.", "Buổi họp mặt sẽ là vào thứ Ba."],
+                "optionB": [
+                    "The meeting will be moved from Friday to Tuesday.",
+                    "Buổi họp mặt sẽ được dời từ thứ Sáu sang thứ Ba."
+                ],
+                "optionC": ["The meeting will be on Friday.", "Buổi họp mặt sẽ vào thứ Sáu."],
+                "optionD": [
+                    "The meeting will be moved from Thursday to Friday.",
+                    "Buổi họp mặt sẽ được dời từ thứ Năm sang thứ Sáu."
+                ],
+                "answer": [
+                    "C",
+                    "Ta thấy trong bài có câu \"<span class=\"quote quote-q513-1\">Tuesday's Movie Club meeting at the Megaplex cinema will be moved to Friday at 3:00 p.m.</span>\" -> buổi họp mặt sẽ được dời từ thứ Ba sang thứ Sáu -> câu A, B và D sai"
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17238,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What is the special offer?", "Ưu đãi đặc biệt là gì?"],
+                "optionA": ["Free popcorn", "Bắp rang miễn phí"],
+                "optionB": ["Free drinks", "Nước uống miễn phí"],
+                "optionC": ["A free hotdog", "Bánh hotdog miễn phí"],
+                "optionD": ["A free ticket for a friend", "Vé miễn phí cho một người bạn"],
+                "answer": [
+                    "D",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q514-1\">this week you can bring one friend for free. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17239,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["How many people can watch the movie?", "Bao nhiêu người có thể xem bộ phim này?"],
+                "optionA": ["Three", "3"],
+                "optionB": ["Twenty", "20"],
+                "optionC": ["300", "300"],
+                "optionD": ["Everyone", "Mọi người"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q515-1\">We have seating for only 300 people. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 230,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1650,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Dear Jane, <br/></span>\n<span class=\"paragraph-sentence\">How are you? <span class=\"q503-1\">I'm at my aunt and uncle's house in the country.</span> I'm having a great time. The country air is so clean. <span class=\"q504-1\">I ride horses every day with my uncle.</span> He is giving me lots of advice. My aunt cooks delicious food for every meal. <span class=\"q505-1\">She taught me how to make chocolate chip cookies.</span> I would like to stay for another week, but I can't. My vacation will be over. I will see you in two days, and I will tell you all about it.<br/></span>\n<span class=\"paragraph-sentence\">Your friend, <br/></span>\n<span class=\"paragraph-sentence\">Susan</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Jane thân mến,<br/></span>\n<span class=\"paragraph-sentence\">Bạn khỏe không? Mình đang ở nhà dì dượng ở nông thôn. Mình rất vui. Không khí ở nông thôn rất trong lành. Mình cưỡi ngựa mỗi ngày với dượng. Ông ấy cho mình rất nhiều lời khuyên. Dì của mình mỗi bữa ăn đều nấu những thức ăn ngon. Bà ấy dạy mình cách làm bánh quy chocolate. Mình muốn ở lại thêm 1 tuần nữa nhưng không được. Kỳ nghỉ của mình sẽ kết thúc. Mình sẽ gặp lại bạn sau hai ngày nữa và sẽ kể cho bạn nghe tất cả. <br/></span>\n<span class=\"paragraph-sentence\">Bạn của bạn,<br/></span>\n<span class=\"paragraph-sentence\">Susan</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 17227,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Where do Susan's aunt and uncle live?", "Dì và dượng của Susan sống ở đâu?"],
+                "optionA": ["In the city", "Trong thành phố"],
+                "optionB": ["In the country", "Ở nông thôn"],
+                "optionC": ["At the beach", "Ở bờ biển"],
+                "optionD": ["In an apartment", "Trong một căn hộ"],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q503-1\">I'm at my aunt and uncle's house in the country. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17228,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What does Susan do there?", "Susan làm gì ở đó?"],
+                "optionA": ["Feed animals", "Cho thú ăn"],
+                "optionB": ["Work in the garden", "Làm việc trong vườn"],
+                "optionC": ["Swim in the lake", "Bơi trong hồ"],
+                "optionD": ["Ride horses", "Cưỡi ngựa"],
+                "answer": [
+                    "D",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q504-1\">I ride horses every day with my uncle. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17229,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What did Susan's aunt teach her?", "Dì của Susan dạy cho cô ấy cái gì?"],
+                "optionA": ["How to make cookies", "Cách làm bánh quy"],
+                "optionB": ["How to ride a horse", "Cách cưỡi ngựa"],
+                "optionC": ["How to write a letter", "Cách viết thư"],
+                "optionD": ["How to live in the country", "Cách sống ở nông thôn"],
+                "answer": [
+                    "A",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q505-1\">She taught me how to make chocolate chip cookies. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 230,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1034,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">The Health Factory will introduce a new line of vitamins, a company spokesman said yesterday. <span class=\"q162-1\">The vitamins are intended for athletic men and women,</span> who are looking for a vitamin that will replace vital nutrients lost during strenuous exercise. Unlike regular vitamins, <span class=\"q163-2\">the Health Factory Active Essentials 2020 have more iron, calcium, and potassium.</span> <span class=\"q163-1\">The new vitamins have been tested on professional athletes, such as cyclist Luke Wilson, and are proven to increase athletic performance by up to 20 percent.</span> Of course, health products like the Active Essentials vitamins are not cheap. One month's supply of the new vitamins costs about $200. To promote the new product, however, <span class=\"q164-1\">the Health Factory is offering a special 30 percent discount to anyone who purchase the new vitamins with their Health Factory card.</span> For more information on the new product or to apply for a health Factory card, call the company's customer service hotline at 1-800-326-HEALTH.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Công ty Health Factory sẽ giới thiệu một dòng vitamin mới, phát ngôn viên của công ty cho biết ngày hôm qua. Các viatamin này được dành cho các vận động viên nam và nữ, những người đang tìm kiếm một loại vitamin thay thế cho các dưỡng chất quan trọng mất đi trong quá trình luyện tập cực khổ. Không giống như các loại vitamin thông thường, sản phẩm Health Factory Active Essentials 2020 chứa nhiều sắt, can-xi và ka-li hơn. Vitamin mới đã  được thử nghiệm trên các vận động viên chuyên nghiệp như vận động viên đạp xe Luke Wilson và đã chứng minh có thể tăng biểu hiện của vận động viên lên đến 20%. Tất nhiên, các sản phẩm dành cho sức khỏe như  Active Essentials vitamins thì không rẻ. Chi phí dành cho một tháng uống vitamin mới này là khoảng 200 đô. Tuy nhiên, để giới thiệu sản phẩm mới, công ty Health Factory đang cung cấp ưu đãi giảm 30% cho những khách hàng mua vitamin mới bằng thẻ của Health Factory. Để biết thêm thông tin về sản phẩm mới hoặc yêu cầu làm thẻ Health Factory, xin vui lòng gọi cho đường dây nóng chăm sóc khách hàng số 1-800-326-HEALTH.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 11943,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What can be inferred about the new vitamins?",
+                    "Có thể suy ra điều gì về loại vitamin mới?"
+                ],
+                "optionA": ["They are intended for athletes.", "Chúng được dành cho các vận động viên."],
+                "optionB": ["They are the most popular.", "Chúng là loại phổ biến nhất."],
+                "optionC": ["They are easy to swallow.", "Chúng thì dễ nuốt."],
+                "optionD": ["They are not sold in stores.", "Chúng không được bán ở cửa hàng."],
+                "answer": [
+                    "A",
+                    "Ta có thể thấy ý này trong câu: \"<span class=\"quote quote-q162-1\">The vitamins are intended for athletic men and women,</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 11944,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What is NOT mentioned about the new vitamins?",
+                    "Điều nào sau đây KHÔNG được đề cập về vitamin mới?"
+                ],
+                "optionA": ["They increase performance.", "Chúng giúp tăng hiệu suất."],
+                "optionB": ["They were tested on athletes.", "Chúng đã được thử nghiệm trên các vận động viên."],
+                "optionC": ["They are cheaper than other brands.", "Chúng rẻ hơn các nhãn hiệu khác."],
+                "optionD": ["They have more iron and calcium.", "Chúng có nhiều sắt và can-xi hơn."],
+                "answer": [
+                    "C",
+                    "Ta thấy đáp án A và B trong câu: \"<span class=\"quote quote-q163-1\">The new vitamins have been tested on professional athletes, such as cyclist Luke Wilson, and are proven to increase athletic performance by up to 20 percent. </span>\"<br/>Ta thấy đáp án D trong câu: \"<span class=\"quote quote-q163-2\">the Health Factory Active Essentials 2020 have more iron, calcium, and potassium. </span>\"<br/>Chỉ có đáp án C là không thấy đề cập đến trong bài."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 11945,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "According to the article, how can people receive a discount?",
+                    "Theo như bài viết, làm sao để mọi người nhận được giảm giá?"
+                ],
+                "optionA": ["Place an order online", "Đặt hàng trên mạng"],
+                "optionB": ["Apply for a membership card", "Yêu cầu làm thẻ thành viên"],
+                "optionC": ["Enter a contest", "Tham gia một cuộc thi"],
+                "optionD": ["Spend a certain amount", "Chi một khoản nhất định"],
+                "answer": [
+                    "B",
+                    "Trong bài có câu:\"<span class=\"quote quote-q164-1\">the Health Factory is offering a special 30 percent discount to anyone who purchase the new vitamins with their Health Factory card. </span>\"<br/>Health Factory chỉ giảm giá cho những ai mua bằng thẻ của Health Factory -> để được giảm giá phải có thẻ thành viên"
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 230,
+        "did_wrongly_the_last_time": false
+    }
+]

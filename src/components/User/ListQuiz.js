@@ -5,7 +5,7 @@ import { getQuizByUser } from '../../services/apiService';
 import './ListQuiz.scss';
 import { useNavigate } from 'react-router-dom';
 
-function ListQuiz() {
+function ListQuiz({ action, colorBtn }) {
     const navigate = useNavigate();
 
     const [arrQuiz, setArrQuiz] = useState([]);
@@ -15,35 +15,36 @@ function ListQuiz() {
     const getQuizData = async () => {
         const res = await getQuizByUser();
         if (res.EC === 0) {
+            // console.log(res.DT);
             setArrQuiz(res.DT);
         }
     };
+    console.log('arrQuiz', arrQuiz);
     return (
         <div className='listquiz-container container'>
             {arrQuiz.length > 0 ? (
                 arrQuiz.map((quiz, index) => {
                     return (
-                        <Card key={index} style={{ width: '18rem' }} className='card'>
-                            <Card.Img
-                                variant='top'
-                                className='img'
-                                src={`data:image/jpeg;base64,${quiz.image}`}
-                                alt=''
-                            />
-                            <Card.Body>
-                                <Card.Title>Quiz {index + 1}</Card.Title>
-                                <Card.Text>{quiz.description}</Card.Text>
+                        <div key={index} className='card'>
+                            <div className='image'>
+                                <img
+                                    src={`data:image/jpeg;base64,${quiz.image}`}
+                                    alt='' />
+                            </div>
+                            <div className='card-content'>
+                                <h4>Quiz {index + 1}</h4>
+                                <p className='card-description'>{quiz.description}</p>
                                 <Button
                                     className='btn'
-                                    variant='primary'
+                                    variant={colorBtn}
                                     onClick={() =>
                                         navigate(`/quiz/${quiz.id}`, { state: { quizTitle: quiz.description } })
                                     }
                                 >
-                                    Start now
+                                    {action}
                                 </Button>
-                            </Card.Body>
-                        </Card>
+                            </div>
+                        </div>
                     );
                 })
             ) : (

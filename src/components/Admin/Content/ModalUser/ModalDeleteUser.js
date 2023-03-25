@@ -33,7 +33,7 @@ function ModalDeleteUser({
                     <Modal.Title>Comfirm delete user</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    Are you sure to delete this use. email = <b>{userDelete.email && userDelete.email}</b>
+                    Are you sure to delete  user email = <b>{userDelete.email && userDelete.email}</b>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant='secondary' onClick={handleClose}>

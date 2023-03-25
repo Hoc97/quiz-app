@@ -1,0 +1,351 @@
+[
+    {
+        "isMcqGroup": true,
+        "id": 1266,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_4/g0fZO.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">W: <span class=\"q313-1\">The next stop is Main Street.</span> The exit doors are on the left side. <span class=\"q314-1\"><span class=\"q315-1\">You can transfer to the white line, line number 4,</span> to Seoul soccer stadium.</span> Please be careful as you leave the train.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Trạm tiếp theo là Main Street. Cửa xuống nằm bên trái. Bạn có thể chuyển sang line màu trắng, line số 4 để đi sân bóng đá Seoul. Xin vui lòng cẩn thận khi rời tàu.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 13688,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What is the next stop?", "Trạm tiếp theo là gì?"],
+                "optionA": ["Main Road", "Main Road"],
+                "optionB": ["Main Station", "Main Station"],
+                "optionC": ["Main Street", "Main Street"],
+                "optionD": ["Main Row", "Main Row"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q313-1\">The next stop is Main Street. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 13689,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What line leads to Seoul soccer stadium?", "Line nào đến sân bóng đá Seoul?"],
+                "optionA": ["The brown line", "Line màu nâu"],
+                "optionB": ["The green line", "Line màu xanh lá"],
+                "optionC": ["The white line", "Line màu trắng"],
+                "optionD": ["The purple line", "Line màu tím"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu <span class=\"quote quote-q314-1\">You can transfer to the white line, line number 4, to Seoul soccer stadium. </span>"
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 13690,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What number is the white line?", "Line màu trắng là số mấy?"],
+                "optionA": ["Number six", "Số 6"],
+                "optionB": ["Number four", "Số 4"],
+                "optionC": ["Number seven", "Số 7"],
+                "optionD": ["Number three", "Số 3"],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu <span class=\"quote quote-q315-1\">You can transfer to the white line, line number 4,</span>"
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1723,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_4/P0cDC.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Many people have great ideas, yet they have much difficulty in getting their own businesses off the ground. <span class=\"q715-1\">If you are the entrepreneurial type and are interested in starting your own business, <span class=\"q716-1\">here are a couple of words of interest from previous entrepreneurs such as Michael Bell and Susan McDonald, who have started their own businesses.</span></span> First, you may have a great idea, but great ideas don't run a business. <span class=\"q717-1\">To run a great business, it is always recommended that you have a business plan.</span> This way if you're not sure where you are headed during the course of your business, you can always refer to the business plan that you constructed before you started your business.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Nhiều người có ý tưởng rất hay, nhưng rất khó khăn trong việc làm cho doanh nghiệp của họ thành công. Nếu bạn thuộc tuýp người thích khởi nghiệp và hứng thú với việc tự kinh doanh, sau đây là một vài lời rất thú vị từ những người khởi nghiệp trước như Michael Bell và Susan McDonald, những người đã tự mở công ty cho chính mình. Trước hết, có thể bạn cần phải có một ý tưởng tuyệt vời, nhưng những ý tưởng tuyệt vời không vận hành được một công ty. Để vận hành được công ty, bạn chắc chắn cần phải có kế hoạch kinh doanh. Bằng cách này nếu bạn không chắc liệu có đang đi đúng hướng trong lúc kinh doanh hay không, bạn có thể quay lại kế hoạch kinh doanh ban đầu mà bạn đề ra trước khi bạn bắt đầu kinh doanh.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 17613,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What is the purpose of the talk?", "Mục đích của bài nói là gì?"],
+                "optionA": [
+                    "To give tips on how to quickly climb the corporate ladder.",
+                    "Đưa ra những chiêu thức để thăng tiến nhanh trong công ty."
+                ],
+                "optionB": [
+                    "To provide advice to people who are thinking of starting a business.",
+                    "Cung cấp lời khuyên cho những người muốn khởi nghiệp."
+                ],
+                "optionC": [
+                    "To learn to manage one's workers to get the most out of them.",
+                    "Học cách quản lý và tận dụng tốt nhất nhân viên."
+                ],
+                "optionD": [
+                    "To brainstorm new ideas on the products the company should be making.",
+                    "Động não suy nghĩ những ý tưởng mới về sản phẩm mà công ty nên sản xuất."
+                ],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu <span class=\"quote quote-q715-1\">If you are the entrepreneurial type and are interested in starting your own business, here are a couple of words of interest from previous entrepreneurs such as Michael Bell and Susan McDonald, who have started their own businesses. </span>"
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 17614,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Who is Michael Bell?", "Michael Bell là ai?"],
+                "optionA": ["The speaker.", "Người nói."],
+                "optionB": ["The CEO of a company.", "Giám đốc điều hành của một công ty."],
+                "optionC": ["A business owner.", "Chủ doanh nghiệp."],
+                "optionD": ["A motivational speaker.", "Người diễn giả truyền cảm hứng."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu <span class=\"quote quote-q716-1\">here are a couple of words of interest from previous entrepreneurs such as Michael Bell and Susan McDonald, who have started their own businesses. </span>"
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 17615,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What does the speaker recommend?", "Người nói khuyên điều gì?"],
+                "optionA": ["To listen to other people's ideas.", "Lắng nghe ý kiến của người khác."],
+                "optionB": ["To always prepare a business plan.", "Luôn luôn lên kế hoạch kinh doanh."],
+                "optionC": ["To have as many investors as possible.", "Có càng nhiều nhà đầu tư càng tốt."],
+                "optionD": ["To use a local bank if possible.", "Sử dụng ngân hàng địa phương nếu có."],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q717-1\">To run a great business, it is always recommended that you have a business plan. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 2524,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_4/oyi9b.mp3",
+        "image": "/static/ToeicTests/images/Practice_Tests/Part_4/txKYP.png",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">(W-Am): Hi, it's Samantha. I'm still coming to visit you in June, but I've had a little change of plans. <span class=\"q1123-1\">My boss asked me to go to a trade show the first week of the month, so I can't take a vacation until later</span>. <span class=\"q1124-1\">I'm looking at some airline tickets online, and the best day for me to travel to Los Angeles is Saturday, June Eighteenth</span>. I'm going to book that. I'd still like to go to that exhibit we talked about at the Delany Science Museum, though. <span class=\"q1125-1\">Can you check if the exhibit will still be open after the eighteenth</span>?</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">(W-Am): Xin chào, đây là Samantha. Tôi vẫn sẽ đến thăm bạn vào tháng sáu, nhưng tôi đã có một chút thay đổi về kế hoạch. Sếp của tôi yêu cầu tôi đi xem triển lãm thương mại vào tuần đầu tiên của tháng, vì vậy tôi không thể có một kỳ nghỉ cho đến sau đó. Tôi đang xem một số vé máy bay trực tuyến và ngày tốt nhất để tôi đi du lịch tới Los Angeles là thứ bảy, ngày mười tám tháng Sáu. Tôi sẽ đặt chuyến đó. Dù vậy, tôi vẫn muốn đến triển lãm mà chúng ta đã nói ở Bảo tàng Khoa học Delany. Bạn có thể kiểm tra xem liệu triển lãm vẫn sẽ được mở sau ngày mười tám không?</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 21552,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "Why does the speaker have to delay a trip?",
+                    "Tại sao người nói phải trì hoãn một chuyến đi?"
+                ],
+                "optionA": ["She has to renew her passport.", "Cô ấy phải gia hạn hộ chiếu của mình."],
+                "optionB": ["She wants to avoid bad weather.", "Cô ấy muốn tránh thời tiết xấu."],
+                "optionC": ["She has to attend a work event.", "Cô ấy phải tham dự một sự kiện làm việc."],
+                "optionD": ["She wants to get a cheaper ticket.", "Cô ấy muốn có được một vé rẻ hơn."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1123-1\">My boss asked me to go to a trade show the first week of the month, so I can't take a vacation until later</span>\" -> Chọn C."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21553,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "Look at the graphic. How much will the speaker pay for a flight?",
+                    "Nhìn vào hình. Người nói sẽ trả bao nhiêu cho một chuyến bay?"
+                ],
+                "optionA": ["$280.", "280 đô la."],
+                "optionB": ["$375.", "375 đô la."],
+                "optionC": ["$310.", "310 đô la."],
+                "optionD": ["$345.", "345 đô la."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1124-1\">I'm looking at some airline tickets online, and the best day for me to travel to Los Angeles is Saturday, June Eighteenth</span>\" -> Nhìn vào hình, ta thấy giá vé của chuyến bay vào ngày mười tám tháng sáu là 310 đô la -> Chọn C."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21554,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What does the speaker ask the listener to do?", "Người nói yêu cầu người nghe làm gì?"],
+                "optionA": ["Check a schedule.", "Kiểm tra một lịch trình."],
+                "optionB": ["Recommend a hotel.", "Đề xuất một khách sạn."],
+                "optionC": ["Send some documents.", "Gửi một số tài liệu."],
+                "optionD": ["Rent a car.", "Thuê một chiếc xe hơi."],
+                "answer": [
+                    "A",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1125-1\">Can you check if the exhibit will still be open after the eighteenth</span>\" -> Chọn A."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1722,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_4/IjSJi.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Good morning, everyone. It's a bright, beautiful day today, isn't it? <span class=\"q712-1\">My name is Richard Benson and I'm your assigned tour guide for today.</span> <span class=\"q713-1\">We'll start off the day by taking a short hike up the mountain to observe the wild animals and exotic forestry</span>, which are found in no other region of the earth than this one. Then we'll pass some Buddhist temples, which were constructed in the 18th century. We will spend some time there to relax and feel the serenity of the place. Afterwards, we will head toward the city market for lunch. Once there, you will get to enjoy all kinds of delicacies of the local people. After lunch, we'll take you to a snake farm to take a look at some of the most venomous creatures on this earth. So everyone, let's all get ready to leave. <span class=\"q714-1\">Also, don't forget to pack your video or digital cameras.</span></span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Xin chào moi người. Ngày hôm nay là một ngày đẹp trời phải không ạ? tôi tên là Richard Benson và tôi được phân làm người hướng dẫn đoàn cho hôm nay. Chúng ta sẽ bắt đầu ngày tham quan bằng việc đi bộ một đoạn ngắn lên núi để quan sát những loài động vật hoang dã và những loài thực vật đặc biệt mà bạn không thể tìm thấy chúng ở nơi nào khác trên trái đất này. Sau đó chúng ta sẽ qua một số ngôi đền phật giáo được xây dựng ở thế kỷ thứ 18. Chúng ta sẽ nghỉ ngơi ở đó và cảm nhận sự tĩnh lặng của nơi đây. Sau đó, chúng ta sẽ đi về khu chợ của thành phố dùng bữa trưa. Khi đến đó, bạn sẽ cảm nhận được hết tất cả sự duyên dáng của con người địa phương. Sau đó chúng ta sẽ đến nông trại rắn để ngắm nhìn một vài loài sinh vật độc nhất trên trái đất này. Nào mọi người, hãy chuẩn bị sẵn sàng. Và cũng đừng quên mang theo máy quay phim hoặc máy ảnh kỹ thuật số nhé.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 17610,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Who is the speaker?", "Người nói là ai?"],
+                "optionA": ["A snake farmer.", "Người trong trang trại rắn."],
+                "optionB": ["A forest ranger.", "Kiểm lâm."],
+                "optionC": ["A tour guide.", "Hướng dẫn viên du lịch."],
+                "optionD": ["A Buddhist monk.", "Nhà sư phật giáo."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q712-1\">My name is Richard Benson and I'm your assigned tour guide for today. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 17611,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What will they do first?", "Đầu tiên họ sẽ làm gì?"],
+                "optionA": ["Visit a Buddhist temple.", "Thăm đền phật giáo."],
+                "optionB": ["Shop at the city market.", "Mua sắm tại khu chợ thành phố."],
+                "optionC": ["Walk up the mountain.", "Leo núi."],
+                "optionD": ["Watch some dangerous snakes.", "Quan sát một vài loài rắn nguy hiểm."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q713-1\">We'll start off the day by taking a short hike up the mountain to observe the wild animals and exotic forestry</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 17612,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What does the speaker remind the listeners to do?",
+                    "Người nói nhắc nhở người nghe làm gì?"
+                ],
+                "optionA": ["To take some money with them.", "Mang theo tiền."],
+                "optionB": ["To bring along their cameras.", "Mang theo máy chụp ảnh."],
+                "optionC": ["To not be late getting back to the bus.", "Không được trễ giờ lên xe buýt."],
+                "optionD": ["To be careful at the snake farm.", "Cẩn thận khi ở trang trại rắn."],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q714-1\">Also, don't forget to pack your video or digital cameras. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    }
+]

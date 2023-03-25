@@ -9,9 +9,6 @@ function Password() {
     const [currentPassword, setCurrentPassword] = useState('');
     const [newPassword, setNewPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    console.log('currentpassword', currentPassword);
-    console.log('newPassword', newPassword);
-    console.log('confirmPassword', confirmPassword);
     const handleUpdatePassword = async () => {
         //validate
         if (!currentPassword) {

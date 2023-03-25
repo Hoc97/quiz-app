@@ -1,0 +1,360 @@
+[
+    {
+        "isMcqGroup": true,
+        "id": 2638,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_4/tvDLe.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Hello, and <span class=\"q106-1\">welcome to Coldwell Family Farm</span>! Today at our farm, you'll have the opportunity to tour the fields and go inside our greenhouses to see a wide variety of flowers. You'll also hear from our farmers, who will share with you what it takes to grow such fresh, beautiful flowers. But remember that this is an outdoor tour, so <span class=\"q107-1\">please take your hats, sunglasses, and anything else you need to protect yourself from the sun</span>. <span class=\"q108-1\">We'll end the tour in our farm store, and all of our flowerpots are twenty percent off</span>. Enjoy!</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Xin chào, và chào mừng đến Nông trại Gia đình Coldwell! Hôm nay trên nông trại của chúng tôi, bạn sẽ có cơ hội tham quan các cánh đồng và vào trong các nhà kính của chúng tôi để xem một loạt các bông hoa đa dạng. Bạn cũng sẽ nghe từ các nông dân của chúng tôi, những người mà sẽ chia sẻ với bạn những thứ bạn cần để trồng các bông hoa tươi, đẹp như vậy. Nhưng hãy nhớ rằng đây là một chuyến tham quan ngoài trời, nên vui lòng lấy nón, kính mát của bạn, và bất kì gì khác bạn cần để bảo vệ bản thân khỏi ánh nắng mặt trời. Chúng ta sẽ kết thúc chuyến tham quan tại cửa hàng nông trại của chúng tôi, và tất cả các chậu hoa của chúng tôi đều giảm 20 phần trăm. Hãy tận hưởng!</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 21899,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": ["Where is the talk most likely taking place?", "Bài nói đang có thể diễn ra ở đâu nhất?"],
+                "optionA": ["At a supermarket", "Tại một siêu thị"],
+                "optionB": ["At a community park", "Tại một công viên công đồng"],
+                "optionC": ["At an art supply store", "Tại một cửa hàng đồ dùng nghệ thuật"],
+                "optionD": ["At a farm", "Tại một nông trại"],
+                "answer": [
+                    "D",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q106-1\">welcome to Coldwell Family Farm</span>\", nên chọn D."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21900,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What does the speaker remind the listeners to do?",
+                    "Người nói nhắc nhở những người nghe làm gì?"
+                ],
+                "optionA": ["Put belongings in a locker", "Cất đồ đạc cá nhân vào một căn tủ"],
+                "optionB": ["Fill out a survey", "Điền vào một phiếu khảo sát"],
+                "optionC": ["Use sun protection", "Dùng đồ dùng chống nắng"],
+                "optionD": ["Read some instructions", "Đọc vài hướng dẫn"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q107-1\">please take your hats, sunglasses, and anything else you need to protect yourself from the sun</span>\", nên chọn C."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21901,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What does the speaker mean when she says, \"all of our flowerpots are twenty percent off\"?",
+                    "Người nói có ý gì khi cô ấy nói, \"tất cả các chậu hoa của chúng tôi đều giảm 20 phần trăm\"?"
+                ],
+                "optionA": [
+                    "She needs the listeners to change some price tags.",
+                    "Cô ấy cần những người nghe thay đổi vài nhãn giá."
+                ],
+                "optionB": [
+                    "She wants the listeners to purchase some merchandise.",
+                    "Cô ấy muốn những người nghe mua vài hàng hóa."
+                ],
+                "optionC": [
+                    "She is disappointed that a product did not sell well.",
+                    "Cô ấy thất vọng rằng một sản phẩm đã không bán chạy."
+                ],
+                "optionD": ["She is surprised by a decision.", "Cô ấy ngạc nhiên bởi một quyết định."],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong cả câu \"<span class=\"quote quote-q108-1\">We'll end the tour in our farm store, and all of our flowerpots are twenty percent off</span>\", người nói muốn những người nghe mua các chậu hoa đã giảm giá, nên chọn B."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 2649,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_4/qMK0x.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">For all of you tuning in to our radio station today, <span class=\"q139-1\">the annual Springfield Music Festival is just around the corner! From June twelfth to fourteenth, the Springfield Park will host a variety of live performances</span>, from drumming circles to alternative rock bands... all free and open to the public. And don't forget about WKBC's annual raffle. <span class=\"q140-1\">This year, you can enter to win a brand new, one-of-a-kind electric guitar</span>. <span class=\"q141-1\">Raffle tickets are only available at our ticket booth</span>. And last year, all the tickets were gone in an hour. Look for us by the water fountain on June twelfth. Hope to see you there!</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Cho tất cả những ai đang nghe đài phát thanh của chúng tôi hôm nay, Lễ hội Âm nhạc Springfield thường niên sắp đến rồi! Từ ngày 12 đến 14 tháng 6, Công viên Springfield sẽ tổ chức một loạt các màn biểu diễn trực tiếp, từ các vòng tròn chơi trống đến các ban nhạc \"alternative rock\" (một thể loại nhạc rock)... tất cả đều miễn phí và mở cửa cho công chúng. Và đừng quên trò chơi rút thăm trúng thưởng hằng năm của WKBC. Năm nay, bạn có thể tham gia để thắng một cây đàn ghi-ta điện hoàn toàn mới, độc nhất vô nhị. Các vé rút thăm chỉ có tại quầy bán vé của chúng tôi. Và năm ngoái, tất cả vé đã bán hết trong một giờ. Hãy tìm chúng tôi bên đài phun nước vào ngày 12 tháng 6. Mong gặp bạn tại đó!</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 21932,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": ["What event is happening in June?", "Sự kiện gì sẽ diễn ra vào tháng 6?"],
+                "optionA": ["A job fair", "Một hội chợ việc làm"],
+                "optionB": ["A music festival", "Một lễ hội âm nhạc"],
+                "optionC": ["An art exhibit", "Một triển lãm nghệ thuật"],
+                "optionD": ["A fitness demonstration", "Một buổi tường thuật thể dục"],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q139-1\">the annual Springfield Music Festival is just around the corner! From June twelfth to fourteenth, the Springfield Park will host a variety of live performances</span>\", nên chọn B."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21933,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What kind of prize can the listeners win?",
+                    "Những người nghe có thể thắng loại giải thưởng gì?"
+                ],
+                "optionA": ["Dinner reservations", "Các lịch đặt trước bữa tối"],
+                "optionB": ["Concert tickets", "Các vé biểu diễn âm nhạc"],
+                "optionC": ["A laptop computer", "Một máy tính xách tay"],
+                "optionD": ["A musical instrument", "Một nhạc cụ"],
+                "answer": [
+                    "D",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q140-1\">This year, you can enter to win a brand new, one-of-a-kind electric guitar</span>\", nên chọn D."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21934,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What does the speaker mean when he says, \"all the tickets were gone in an hour\"?",
+                    "Người nói có ý gì khi anh ấy nói, \"tất cả vé đã bán hết trong một giờ\"?"
+                ],
+                "optionA": [
+                    "The listeners should make a purchase as soon as possible.",
+                    "Những người nghe nên mua sớm nhất có thể."
+                ],
+                "optionB": ["The listeners should print more tickets.", "Những người nghe nên in thêm vé."],
+                "optionC": ["An event might begin late.", "Một sự kiện có thể bắt đầu trễ."],
+                "optionD": ["Some vendors will be pleased.", "Vài người bán hàng sẽ hài lòng."],
+                "answer": [
+                    "A",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q141-1\">Raffle tickets are only available at our ticket booth</span>\" trước đó, ám chỉ vé rút thăm chỉ bán tại quầy và bán rất chạy, hết hàng rất nhanh.<br/>Do đó, người nói muốn những người nghe nhanh chân mua chúng, nên chọn A."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 2530,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_4/goGH0.mp3",
+        "image": "/static/ToeicTests/images/Practice_Tests/Part_4/yLusb.png",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">(W-Br): Hi, Gordon, it's Anna. <span class=\"q1141-1\">I've arrived here in Vancouver for the opening of the branch office</span>. I wanted to discuss the sales strategy with you, and I don't think it can wait until I get back. I'm wondering if you'll be available for a discussion on Friday morning. <span class=\"q1142-1\">There's a two-hour time difference between the office here in Vancouver and your office</span>. So that'll be nine A.M. for you. The opening ceremony here doesn't start until midmorning. <span class=\"q1143-1\">Please call me back to confirm that this time will work for you</span>. Thanks.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">(W-Br): Xin chào, Gordon, đây là Anna. Tôi đã đến Vancouver để khai trương văn phòng chi nhánh. Tôi muốn thảo luận về chiến lược bán hàng với bạn và tôi không nghĩ rằng nó có thể đợi cho đến khi tôi quay lại. Tôi tự hỏi liệu bạn có rảnh để có một cuộc thảo luận vào sáng thứ sáu không. Có một khoảng chênh lệch hai giờ giữa văn phòng ở Vancouver và văn phòng của bạn. Vì vậy, đó sẽ là chín giờ sáng cho bạn. Lễ khai mạc ở đây không bắt đầu cho đến giữa sáng. Hãy gọi lại cho tôi để xác nhận rằng thời gian này sẽ phù hợp cho bạn. Cảm ơn.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 21570,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What event is the speaker planning to attend?", "Diễn giả dự định tham dự sự kiện nào?"],
+                "optionA": ["A retirement celebration.", "Một buổi tiệc nghỉ hưu."],
+                "optionB": ["A job interview.", "Một cuộc phỏng vấn việc làm."],
+                "optionC": ["A trade show.", "Một triển lãm thương mại."],
+                "optionD": ["A branch opening.", "Một sự khai trương chi nhánh."],
+                "answer": [
+                    "D",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1141-1\">I've arrived here in Vancouver for the opening of the branch office</span>\" -> Chọn D."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21571,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "Look at the graphic. Where is the listener's office located?",
+                    "Nhìn vào hình. Văn phòng của người nghe nằm ở đâu?"
+                ],
+                "optionA": ["In Vancouver.", "Ở Vancouver."],
+                "optionB": ["In Denver.", "Ở Denver."],
+                "optionC": ["In Chicago.", "Ở Chicago."],
+                "optionD": ["In Montreal.", "Ở Montreal."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1142-1\">There's a two-hour time difference between the office here in Vancouver and your office</span>\" -> Nhìn vào hình, ta thấy giờ của Chicago sẽ lệch hai tiếng so với ở Vancouver -> Chọn C."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21572,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What does the speaker ask the listener to do?", "Người nói yêu cầu người nghe làm gì?"],
+                "optionA": ["Return a phone call.", "Phản hồi một cuộc gọi điện thoại."],
+                "optionB": ["Provide flight information.", "Cung cấp thông tin chuyến bay."],
+                "optionC": ["Authorize an expense.", "Cho phép một khoản chi."],
+                "optionD": ["Verify an address.", "Xác minh một địa chỉ."],
+                "answer": [
+                    "A",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1143-1\">Please call me back to confirm that this time will work for you</span>\" -> Chọn A."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1722,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_4/IjSJi.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Good morning, everyone. It's a bright, beautiful day today, isn't it? <span class=\"q712-1\">My name is Richard Benson and I'm your assigned tour guide for today.</span> <span class=\"q713-1\">We'll start off the day by taking a short hike up the mountain to observe the wild animals and exotic forestry</span>, which are found in no other region of the earth than this one. Then we'll pass some Buddhist temples, which were constructed in the 18th century. We will spend some time there to relax and feel the serenity of the place. Afterwards, we will head toward the city market for lunch. Once there, you will get to enjoy all kinds of delicacies of the local people. After lunch, we'll take you to a snake farm to take a look at some of the most venomous creatures on this earth. So everyone, let's all get ready to leave. <span class=\"q714-1\">Also, don't forget to pack your video or digital cameras.</span></span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Xin chào moi người. Ngày hôm nay là một ngày đẹp trời phải không ạ? tôi tên là Richard Benson và tôi được phân làm người hướng dẫn đoàn cho hôm nay. Chúng ta sẽ bắt đầu ngày tham quan bằng việc đi bộ một đoạn ngắn lên núi để quan sát những loài động vật hoang dã và những loài thực vật đặc biệt mà bạn không thể tìm thấy chúng ở nơi nào khác trên trái đất này. Sau đó chúng ta sẽ qua một số ngôi đền phật giáo được xây dựng ở thế kỷ thứ 18. Chúng ta sẽ nghỉ ngơi ở đó và cảm nhận sự tĩnh lặng của nơi đây. Sau đó, chúng ta sẽ đi về khu chợ của thành phố dùng bữa trưa. Khi đến đó, bạn sẽ cảm nhận được hết tất cả sự duyên dáng của con người địa phương. Sau đó chúng ta sẽ đến nông trại rắn để ngắm nhìn một vài loài sinh vật độc nhất trên trái đất này. Nào mọi người, hãy chuẩn bị sẵn sàng. Và cũng đừng quên mang theo máy quay phim hoặc máy ảnh kỹ thuật số nhé.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 17610,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Who is the speaker?", "Người nói là ai?"],
+                "optionA": ["A snake farmer.", "Người trong trang trại rắn."],
+                "optionB": ["A forest ranger.", "Kiểm lâm."],
+                "optionC": ["A tour guide.", "Hướng dẫn viên du lịch."],
+                "optionD": ["A Buddhist monk.", "Nhà sư phật giáo."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q712-1\">My name is Richard Benson and I'm your assigned tour guide for today. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 17611,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What will they do first?", "Đầu tiên họ sẽ làm gì?"],
+                "optionA": ["Visit a Buddhist temple.", "Thăm đền phật giáo."],
+                "optionB": ["Shop at the city market.", "Mua sắm tại khu chợ thành phố."],
+                "optionC": ["Walk up the mountain.", "Leo núi."],
+                "optionD": ["Watch some dangerous snakes.", "Quan sát một vài loài rắn nguy hiểm."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q713-1\">We'll start off the day by taking a short hike up the mountain to observe the wild animals and exotic forestry</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 17612,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What does the speaker remind the listeners to do?",
+                    "Người nói nhắc nhở người nghe làm gì?"
+                ],
+                "optionA": ["To take some money with them.", "Mang theo tiền."],
+                "optionB": ["To bring along their cameras.", "Mang theo máy chụp ảnh."],
+                "optionC": ["To not be late getting back to the bus.", "Không được trễ giờ lên xe buýt."],
+                "optionD": ["To be careful at the snake farm.", "Cẩn thận khi ở trang trại rắn."],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q714-1\">Also, don't forget to pack your video or digital cameras. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    }
+]

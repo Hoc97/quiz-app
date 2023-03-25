@@ -13,12 +13,12 @@ import './ManageUser.scss';
 function ManageUser() {
     const limitUser = 7;
     const [showModalCreate, setShowModalCreate] = useState(false);
-    const [showModalUpdate, setShowModalUpdate] = useState(false);
     const [showModalView, setShowModalView] = useState(false);
+    const [showModalUpdate, setShowModalUpdate] = useState(false);
     const [showModalDelete, setShowModalDelete] = useState(false);
     const [listUsers, setListUsers] = useState([]);
-    const [userUpdate, setUserUpdate] = useState({});
     const [userView, setUserView] = useState({});
+    const [userUpdate, setUserUpdate] = useState({});
     const [userDelete, setUserDelete] = useState({});
     const [pageCount, setPageCount] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
@@ -105,8 +105,8 @@ function ManageUser() {
                     show={showModalUpdate}
                     setShow={setShowModalUpdate}
                     fetchListUsers={fetchListUsers}
-                    fetchListUsersPaginate={fetchListUsersPaginate}
                     userUpdate={userUpdate}
+                    fetchListUsersPaginate={fetchListUsersPaginate}
                     currentPage={currentPage}
                     setCurrentPage={setCurrentPage}
                 />

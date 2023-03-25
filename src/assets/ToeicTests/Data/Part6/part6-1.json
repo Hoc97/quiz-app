@@ -1,0 +1,306 @@
+[
+    {
+        "isMcqGroup": true,
+        "id": 868,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><span class=\"reading-text-title\">Memo</span></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">To: Department Staff</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">From: Alison Roth, Department Manager</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Re: Meeting</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">All members of the department staff are requested to attend a department meeting next Friday morning. As you know, we meet _____(1) to review our work of the past months and finalize plans for the coming months.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">The goal of this Friday's meeting is to set our priorities for the next six months. The meeting agenda is attached for your review. Let's agree to follow the agenda and not _____(2) other matters at this time so that we can finish the meeting in a timely manner.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">The most important item on the agenda is the budget. We need to take a careful look at our spending practices. We _____(3) too much money over the past six months.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Please come with ideas about how we can use our funds more efficiently in the future. Please arrive at the meeting on time so that we can conclude before 12:00</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><span class=\"reading-text-title\">Thông báo</span></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Đến: Nhân viên của phòng</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Từ: Alison Roth, trưởng phòng</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Về việc: Họp</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Tất cả các thành viên của phòng được yêu cầu phải tham gia vào cuộc họp của phòng vào sáng thứ Sáu tuần sau. Như các anh/chị đã biết, chúng ta họp theo định kỳ để xem xét lại công việc của những tháng trước và lên kế hoạch cho những tháng sau.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Mục tiêu của cuộc họp thứ Sáu tuần này là để lặp ưu tiên cho sáu tháng tới. Chương trình họp được đính kèm để để các anh/chị xem qua. Hãy bám theo chương trình họp này và không nêu lên những vấn đề khác để chúng ta có thể hoàn thành cuộc họp nhanh chóng.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Mục quan trọng nhất trong chương trình họp là ngân sách. Chúng ta nên xem kỹ hơn về việc chi tiêu. Chúng ta đã lãng phí quá nhiều trong sáu tháng vừa rồi.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Hãy đề xuất ý kiến để sử dụng quỹ một cách hiệu quả trong tương lai. Vui lòng tham dự cuộc họp đúng giờ để chúng ta có thể kết thúc trước 12 giờ.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 10684,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(1)", ""],
+                "optionA": ["period", "thời kỳ (danh từ)"],
+                "optionB": ["periodic", "định kỳ (tính từ)"],
+                "optionC": ["periodical", "định kỳ (tính từ)"],
+                "optionD": ["periodically", "một cách định kỳ"],
+                "answer": ["D", "Ta cần một trạng từ để bổ nghĩa cho động từ \"meet\"."],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            },
+            {
+                "id": 10685,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(2)", ""],
+                "optionA": ["set back", "trì hoãn"],
+                "optionB": ["go ahead", "đi trước"],
+                "optionC": ["bring up", "nêu lên"],
+                "optionD": ["adhere to", "trung thành"],
+                "answer": ["C", "Xét theo nghĩa của câu để chọn từ phù hợp."],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            },
+            {
+                "id": 10686,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(3)", ""],
+                "optionA": ["waste", "lãng phí (hiện tại đơn)"],
+                "optionB": ["have wasted", "lãng phí (hiện tại hoàn thành)"],
+                "optionC": ["will waste", "lãng phí (tương lai đơn)"],
+                "optionD": ["are wasting", "lãng phí (hiện tại tiếp diễn)"],
+                "answer": [
+                    "B",
+                    "Trong câu có cụm \"over the past six months\" là dấu hiệu của thì hiện tại hoàn thành."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            }
+        ],
+        "testDuration": 135,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 689,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">When you go on a job interview, the most important thing to remember is to present yourself well. Before you go, prepare yourself by dressing neatly and professionally. When you arrive, enter the interview room _____(1).</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Look the interviewer in the eye when you shake hands. When you talk about yourself, do not be shy about your abilities. You are there to prove that you can do the job. Explain your work and educational background briefly and discuss the skills you have developed through experience. _____(2) to point out areas in which you have expertise.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">The worst thing you can do is discuss your experience weakly. Remember if you believe in yourself, other people will, too. Don't forget to _____(3) the interview with a thank-you note before a week has passed.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Khi bạn đến một cuộc phỏng vấn, điều quan trọng nhất cần phải nhớ là trình bày rõ bản thân mình. Trước khi đi, hãy chuẩn bị bản thân kỹ càng bằng cách ăn mặc gọn gàng và chuyên nghiệp. Khi bạn đến, hãy vào phòng phỏng vấn một cách tụ tin.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Nhìn thẳng vào mắt người phỏng vấn khi bạn bắt tay. Khi bạn nói về bản thân, đừng nhút nhát về kỹ năng của mình. Bạn ở đó để chứng minh là bạn có thể làm được công việc. Hãy giải thích ngắn về công việc và học vấn của bạn và thảo luận về những kỹ năng mà bạn đã phát triển thông qua kinh nghiệm. Đừng chần chừ khi chỉ ra những lĩnh vực chuyên môn của mình.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Điều tệ nhất bạn có thể làm là thảo luận về kinh nghiệm của mình quá yếu ớt. Hãy nhớ là tin vào bản thân, và người khác cũng sẽ làm vậy. Đừng quên tiếp nối cuộc phỏng vấn bằng một ghi chú cám ơn trước một tuần sau đó.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 9122,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(1)", ""],
+                "optionA": ["confident", "tự tin (tính từ)"],
+                "optionB": ["confidently", "một cách tự tin (trạng từ)"],
+                "optionC": ["confide", "thổ lộ (động từ)"],
+                "optionD": ["confidence", "sự tự tin (danh từ)"],
+                "answer": ["B", "Ta dùng trạng từ để bổ nghĩa cho động từ thường \"enter\" -> chọn B."],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            },
+            {
+                "id": 9123,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(2)", ""],
+                "optionA": ["No hesitation", "Không có sự chần chừ"],
+                "optionB": ["Not hesitating", "Không chần chừ"],
+                "optionC": ["Don't hesitate", "Đừng chần chừ"],
+                "optionD": ["Doesn't hesitate", "Đừng chần chừ"],
+                "answer": ["C", "Câu mệnh lệnh mang nghĩa phủ định thì ta dùng: Do + NOT + bare_inf -> chọn C."],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            },
+            {
+                "id": 9124,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(3)", ""],
+                "optionA": ["call in", ""],
+                "optionB": ["apply to", "nộp đơn cho"],
+                "optionC": ["be ready for", "sẵn sàng cho"],
+                "optionD": ["follow up", "theo sát"],
+                "answer": [
+                    "D",
+                    "Ta dịch câu để chọn nghĩa phù hợp. \"follow up\" trong tiếng anh là việc bạn tiếp theo sát những điều mà người khác đã nói hay đã hứa với bạn."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            }
+        ],
+        "testDuration": 135,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 893,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">One of the joys of traveling abroad is taking the opportunity to try out different kinds of food. Travelers should always make a point of eating the local dishes. It is exciting to try out dishes made with unfamiliar ingredients and unusual _____(1)</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Daring travelers can order _____(2) from the menu.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Or, they can look at the dishes that other patrons are eating and order one that looks appealing. A traveler who doesn't speak the local language well can order by pointing to the dishes he wishes to order. That is the easiest way to avoid a mix _____(3)</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Finally, dessert should not be forgotten. A sweet treat at the end of the meal will complete the experience of enjoying foreign cooking.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Một trong những niềm vui của du lịch nước ngoài là có cơ hội được thử những món ăn khác nhau. Du khách nên ăn thử các món ăn địa phương. Thật thú vị khi được ăn những món ăn chế biến từ những nguyên liệu và có vị khác lạ.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Những du khách can đảm hơn có thể gọi món một cách ngẫu nhiên từ thực đơn.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Hoặc, họ có thể nhìn món ăn mà các thực khách khác đang dùng và gọi món nào trông có vẻ hấp dẫn. Du khách không thể nói được tiếng địa phương có thể gọi món bằng cách chỉ vào đĩa thức ăn mà họ muốn gọi. Đó là cách tốt nhất để tránh bị nhầm lẫn.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Cuối cùng, không nên quên món tráng miệng. Một món ngọt sau bữa ăn sẽ làm cho việc trải nghiệm ẩm thực nước ngoài được trọn vẹn hơn.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 10910,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(1)", ""],
+                "optionA": ["favors", "sự giúp đỡ"],
+                "optionB": ["flavors", "mùi vị"],
+                "optionC": ["fivers", "đồng năm bảng Anh"],
+                "optionD": ["fevers", "cơn sốt"],
+                "answer": ["B", "Xét theo nghĩa của câu để chọn từ phù hợp."],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            },
+            {
+                "id": 546,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(2)", ""],
+                "optionA": ["random", "ngẫu nhiên (tính từ)"],
+                "optionB": ["randomly", "một cách ngẫu nhiên (trạng từ)"],
+                "optionC": ["randomize", "ngẫu nhiên (động từ)"],
+                "optionD": ["randomness", "sự ngẫu nhiên (danh từ)"],
+                "answer": ["B", "Chọn trạng từ để bổ nghĩa cho động từ \"order\""],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            },
+            {
+                "id": 10911,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(3)", ""],
+                "optionA": ["up", "(mix up = lộn xộn, nhầm lẫn)"],
+                "optionB": ["in", "(mix something in with something = trộn cái gì với cái gì)"],
+                "optionC": ["of", "(mix of = không tồn tại)"],
+                "optionD": ["out", "(mix out = không tồn tại)"],
+                "answer": ["A", "Xét theo nghĩa của câu để chọn từ phù hợp"],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            }
+        ],
+        "testDuration": 135,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 897,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><span class=\"reading-text-title\">Information for Travelers</span></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* We make every effort to leave on time. To avoid _____(1), please plan to arrive at least one hour before your scheduled departure time. This is especially important because all passengers must pass through security control.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Scissors, nail clippers, and other sharp instruments _____(2) on board. Leave these items at home or surrender them to the security officer in charge.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Each passenger is allowed two small carry-on bags. Check your excess luggage with the attendant. You can claim it at the end of your trip.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* We request that passengers remain in the waiting area until the attendant _____(3) the embarkation time.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Please don't attempt to board ahead of time.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Your comfort is our priority. Snack service is available on board. Please ask the attendant for pillows and blankets if you require them.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Thank you for traveling with us. Have a safe and happy trip.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><span class=\"reading-text-title\">Thông tin cho hành khách</span></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Chúng tôi luôn nỗ lực để khởi hành đúng giờ. Để tránh hoãn chuyến, vui lòng đến trước giờ khởi hành đã định ít nhất là 1 tiếng . Điều này rất quan trọng vì tất cả các hành khách đều phải qua khu vực an ninh.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Kéo, dụng cụ cắt móng và những vật sắt nhọn khác bị cấm trên máy bay. Để những vật này ở nhà hoặc nộp chúng cho nhân viên an ninh đang trực.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Mỗi hành khách được phép mang 2 túi xách tay nhỏ. Gửi hành lý bị quá cân với nhân viên. Bạn có thể nhận lại nó sau chuyến bay.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Chúng tôi yêu cầu hành khách ở yên trong khu vực chờ cho đến khi nhân viên thông báo giờ lên máy bay.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Xin vui lòng không lên máy bay trước.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Sự thoải mái của hành khách là ưu tiên của chúng tôi. Phục vụ thức ăn nhẹ có trên máy bay. Xin hỏi tiếp viên nếu hành khách cần gối và chăn.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Cám ơn đã bay cùng chúng tôi. Chúc quý khách thượng lộ bình an.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 10921,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(1)", ""],
+                "optionA": ["delays", "sự hoãn lại"],
+                "optionB": ["delights", "niềm vui sướng"],
+                "optionC": ["deliveries", "sự giao hàng"],
+                "optionD": ["delusions", "ảo tưởng"],
+                "answer": ["A", "Xét theo nghĩa của câu để chọn từ phù hợp"],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            },
+            {
+                "id": 10922,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(2)", ""],
+                "optionA": ["prohibit", "cấm (động từ nguyên mẫu)"],
+                "optionB": ["prohibits", "cấm (động từ ở thì hiện tại đơn, ngôi số ít)"],
+                "optionC": ["are prohibited", "bị cấm (bị động)"],
+                "optionD": ["are prohibiting", "cấm (thì hiện tại hoàn thành)"],
+                "answer": [
+                    "C",
+                    "Theo nghĩa của câu, ta biết câu đang ở dạng bị động. Công thức của câu bị động: \"to be + V3/V_ed\"."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            },
+            {
+                "id": 10923,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["(3)", ""],
+                "optionA": ["announce", "thông báo (động từ nguyên mẫu)"],
+                "optionB": ["announces", "thông báo (động từ ở thì hiện tại đơn, ngôi số ít)"],
+                "optionC": ["will announce", "thông báo (thì tương lai)"],
+                "optionD": ["does announce", "thông báo (thì hiện tại- mang nghĩa nhấn mạnh)"],
+                "answer": [
+                    "B",
+                    "Mệnh đề \"until\" không chia tương lai -> loại C. Chủ ngữ \"attendant\" là chủ ngữ số ít -> cần động từ số ít -> loại A. Lựa chọn D cũng khá thích hợp, nhưng nghĩa ở đây ta không cần nhấn mạnh -> chọn B"
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 45
+            }
+        ],
+        "testDuration": 135,
+        "did_wrongly_the_last_time": false
+    }
+]

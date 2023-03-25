@@ -1,0 +1,342 @@
+[
+    {
+        "isMcqGroup": true,
+        "id": 1970,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_3/htewX.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">M: <span class=\"q1900-1\">Excuse me, but could you tell me how to get to City Hall?</span> <span class=\"q1901-1\">I heard it's within walking distance from here.</span><br></span>\n<span class=\"paragraph-sentence\">W: Of course. <span class=\"q1901-2\">Just walk down this road for two blocks, and you will see a big pharmacy at the corner of the intersection.</span> Turn right, and walk another two blocks, and you will see the two big, identical buildings next to the post office. Those are the buildings you are looking for.<br></span>\n<span class=\"paragraph-sentence\">M: Thank you. I think I know where that is. There is a small park across the road from it, isn't there?<br></span>\n<span class=\"paragraph-sentence\">W: Yes, you're right. <span class=\"q1902-1\">And if you walk fast, you could probably get there in 10 minutes.</span></span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">M: Thứ lỗi cho tôi, nhưng bạn có thể nói cho tôi biết làm cách nào để đến tòa thị chính? Tôi nghe nói nó nằm trong khoảng có thể đi bộ từ đây.<br></span>\n<span class=\"paragraph-sentence\">W: Dĩ nhiên. Chỉ cần đi bộ dọc con đường này khoảng hai dãy nhà, và bạn sẽ thấy một tiệm thuốc lớn ở góc ngã tư. Quẹo phải, và đi bộ qua hai dãy nhà nữa, và bạn sẽ thấy hai tòa nhà lớn, giống nhau bên cạnh bưu điện. Đó là tòa nhà mà bạn đang tìm kiếm.<br></span>\n<span class=\"paragraph-sentence\">M: Cảm ơn. Tôi nghĩ tôi biết nó ở đâu. Có một công viên nhỏ xuyên qua con đường ở đó, phải không?<br></span>\n<span class=\"paragraph-sentence\">W: Vâng, bạn đúng rồi đấy. Và nếu bạn đi bộ nhanh, bạn có lẽ có thể đến đấy trong 10 phút.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 19611,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Where does the man want to go?", "Người đàn ông muốn đi đâu?"],
+                "optionA": ["To City Hall.", "Đến tòa thị chính."],
+                "optionB": ["To a park.", "Đến công viên."],
+                "optionC": ["To the post office.", "Đến bưu điện."],
+                "optionD": ["To the pharmacy.", "Đến tiệm thuốc."],
+                "answer": [
+                    "A",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1900-1\">Excuse me, but could you tell me how to get to City Hall? </span>\" -> Chọn A."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 19612,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "How will the man get to his destination?",
+                    "Người đàn ông làm sao để đến đích đến của mình?"
+                ],
+                "optionA": ["By car.", "Bằng xe hơi."],
+                "optionB": ["By bus.", "Bằng xe buýt."],
+                "optionC": ["By bicycle.", "Bằng xe đạp."],
+                "optionD": ["On foot.", "Đi bộ."],
+                "answer": [
+                    "D",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1901-1\">I heard it's within walking distance from here. </span>\" và \"<span class=\"quote quote-q1901-2\">Just walk down this road for two blocks, and you will see a big pharmacy at the corner of the intersection. </span>\" -> Người đàn ông định sẽ đi bộ -> Chọn D."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 19613,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "How long will it take for the man to get to his destination?",
+                    "Sẽ mất bao lâu để người đàn ông đến được đích đến của mình?"
+                ],
+                "optionA": ["Five minutes.", "Năm phút."],
+                "optionB": ["Ten minutes.", "Mười phút."],
+                "optionC": ["Thirty minutes.", "Ba mươi phút."],
+                "optionD": ["Sixty minutes.", "Sáu mươi phút."],
+                "answer": [
+                    "B",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1902-1\">And if you walk fast, you could probably get there in 10 minutes. </span>\" -> Chọn B."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1516,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_3/oNvsC.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">W: Pardon me, have you seen our waiter? <span class=\"q1192-1\">I'd like to order some more water.</span> <br/></span>\n<span class=\"paragraph-sentence\">M: I'm terribly sorry. <span class=\"q1193-1\">I'll see where he has gone.</span> You haven't been waiting long, have you? <br/></span>\n<span class=\"paragraph-sentence\">W: <span class=\"q1194-1\">Only about 5 minutes.</span> But that's okay, you look quite busy this afternoon. <br/></span>\n<span class=\"paragraph-sentence\">M: Yes, we are now at full capacity, so everyone here is busy at the moment.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">W: Xin lỗi, bạn có thấy người phục vụ đâu không? Tôi muốn gọi ít nước lọc. <br/></span>\n<span class=\"paragraph-sentence\">M: Tôi vô cùng xin lỗi. Tôi sẽ đi xem anh ấy ở đâu. Bạn chờ chưa có lâu lắm phải không? <br/></span>\n<span class=\"paragraph-sentence\">W: Mới có 5 phút thôi. Nhưng mà không sao, quán có vẻ khá bận chiều nay mà. <br/></span>\n<span class=\"paragraph-sentence\">M: Vâng, quán chúng tôi chiều này đông khách quá, nên ai cũng bận hết.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 15079,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What would the woman like?", "Người phụ nữ muốn gì?"],
+                "optionA": ["Some water", "Một ít nước lọc"],
+                "optionB": ["Some dessert", "Một ít món tráng miệng"],
+                "optionC": ["Her bill", "Hóa đơn thanh toán tiền"],
+                "optionD": ["A glass of wine", "Một ly rượu"],
+                "answer": [
+                    "A",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q1192-1\">I'd like to order some more water. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 15080,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What does the man offer to do?", "Người đàn ông đề nghị làm gì?"],
+                "optionA": ["To bring her some water", "Mang ít nước cho cô ấy."],
+                "optionB": ["To speak with his manager", "Nói chuyện với người quản lý"],
+                "optionC": ["To get her bill", "Lấy hóa đơn cho cô ấy"],
+                "optionD": ["To find her waiter", "Tìm người phục vụ cho cô ấy"],
+                "answer": [
+                    "D",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q1193-1\">I'll see where he has gone. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 15081,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["How long has the woman been waiting?", "Người phụ nữ đã chờ bao lâu?"],
+                "optionA": ["For 5 minutes", "5 phút"],
+                "optionB": ["For 10 minutes", "10 phút"],
+                "optionC": ["For 15 minutes", "15 phút"],
+                "optionD": ["For 20 minutes", "20 phút"],
+                "answer": [
+                    "A",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q1194-1\">Only about 5 minutes. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 2486,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_3/xRzVT.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">(W-Am): <span class=\"q2392-1\">Hey Alonso, I'm finalizing the schedule for tomorrow's company picnic</span>. The interdepartmental softball game is supposed to start at nine A.M., but it's raining right now.<br></span>\n<span class=\"paragraph-sentence\">(M-Au): Oh, then the ground will probably be too wet to play softball in the morning.<br></span>\n<span class=\"paragraph-sentence\">(W-Am): Well, <span class=\"q2393-1\">we could start the game later in the afternoon, except the president is supposed to make a speech right after the game</span>.<br></span>\n<span class=\"paragraph-sentence\">(M-Au): Right, and I know he has a busy schedule. But... let me call his assistant. And what about the catering order? We should probably still have them bring lunch at noon, right?<br></span>\n<span class=\"paragraph-sentence\">(W-Am): Yes. <span class=\"q2394-1\">I'll contact the caterer to confirm the delivery time for the food</span>.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">(W-Am): Này Alonso, tôi đang hoàn tất lịch trình cho buổi dã ngoại của công ty vào ngày mai. Trận đấu bóng mềm liên ngành dự tính là bắt đầu lúc chín giờ sáng, nhưng trời đang mưa lúc này.<br></span>\n<span class=\"paragraph-sentence\">(M-Au): Ồ, vậy thì mặt đất có lẽ sẽ ướt không thể chơi bóng mềm vào buổi sáng.<br></span>\n<span class=\"paragraph-sentence\">(W-Am): Chà, chúng ta có thể bắt đầu trò chơi vào buổi chiều, ngoại trừ việc giám đốc có dự định phát biểu ngay sau trận đấu.<br></span>\n<span class=\"paragraph-sentence\">(M-Au): Phải, và tôi biết anh ấy có một thời gian biểu bận rộn. Nhưng ... hãy để tôi gọi cho trợ lý của anh ấy. Còn về việc đặt món ăn? Có lẽ chúng ta vẫn nên đặt họ giao món vào buổi trưa phải không?<br></span>\n<span class=\"paragraph-sentence\">(W-Am): Đúng vậy. Tôi sẽ liên hệ với người cung cấp dịch vụ để xác nhận thời gian giao thức ăn.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 21438,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What event is being discussed?", "Sự kiện nào đang được thảo luận?"],
+                "optionA": ["A company picnic.", "Một buổi dã ngoại của công ty."],
+                "optionB": ["A professional conference.", "Một hội nghị chuyên gia."],
+                "optionC": ["A grand opening.", "Một buổi khai trương."],
+                "optionD": ["An investors meeting.", "Một cuộc họp của các nhà đầu tư."],
+                "answer": [
+                    "A",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q2392-1\">Hey Alonso, I'm finalizing the schedule for tomorrow's company picnic</span>\" -> Chọn A."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21439,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What does the man imply when he says, \"let me call his assistant\"?",
+                    "Người đàn ông ngụ ý gì khi anh ta nói, \"hãy để tôi gọi trợ lý của anh ta\"?"
+                ],
+                "optionA": [
+                    "He will volunteer to prepare a speech.",
+                    "Anh ấy sẽ tình nguyện để chuẩn bị một bài phát biểu."
+                ],
+                "optionB": ["He will find a new location.", "Anh ấy sẽ tìm một địa điểm mới."],
+                "optionC": ["He will ask for a schedule change.", "Anh ấy sẽ yêu cầu một sự thay đổi lịch trình."],
+                "optionD": ["He will make a complaint.", "Anh ấy sẽ đệ một đơn khiếu nại."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q2393-1\">we could start the game later in the afternoon, except the president is supposed to make a speech right after the game</span>\" -> Họ có ý định dời trò chơi vào buổi chiều thay vì sáng như đã định và giám đốc dự định phát biểu sau khi trò chơi kết thúc nên cần gọi ông ta để hỏi về việc thay đổi lịch trình\" -> Chọn C."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21440,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What does the woman say she will do?", "Người phụ nữ nói cô ấy sẽ làm gì?"],
+                "optionA": ["Print out a map.", "In ra một bản đồ."],
+                "optionB": ["Confirm a catering order.", "Xác nhận một yêu cầu đặt món ăn."],
+                "optionC": ["Clean some sports equipment.", "Làm sạch một số thiết bị thể thao."],
+                "optionD": ["Mail some invitations.", "Gửi mail một số lời mời."],
+                "answer": [
+                    "B",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q2394-1\">I'll contact the caterer to confirm the delivery time for the food</span>\" -> Chọn B."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 2558,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_3/A9UvP.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">M1: Hi Ruth, hi Greg. Unfortunately, <span class=\"q49-1\">there is going to be a delay on the delivery of your computer equipment</span>. We won't be able to deliver it until tomorrow.<br></span>\n<span class=\"paragraph-sentence\">W: We needed that equipment today. <span class=\"q50-1\">We are going to miss some important deadlines without that equipment</span>.<br></span>\n<span class=\"paragraph-sentence\">M2: If we miss that deadline, we might lose some very important clients. Is there any possible way you can get it to us today?<br></span>\n<span class=\"paragraph-sentence\">M1: I'm sorry it's not possible. We haven't received the equipment at our distribution center yet.<br></span>\n<span class=\"paragraph-sentence\">W: OK. <span class=\"q51-1\">I know another supplier who can guarantee same-day delivery. I'm going to call them</span> and ask if they can supply us with the equipment.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">M1: Chào Ruth, chào Greg. Không may, sẽ có một sự trì hoãn với đơn giao hàng thiết bị máy tính của các bạn. Chúng tôi sẽ không thể giao nó cho đến ngày mai.<br></span>\n<span class=\"paragraph-sentence\">W: Chúng tôi đã cần các thiết bị đó hôm nay. Chúng tôi sẽ bỏ lỡ vài hạn chót quan trọng nếu không có các thiết bị đó.<br></span>\n<span class=\"paragraph-sentence\">M2: Nếu chúng tôi bỏ lỡ hạn chót đó, chúng tôi có thể mất vài khách hàng rất quan trọng. Có cách nào bạn có thể giao nó cho chúng tôi hôm nay không?<br></span>\n<span class=\"paragraph-sentence\">M1: Tôi xin lỗi việc đó không khả thi. Chúng tôi chưa nhận được các thiết bị tại trung tâm phân phối.<br></span>\n<span class=\"paragraph-sentence\">W: OK. Tôi biết một nhà cung cấp khác có thể đảm bảo giao hàng cùng ngày. Tôi sẽ gọi họ và hỏi xem liệu họ có thể cung cấp chúng tôi với các thiết bị.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 21659,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": ["What are the speakers mainly discussing?", "Những người nói đang chủ yếu bàn về gì?"],
+                "optionA": ["The delivery of some furniture", "Việc giao hàng vài nội thất"],
+                "optionB": ["The signing of a rental contract", "Việc ký một hợp đồng cho thuê"],
+                "optionC": ["The drafting of a document", "Việc phác thảo một tài liệu"],
+                "optionD": ["The delivery of computer equipment", "Việc giao hàng các thiết bị máy tính"],
+                "answer": [
+                    "D",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q49-1\">there is going to be a delay on the delivery of your computer equipment</span>\", nên chọn D."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21660,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": ["What problem do the speakers have?", "Những người nói có vấn đề gì?"],
+                "optionA": ["They don't need the equipment.", "Họ không cần các thiết bị."],
+                "optionB": ["They will miss some important deadlines.", "Họ sẽ bỏ lỡ vài hạn chót quan trọng."],
+                "optionC": ["They need to train their new staff.", "Họ cần đào tạo nhân viên mới của mình."],
+                "optionD": ["They haven't found the documents.", "Họ chưa tìm thấy các tài liệu."],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q50-1\">We are going to miss some important deadlines without that equipment</span>\", nên chọn B."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21661,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": ["What does the woman suggest they do?", "Người phụ nữ đề nghị họ làm gì?"],
+                "optionA": ["Accept the late order", "Chấp nhận đơn hàng trễ"],
+                "optionB": ["Cancel the order", "Hủy đơn hàng"],
+                "optionC": ["Call another supplier", "Gọi một nhà cung cấp khác"],
+                "optionD": ["Rent some equipment", "Thuê vài thiết bị"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q51-1\">I know another supplier who can guarantee same-day delivery. I'm going to call them</span>\", nên chọn C."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    }
+]

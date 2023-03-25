@@ -25,7 +25,7 @@ function App() {
     useEffect(() => {
         setTimeout(() => {
             setLoad(false);
-        }, 13000);
+        }, 12000);
     }, []);
     return (
         <div className='App-container' id="App-container">

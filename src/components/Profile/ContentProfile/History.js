@@ -15,11 +15,10 @@ function History() {
             let list = res.DT.data;
 
             let newData = list.map(item => {
-                console.log('item.updatedAt', item);
                 return {
                     total_correct: item.total_correct,
                     total_questions: item.total_questions,
-                    quiz_name: item.quizHistory.name,
+                    quiz_name: item.quizHistory.description,
                     id: item.id,
                     date: moment(item.updatedAt).format('DD/MM/YYYY hh:mm:ss A')
                 };
@@ -34,30 +33,34 @@ function History() {
 
     };
     return (
-        <Table bordered hover>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Quiz Name</th>
-                    <th>Total Question</th>
-                    <th>Total Correct</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                {listHistory.length > 0 && listHistory.map((n, index) => {
-                    return (
-                        <tr key={index}>
-                            <td>{n.id}</td>
-                            <td>{n.quiz_name} </td>
-                            <td>{n.total_questions}</td>
-                            <td>{n.total_correct}</td>
-                            <td>{n.date}</td>
-                        </tr>
-                    );
-                })}
-            </tbody>
-        </Table>
+        <>
+            <Table bordered hover>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Quiz Name</th>
+                        <th>Total Question</th>
+                        <th>Total Correct</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {listHistory.length > 0 && listHistory.map((n, index) => {
+                        return (
+                            <tr key={index}>
+                                <td>{index + 1}</td>
+                                <td>{n.quiz_name} </td>
+                                <td>{n.total_questions}</td>
+                                <td className='color'>{n.total_correct}</td>
+                                <td>{n.date}</td>
+                            </tr>
+                        );
+                    })}
+                </tbody>
+            </Table>
+            <br />
+            <hr />
+        </>
     );
 }
 

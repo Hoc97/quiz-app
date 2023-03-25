@@ -1,0 +1,339 @@
+[
+    {
+        "isMcqGroup": true,
+        "id": 1572,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_3/G8HJ4.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Woman: <span class=\"q1231-1\">I plan to invite a few people for dinner on Thursday</span>.</span>\n<span class=\"paragraph-sentence\">Man: Thursday? What’s wrong with a weekend evening like Friday or Saturday?</span>\n<span class=\"paragraph-sentence\">Woman: People are usually busy then.</span>\n<span class=\"paragraph-sentence\">Man: Who will you invite? People from school?</span>\n<span class=\"paragraph-sentence\">Woman: No, <span class=\"q1232-1\">just some neighbors</span>. <span class=\"q1233-1\">I’m planning for six guests</span>.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Người phụ nữ (W): Tôi định mời một số người đến ăn tối vào thứ 5.</span>\n<span class=\"paragraph-sentence\">Người đàn ông (M): Thứ 5 à? Bộ tối cuối tuần như thứ 6 hay thứ 7 có vấn đề gì sao?</span>\n<span class=\"paragraph-sentence\">Người phụ nữ (W): Lúc đó mọi người thường bận.</span>\n<span class=\"paragraph-sentence\">Người đàn ông (M): Cô tính mời ai? Những người từ trường à?</span>\n<span class=\"paragraph-sentence\">Người phụ nữ (W): Không, chỉ một số hàng xóm thôi. Tôi đang định mời 6 khách.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 15345,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "When does the woman plan to invite people for dinner?",
+                    "Khi nào thì người phụ nữ định mời người đến ăn tối."
+                ],
+                "optionA": ["Tuesday.", "Thứ 3"],
+                "optionB": ["Thursday.", "Thứ 5"],
+                "optionC": ["Friday.", "Thứ 6"],
+                "optionD": ["Saturday.", "Thứ 7"],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q1231-1\">I plan to invite a few people for dinner on Thursday</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 15346,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Who will she invite?", "Cô ấy sẽ mời ai?"],
+                "optionA": ["Business associates.", "Đồng nghiệp"],
+                "optionB": ["School friends.", "Bạn cùng trường"],
+                "optionC": ["Neighbors.", "Hàng xóm"],
+                "optionD": ["Her sisters.", "Các chị em gái"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q1232-1\">just some neighbors</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 15347,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["How many guests does she plan to have?", "Cô ấy định mời bao nhiêu khách?"],
+                "optionA": ["Two.", "Hai"],
+                "optionB": ["Four.", "Bốn"],
+                "optionC": ["Six.", "Sáu"],
+                "optionD": ["Ten.", "Mười"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q1233-1\">I’m planning for six guests</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 2551,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_3/mxwCq.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">W1: Hi, can I please talk to Robert Porter? It's regarding the repairs to the office equipment at Baker & McKenzie. <span class=\"q28-1\"><span class=\"q28-2\">He</span> is the <span class=\"q28-2\">He</span>ad Engineer, right?</span><br></span>\n<span class=\"paragraph-sentence\">W2: <span class=\"q28-3\">Yes</span>. May I ask who is calling?<br></span>\n<span class=\"paragraph-sentence\">W1: This is Susan Sherman. I'm the maintenance manager at Baker & McKenzie. <span class=\"q29-1\">Some of our equipment is missing</span> and I'd like to know where it is, and when we will get it back.<br></span>\n<span class=\"paragraph-sentence\">W2: OK, wait a moment. I will try to put you through to Robert. Please hold the line.<br></span>\n<span class=\"paragraph-sentence\">W1: Thank you.<br></span>\n<span class=\"paragraph-sentence\">M: Hello? Susan?<br></span>\n<span class=\"paragraph-sentence\">W1: Hi Robert, I'm calling in regards to the missing office equipment you repaired at Baker & McKenzie yesterday. Where is it and when will we get it back?<br></span>\n<span class=\"paragraph-sentence\">M: Oh, I left a note with your receptionist. <span class=\"q30-1\">I told her we needed to take it away to our workshop for special repairs</span>. We should have it ready by the end of the week.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">W1: Chào, làm ơn cho tôi nói chuyện với Robert Porter được không? Việc này liên quan đến các đợt sửa chữa thiết bị văn phòng tại Baker & McKenzie. Anh ấy là Kỹ sư trưởng, phải không?<br></span>\n<span class=\"paragraph-sentence\">W2: Vâng. Làm ơn cho tôi biết ai đang gọi được không?<br></span>\n<span class=\"paragraph-sentence\">W1: Đây là Susan Sherman. Tôi là quản lý bảo trì tại Baker & McKenzie. Vài thiết bị của chúng tôi đã mất và tôi muốn biết chúng ở đâu, và khi nào chúng tôi sẽ được trả chúng.<br></span>\n<span class=\"paragraph-sentence\">W2: OK, hãy chờ một lát. Tôi sẽ cố nối máy bạn với Robert. Vui lòng giữ máy.<br></span>\n<span class=\"paragraph-sentence\">W1: Cảm ơn.<br></span>\n<span class=\"paragraph-sentence\">M: Xin chào? Susan?<br></span>\n<span class=\"paragraph-sentence\">W1: Chào Robert, tôi đang gọi về việc các thiết bị văn phòng bị mất mà bạn đã sửa tại Baker & McKenzie hôm qua. Chúng ở đâu và khi nào chúng tôi sẽ được trả chúng?<br></span>\n<span class=\"paragraph-sentence\">M: Ồ, tôi đã để lại một ghi chú cho nhân viên tiếp tân của bạn. Tôi đã bảo cô ấy rằng chúng tôi đã cần đưa chúng đến xưởng làm việc của chúng tôi để sửa chữa đặc biệt. Chúng tôi sẽ có chúng sẵn sàng trước cuối tuần.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 21638,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": ["What is Robert Porter's position?", "Robert Porter có vị trí gì?"],
+                "optionA": ["Lead Repairer", "Trưởng Sửa chữa"],
+                "optionB": ["Head Engineer", "Kỹ sư Trưởng"],
+                "optionC": ["Main Engineer", "Kỹ sư Chính"],
+                "optionD": ["Main Repairer", "Sửa chữa Chính"],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q28-1\"><span class=\"quote quote-q28-2\">He</span> is the <span class=\"quote quote-q28-2\">He</span>ad Engineer, right? </span>\", với \"<span class=\"quote quote-q28-2\">He</span>\" ám chỉ Robert Porter.<br/>Sau đó cũng có câu trả lời \"<span class=\"quote quote-q28-3\">Yes</span>\", nên chọn B."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21639,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": ["What problem does Susan Sherman describe?", "Susan Sherman nói về vấn đề gì?"],
+                "optionA": ["Some of the measurements weren't done.", "Vài việc đo lường đã chưa được hoàn thành."],
+                "optionB": ["All of their equipment is missing.", "Tất cả thiết bị của họ bị mất."],
+                "optionC": ["Some of their equipment is missing.", "Vài thiết bị của họ bị mất."],
+                "optionD": [
+                    "A piece of equipment is still in the office.",
+                    "Một thiết bị của họ vẫn còn trong văn phòng."
+                ],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q29-1\">Some of our equipment is missing</span>\", nên chọn C."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 21640,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": ["Why did Robert take the equipment away?", "Vì sao Robert đã lấy các thiết bị đi?"],
+                "optionA": ["To review it further", "Để xem xét nó kỹ hơn"],
+                "optionB": ["For special repairs", "Để sửa chữa đặc biệt"],
+                "optionC": ["For replacement", "Để thay thế"],
+                "optionD": ["To evaluate its condition", "Để đánh giá tình trạng của nó"],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q30-1\">I told her we needed to take it away to our workshop for special repairs</span>\", nên chọn B."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1190,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_3/lt3YX.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">W: I don't have any money. <span class=\"q958-1\">I forgot to bring my wallet.</span> <br/></span>\n<span class=\"paragraph-sentence\">M: Don't worry. I'll lend you some. <span class=\"q959-1\">Is $50 enough?</span> <br/></span>\n<span class=\"paragraph-sentence\">W: Thanks, <span class=\"q960-1\">I'll pay you back tomorrow.</span></span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">W: Tôi không có tiền. Tôi quên mang ví rồi. <br/></span>\n<span class=\"paragraph-sentence\">M: Đừng lo. Tôi sẽ cho cô mượn một ít. 50 đô đủ không? <br/></span>\n<span class=\"paragraph-sentence\">W: Cảm ơn. Tôi sẽ trả lại anh ngày mai.</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 13127,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Why doesn't the woman have any money?", "Tại sao người phụ nữ không có tiền?"],
+                "optionA": ["She has a lot of debts.", "Cô ấy có rất nhiều khoản nợ."],
+                "optionB": ["Her wallet was stolen.", "Ví cô ấy bị mất cắp."],
+                "optionC": ["She forgot her wallet.", "Cô ấy quên mang ví."],
+                "optionD": ["She lost her wallet on the bus.", "Cô ấy làm mất ví trên xe buýt."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q958-1\">I forgot to bring my wallet. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 13128,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["How much money will the man lend her?", "Người đàn ông sẽ cho cô mượn bao nhiêu tiền?"],
+                "optionA": ["None. She should be more careful.", "Không. Cô ấy nên cẩn thận hơn."],
+                "optionB": ["As much as she wants.", "Tất cả cô ấy muốn."],
+                "optionC": ["$50", "50 đô"],
+                "optionD": ["$500", "500 đô"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q959-1\">Is $50 enough? </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 13129,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": ["When will the woman pay him back?", "Khi nào người phụ nữ sẽ trả lại cho anh ấy?"],
+                "optionA": ["Never", "Không bao giờ"],
+                "optionB": ["On pay day", "Vào ngày nhận lương"],
+                "optionC": ["Tomorrow", "Ngày mai"],
+                "optionD": ["In a week", "Sau một tuần"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q960-1\">I'll pay you back tomorrow. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1941,
+        "audio": "/static/ToeicTests/audios/Practice_Tests/Part_3/YrXAg.mp3",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">W: A quick overview of your dental records shows that there is cause for concern. <span class=\"q1813-1\">You need to make more regular dental appointments if you want to have a healthy mouth.</span><br></span>\n<span class=\"paragraph-sentence\">M: I don't care about cavities. <span class=\"q1814-1\">I just want you to restore the shine to my teeth.</span><br></span>\n<span class=\"paragraph-sentence\">W: Then I encourage you to kick the habits of smoking and drinking coffee. They both dull the teeth. We can also schedule an appointment for a special cleaning to whiten your teeth.<br></span>\n<span class=\"paragraph-sentence\">M: That's a good idea. I'd like to do it as soon as possible. <span class=\"q1815-1\">Can we do it next week?</span></span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">W: Một cái nhìn tổng quan về bệnh án răng của bạn cho thấy có nguyên nhân để lo lắng. Bạn cần phải sắp xếp nhiều buổi khám răng thường xuyên hơn nếu bạn muốn có một vùng miệng khỏe mạnh.<br></span>\n<span class=\"paragraph-sentence\">M: Tôi không quan tâm về sâu răng. Tôi chỉ muốn bạn khôi phục lại sự sáng bóng cho răng tôi.<br></span>\n<span class=\"paragraph-sentence\">W: Vậy thì tôi khuyến khích bạn bỏ thói quen hút thuốc và uống cà phê. Chúng đều gây mòn răng. Chúng ta cũng có thể lên lịch khám cho một đợt làm sạch đặc biệt để làm trắng răng bạn.<br></span>\n<span class=\"paragraph-sentence\">M: Đó là một ý tưởng hay. Tôi muốn làm nó càng sớm càng tốt. Chúng ta có thể làm nó trong tuần sau không?</span></p>"
+            ],
+            ["", ""]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 19524,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What does the dentist recommend that the patient do?",
+                    "Người nha sĩ đã gợi ý cho người bệnh nhân làm gì?"
+                ],
+                "optionA": ["Visit her office more regularly.", "Ghé qua văn phòng của cô ấy thường xuyên hơn."],
+                "optionB": ["Shop at a certain store.", "Mua tại một cửa tiệm cụ thể."],
+                "optionC": ["Review his records.", "Xem lại bệnh án của anh ấy."],
+                "optionD": ["Talk about his concerns.", "Nói về những mối lo của anh ấy."],
+                "answer": [
+                    "A",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1813-1\">You need to make more regular dental appointments if you want to have a healthy mouth. </span>\" -> Người đàn ông cần phải có nhiều buổi khám răng thường xuyên hơn -> Chọn A."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 19525,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["What does the patient want?", "Người bệnh nhân muốn gì?"],
+                "optionA": ["Shinier teeth.", "Răng sáng bóng hơn."],
+                "optionB": ["A cup of coffee.", "Một tách cà phê."],
+                "optionC": ["A copy of his records.", "Một bản phô-tô bệnh án của anh ấy."],
+                "optionD": ["Fillings in his cavities.", "Lấp vào chỗ sâu răng của anh ấy."],
+                "answer": [
+                    "A",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1814-1\">I just want you to restore the shine to my teeth. </span>\" -> Chọn A."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            },
+            {
+                "id": 19526,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["When does the patient want an appointment?", "Người bệnh nhân muốn cuộc gặp khi nào?"],
+                "optionA": ["This afternoon.", "Chiều nay."],
+                "optionB": ["Tonight.", "Tối nay."],
+                "optionC": ["Next week.", "Tuần sau."],
+                "optionD": ["Next month.", "Tháng sau."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý trong câu \"<span class=\"quote quote-q1815-1\">Can we do it next week? </span>\" -> Chọn C."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 27
+            }
+        ],
+        "testDuration": 81,
+        "did_wrongly_the_last_time": false
+    }
+]

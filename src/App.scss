@@ -41,6 +41,10 @@ polyline {
     stroke: currentColor;
 }
 
+.Toastify__toast-container {
+    top: 4rem !important;
+}
+
 // //Scrollbar CSS
 html *::-webkit-scrollbar {
     border-radius: 0;

@@ -1,0 +1,113 @@
+.question-container {
+    padding: 15px;
+
+    .question-title {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .question-add {
+        .q-main {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+            .form-label {
+                margin: 0;
+            }
+
+            .question-content {
+                .description {
+                    padding-right: 0px;
+                }
+
+                .question-upload-image {
+                    display: flex;
+                    align-items: center;
+
+                    .upload-image {
+                        display: flex;
+                        align-items: center;
+
+                        .btn-upload {
+                            font-size: 30px;
+                            line-height: 30px;
+                            color: #9068ff;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: #0004ff;
+                            }
+                        }
+
+                        .file-upload {
+                            width: 170px;
+                            margin-top: 1px;
+                            margin-left: 5px;
+
+                            .preview-image {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .btn-add {
+                        padding: 15px;
+
+                        .icon-add {
+                            font-size: 30px;
+                            color: #009400;
+                            cursor: pointer;
+                        }
+
+                        .icon-remove {
+                            margin-left: 10px;
+                            font-size: 30px;
+                            color: #f73f3f;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .answers-content {
+                display: flex;
+                gap: 10px;
+                padding-left: 20px;
+                padding-top: 10px;
+                align-items: center;
+
+                .iscorrect {
+                    font-size: 20px;
+                }
+
+                .description {
+                    width: 60%;
+                }
+
+                .btn-add {
+                    padding: 15px;
+
+                    .icon-add {
+                        font-size: 30px;
+                        color: #1b90ff;
+                        cursor: pointer;
+                    }
+
+                    .icon-remove {
+                        margin-left: 10px;
+                        font-size: 30px;
+                        color: #f37c17;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Toastify__toast-container {
+    width: 370px;
+
+}

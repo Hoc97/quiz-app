@@ -30,13 +30,19 @@ function DetailQuiz() {
                 // `key` is group's name (id), `answers` is the array of objects
                 .map((value, key) => {
                     let answers = [];
-                    let questionDescription, image;
+                    let questionDescription, image, audio;
                     value.forEach((item, index) => {
                         if (index === 0) {
-                            questionDescription = item.description;
+                            if (item.description.indexOf(';audio,') > -1) {
+                                audio = item.description.slice(item.description.indexOf(';audio,') + 7);
+                                questionDescription = item.description.slice(0, item.description.indexOf(';audio,'));
+                            } else {
+                                audio = '';
+                                questionDescription = item.description;
+                            }
+
                             image = item.image;
                         }
-
                         item.answers.isSelected = false;
                         answers.push(item.answers);
                     });
@@ -46,7 +52,8 @@ function DetailQuiz() {
                         questionID: key,
                         answers,
                         questionDescription,
-                        image
+                        image,
+                        audio
                     };
                 })
                 .value();

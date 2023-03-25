@@ -1,0 +1,546 @@
+[
+    {
+        "isMcqGroup": true,
+        "id": 1597,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"text-align: center;\"><span class=\"paragraph-sentence\"><strong>HELP WANTED</strong></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Giorgio's World Famous Pizza House is now hiring people for the following positions:</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><p  style=\"\"><table style=\"border: 0px\">\n<ul>\n\t<li><span class=\"q303-1\"><span class=\"q305-1\">Cook (Two openings — experience required)</span></span></li>\n\t<li>Waiter (Four openings — experience preferred)</li>\n\t<li>Cashier (One opening — willing to train the right high school graduate)</li>\n\t<li>Dishwasher (One opening — must be physically fit)</li>\n</ul></table></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><span class=\"q307-3\">Giorgio's offers good salaries and a very nice benefits package</span>.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">To apply, please bring your resume to the restaurant and ask to speak to the manager, Ms. Elissa Haggio.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"text-align: center;\"><span class=\"paragraph-sentence\"><strong>CẦN PHỤ VIỆC</strong></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Giorgio's World Famous Pizza House hiện đang tuyển dụng cho những vị trí sau:</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><table style=\"border: 0px\">\n<ul>\n\t<li>Đầu bếp (2 vị trí — yêu cầu có kinh nghiệm)</li>\n\t<li>Phục vụ (4 vị trí — ưu tiên có kinh nghiệm)</li>\n\t<li>Thu ngân (1 vị trí — sẵn sàng đào tạo người đã tốt nghiệp phổ thông phù hợp)</li>\n\t<li>Rửa chén (1 vị trí — phải có thể lực)</li>\n</ul></table></p></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Giorgio's cung cấp mức lương tốt và phụ cấp rất tốt.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Để ứng tuyển, vui lòng mang lí lịch đến nhà hàng và hỏi gặp quản lí, cô Elissa Haggio.</span></p>"
+            ],
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Dear Ms. Haggio,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">I am very interested in your job advertisement. <span class=\"q306-1\">I am a cook with over ten year's experience</span>. <span class=\"q307-2\">I worked at Sandro's Spaghetti House for three years</span>. I then worked at Pizza Amore for seven years. <span class=\"q307-1\">I am a very hardworking person and would like to work at Giorgio's</span>. I often visit your restaurant and am always impressed by the food there.<br /></span>\n<span class=\"paragraph-sentence\">I hope to hear from you.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Sincerely,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Mike Di Beni</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Kính gửi Cô Haggio,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Tôi rất hứng thú với quảng cáo việc làm của chị. Tôi là một đầu bếp với hơn 10 năm kinh nghiệm. Tôi đã làm việc tại Sandro's Spaghetti House trong 3 năm. Sau đó tôi làm việc tại Pizza Amore trong 7 năm. Tôi là một người làm việc chăm chỉ và mong muốn làm việc tại Giorgio's. Tôi thường đến nhà hàng của chị và luôn ấn tượng với thức ăn ở đấy.<br /></span>\n<span class=\"paragraph-sentence\">Hi vọng nhận được hồi âm từ chị.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Trân trọng,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Mike Di Beni</span></p>"
+            ]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 15432,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": ["Who is this advertisement for?", "Quảng cáo này dành cho ai?"],
+                "optionA": ["People who like Italian food", "Những người thích thức ăn Ý"],
+                "optionB": ["People named Giorgio", "Những người tên là Giorgio"],
+                "optionC": ["People who have worked in restaurants before", "Những người đã từng làm việc ở nhà hàng."],
+                "optionD": [
+                    "People who have never worked in restaurants before",
+                    "Những người chưa bao giờ làm việc ở nhà hàng."
+                ],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong vị trí tuyển dụng <span class=\"quote quote-q303-1\">Cook (Two openings — experience required)</span>, \"Dishwasher (One opening — must be physically fit)\", \"Waiter (Four openings — experience preferred)\". Đây đều là các vị trí dành cho người đã làm việc trong nhà hàng.<br/>\r\nĐoạn văn số 1 không nhắc gì về việc nhân viên cần phải thích thức ăn Ý cả, nên đáp án A không chính xác, đặc biệt là khi so với các đáp án còn lại.<br/>\r\nĐáp án B cũng không đúng vì không nhắc gì đến Giorgio nào cả.<br/>\r\nCòn lại C và D. Do bản thân nơi làm việc là một nhà hàng và vài công việc quảng cáo cũng yêu cầu kinh nghiệm, chọn đáp án C nói rằng quảng cáo hướng tới những người đã từng làm ở nhà hàng hợp lý hơn là tới những người chưa bao giờ làm ở nhà hàng."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 15433,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "How many people does the restaurant want to hire?",
+                    "Nhà hàng muốn tuyển bao nhiêu người?"
+                ],
+                "optionA": ["Four", "4"],
+                "optionB": ["Six", "6"],
+                "optionC": ["Eight", "8"],
+                "optionD": ["Ten", "10"],
+                "answer": ["C", "Ta cộng tất cả các vị trí lại thì có tổng cộng 2 + 4 + 1 + 1 = 8 người."],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 15434,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["For which position is the restaurant not hiring?", "Nhà hàng không tuyển vị trí nào?"],
+                "optionA": ["Manager", "Quản lí"],
+                "optionB": ["Cook", "Đầu bếp"],
+                "optionC": ["Dishwasher", "Rửa chén"],
+                "optionD": ["Waiter", "Phục vụ"],
+                "answer": [
+                    "A",
+                    "Ta thấy ý B trong câu <span class=\"quote quote-q305-1\">Cook (Two openings — experience required)</span>.<br/><br /> Ta thấy ý C trong câu \"Dishwasher (One opening — must be physically fit)\".<br/><br /> Ta thấy ý D trong câu \"Waiter (Four openings — experience preferred)\".<br/><br /> Không thấy nhắc gì đến đáp án A."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 15435,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "How long has Mike Di Beni worked as a cook?",
+                    "Mike Di Beni đã làm việc đầu bếp được bao lâu?"
+                ],
+                "optionA": ["Three years", "3 năm"],
+                "optionB": ["Seven years", "7 năm"],
+                "optionC": ["Ten years", "10 năm"],
+                "optionD": ["One week", "1 tuần"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q306-1\">I am a cook with over ten year's experience</span>\"."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 15436,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Which of the following is NOT true?", "Điều nào sau đây KHÔNG đúng?"],
+                "optionA": [
+                    "Mike Di Beni wants to work at Giorgio's Pizza House.",
+                    "Mike Di Beni muốn làm việc ở Giorgio's Pizza House."
+                ],
+                "optionB": [
+                    "Mike used to work at Sandro's Spaghetti House.",
+                    "Mike từng làm việc tại Sandro's Spaghetti House."
+                ],
+                "optionC": [
+                    "Mike wants to be manager at Giorgio's Pizza House.",
+                    "Mike muốn trở thành quản lí tại Giorgio's Pizza House."
+                ],
+                "optionD": ["Pay is good at Giorgio's Pizza House.", "Lương ở Giorgio's Pizza House tốt."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý A trong câu \"<span class=\"quote quote-q307-1\">I am a very hardworking person and would like to work at Giorgio's</span>\".<br/><br /> Ta thấy ý B trong câu \"<span class=\"quote quote-q307-2\">I worked at Sandro's Spaghetti House for three years</span>\".<br/><br /> Ta thấy ý D trong câu \"<span class=\"quote quote-q307-3\">Giorgio's offers good salaries and a very nice benefits package</span>\".<br/><br /> Không thấy nhắc gì đến đáp án C."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 382,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1655,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><strong>Asia Pacific Weather: Five-Day Forecast January 7th-11th</strong></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><p  style=\"\"><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\">\r\n        <tbody>\r\n                <tr>\r\n                      <td><span class=\"q309-1\">Beijing</span></td>\r\n\t\t      <td><span class=\"q309-2\">-4ºC</span>, cloudy, with some snow</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                        <td>Tokyo</td>\r\n\t\t\t<td>0ºC, sunny, with some clouds in the evening</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                        <td>Hong Kong</td>\r\n\t\t\t<td>14ºC, cloudy, with sunshine in the morning</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                       \t<td>Seoul</td>\r\n\t\t\t<td>3ºC, sunny, some light rain in the afternoon</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                        <td><span class=\"q308-1\">Singapore</span></td>\r\n\t\t\t<td><span class=\"q308-2\">27ºC</span>, windy and rainy, with some lightning</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                        <td><span class=\"q310-2\">Jakarta</span></td>\r\n\t\t\t<td>26ºC, <span class=\"q310-1\">heavy rain,</span> some lightning at night</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                        <td>Sydney</td>\r\n\t\t\t<td>19ºC, windy and cloudy all day</td>\r\n\t\t</tr>\r\n        </tbody>\r\n</table></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Thời tiết khu vực Châu Á Thái Bình Dương: Dự báo thời tiết cho năm ngày từ 7 đến 11 tháng Giêng</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\">\r\n        <tbody>\r\n\t\t<tr>\r\n                      <td>Beijing</td>\r\n\t\t      <td style=\"min-width: 300px\">âm 4ºC, nhiều mây, có tuyết rơi</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                        <td>Tokyo</td>\r\n\t\t\t<td>0ºC, trời nắng, có mây vào buổi tối</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                        <td>Hong Kong</td>\r\n\t\t\t<td>14ºC, nhiều mây, có nắng vào buổi sáng</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                       \t<td>Seoul</td>\r\n\t\t\t<td>3ºC, trời nắng, có mưa nhỏ vào buổi chiều</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                        <td>Singapore</td>\r\n\t\t\t<td>27ºC, có gió và mưa, có chớp</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                        <td>Jakarta</td>\r\n\t\t\t<td>26ºC, mưa to, có chớp vào buổi tối</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n                        <td>Sydney</td>\r\n\t\t\t<td>19ºC, có gió và trời nhiều mây cả ngày</td>\r\n\t\t</tr>\r\n        </tbody>\r\n</table></p></p>"
+            ],
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">To: Alice Souza <aasouza@netmail.co> <br/></span>\n<span class=\"paragraph-sentence\">From: MJames@mailhouse.com <br/></span>\n<span class=\"paragraph-sentence\">Subject: Forecast <br/></span>\n<span class=\"paragraph-sentence\">Date: January 7th</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Dear Ms. Souza,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Here is the weather forecast that you asked for. Your trip starts in Beijing. It will be very cold there, so bring lots of warm clothes. On January 10th, you will go to Singapore. It will be hot, so you need light clothes. I think you should also pack an umbrella. <br/></span>\n<span class=\"paragraph-sentence\"><span class=\"q311-1\">Have a good trip,</span> and don't hesitate to call me if you have any questions.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Sincerely, <br/></span>\n<span class=\"paragraph-sentence\">Marilyn James</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Đến: Alice Souza <aasouza@netmail.co><br/></span>\n<span class=\"paragraph-sentence\">Từ: MJames@mailhouse.com<br/></span>\n<span class=\"paragraph-sentence\">Chủ đề: Dự báo thời tiết<br/></span>\n<span class=\"paragraph-sentence\">Ngày: 7 tháng Giêng</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Cô Souza thân mến,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Đây là bản dự báo thời tiết cô yêu cầu. Chuyến đi của cô bắt đầu ở Bắc Kinh. Thời tiết ở đó sẽ rất lạnh vì thế hãy mang theo nhiều quần áo ấm. Vào ngày 10 tháng Giêng, cô sẽ đến Singapore. Thời tiết sẽ nóng nên cô cần quần áo gọn nhẹ. Tôi nghĩ cô cũng nên mang theo dù. <br/></span>\n<span class=\"paragraph-sentence\">Chúc một chuyến đi vui vẻ và đừng ngần ngại gọi cho tôi nếu cô có câu hỏi nào.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Trân trọng,<br/></span>\n<span class=\"paragraph-sentence\">Marilyn James</span></p>"
+            ]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 17241,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Which city has the highest temperature?", "Thành phố nào có nhiệt độ cao nhất?"],
+                "optionA": ["Beijing", "Bắc Kinh"],
+                "optionB": ["Seoul", "Seoul"],
+                "optionC": ["Singapore", "Singapore"],
+                "optionD": ["Sydney", "Sydney"],
+                "answer": [
+                    "C",
+                    "Ta thấy nhiệt độ ở \"<span class=\"quote quote-q308-1\">Singapore</span>\" là \"<span class=\"quote quote-q308-2\">27ºC</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17242,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Which city has the lowest temperature?", "Thành phố nào có nhiệt độ thấp nhất?"],
+                "optionA": ["Beijing", "Bắc Kinh"],
+                "optionB": ["Seoul", "Seoul"],
+                "optionC": ["Singapore", "Sigapore"],
+                "optionD": ["Sydney", "Sydney"],
+                "answer": [
+                    "A",
+                    "Ta thấy nhiệt độ ở \"<span class=\"quote quote-q309-1\">Beijing</span>\" là \"<span class=\"quote quote-q309-2\">-4ºC</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17243,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Which city will have the most rain?", "Thành phố nào có mưa nhiều nhất?"],
+                "optionA": ["Hong Kong", "Hồng Kông"],
+                "optionB": ["Tokyo", "Tokyo"],
+                "optionC": ["Jakarta", "Jakarta"],
+                "optionD": ["Singapore", "Singapore"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong cụm \"<span class=\"quote quote-q310-1\">heavy rain,</span>\" ở \"<span class=\"quote quote-q310-2\">Jakarta</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 17244,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "Why did Alice Souza want to know the weather forecast?",
+                    "Tại sao Alice Souza muốn biết dự báo thời tiết?"
+                ],
+                "optionA": ["Because it is her hobby", "Vì đó là sở thích của cô ấy"],
+                "optionB": ["Because she is taking a trip", "Vì cô ấy sắp có một chuyến đi"],
+                "optionC": ["Because she wants to buy new clothes", "Vì cô ấy muốn mua quần áo mới"],
+                "optionD": ["Because she doesn't like rain", "Vì cô ấy không thích mưa"],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q311-1\">Have a good trip,</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 306,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1261,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Three-Day Forecast</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Friday March 22: Residents should carry their umbrellas because there is an 85 percent chance of heavy rain. Morning temperatures will be in the low 70's and are expected to drop to around 65 in the mid-afternoon.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Saturday March 23: If you're planning any outdoor activities, then this is the day to schedule them. Thanks to a warm westerly wind, <span class=\"q88-1\">temperatures are forecasted to be in the high 80's, about five degrees warmer than we might usually expect</span> at this time of the year. Remember to wear sunscreen and drink lots of water.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Sunday March 24: Make sure you enjoy the sunshine on Saturday, because on Sunday temperatures will drop to the low 60's . There will be some sun in the morning, but the afternoon will be mostly cloudy.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Dự báo cho ba ngày sắp tới</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Thứ Sáu, 22 tháng 3: Người dân nên mang theo dù vì 85% khả năng  là sẽ có mưa to. Nhiệt độ buổi sáng sẽ là 70 độ F và sẽ giảm xuống còn khoảng 65 độ F vào giữa trưa.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Thứ Bảy, ngày 23 tháng 3: Nếu bạn đang lên  kế hoạch tổ chức các hoạt động ngoài trời, vậy thì đây sẽ là thời gian thích hợp. Nhờ có gió tây ấm áp, nhiệt độ được dự báo sẽ cao khoảng 80 độ F, ấm hơn nhiệt độ chúng ta thường mong đợi vào thời gian này trong năm khoảng 5 độ. Hãy nhớ sử dụng kem chống nắng và uống nhiều nước.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Chủ Nhật, ngày 24 tháng 3: Hãy chắc rằng bạn đã tận hưởng được ánh nắng của ngày thứ Bảy, vì vào Chủ Nhật, nhiệt độ sẽ giảm xuống còn 60 độ F. Sẽ có chút nắng vào buổi sáng, nhưng  buổi trưa hầu hết sẽ có mây.</span></p>"
+            ],
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">From: Belinda Pushkin <br/></span>\n<span class=\"paragraph-sentence\">To: All sales staff <br/></span>\n<span class=\"paragraph-sentence\">Subject: Company Picnic</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Hello, I just wanted to let everyone know that the Tollins company picnic has been cancelled because <span class=\"q89-1\">there is a chance of rain on the day we originally chose</span>. As you know, we wanted to have the picnic outdoors so that employees could participate in a variety of team-building exercises. <br/></span>\n<span class=\"paragraph-sentence\">We asked the Humble Country Club if we could hold the lunch in their Club House instead, but <span class=\"q90-1\">unfortunately they told us that Plymouth Autos will be holding a special banquet to celebrate their 25th anniversary there</span>. <br/></span>\n<span class=\"paragraph-sentence\"><span class=\"q92-1\">Attached to this email is an Employee Preference Form.</span> I am asking all employees to list their preferred date for the rescheduled company picnic. I sincerely hope that we can accommodate everyone's schedule. Please fill out the form and email it to me by Thursday, March 2st, at 3p.m.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Regards,<br/></span>\n<span class=\"paragraph-sentence\">Belinda Pushkin <br/></span>\n<span class=\"paragraph-sentence\">Human Resources</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Từ: Belinda Pushkin<br/></span>\n<span class=\"paragraph-sentence\">Đến: Tất cả nhân viên kinh doanh<br/></span>\n<span class=\"paragraph-sentence\">Chủ đề: Buổi dã ngoại của công ty</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Xin chào, tôi chỉ muốn báo cho  mọi người biết rằng buổi dã ngoại của công ty Tollins đã bị hủy vì có khả năng sẽ có mưa vào ngày chúng ta đã chọn ban đầu. Như các bạn biết, chúng tôi muốn tổ chức buổi dã ngoại ngoài trời để mọi người có thể tham gia vào nhiều hoạt động xây dựng tinh thần đội nhóm khác nhau.<br/></span>\n<span class=\"paragraph-sentence\">Chúng tôi đã hỏi Câu lạc bộ Humble Country xem liệu chúng ta có thể tổ chức ăn trưa ở nhà hàng câu lạc bộ của họ không, nhưng không may họ nói rằng công ty Plymouth Autos sẽ tổ  chức một buổi tiệc đặt biệt ở đó để mừng ngày kỷ niệm 25 năm của họ.<br/></span>\n<span class=\"paragraph-sentence\">Đính kèm cùng với email này là Đơn Ý kiến của Nhân viên. Tôi muốn tất cả nhân viên liệt kê ra ngày mà họ thích cho buổi dã  ngoại của công ty. Tôi thật sự hy vọng rằng chúng tôi có thể đáp ứng được thời gian biểu của mọi người. Xin vui lòng điền vào tờ đơn và gửi nó cho tôi qua email  trước thứ Năm, ngày 2 tháng 3, lúc 3 giờ.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Trân trọng,<br/></span>\n<span class=\"paragraph-sentence\">Belinda Pushkin<br/></span>\n<span class=\"paragraph-sentence\">Phòng Nhân sự</span></p>"
+            ]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 13664,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "According to the weather forecast, what is unusual about Saturday's weather?",
+                    "Theo dự báo thời tiết, thời tiết ngày thứ Bảy có gì bất thường?"
+                ],
+                "optionA": ["Low humidity", "Độ ẩm thấp"],
+                "optionB": ["Strong winds", "Gió mạnh"],
+                "optionC": ["High temperatures", "Nhiệt độ cao"],
+                "optionD": ["No rain", "Không có mưa"],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q88-1\">temperatures are forecasted to be in the high 80's, about five degrees warmer than we might usually expect</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 13665,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "When was the picnic originally scheduled?",
+                    "Buổi dã ngoại ban đầu được lên lịch khi nào?"
+                ],
+                "optionA": ["March 21st", "Ngày 21 tháng 3"],
+                "optionB": ["March 22nd", "Ngày 22 tháng 3"],
+                "optionC": ["March 23rd", "Ngày 23 tháng 3"],
+                "optionD": ["March 24th", "Ngày 24 tháng 3"],
+                "answer": [
+                    "B",
+                    "Câu đầu tiên trong email cho ta biết ngày ban đầu được chọn để tổ chức dã ngoại là ngày sẽ có mưa \"<span class=\"quote quote-q89-1\">there is a chance of rain on the day we originally chose</span>\".<br/>Đối chiếu với dự báo thời tiết ở trên, ta biết ngày có mưa là ngày thứ Sáu, 22 tháng 3 -> ngày dã ngoại ban đầu được chọn là ngày 22 tháng 3."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 13666,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "Why can't the event be held in the Club House?",
+                    "Tại sao sự kiện này không thể tổ chức ở Club House?"
+                ],
+                "optionA": ["It is closed for renovations.", "Nó được đóng cửa để sửa chữa."],
+                "optionB": ["It must be reserved in advance.", "Nó phải được đặt trước."],
+                "optionC": ["It can't accommodate all employees.", "Nó không thể chứa hết tất cả nhân  viên."],
+                "optionD": ["It is being used by another group.", "Nó được sử dụng bởi một nhóm khác."],
+                "answer": [
+                    "D",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q90-1\">unfortunately they told us that Plymouth Autos will be holding a special banquet to celebrate their 25th anniversary there</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 13667,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What can be inferred about Plymouth Autos from the email?",
+                    "Có thể suy ra điều gì về Plymouth Autos từ email này?"
+                ],
+                "optionA": ["It will host an event on Marh 21st.", "Nó sẽ tổ chức một sự kiện vào ngày 21 tháng 3."],
+                "optionB": ["It is celebrating an employee's achievements.", "Nó ăn mừng thành tựu của một nhân viên."],
+                "optionC": ["It has been in business more than twenty years.", "Nó đã kinh doanh được hơn 20 năm."],
+                "optionD": ["It is located next to Humble Country Club.", "Nó nằm gần Câu lạc bộ Humble Country."],
+                "answer": [
+                    "C",
+                    "Ta thấy ý này trong câu \"Plymouth Autos will be holding a special banquet to celebrate their 25th anniversary. \" Kỷ niệm 25 năm -> đã kinh doanh được hơn 20 năm."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 13668,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What did Belinda Pushkin add to her email?",
+                    "Belinda Pushkin thêm gì vào email của cô ấy?"
+                ],
+                "optionA": ["The email addresses of all employees", "Địa chỉ email của tất cả các nhân viên"],
+                "optionB": ["The Employee Preference Form", "Đơn Ý kiến của Nhân viên"],
+                "optionC": ["The list of famous restaurants", "Danh sách những nhà hàng nổi tiếng"],
+                "optionD": ["The menu for the luncheon", "Thực đơn bữa trưa"],
+                "answer": [
+                    "B",
+                    "Ta thấy ý này trong câu \"<span class=\"quote quote-q92-1\">Attached to this email is an Employee Preference Form. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 382,
+        "did_wrongly_the_last_time": false
+    },
+    {
+        "isMcqGroup": true,
+        "id": 1096,
+        "audio": "",
+        "image": "",
+        "video_exp_url": "",
+        "reading_texts": [
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><strong>To: registration@fcc.ac.us </strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>From: Sallyday@tinynet.come</strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>Subject: Free courses</strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>Date: August 3 2006</strong></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Dear Sir,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">I work in the Foothills Community College canteen, and I recently heard about free courses offered by the college. Is it true that all full-time staff can apply for these courses? <span class=\"q67-1\">I have been working here since the middle of June</span>, and I am very interested in studying. <span class=\"q66-1\">Please send me further information about these course and the application process.</span></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Thank you for your assistance.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Sally Day</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><strong>Đến: registration@fcc.ac.us </strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>Từ: Sallyday@tinynet.come </strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>Chủ đề: Những khóa học miễn phí </strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>Ngày: 3 tháng 8 năm 2006</strong></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Thưa ông,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Tôi làm việc trong căn-tin của trường cao đẳng cộng đồng Foothills, và gần đây tôi có nghe nói về những khóa học miễn phí do trường cung cấp. Có đúng là tất cả các nhân viên toàn thời gian đều có thể nộp đơn học những khóa này? Tôi đã làm việc ở đây từ giữa tháng 6, và tôi rất hứng thú với việc học. Xin vui lòng gửi cho tôi thông tin thêm về những khóa học này và quy trình nộp đơn.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Cảm ơn sự giúp đỡ của ông.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Sally Day</span></p>"
+            ],
+            [
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><strong>To: Sallyday@tinynet.com</strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>From: registration@fcc.ac.us</strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>Subject: Re: free courses</strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>Date: August 4 2006</strong></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Dear Sally,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Here is our free course online information brochure: <br/></span>\n<span class=\"paragraph-sentence\">Foothills Community College is now pleased to <span class=\"q67-2\">offer free college courses to all of its full-time staff and faculty</span>. Funding for these courses has been provided by the State of Oregon and is available to all full-time staff and faculty who have been working at the college for at least three months. To register for classes:</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">1. Obtain a class request from the department secretary. <br/></span>\n<span class=\"paragraph-sentence\">2. Make sure your classes do not interfere with your normal work schedule.<br/></span>\n<span class=\"paragraph-sentence\">3. <span class=\"q70-1\">Present your selections to your supervisor and obtain his or her signature.</span><br/></span>\n<span class=\"paragraph-sentence\">4. <span class=\"q68-1\">Register for your classes online through the college website.</span><br/></span>\n<span class=\"paragraph-sentence\">5. When you are asked for payment method, enter your departmental code. <span class=\"q67-3\">Your confirmation for registration will be sent to your email account</span> within one working day.</span></p>",
+                "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><strong>Đến: Sallyday@tinynet.com</strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>Từ: registration@fcc.ac.us </strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>Chủ đề: Về việc: Những khóa học miễn phí </strong><br/></span>\n<span class=\"paragraph-sentence\"><strong>Ngày: 4 tháng 8 năm 2006 </strong></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Sally thân mến,</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Đây là tập thông tin trực tuyến của khóa học miễn phí:<br/></span>\n<span class=\"paragraph-sentence\">Trường cao đẳng cộng đồng Foothills rất vui được cung cấp những khóa học đại học miễn phí cho tất cả các nhân viên toàn thời gian và các khoa của trường. Quỹ cho những khóa học này được cung cấp bởi bang Oregon và có sẵn cho tất cả các nhân viên toàn thời gian và nhân viên các khoa đã làm việc ở trường ít nhất là 3 tháng. Để đăng ký lớp học:</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">1. Nhận phiếu yêu cầu lớp từ  thư ký của phòng<br/></span>\n<span class=\"paragraph-sentence\">2. Đảm bảo rằng các lớp học của bạn sẽ không gây gián đoạn lịch làm việc thường ngày.<br/></span>\n<span class=\"paragraph-sentence\">3. Trình những lựa chọn của bạn cho người giám sát và xin chữ ký của anh/cô ấy.<br/></span>\n<span class=\"paragraph-sentence\">4. Đăng ký lớp học trực tuyến thông qua trang web của trường.<br/></span>\n<span class=\"paragraph-sentence\">5. Khi được hỏi hình thức thanh toán, hãy nhập mã phòng ban của mình. Thư xác nhận đăng ký sẽ được gửi đến tài khoản email của bạn trong vòng một ngày làm việc.</span></p>"
+            ]
+        ],
+        "learnerQuestionsCount": 0,
+        "mcqDatas": [
+            {
+                "id": 12541,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "Why did Sally send an email to the community college?",
+                    "Tại sao Sally gửi email đến trường cao đẳng cộng đồng?"
+                ],
+                "optionA": ["She wants a job in the canteen.", "Cô ấy muốn một công việc trong căn-tin."],
+                "optionB": [
+                    "She wants to find out about degree programs.",
+                    "Cô ấy muốn tìm hiểu về chương trình học lấy bằng."
+                ],
+                "optionC": [
+                    "She wants to find out about free programs.",
+                    "Cô ấy muốn tìm hiểu về chương trình học miễn phí."
+                ],
+                "optionD": ["She wants to complain about fees.", "Cô ấy muốn phàn nàn về học phí."],
+                "answer": [
+                    "C",
+                    "Xem chủ đề  của email là về những khóa học miễn phí và trong email cô có viết \"<span class=\"quote quote-q66-1\">Please send me further information about these course and the application process. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 12542,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": ["Which of the following is NOT true?", "Câu nào sau đây KHÔNG đúng?"],
+                "optionA": ["Sally is eligible for the courses.", "Sally có đủ điều kiện để được học những khóa này."],
+                "optionB": [
+                    "Sally is a community college employee.",
+                    "Sally là một nhân viên của trường cao đẳng cộng đồng."
+                ],
+                "optionC": [
+                    "Only full-time staff and faculty can take free courses.",
+                    "Chỉ có nhân viên toàn thời gian và nhân viên các khoa có thể học những khóa học miễn phí này."
+                ],
+                "optionD": ["Confirmations are sent by email.", "Thư xác nhận sẽ được gửi bằng email."],
+                "answer": [
+                    "A",
+                    "Ta thấy đáp án B trong \"<span class=\"quote quote-q67-1\">I have been working here since the middle of June</span>\" ->Sally là nhân viên của trường.<br/>Ta thấy đáp án C trong \"<span class=\"quote quote-q67-2\">offer free college courses to all of its full-time staff and faculty</span>\".<br/>Ta thấy đáp án D trong \"<span class=\"quote quote-q67-3\">Your confirmation for registration will be sent to your email account</span>\".<br/>Không thấy nhắc đến đáp án A ->chọn A."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 12543,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "How can a person register for classes?",
+                    "Một người có thể đăng ký lớp học bằng cách nào?"
+                ],
+                "optionA": ["On the telephone", "Trên điện thoại"],
+                "optionB": ["In the department", "Trong phòng ban"],
+                "optionC": ["By mail", "Bằng thư"],
+                "optionD": ["Online", "Trực tuyến"],
+                "answer": [
+                    "D",
+                    "Ta thấy ý này trong \"<span class=\"quote quote-q68-1\">Register for your classes online through the college website.</span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 12544,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": "",
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "According to the second step, what must applicants do?",
+                    "Theo như  bước thứ 2, người nộp đơn phải làm gì?"
+                ],
+                "optionA": ["Talk to the supervisor", "Nói chuyện với giám sát"],
+                "optionB": ["Pay for the classes", "Trả tiền học"],
+                "optionC": ["Check their work schedule", "Kiểm tra lịch làm việc của mình"],
+                "optionD": ["Confirm their registration", "Xác nhận đăng ký"],
+                "answer": [
+                    "C",
+                    "Theo bước 2, người học phải đảm bảo lớp học không ảnh hưởng đến lịch làm việc của họ -> họ phải kiểm tra lịch làm việc của mình xem có bị ảnh hưởng hay không."
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            },
+            {
+                "id": 12545,
+                "isMcqGroup": false,
+                "image": "",
+                "hintImage": null,
+                "audio": ["", "", "", "", ""],
+                "question": [
+                    "What must applicants receive from their supervisors?",
+                    "Người nộp đơn phải nhận được gì từ giám sát của họ?"
+                ],
+                "optionA": ["A signature", "Chữ ký"],
+                "optionB": ["Permission", "Sự cho phép"],
+                "optionC": ["Payment information", "Thông tin thanh toán"],
+                "optionD": ["A class schedule", "Lịch học"],
+                "answer": [
+                    "A",
+                    "Ta thấy ý này trong bước 3: \"<span class=\"quote quote-q70-1\">Present your selections to your supervisor and obtain his or her signature. </span>\""
+                ],
+                "video_exp_url": "",
+                "grammar_links_info": [],
+                "annotatedVocabs": [],
+                "learnerQuestionsCount": 0,
+                "testDuration": 76
+            }
+        ],
+        "testDuration": 382,
+        "did_wrongly_the_last_time": false
+    }
+]

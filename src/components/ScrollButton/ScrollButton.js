@@ -28,7 +28,6 @@ const ScrollButton = () => {
         getID.addEventListener('scroll', toggleVisible);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-    // console.log(visible);
     return (
         <div >
             {/* 👇️ scroll to top on button click */}
@@ -41,8 +40,8 @@ const ScrollButton = () => {
                 onClick={() => {
                     getID.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
                 }}
-
             >
+                <span className='rorate-scroll'></span>
                 <FaAngleUp />
             </button>
         </div>

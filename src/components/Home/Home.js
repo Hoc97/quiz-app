@@ -8,18 +8,17 @@ import Footer from './modules/Footer/Footer';
 import Feature from './modules/Feature/Feature';
 
 function Home() {
-
-    return (
-        <div className='home-wrapper'>
-            <Content />
-            <Opinion />
-            <Feature />
-            <GenZ />
-            <AboutMe />
-            <Feedback />
-            <Footer />
-        </div>
-    );
+  return (
+    <div className='home-wrapper'>
+      <Content />
+      <Opinion />
+      <Feature />
+      <GenZ />
+      <AboutMe />
+      <Feedback />
+      <Footer />
+    </div>
+  );
 }
 
 export default Home;

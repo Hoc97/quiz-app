@@ -34,7 +34,6 @@
 
     .login-content {
         flex: 1;
-        // height: calc(100% - 44px);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -44,9 +43,11 @@
             width: 300px;
 
             .logo {
+                display: flex;
+                justify-content: center;
                 text-align: center;
                 font-size: 28px;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
 
             .welcome {
@@ -77,28 +78,6 @@
                     }
                 }
 
-                .text {
-                    cursor: pointer;
-                    margin-top: 10px;
-                }
-
-                .loaderIcon {
-                    margin-bottom: 2px;
-                    margin-right: 5px;
-                    color: #00d4ff;
-                    animation: spin 1s infinite linear;
-
-                    @keyframes spin {
-                        from {
-                            transform: scale(1) rotate(0deg);
-                        }
-
-                        to {
-                            transform: scale(1) rotate(360deg);
-                        }
-                    }
-                }
-
                 .btn-login {
                     width: 100%;
                     background: #262627;
@@ -113,6 +92,36 @@
                         cursor: no-drop;
                         outline: none;
                         border: none;
+                    }
+
+                    .loaderIcon {
+                        margin-bottom: 2px;
+                        margin-right: 5px;
+                        color: #00d4ff;
+                        animation: spin 1s infinite linear;
+
+                        @keyframes spin {
+                            from {
+                                transform: scale(1) rotate(0deg);
+                            }
+
+                            to {
+                                transform: scale(1) rotate(360deg);
+                            }
+                        }
+                    }
+                }
+
+                .text {
+                    cursor: pointer;
+                    margin-top: 10px;
+                }
+
+                .quick-login {
+                    .title {
+                        font-size: 20px;
+                        font-weight: 500;
+                        font-style: italic;
                     }
                 }
             }
@@ -168,9 +177,11 @@
             width: 300px;
 
             .logo {
+                display: flex;
+                justify-content: center;
                 text-align: center;
                 font-size: 28px;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
 
             .welcome {

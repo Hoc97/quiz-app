@@ -48,3 +48,4 @@ const rdcReducer = (state = intialState, { type, payload }) => {
 };
 
 export default rdcReducer;
+

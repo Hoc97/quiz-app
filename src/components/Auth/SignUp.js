@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { postSignUp } from '../../services/apiService';
 import { toast } from 'react-toastify';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
-
+import Images from '../../assets/img/Image';
 function SignUp() {
     const [account, setAccount] = useState({
         email: '',
@@ -63,7 +63,9 @@ function SignUp() {
             </div>
             <div className='signup-content'>
                 <div className='form'>
-                    <h2 className='logo'>HỌC ĐI CODE DẠO</h2>
+                    <div className='logo'>
+                        <img src={Images.Headers.logo} alt='' height={50} />
+                    </div>
                     <h2 className='welcome'>Start 's your journey ^^</h2>
                     <div className='content'>
                         <Form>

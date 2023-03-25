@@ -1,0 +1,38 @@
+.wrapper {
+    .content {
+        background-color: #eaefec;
+
+        .user-container {
+            margin-top: 50px;
+
+            .topic {
+                margin-bottom: 30px;
+
+                .topic-title {
+                    background-color: #FFCB09;
+                    width: 100%;
+                    padding: 10px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 3px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(228deg, rgb(21, 209, 252) 14%, rgb(187, 48, 254) 83%);
+                        ;
+                    }
+
+                    span {
+                        font-size: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+}

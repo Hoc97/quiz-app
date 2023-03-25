@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import Images from '../../../../assets/img/Image';
 import Rotate from 'react-reveal/Rotate';
 import Fade from 'react-reveal/Fade';
+import { FaArrowRight } from 'react-icons/fa';
 
 function Content() {
     const isAuthenticated = useSelector((state) => state.userManage.isAuthenticated);
@@ -17,7 +18,7 @@ function Content() {
                 <div className='text'>
                     <div className='title'>
                         <Fade bottom>
-                            <h3 className='title-h1'>CÓ MỘT CÁCH TỐT HƠN ĐỂ HỎI</h3>
+                            <h1 className='title-h1'>CÓ MỘT CÁCH TỐT HƠN ĐỂ HỎI</h1>
                             <p className='title-p'>
                                 Bạn không muốn làm một hình thức nhàm chán. Và khán giả của bạn sẽ không trả lời một.
                                 Thay vào đó, hãy tạo một vài thứ và khiến mọi người hài lòng.
@@ -30,6 +31,7 @@ function Content() {
                                     onClick={() => navigate('/login')}
                                 >
                                     <span>ĐĂNG NHẬP</span>
+                                    <span className='arrow-icon'><FaArrowRight /></span>
                                 </Button>
                             ) : (
                                 <Button
@@ -38,6 +40,7 @@ function Content() {
                                     onClick={() => navigate('/user')}
                                 >
                                     <span>BẮT ĐẦU NGAY</span>
+                                    <span className='arrow-icon'><FaArrowRight /></span>
                                 </Button>
                             )}
                         </Fade>
@@ -48,6 +51,17 @@ function Content() {
                         <img src={Images.Home.content} alt='' />
                     </div>
                 </Rotate>
+            </div>
+            <div className='bg-infinite-text'>
+                <div className='infinite-text'>
+                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
+                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
+                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
+                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
+                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
+                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
+                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
+                </div>
             </div>
             <Fade right>
                 <div className='home-footer'></div>

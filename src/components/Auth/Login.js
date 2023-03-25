@@ -12,7 +12,7 @@ import { getDataLogin } from '../../redux/action/action';
 import { ImSpinner10 } from 'react-icons/im';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import Languages from '../Languages/Languages';
-
+import Images from '../../assets/img/Image';
 function Login() {
     const dispatch = useDispatch();
 
@@ -66,6 +66,10 @@ function Login() {
         }
     };
 
+    const handleQuickLogin = (email, password) => {
+        setAccount({ email, password });
+    };
+    console.log(account);
     return (
         <div className='login-container'>
             <div className='login-header'>
@@ -78,7 +82,10 @@ function Login() {
             </div>
             <div className='login-content'>
                 <div className='form'>
-                    <h2 className='logo'>HỌC ĐI CODE DẠO</h2>
+                    <div className='logo'>
+                        <img src={Images.Headers.logo} alt='' height={50} />
+                    </div>
+
                     <h2 className='welcome'>Hello, who's this?</h2>
                     <div className='content'>
                         <Form>
@@ -88,6 +95,7 @@ function Login() {
                                     type='email'
                                     placeholder='Enter email'
                                     name='email'
+                                    value={account.email}
                                     onChange={handleInput}
                                 />
                             </Form.Group>
@@ -98,6 +106,7 @@ function Login() {
                                     type={isShowPassword ? 'text' : 'password'}
                                     placeholder='Password'
                                     name='password'
+                                    value={account.password}
                                     onChange={handleInput}
                                 />
                                 {isShowPassword ? (
@@ -127,9 +136,17 @@ function Login() {
                         <div className='text' onClick={() => navigate('/')}>
                             &lt;&lt;&lt; Go to homepage
                         </div>
+                        <div className='quick-login'>
+                            <hr />
+                            <div className='mb-3 title'>For quick login click below... </div>
+                            <Button variant="success me-3" onClick={() => handleQuickLogin('admin@gmail.com', '123456')}>Admin</Button>
+                            <Button variant="info" onClick={() => handleQuickLogin('user@gmail.com', '123456')}>User</Button>
+                        </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
     );
 }
