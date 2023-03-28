@@ -2,9 +2,6 @@
     {
         "isMcqGroup": true,
         "id": 868,
-        "audio": "",
-        "image": "",
-        "video_exp_url": "",
         "reading_texts": [
             [
                 "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><span class=\"reading-text-title\">Memo</span></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">To: Department Staff</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">From: Alison Roth, Department Manager</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Re: Meeting</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">All members of the department staff are requested to attend a department meeting next Friday morning. As you know, we meet _____(1) to review our work of the past months and finalize plans for the coming months.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">The goal of this Friday's meeting is to set our priorities for the next six months. The meeting agenda is attached for your review. Let's agree to follow the agenda and not _____(2) other matters at this time so that we can finish the meeting in a timely manner.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">The most important item on the agenda is the budget. We need to take a careful look at our spending practices. We _____(3) too much money over the past six months.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Please come with ideas about how we can use our funds more efficiently in the future. Please arrive at the meeting on time so that we can conclude before 12:00</span></p>",
@@ -12,14 +9,9 @@
             ],
             ["", ""]
         ],
-        "learnerQuestionsCount": 0,
         "mcqDatas": [
             {
                 "id": 10684,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(1)", ""],
                 "optionA": ["period", "thời kỳ (danh từ)"],
                 "optionB": ["periodic", "định kỳ (tính từ)"],
@@ -29,15 +21,11 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             },
             {
                 "id": 10685,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(2)", ""],
                 "optionA": ["set back", "trì hoãn"],
                 "optionB": ["go ahead", "đi trước"],
@@ -47,15 +35,11 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             },
             {
                 "id": 10686,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(3)", ""],
                 "optionA": ["waste", "lãng phí (hiện tại đơn)"],
                 "optionB": ["have wasted", "lãng phí (hiện tại hoàn thành)"],
@@ -68,7 +52,7 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             }
         ],
@@ -78,9 +62,6 @@
     {
         "isMcqGroup": true,
         "id": 689,
-        "audio": "",
-        "image": "",
-        "video_exp_url": "",
         "reading_texts": [
             [
                 "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">When you go on a job interview, the most important thing to remember is to present yourself well. Before you go, prepare yourself by dressing neatly and professionally. When you arrive, enter the interview room _____(1).</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Look the interviewer in the eye when you shake hands. When you talk about yourself, do not be shy about your abilities. You are there to prove that you can do the job. Explain your work and educational background briefly and discuss the skills you have developed through experience. _____(2) to point out areas in which you have expertise.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">The worst thing you can do is discuss your experience weakly. Remember if you believe in yourself, other people will, too. Don't forget to _____(3) the interview with a thank-you note before a week has passed.</span></p>",
@@ -88,14 +69,9 @@
             ],
             ["", ""]
         ],
-        "learnerQuestionsCount": 0,
         "mcqDatas": [
             {
                 "id": 9122,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(1)", ""],
                 "optionA": ["confident", "tự tin (tính từ)"],
                 "optionB": ["confidently", "một cách tự tin (trạng từ)"],
@@ -105,15 +81,11 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             },
             {
                 "id": 9123,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(2)", ""],
                 "optionA": ["No hesitation", "Không có sự chần chừ"],
                 "optionB": ["Not hesitating", "Không chần chừ"],
@@ -123,15 +95,11 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             },
             {
                 "id": 9124,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(3)", ""],
                 "optionA": ["call in", ""],
                 "optionB": ["apply to", "nộp đơn cho"],
@@ -144,7 +112,7 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             }
         ],
@@ -154,9 +122,6 @@
     {
         "isMcqGroup": true,
         "id": 893,
-        "audio": "",
-        "image": "",
-        "video_exp_url": "",
         "reading_texts": [
             [
                 "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">One of the joys of traveling abroad is taking the opportunity to try out different kinds of food. Travelers should always make a point of eating the local dishes. It is exciting to try out dishes made with unfamiliar ingredients and unusual _____(1)</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Daring travelers can order _____(2) from the menu.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Or, they can look at the dishes that other patrons are eating and order one that looks appealing. A traveler who doesn't speak the local language well can order by pointing to the dishes he wishes to order. That is the easiest way to avoid a mix _____(3)</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Finally, dessert should not be forgotten. A sweet treat at the end of the meal will complete the experience of enjoying foreign cooking.</span></p>",
@@ -164,14 +129,9 @@
             ],
             ["", ""]
         ],
-        "learnerQuestionsCount": 0,
         "mcqDatas": [
             {
                 "id": 10910,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(1)", ""],
                 "optionA": ["favors", "sự giúp đỡ"],
                 "optionB": ["flavors", "mùi vị"],
@@ -181,15 +141,11 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             },
             {
                 "id": 546,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(2)", ""],
                 "optionA": ["random", "ngẫu nhiên (tính từ)"],
                 "optionB": ["randomly", "một cách ngẫu nhiên (trạng từ)"],
@@ -199,15 +155,11 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             },
             {
                 "id": 10911,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(3)", ""],
                 "optionA": ["up", "(mix up = lộn xộn, nhầm lẫn)"],
                 "optionB": ["in", "(mix something in with something = trộn cái gì với cái gì)"],
@@ -217,7 +169,7 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             }
         ],
@@ -227,9 +179,6 @@
     {
         "isMcqGroup": true,
         "id": 897,
-        "audio": "",
-        "image": "",
-        "video_exp_url": "",
         "reading_texts": [
             [
                 "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><span class=\"reading-text-title\">Information for Travelers</span></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* We make every effort to leave on time. To avoid _____(1), please plan to arrive at least one hour before your scheduled departure time. This is especially important because all passengers must pass through security control.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Scissors, nail clippers, and other sharp instruments _____(2) on board. Leave these items at home or surrender them to the security officer in charge.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Each passenger is allowed two small carry-on bags. Check your excess luggage with the attendant. You can claim it at the end of your trip.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* We request that passengers remain in the waiting area until the attendant _____(3) the embarkation time.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Please don't attempt to board ahead of time.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Your comfort is our priority. Snack service is available on board. Please ask the attendant for pillows and blankets if you require them.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Thank you for traveling with us. Have a safe and happy trip.</span></p>",
@@ -237,14 +186,9 @@
             ],
             ["", ""]
         ],
-        "learnerQuestionsCount": 0,
         "mcqDatas": [
             {
                 "id": 10921,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(1)", ""],
                 "optionA": ["delays", "sự hoãn lại"],
                 "optionB": ["delights", "niềm vui sướng"],
@@ -254,15 +198,11 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             },
             {
                 "id": 10922,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(2)", ""],
                 "optionA": ["prohibit", "cấm (động từ nguyên mẫu)"],
                 "optionB": ["prohibits", "cấm (động từ ở thì hiện tại đơn, ngôi số ít)"],
@@ -275,15 +215,11 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             },
             {
                 "id": 10923,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(3)", ""],
                 "optionA": ["announce", "thông báo (động từ nguyên mẫu)"],
                 "optionB": ["announces", "thông báo (động từ ở thì hiện tại đơn, ngôi số ít)"],
@@ -296,7 +232,7 @@
                 "video_exp_url": "",
                 "grammar_links_info": [],
                 "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
+
                 "testDuration": 45
             }
         ],

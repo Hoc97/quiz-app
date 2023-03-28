@@ -3,9 +3,18 @@ import { useRef, } from 'react';
 
 
 
-function CheckMark({ dataQuiz, setDataQuiz, handleFinishQuiz, setCurrentQuestion, currentQuestion }) {
+function CheckMark({
+    dataQuiz,
+    setDataQuiz,
+    handleFinishQuiz,
+    setCurrentQuestion,
+    currentQuestion,
+    currentPart,
+    arrayIndexPara,
+    setIndexQuestion,
+    isShowResultQuiz
+}) {
     const refDiv = useRef([]);
-
     const questionSelected = (question, index, currentQuestion) => {
         if (!question.answers.length) return '';
         let _class = '';
@@ -21,19 +30,40 @@ function CheckMark({ dataQuiz, setDataQuiz, handleFinishQuiz, setCurrentQuestion
         return _class.trim();
     };
 
-
     const handleClickQuestion = (index) => {
         setCurrentQuestion(index);
+        if (+currentPart !== 7) return;
+        const a = arrayIndexPara.filter(item => index >= item);
+        const b = arrayIndexPara.findIndex(item => item === Math.max(...a));
+        setIndexQuestion(b);
     };
     return (
         <div className='check-mark'>
             <div className='check-header'>
                 <CountDown
+                    isShowResultQuiz={isShowResultQuiz}
                     handleFinishQuiz={handleFinishQuiz}
                     setCurrentQuestion={setCurrentQuestion}
                     dataQuiz={dataQuiz}
                     setDataQuiz={setDataQuiz}
+                    setIndexQuestion={setIndexQuestion}
+                    currentPart={currentPart}
                 />
+            </div>
+            <div className='note'>
+                <h4>Note:</h4>
+                <p>
+                    <span className='note-number answered'>1</span>
+                    <span>Answered</span>
+                </p>
+                <p>
+                    <span className='note-number isfocusing '>1</span>
+                    <span>Is Focusing</span>
+                </p>
+                <p>
+                    <span className='note-number notselected'>1</span>
+                    <span>Not Selected</span>
+                </p>
             </div>
             <div className='list-mark'>
                 <div className='list'>
@@ -55,24 +85,8 @@ function CheckMark({ dataQuiz, setDataQuiz, handleFinishQuiz, setCurrentQuestion
                         );
                     })}
                 </div >
-
-
             </div >
-            <div className='note'>
-                <h4>Note:</h4>
-                <p>
-                    <span className='note-number answered'>1</span>
-                    <span>Answered</span>
-                </p>
-                <p>
-                    <span className='note-number isfocusing '>1</span>
-                    <span>Is Focusing</span>
-                </p>
-                <p>
-                    <span className='note-number notselected'>1</span>
-                    <span>Not Selected</span>
-                </p>
-            </div>
+
         </div >
     );
 };

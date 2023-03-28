@@ -6,6 +6,17 @@ const validateEmail = (email) => {
         );
 };
 
+const toHHMMSS = (secs) => {
+    const sec_num = parseInt(secs, 10);
+    const hours = Math.floor(sec_num / 3600);
+    const minutes = Math.floor(sec_num / 60) % 60;
+    const seconds = sec_num % 60;
+
+    return [hours, minutes, seconds]
+        .map(v => v < 10 ? "0" + v : v)
+        .join(" : ");
+};
+
 // blob is e.target.files[0] => return data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQAB...
 const blobToBase64 = (blob) => {
     return new Promise((resolve, _) => {
@@ -23,4 +34,4 @@ const urltoFile = (url, filename, mimeType) => {
     );
 };
 
-export { validateEmail, blobToBase64, urltoFile };
+export { validateEmail, blobToBase64, urltoFile, toHHMMSS };

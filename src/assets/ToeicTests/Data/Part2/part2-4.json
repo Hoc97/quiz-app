@@ -1,9 +1,6 @@
 [
     {
         "id": 12613,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/URryZ.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/URryZ_1.mp3",
@@ -15,20 +12,11 @@
         "optionA": ["You're welcome.", "Không có chi."],
         "optionB": ["I'm hungry.", "Tôi đói."],
         "optionC": ["No, thank you.", "Không, cảm ơn."],
-        "optionD": ["", ""],
         "answer": ["C", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 12219,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/JISN6.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/JISN6_1.mp3",
@@ -40,20 +28,11 @@
         "optionA": ["About four days.", "Khoảng 4 ngày"],
         "optionB": ["Usually five dollars per hour.", "Thường là 5 đô một giờ."],
         "optionC": ["To the delivery department.", "Đến phòng giao hàng"],
-        "optionD": ["", ""],
         "answer": ["A", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 14528,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/QrpaH.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/QrpaH_1.mp3",
@@ -68,20 +47,11 @@
         "optionA": ["Yes, they've been sent.", "Vâng, chúng đã được gửi."],
         "optionB": ["This afternoon.", "Trưa nay."],
         "optionC": ["It's for my colleague.", "Nó là dành cho đồng nghiệp của tôi."],
-        "optionD": ["", ""],
         "answer": ["B", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 12765,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/7fpv9.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/7fpv9_1.mp3",
@@ -93,20 +63,11 @@
         "optionA": ["Around an hour.", "Khoảng một tiếng"],
         "optionB": ["Yes, I'm taking my car.", "Vâng, tôi sẽ mang xe đi."],
         "optionC": ["Yes, I drove my car here.", "Vâng, tôi lái xe đến  đây."],
-        "optionD": ["", ""],
         "answer": ["A", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 12569,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/gqvFH.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/gqvFH_1.mp3",
@@ -118,20 +79,11 @@
         "optionA": ["Yes, she did.", "Vâng, cô ấy có."],
         "optionB": ["To the supermarket.", "Đến siêu thị."],
         "optionC": ["She's going now.", "Giờ cô ấy đi."],
-        "optionD": ["", ""],
         "answer": ["B", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 17653,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/LrKPc.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/LrKPc_1.mp3",
@@ -146,20 +98,11 @@
         "optionA": ["Once a month.", "Mỗi tháng một lần."],
         "optionB": ["He's on a business trip.", "Anh ấy đang đi công tác."],
         "optionC": ["On the third floor.", "Ở tầng ba."],
-        "optionD": ["", ""],
         "answer": ["A", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 14870,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/8bgoT.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/8bgoT_1.mp3",
@@ -171,20 +114,11 @@
         "optionA": ["No, she left a while ago.", "Không, cô ấy đã rời khỏi được một lúc rồi."],
         "optionB": ["I'd rather go to London.", "Tôi thà đi Luân Đôn còn hơn."],
         "optionC": ["On Tuesday afternoon.", "Chiều thứ Ba."],
-        "optionD": ["", ""],
         "answer": ["C", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 213,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Ets_Toeic_Test_2/questions_audios/13.mp3",
             "/static/ToeicTests/audios/Ets_Toeic_Test_2/questions_audios/sub_audios/13_1.mp3",
@@ -199,20 +133,11 @@
         "optionA": ["(M-Au)A television reporter.", "(Đàn ông - Giọng Úc) Một phóng viên truyền hình."],
         "optionB": ["I'd prefer Thursday.", "Tôi thích thứ năm hơn."],
         "optionC": ["The latest press release.", "Thông cáo báo chí gần nhất."],
-        "optionD": ["", ""],
         "answer": ["B", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 14544,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/VOkVZ.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/VOkVZ_1.mp3",
@@ -224,20 +149,11 @@
         "optionA": ["The hotel was already booked.", "Khách sạn đã được đặt kín rồi."],
         "optionB": ["Perhaps Mr. Chang.", "Có lẽ ông Chang."],
         "optionC": ["Submit it by e-mail.", "Nộp qua email."],
-        "optionD": ["", ""],
         "answer": ["B", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 17835,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/cBx3a.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/cBx3a_1.mp3",
@@ -249,20 +165,11 @@
         "optionA": ["Yes, I can.", "Được chứ, tôi có thể."],
         "optionB": ["After three p.m.", "Sau 3 giờ chiều."],
         "optionC": ["At the repair shop.", "Ở xưởng sửa chữa."],
-        "optionD": ["", ""],
         "answer": ["B", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 14690,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/nHYMb.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/nHYMb_1.mp3",
@@ -274,13 +181,7 @@
         "optionA": ["Brian did.", "Brian đã làm."],
         "optionB": ["By e-mail.", "Bằng e-mail."],
         "optionC": ["To review them.", "Để xem lại chúng."],
-        "optionD": ["", ""],
         "answer": ["A", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     }
 ]

@@ -2,9 +2,6 @@
     {
         "isMcqGroup": true,
         "id": 927,
-        "audio": "",
-        "image": "",
-        "video_exp_url": "",
         "reading_texts": [
             [
                 "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Welcome to the office of Dr. Shaw. The following office policies are in effect. <br /></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">- Please check in with the receptionist when you arrive. If you were given a referral, please tell the receptionist the name of the doctor who _____(1) you.  <br /></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">- We recognize that sometimes unexpected situations occur and you must cancel your _____(2). Cancelations must be made 24 hours ahead of time or you will be charged a fee.  <br /></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">- Please don't call us to find out the results of _____(3) test.  <br /></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">We will call you when the results are ready. <br /></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">- Effective January 1, all bills must be paid in full at the time of your visit. We accept all major credit cards. <br /></span></p>",
@@ -12,14 +9,9 @@
             ],
             ["", ""]
         ],
-        "learnerQuestionsCount": 0,
         "mcqDatas": [
             {
                 "id": 11061,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(1)", ""],
                 "optionA": ["will refer", "sẽ chỉ định (thì tương lai đơn)"],
                 "optionB": ["did refer", "đã chỉ định (trợ động từ \"did\" để nhấn mạnh)"],
@@ -29,18 +21,10 @@
                     "C",
                     "Hành động chỉ định trong vế \"please tell the receptionist the name of the doctor who _____ you\" đã diễn ra và kết thúc ở quá khứ nên không thể dùng thì hiện tại và tương lai -> loại A và D. Loại B vì đây là cấu trúc nhấn mạnh động từ mà câu không hàm ý gì về điều này -> chọn C."
                 ],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             },
             {
                 "id": 11062,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(2)", ""],
                 "optionA": ["appoint", "chỉ định (động từ)"],
                 "optionB": ["disappoint", "làm ai đó thất vọng (động từ)"],
@@ -50,18 +34,10 @@
                     "C",
                     "Sau \"your\" cần danh từ để tạo nên tân ngữ bổ nghĩa cho động từ \"cancel\" -> loại A và B. Dựa vào nghĩa -> chọn C."
                 ],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             },
             {
                 "id": 11063,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(3)", ""],
                 "optionA": ["diagnose", "chẩn đoán (động từ)"],
                 "optionB": ["diagnosis", "sự chẩn đoán (danh từ)"],
@@ -71,10 +47,6 @@
                     "D",
                     "Sau giới từ như \"of\" ta phải dùng cụm danh từ hoặc động từ thêm -ing, nhìn sau chỗ trống thì đã có sẵn danh từ là \"test\" -> dùng tính từ bổ nghĩa cho danh từ -> loại cả A, B, C -> chọn D."
                 ],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             }
         ],
@@ -84,9 +56,6 @@
     {
         "isMcqGroup": true,
         "id": 980,
-        "audio": "",
-        "image": "",
-        "video_exp_url": "",
         "reading_texts": [
             [
                 "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">If you are looking for an activity that the whole family can enjoy, consider visiting one of our city's fine museums. It is the perfect way to _____(1) fun with education.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Depending on your family's interests, you might _____(2) to visit a science, history, or art museum.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">If your children are older, they will want to visit exhibits that particularly interest them and take the time to give each one a _____(3) look. Younger children have a shorter attention span. Museums with interactive exhibits are best for them.</span></p>",
@@ -94,60 +63,35 @@
             ],
             ["", ""]
         ],
-        "learnerQuestionsCount": 0,
         "mcqDatas": [
             {
                 "id": 11637,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(1)", ""],
                 "optionA": ["separate", "tách riêng"],
                 "optionB": ["combine", "kết hợp"],
                 "optionC": ["rehearse", "diễn tập"],
                 "optionD": ["subscribe", "đặt mua"],
                 "answer": ["B", "Xét theo nghĩa của câu để chọn từ thích hợp"],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             },
             {
                 "id": 11638,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(2)", ""],
                 "optionA": ["deride", "chế giễu"],
                 "optionB": ["derive", "bắt nguồn từ"],
                 "optionC": ["decide", "quyết định"],
                 "optionD": ["decline", "từ chối"],
                 "answer": ["C", "Xét theo nghĩa của câu để chọn từ thích hợp"],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             },
             {
                 "id": 11639,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(3)", ""],
                 "optionA": ["thorough", "kỹ lưỡng, chu đáo"],
                 "optionB": ["through", "xuyên qua"],
                 "optionC": ["thought", "suy nghĩ"],
                 "optionD": ["though", "mặc dù"],
                 "answer": ["A", "Xét theo nghĩa của câu để chọn từ thích hợp"],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             }
         ],
@@ -157,9 +101,6 @@
     {
         "isMcqGroup": true,
         "id": 1603,
-        "audio": "",
-        "image": "",
-        "video_exp_url": "",
         "reading_texts": [
             [
                 "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">To: All employees<br /></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">From: Management</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">This is a reminder about the next general meeting. There will be a meeting for employees _____(1) 9:30 a.m. on Wednesday, June 25th.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">All employees must attend. Please _____(2) John Fisher in the payroll office if you cannot attend.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">If you have not told him _____(3), please tell him before Tuesday afternoon.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">The meeting will be held in the main conference room.</span></p>",
@@ -167,32 +108,19 @@
             ],
             ["", ""]
         ],
-        "learnerQuestionsCount": 0,
         "mcqDatas": [
             {
                 "id": 15483,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(1)", ""],
                 "optionA": ["on", "on"],
                 "optionB": ["in", "in"],
                 "optionC": ["at", "at"],
                 "optionD": ["by", "by"],
                 "answer": ["C", "Vì là giờ trong ngày nên chọn giới từ \"at\"."],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             },
             {
                 "id": 15484,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(2)", ""],
                 "optionA": ["notify", "thông báo"],
                 "optionB": ["talk", "nói chuyện"],
@@ -202,10 +130,6 @@
                     "A",
                     "Ta thấy \"talk\" và \"speak\" cũng cần giới từ \"to\" hoặc \"with\", để có nghĩa là \"nói chuyện với ai đó\" -> loại \"talk\" và \"speak\".<br/>Xét theo nghĩa của 2 từ còn lại, ta chọn từ thích hợp là \"notify\".<br/>"
                 ],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             },
             {
@@ -223,10 +147,6 @@
                     "C",
                     "Xét theo nghĩa của câu để chọn từ thích hợp.<br/>Lưu ý: \"now\" và \"yet\" có nghĩa khá tương đồng với nhau trong câu sử dụng thì hiện tại hoàn thành, nhưng chúng ta dùng \"now\" cho câu khẳng định, còn \"yet\" thì dùng trong câu phủ định hoặc câu hỏi.<br/>\r\nKhi dùng \"yet\" kết hợp với thì hiện tại hoàn thành, chúng ta có thể hiểu \"yet\" có nghĩa là \"chưa\"."
                 ],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             }
         ],
@@ -236,9 +156,6 @@
     {
         "isMcqGroup": true,
         "id": 897,
-        "audio": "",
-        "image": "",
-        "video_exp_url": "",
         "reading_texts": [
             [
                 "<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\"><span class=\"reading-text-title\">Information for Travelers</span></span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* We make every effort to leave on time. To avoid _____(1), please plan to arrive at least one hour before your scheduled departure time. This is especially important because all passengers must pass through security control.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Scissors, nail clippers, and other sharp instruments _____(2) on board. Leave these items at home or surrender them to the security officer in charge.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Each passenger is allowed two small carry-on bags. Check your excess luggage with the attendant. You can claim it at the end of your trip.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* We request that passengers remain in the waiting area until the attendant _____(3) the embarkation time.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Please don't attempt to board ahead of time.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">* Your comfort is our priority. Snack service is available on board. Please ask the attendant for pillows and blankets if you require them.</span></p>\n<p class=\"reading-text-paragraph\" style=\"\"><span class=\"paragraph-sentence\">Thank you for traveling with us. Have a safe and happy trip.</span></p>",
@@ -246,32 +163,19 @@
             ],
             ["", ""]
         ],
-        "learnerQuestionsCount": 0,
         "mcqDatas": [
             {
                 "id": 10921,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(1)", ""],
                 "optionA": ["delays", "sự hoãn lại"],
                 "optionB": ["delights", "niềm vui sướng"],
                 "optionC": ["deliveries", "sự giao hàng"],
                 "optionD": ["delusions", "ảo tưởng"],
                 "answer": ["A", "Xét theo nghĩa của câu để chọn từ phù hợp"],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             },
             {
                 "id": 10922,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(2)", ""],
                 "optionA": ["prohibit", "cấm (động từ nguyên mẫu)"],
                 "optionB": ["prohibits", "cấm (động từ ở thì hiện tại đơn, ngôi số ít)"],
@@ -281,18 +185,10 @@
                     "C",
                     "Theo nghĩa của câu, ta biết câu đang ở dạng bị động. Công thức của câu bị động: \"to be + V3/V_ed\"."
                 ],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             },
             {
                 "id": 10923,
-                "isMcqGroup": false,
-                "image": "",
-                "hintImage": "",
-                "audio": ["", "", "", "", ""],
                 "question": ["(3)", ""],
                 "optionA": ["announce", "thông báo (động từ nguyên mẫu)"],
                 "optionB": ["announces", "thông báo (động từ ở thì hiện tại đơn, ngôi số ít)"],
@@ -302,10 +198,6 @@
                     "B",
                     "Mệnh đề \"until\" không chia tương lai -> loại C. Chủ ngữ \"attendant\" là chủ ngữ số ít -> cần động từ số ít -> loại A. Lựa chọn D cũng khá thích hợp, nhưng nghĩa ở đây ta không cần nhấn mạnh -> chọn B"
                 ],
-                "video_exp_url": "",
-                "grammar_links_info": [],
-                "annotatedVocabs": [],
-                "learnerQuestionsCount": 0,
                 "testDuration": 45
             }
         ],

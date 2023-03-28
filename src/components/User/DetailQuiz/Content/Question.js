@@ -1,15 +1,16 @@
 import _ from 'lodash';
-import Form from 'react-bootstrap/Form';
-import Lightbox from "react-awesome-lightbox";
 import { useState } from 'react';
-import ToeicTest from '../../../../assets/ToeicTests/ToeicTest';
+import Part1 from './Part/Part1';
+import Part2 from './Part/Part2';
+import Part3 from './Part/Part3';
+import Part4 from './Part/Part4';
+import Part5 from './Part/Part5';
+import Part6 from './Part/Part6';
+import Part7 from './Part/Part7';
 
-function Question({ data, index, handleCheckBox }) {
+function Question({ data, index, handleCheckBox, currentPart, isShowResultQuiz }) {
     const [previewImage, setPreviewImage] = useState(false);
-    const handleImage = () => {
-        setPreviewImage(true);
-    };
-
+    // console.log('data', data);
     const genCharArray = (charA, charZ) => {
         let a = [];
         let i = `${charA}`.charCodeAt(0) + 17;
@@ -20,63 +21,72 @@ function Question({ data, index, handleCheckBox }) {
         return a;
     };
 
-    const handleCheckAnswer = (e, ansID, quesID) => {
-        handleCheckBox(ansID, quesID, e.target.checked);
-    };
-
-    if (_.isEmpty(data)) {
-        return <div className='question-container'></div>;
-    }
-    const audio = ToeicTest.Practice_Tests.Part1.audio[data.audio];
-    console.log('data.image', data);
+    console.log(isShowResultQuiz);
     return (
-        <div className='question-container'>
-            <div className='image'>{data.image ?
-                <img
-                    style={{ cursor: 'pointer' }}
-                    onClick={handleImage}
-                    src={`data:image/jpeg;base64,${data.image}`} alt='' />
-                : ''}
-            </div>
-            {data.audio?.includes('.mp3') && (
-                <div className='audio'>
-                    <audio src={audio} controls="play"></audio>
-                </div>
-            )}
-            {previewImage &&
-                <Lightbox
+        <div className='question-quiz-container'>
+            {!_.isEmpty(data) &&
+                <>
+                    {+currentPart === 1 && <Part1
+                        data={data}
+                        currentPart={currentPart}
+                        handleCheckBox={handleCheckBox}
+                        index={index}
+                        genCharArray={genCharArray}
+                        previewImage={previewImage}
+                        setPreviewImage={setPreviewImage}
+                    />}
 
-                    image={`data:image/jpeg;base64,${data.image}`}
-                    title={data.questionDescription}
-                    onClose={() => setPreviewImage(false)}
-                >
-                </Lightbox>}
-            <div className='question'>
-                <span>Question {index + 1}:</span>
-                <p className='question-detail'>{data.questionDescription}</p>
-            </div>
-            {data?.answers?.map((answer, index) => {
-                let key = genCharArray(0, data?.answers.length - 1)[index];
-                return (
-                    <div key={index} className='answer'>
+                    {+currentPart === 2 && <Part2
+                        data={data}
+                        currentPart={currentPart}
+                        handleCheckBox={handleCheckBox}
+                        index={index}
+                        genCharArray={genCharArray}
+                        isShowResultQuiz={isShowResultQuiz}
 
-                        <Form>
-                            <div className="form-check">
-                                <label>
-                                    <input
-                                        type="checkbox"
-                                        className="form-check-input"
-                                        onChange={(e) => handleCheckAnswer(e, answer.id, data.questionID)}
-                                        checked={answer.isSelected}
-                                    />
-                                    <span className='label-text'>{key}</span>
-                                </label>
-                                <label className="form-check-label" >{answer.description}</label>
-                            </div>
-                        </Form>
-                    </div >
-                );
-            })}
+                    />}
+                    {+currentPart === 3 && <Part3
+                        listData={data}
+                        currentPart={currentPart}
+                        handleCheckBox={handleCheckBox}
+                        index={index}
+                        genCharArray={genCharArray}
+
+                    />}
+                    {+currentPart === 4 && <Part4
+                        listData={data}
+                        currentPart={currentPart}
+                        handleCheckBox={handleCheckBox}
+                        index={index}
+                        genCharArray={genCharArray}
+
+                    />}
+                    {+currentPart === 5 && <Part5
+                        data={data}
+                        currentPart={currentPart}
+                        handleCheckBox={handleCheckBox}
+                        index={index}
+                        genCharArray={genCharArray}
+
+                    />}
+                    {+currentPart === 6 && <Part6
+                        listData={data}
+                        currentPart={currentPart}
+                        handleCheckBox={handleCheckBox}
+                        index={index}
+                        genCharArray={genCharArray}
+
+                    />}
+                    {+currentPart === 7 && <Part7
+                        listData={data}
+                        currentPart={currentPart}
+                        handleCheckBox={handleCheckBox}
+                        index={index}
+                        genCharArray={genCharArray}
+
+                    />}
+                </>
+            }
         </div >
     );
 }

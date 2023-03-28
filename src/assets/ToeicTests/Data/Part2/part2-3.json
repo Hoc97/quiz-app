@@ -1,9 +1,6 @@
 [
     {
         "id": 17093,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/AN9x9.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/AN9x9_1.mp3",
@@ -15,20 +12,11 @@
         "optionA": ["I usually take the bus.", "Tôi thường bắt xe buýt."],
         "optionB": ["He took it there.", "Anh ta mang nó đến đó."],
         "optionC": ["About twenty minutes.", "Khoảng 20 phút."],
-        "optionD": ["", ""],
         "answer": ["C", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 6520,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Economy_Toeic_4_Test_1/questions_audios/25.mp3",
             "/static/ToeicTests/audios/Economy_Toeic_4_Test_1/questions_audios/sub_audios/25_1.mp3",
@@ -40,20 +28,11 @@
         "optionA": ["I bought it at a flea market.", "Tôi đã mua nó ở một khu chợ trời."],
         "optionB": ["You have to report all mistakes.", "Bạn phải báo cáo lại tất cả sai sót."],
         "optionC": ["About fifteen pages.", "Khoảng 15 trang."],
-        "optionD": ["", ""],
         "answer": ["C", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 17451,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/EGSO3.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/EGSO3_1.mp3",
@@ -65,20 +44,11 @@
         "optionA": ["Yes, it's quite a big apartment.", "Vâng, nó là căn hộ khá lớn."],
         "optionB": ["There are fifteen altogether.", "Có tổng cộng 15 (người)."],
         "optionC": ["I've worked here for several years.", "Tôi đã làm ở đây được vài năm rồi."],
-        "optionD": ["", ""],
         "answer": ["B", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 211,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Ets_Toeic_Test_2/questions_audios/11.mp3",
             "/static/ToeicTests/audios/Ets_Toeic_Test_2/questions_audios/sub_audios/11_1.mp3",
@@ -90,20 +60,11 @@
         "optionA": ["(W-Br) Just a few minutes.", "(Phụ nữ - Giọng Anh) Chỉ một vài phút."],
         "optionB": ["Almost five o'clock.", "Gần năm giờ."],
         "optionC": ["Yes, it is.", "Ừ, đúng vậy."],
-        "optionD": ["", ""],
         "answer": ["B", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 12400,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/StVlv.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/StVlv_1.mp3",
@@ -115,20 +76,11 @@
         "optionA": ["It was about $500.", "Khoảng 500 đô."],
         "optionB": ["Around 3 months ago.", "Khoảng 3 tháng trước."],
         "optionC": ["Yes, the company is cutting costs.", "Vâng, công ty đó đang cắt giảm chi phí."],
-        "optionD": ["", ""],
         "answer": ["A", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 12208,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/EqR93.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/EqR93_1.mp3",
@@ -140,20 +92,11 @@
         "optionA": ["I'll apply for the position.", "Tôi sẽ nộp đơn vào vị trí đó."],
         "optionB": ["At least twenty.", "Ít nhất là 20."],
         "optionC": ["To submit the application.", "Để nộp đơn."],
-        "optionD": ["", ""],
         "answer": ["B", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 13210,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/AmPvP.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/AmPvP_1.mp3",
@@ -165,20 +108,11 @@
         "optionA": ["The swimming pool is near my house.", "Hồ bơi thì gần nhà tôi."],
         "optionB": ["I often go swimming.", "Tôi thường đi bơi."],
         "optionC": ["No, thanks. I have other plans.", "Không, cảm ơn. Tôi có những dự định khác rồi."],
-        "optionD": ["", ""],
         "answer": ["C", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 17441,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/NMEkP.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/NMEkP_1.mp3",
@@ -190,20 +124,11 @@
         "optionA": ["It's only about fifteen minutes.", "Nó chỉ khoảng 15 phút."],
         "optionB": ["It's not a very big bus.", "Nó không phải là chuyến xe buýt lớn."],
         "optionC": ["It's a very pleasant ride.", "Chuyến xe đó thật dễ chịu."],
-        "optionD": ["", ""],
         "answer": ["A", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 14985,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/12rMb.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/12rMb_1.mp3",
@@ -215,20 +140,11 @@
         "optionA": ["On Monday afternoon.", "Chiều thứ hai."],
         "optionB": ["She has just left.", "Cô ấy vừa rời đi."],
         "optionC": ["I thought London was better.", "Tôi nghĩ rằng Luân Đôn thì tốt hơn."],
-        "optionD": ["", ""],
         "answer": ["A", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 10755,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Practice_Tests/Part_2/OVmF3.mp3",
             "/static/ToeicTests/audios/Practice_Tests/Part_2/sub_audios/OVmF3_1.mp3",
@@ -240,20 +156,11 @@
         "optionA": ["I don't use hair conditioner.", "Tôi không dùng dầu xả."],
         "optionB": ["Ms. Walsh asked me to do it.", "Cô Walsh bảo tôi làm vậy."],
         "optionC": ["Yes, it's in good condition.", "Vâng, nó ở trong tình trạng tốt."],
-        "optionD": ["", ""],
         "answer": ["B", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     },
     {
         "id": 213,
-        "isMcqGroup": false,
-        "image": "",
-        "hintImage": "",
         "audio": [
             "/static/ToeicTests/audios/Ets_Toeic_Test_2/questions_audios/13.mp3",
             "/static/ToeicTests/audios/Ets_Toeic_Test_2/questions_audios/sub_audios/13_1.mp3",
@@ -268,13 +175,7 @@
         "optionA": ["(M-Au)A television reporter.", "(Đàn ông - Giọng Úc) Một phóng viên truyền hình."],
         "optionB": ["I'd prefer Thursday.", "Tôi thích thứ năm hơn."],
         "optionC": ["The latest press release.", "Thông cáo báo chí gần nhất."],
-        "optionD": ["", ""],
         "answer": ["B", ""],
-        "video_exp_url": "",
-        "grammar_links_info": [],
-        "annotatedVocabs": [],
-        "learnerQuestionsCount": 0,
-        "testDuration": 27,
-        "did_wrongly_the_last_time": false
+        "testDuration": 27
     }
 ]

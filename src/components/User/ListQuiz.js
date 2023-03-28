@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import { getQuizByUser } from '../../services/apiService';
 import './ListQuiz.scss';
 import { useNavigate } from 'react-router-dom';
+import _ from 'lodash';
 
 function ListQuiz({ action, colorBtn }) {
     const navigate = useNavigate();
@@ -19,11 +19,22 @@ function ListQuiz({ action, colorBtn }) {
             setArrQuiz(res.DT);
         }
     };
-    console.log('arrQuiz', arrQuiz);
+    let newArrQuiz = _.cloneDeep(arrQuiz);
+    newArrQuiz = newArrQuiz.map((quiz, index) => {
+        // quiz.order = quiz.description.replace(/\D+/g, '');
+        quiz.order = quiz.description.match(/\d+\w*:/g)[0].replace(':', '');
+        return quiz;
+    });
+    newArrQuiz = _.orderBy(newArrQuiz, ['order'], ['asc']);
     return (
         <div className='listquiz-container container'>
-            {arrQuiz.length > 0 ? (
-                arrQuiz.map((quiz, index) => {
+            {newArrQuiz.length > 0 ? (
+                newArrQuiz.map((quiz, index) => {
+                    if (quiz.description.indexOf(': ') > -1) {
+                        quiz.title = quiz.description.slice(0, quiz.description.indexOf(': '));
+                        quiz.description = quiz.description.slice(quiz.title.length + 2);
+                    }
+
                     return (
                         <div key={index} className='card'>
                             <div className='image'>
@@ -32,13 +43,19 @@ function ListQuiz({ action, colorBtn }) {
                                     alt='' />
                             </div>
                             <div className='card-content'>
-                                <h4>Quiz {index + 1}</h4>
+                                <h3> {quiz.title}</h3>
                                 <p className='card-description'>{quiz.description}</p>
                                 <Button
                                     className='btn'
                                     variant={colorBtn}
                                     onClick={() =>
-                                        navigate(`/quiz/${quiz.id}`, { state: { quizTitle: quiz.description } })
+                                        navigate(`/quiz/${quiz.id}`, {
+                                            state: {
+                                                quizTitle: `${quiz.title}`,
+                                                quizDescription: `${quiz.description}`,
+                                                quizOrder: `${quiz.order.replace(/\D*/g, '')}`,
+                                            }
+                                        })
                                     }
                                 >
                                     {action}

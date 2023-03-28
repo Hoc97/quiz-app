@@ -2,22 +2,20 @@ import { useEffect, useState } from 'react';
 import { FcAlarmClock } from 'react-icons/fc';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { RiSendPlaneFill } from 'react-icons/ri';
-
+import { toHHMMSS } from '../../../../utils/commonFunction';
 import _ from 'lodash';
-function CountDown({ handleFinishQuiz, setCurrentQuestion, dataQuiz, setDataQuiz }) {
+function CountDown({
+    handleFinishQuiz,
+    setCurrentQuestion,
+    dataQuiz,
+    setDataQuiz,
+    setIndexQuestion,
+    currentPart,
+    isShowResultQuiz
+}) {
     let timer = 60 * 60;
     const [count, setCount] = useState(timer);
-
-    const toHHMMSS = (secs) => {
-        const sec_num = parseInt(secs, 10);
-        const hours = Math.floor(sec_num / 3600);
-        const minutes = Math.floor(sec_num / 60) % 60;
-        const seconds = sec_num % 60;
-
-        return [hours, minutes, seconds]
-            .map(v => v < 10 ? "0" + v : v)
-            .join(" : ");
-    };
+    const [showBtnSubmit, setShowBtnSubmit] = useState(false);
     useEffect(() => {
         if (count === 0) {
             handleFinishQuiz();
@@ -45,13 +43,22 @@ function CountDown({ handleFinishQuiz, setCurrentQuestion, dataQuiz, setDataQuiz
             });
         });
         setDataQuiz(dataQuizClone);
+        if (+currentPart === 7) {
+            setIndexQuestion(0);
+        }
     };
+
     return (
         <>
-            <div className='check' onClick={() => handleFinishQuiz()} >
-                <span className='check-icon'><RiSendPlaneFill /></span>
-                <span className='check-text'>Finish</span>
-            </div>
+            <button className='check' disabled={isShowResultQuiz} style={isShowResultQuiz ? { cursor: "not-allowed" } : {}}
+                onClick={() => showBtnSubmit ? handleFinishQuiz() : setShowBtnSubmit(true)} >
+                {showBtnSubmit ? (
+                    <span>
+                        <span className='check-icon'><RiSendPlaneFill /></span>
+                        <span className='check-text'>Submit</span>
+                    </span>
+                ) : <span className='confirm'>Bạn có muốn nộp bài</span>}
+            </button>
             <div className='time'>
                 <span className="time-icon"><FcAlarmClock /></span >
                 <span className='time-count'>{toHHMMSS(count)}</span>
@@ -63,5 +70,4 @@ function CountDown({ handleFinishQuiz, setCurrentQuestion, dataQuiz, setDataQuiz
         </>
     );
 }
-
 export default CountDown;
