@@ -7,7 +7,6 @@ import { Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { postLogout } from '../../services/apiService';
 import { toast } from 'react-toastify';
-import { doLogout } from '../../redux/action/action';
 import Images from '../../assets/img/Image';
 import Languages from '../Languages/Languages';
 import Fade from 'react-reveal/Fade';
@@ -16,8 +15,8 @@ import ClockDate from '../TimeDate/ClockDate';
 
 function Header() {
     const dispatch = useDispatch();
-    const isAuthenticated = useSelector((state) => state.userManage.isAuthenticated);
-    const account = useSelector((state) => state.userManage.account);
+    const isAuthenticated = useSelector((state) => state.accountManage.isAuthenticated);
+    const account = useSelector((state) => state.accountManage.account);
     const navigate = useNavigate();
     const handleLogin = () => {
         navigate('/login');
@@ -30,7 +29,7 @@ function Header() {
         let res = await postLogout(account.email, account.refresh_token);
         console.log(res);
         if (res.EC === 0) {
-            dispatch(doLogout());
+            dispatch({ type: 'USER_LOGOUT' });
             navigate('/login');
         } else {
             toast.error(res.EM);
@@ -68,16 +67,16 @@ function Header() {
                         <div className='nav-group'>
                             <Fade bottom>
                                 <span className='pointer intro' onClick={() => scrollTo('feature')}>
-                                    FEATURES
+                                    TÍNH NĂNG
                                 </span>
                                 <span className='pointer intro' onClick={() => scrollTo('aboutus')}>
-                                    ABOUT US
+                                    VỀ CHÚNG TÔI
                                 </span>
                                 <span className=' pointer intro' onClick={() => scrollTo('contact')}>
-                                    CONTACT
+                                    LIÊN HỆ
                                 </span>
                                 <span className='pointer intro' onClick={() => scrollTo('')}>
-                                    COMPETION
+                                    THI ĐẤU
                                 </span>
                                 <Nav className='settings'>
                                     {isAuthenticated ? (
@@ -94,9 +93,9 @@ function Header() {
                                             }
                                         >
                                             <NavDropdown.Item onClick={() => navigate('/profile')}>
-                                                Profile
+                                                Tài khoản
                                             </NavDropdown.Item>
-                                            <NavDropdown.Item onClick={() => handleLogout()}>Log out</NavDropdown.Item>
+                                            <NavDropdown.Item onClick={() => handleLogout()}>Đăng xuất</NavDropdown.Item>
                                         </NavDropdown>
                                     ) : (
                                         <>
@@ -105,10 +104,10 @@ function Header() {
                                                 className='me-3 btn-login'
                                                 onClick={() => handleLogin()}
                                             >
-                                                LOG IN
+                                                ĐĂNG NHẬP
                                             </Button>
                                             <Button variant='dark' className='me-1' onClick={() => handleSignUp()}>
-                                                SIGN UP
+                                                ĐĂNG KÝ
                                             </Button>
                                         </>
                                     )}

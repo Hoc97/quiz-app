@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade';
 import { FaArrowRight } from 'react-icons/fa';
 
 function Content() {
-    const isAuthenticated = useSelector((state) => state.userManage.isAuthenticated);
+    const isAuthenticated = useSelector((state) => state.accountManage.isAuthenticated);
     const navigate = useNavigate();
     // const { t } = useTranslation();
     return (
@@ -18,10 +18,9 @@ function Content() {
                 <div className='text'>
                     <div className='title'>
                         <Fade bottom>
-                            <h1 className='title-h1'>CÓ MỘT CÁCH TỐT HƠN ĐỂ HỎI</h1>
+                            <h1 className='title-h1'>TIẾNG ANH KHÓ, CÓ DUOLINGO</h1>
                             <p className='title-p'>
-                                Bạn không muốn làm một hình thức nhàm chán. Và khán giả của bạn sẽ không trả lời một.
-                                Thay vào đó, hãy tạo một vài thứ và khiến mọi người hài lòng.
+                                2023, Luyện thi TOEIC & Học tiếng Anh theo cách mới!
                             </p>
 
                             {isAuthenticated === false ? (
@@ -54,13 +53,15 @@ function Content() {
             </div>
             <div className='bg-infinite-text'>
                 <div className='infinite-text'>
-                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
-                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
-                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
-                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
-                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
-                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
-                    <p>Get Ready To Work For Some Of The Biggest Brands</p>
+                    <p>Luyện tập hiệu quả, đạt thành tích cao nhé</p>
+                    <p>Luyện tập hiệu quả, đạt thành tích cao nhé</p>
+                    <p>Luyện tập hiệu quả, đạt thành tích cao nhé</p>
+                    <p>Luyện tập hiệu quả, đạt thành tích cao nhé</p>
+                    <p>Luyện tập hiệu quả, đạt thành tích cao nhé</p>
+                    <p>Luyện tập hiệu quả, đạt thành tích cao nhé</p>
+                    <p>Luyện tập hiệu quả, đạt thành tích cao nhé</p>
+                    <p>Luyện tập hiệu quả, đạt thành tích cao nhé</p>
+
                 </div>
             </div>
             <Fade right>

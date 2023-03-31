@@ -1,89 +1,53 @@
 import _ from 'lodash';
-import { useState } from 'react';
-import Part1 from './Part/Part1';
-import Part2 from './Part/Part2';
-import Part3 from './Part/Part3';
-import Part4 from './Part/Part4';
+import Part12 from './Part/Part12';
+import Part34 from './Part/Part34';
 import Part5 from './Part/Part5';
-import Part6 from './Part/Part6';
-import Part7 from './Part/Part7';
+import Part67 from './Part/Part67';
 
-function Question({ data, index, handleCheckBox, currentPart, isShowResultQuiz }) {
-    const [previewImage, setPreviewImage] = useState(false);
+function Question({
+    data,
+    index,
+    handleCheckBox,
+    currentPart,
+    isShowResultQuiz,
+    isShowAnswer
+}) {
     // console.log('data', data);
-    const genCharArray = (charA, charZ) => {
-        let a = [];
-        let i = `${charA}`.charCodeAt(0) + 17;
-        let j = `${charZ}`.charCodeAt(0) + 17;
-        for (; i <= j; ++i) {
-            a.push(String.fromCharCode(i));
-        }
-        return a;
-    };
-
-    console.log(isShowResultQuiz);
     return (
         <div className='question-quiz-container'>
             {!_.isEmpty(data) &&
                 <>
-                    {+currentPart === 1 && <Part1
+                    {(+currentPart === 1 || +currentPart === 2) && <Part12
                         data={data}
                         currentPart={currentPart}
                         handleCheckBox={handleCheckBox}
                         index={index}
-                        genCharArray={genCharArray}
-                        previewImage={previewImage}
-                        setPreviewImage={setPreviewImage}
-                    />}
-
-                    {+currentPart === 2 && <Part2
-                        data={data}
-                        currentPart={currentPart}
-                        handleCheckBox={handleCheckBox}
-                        index={index}
-                        genCharArray={genCharArray}
                         isShowResultQuiz={isShowResultQuiz}
-
+                        isShowAnswer={isShowAnswer}
                     />}
-                    {+currentPart === 3 && <Part3
+                    {(+currentPart === 3 || +currentPart === 4) && <Part34
                         listData={data}
                         currentPart={currentPart}
                         handleCheckBox={handleCheckBox}
                         index={index}
-                        genCharArray={genCharArray}
-
-                    />}
-                    {+currentPart === 4 && <Part4
-                        listData={data}
-                        currentPart={currentPart}
-                        handleCheckBox={handleCheckBox}
-                        index={index}
-                        genCharArray={genCharArray}
-
+                        isShowResultQuiz={isShowResultQuiz}
+                        isShowAnswer={isShowAnswer}
                     />}
                     {+currentPart === 5 && <Part5
                         data={data}
                         currentPart={currentPart}
                         handleCheckBox={handleCheckBox}
                         index={index}
-                        genCharArray={genCharArray}
-
+                        isShowResultQuiz={isShowResultQuiz}
+                        isShowAnswer={isShowAnswer}
                     />}
-                    {+currentPart === 6 && <Part6
+                    {(+currentPart === 6 || +currentPart === 7) && <Part67
                         listData={data}
                         currentPart={currentPart}
                         handleCheckBox={handleCheckBox}
                         index={index}
-                        genCharArray={genCharArray}
-
-                    />}
-                    {+currentPart === 7 && <Part7
-                        listData={data}
-                        currentPart={currentPart}
-                        handleCheckBox={handleCheckBox}
-                        index={index}
-                        genCharArray={genCharArray}
-
+                        isShowResultQuiz={isShowResultQuiz}
+                        isShowAnswer={isShowAnswer}
                     />}
                 </>
             }

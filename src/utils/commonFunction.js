@@ -17,6 +17,16 @@ const toHHMMSS = (secs) => {
         .join(" : ");
 };
 
+const tranferToAlphabet = (charA, charZ) => {
+    let a = [];
+    let i = `${charA}`.charCodeAt(0) + 17;
+    let j = `${charZ}`.charCodeAt(0) + 17;
+    for (; i <= j; ++i) {
+        a.push(String.fromCharCode(i));
+    }
+    return a;
+};
+
 // blob is e.target.files[0] => return data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQAB...
 const blobToBase64 = (blob) => {
     return new Promise((resolve, _) => {
@@ -34,4 +44,10 @@ const urltoFile = (url, filename, mimeType) => {
     );
 };
 
-export { validateEmail, blobToBase64, urltoFile, toHHMMSS };
+export {
+    validateEmail,
+    blobToBase64,
+    urltoFile,
+    toHHMMSS,
+    tranferToAlphabet
+};

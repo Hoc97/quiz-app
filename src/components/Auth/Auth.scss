@@ -116,13 +116,17 @@
                     cursor: pointer;
                     margin-top: 10px;
                 }
+            }
 
-                .quick-login {
-                    .title {
-                        font-size: 20px;
-                        font-weight: 500;
-                        font-style: italic;
-                    }
+            .quick-login {
+                width: 150%;
+                margin-left: -75px;
+                text-align: center;
+
+                .title {
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-style: italic;
                 }
             }
         }
@@ -222,6 +226,19 @@
                         background-color: #1ad257;
                         box-shadow: 0 0 3px 0.5px #1bdb5a;
                     }
+                }
+            }
+
+
+            .quick-login {
+                width: 150%;
+                margin-left: -75px;
+                text-align: center;
+
+                .title {
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-style: italic;
                 }
             }
         }

@@ -30,7 +30,7 @@ function ModalDeleteUser({
         <>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Comfirm delete user</Modal.Title>
+                    <Modal.Title>Confirm delete user</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     Are you sure to delete  user email = <b>{userDelete.email && userDelete.email}</b>

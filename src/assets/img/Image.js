@@ -36,7 +36,13 @@ const Images = {
     },
     Feature: {
 
+    },
+    Quiz: {
+        Correct: require('./icon-correct.png'),
+        inCorrect: require('./icon-incorrect.png'),
     }
+
+
 
 };
 

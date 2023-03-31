@@ -9,8 +9,8 @@ function Opinion() {
             content: Images.Opinion.content1,
             text: (
                 <span>
-                    Tiết kiệm thời gian học bằng cách học <span className='highlight'> ĐÚNG </span>, xây dựng nền tảng ngữ pháp,
-                    từ vựng có tính <span className='highlight'>ỨNG DỤNG CAO.</span>
+                    Ngân hàng đề thi được cập nhật <span className='highlight'>LIÊN TỤC </span> với bộ câu hỏi đa dạng
+                    giúp bạn làm quen với đề thi thật, sẵn sàng 100% cho kỳ thi của bạn.
                 </span>
             ),
         },
@@ -19,7 +19,7 @@ function Opinion() {
             text: (
                 <span>
                     Nắm được hình thức thi, format bài thi,<span className='highlight'> CHIẾN THUẬT</span> ẳm điểm cao trong các phần thi,
-                    nâng cấp vốn từ.
+                    củng cố kiến thức, nâng cấp vốn từ.
                 </span>
             ),
         },

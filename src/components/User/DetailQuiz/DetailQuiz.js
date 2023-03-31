@@ -8,6 +8,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { TiArrowBack } from 'react-icons/ti';
 import _ from 'lodash';
+
 function DetailQuiz() {
     const navigate = useNavigate();
     const params = useParams();
@@ -16,7 +17,7 @@ function DetailQuiz() {
     const currentPart = location?.state?.quizOrder;
     const [isShowModalResult, setIsShowModalResult] = useState(false);
     const [isShowResultQuiz, setIsShowResultQuiz] = useState(false);
-
+    const [isShowAnswer, setIsShowAnswer] = useState(false);
     const [dataModal, setDataModal] = useState({});
     const [dataQuiz, setDataQuiz] = useState([]);
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -43,6 +44,7 @@ function DetailQuiz() {
                     let audio = '', paragraph = '';
                     value.forEach((item, index) => {
                         item.answers.isSelected = false;
+                        item.answers.isCorrect = false;
                         answers.push(item.answers);
                         image = item.image;
                         if (index !== 0) return;
@@ -82,36 +84,46 @@ function DetailQuiz() {
             'answers': [],
         };
         let answers = [];
-        if (dataQuiz.length > 0) {
-            dataQuiz.forEach((question) => {
-                let questionId = question.questionID;
-                let userAnswerId = [];
-                question.answers.forEach((answer) => {
-                    if (answer.isSelected) {
-                        userAnswerId.push(answer.id);
-                    }
-                });
-                answers.push({
-                    'questionId': +questionId,
-                    'userAnswerId': userAnswerId,
-                });
+        if (dataQuiz.length === 0) return;
+        dataQuiz.forEach((question) => {
+            let questionId = question.questionID;
+            let userAnswerId = [];
+            question.answers.forEach((answer) => {
+                if (answer.isSelected) userAnswerId.push(answer.id);
             });
-            payload.answers = answers;
-        }
+            answers.push({
+                'questionId': +questionId,
+                'userAnswerId': userAnswerId,
+            });
+        });
+        payload.answers = answers;
         //submit API
         let res = await postSubmitQuiz(payload);
         console.log(res);
-        if (res.EC === 0) {
-            setDataModal(res.DT);
-            setIsShowModalResult(true);
-            setCurrentQuestion(0);
-        } else {
+        if (res.EC !== 0) {
             alert('something wrong...');
+            return;
         }
+        setDataModal(res.DT);
+        setIsShowModalResult(true);
+        setCurrentQuestion(0);
+        let dataQuizClone = _.cloneDeep(dataQuiz);
+        dataQuizClone.forEach(question => {
+            let questionSystemId = res.DT.quizData.find(item => item.questionId === +question.questionID);
+            let answerSystemId = questionSystemId.systemAnswers[0].id;
+            question.answers.forEach(answer => {
+                if (answer.id === answerSystemId) answer.isCorrect = true;
+            });
+        });
+        setDataQuiz(dataQuizClone);
     };
+
+    console.log('dataQuiz', dataQuiz);
 
     const handleShowResult = () => {
         setIsShowResultQuiz(true);
+        setIsShowModalResult(false);
+        setIsShowAnswer(true);
     };
     return (
         <div className={`detail-quiz-container ${+currentPart === 6 || +currentPart === 7 ? 'container-part6-7' : 'container'}`} >
@@ -121,18 +133,17 @@ function DetailQuiz() {
                 {/* to your page */}
             </div>
             <div className={`detail-quiz`}>
-                <Content setDataModal={setDataModal}
-                    setIsShowModalResult={setIsShowModalResult}
+                <Content
                     dataQuiz={dataQuiz}
                     setDataQuiz={setDataQuiz}
-                    handleFinishQuiz={handleFinishQuiz}
-                    currentQuestion={currentQuestion}
                     setCurrentQuestion={setCurrentQuestion}
+                    currentQuestion={currentQuestion}
                     currentPart={currentPart}
                     indexQuestion={indexQuestion}
-                    setIndexQuestion={setIndexQuestion}
                     arrayIndexPara={arrayIndexPara}
+                    setIndexQuestion={setIndexQuestion}
                     isShowResultQuiz={isShowResultQuiz}
+                    isShowAnswer={isShowAnswer}
                 />
                 <CheckMark
                     dataQuiz={dataQuiz}
@@ -151,6 +162,7 @@ function DetailQuiz() {
                 setShow={setIsShowModalResult}
                 dataModal={dataModal}
                 handleShowResult={handleShowResult}
+                setIsShowResultQuiz={setIsShowResultQuiz}
             />
         </div>
     );

@@ -9,19 +9,18 @@ import Languages from '../Languages/Languages';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useDispatch, useSelector } from 'react-redux';
 import { postLogout } from '../../services/apiService';
-import { doLogout } from '../../redux/action/action';
 import { toast } from 'react-toastify';
 
 function Admin() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const account = useSelector((state) => state.userManage.account);
+    const account = useSelector((state) => state.accountManage.account);
     const [collapsed, setCollapsed] = useState(false);
     const handleLogout = async () => {
         let res = await postLogout(account.email, account.refresh_token);
         console.log(res);
         if (res.EC === 0) {
-            dispatch(doLogout());
+            dispatch({ type: 'USER_LOGOUT' });
             navigate('/login');
         } else {
             toast.error(res.EM);

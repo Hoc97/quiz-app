@@ -43,7 +43,7 @@ function Password() {
         <Form>
             <Row className='mb-3'>
                 <Form.Group as={Col} xs={6}>
-                    <Form.Label>Current Password</Form.Label>
+                    <Form.Label>Mật khẩu hiện tại</Form.Label>
                     <Form.Control
                         type='password'
                         value={currentPassword}
@@ -53,7 +53,7 @@ function Password() {
             </Row>
             <Row className='mb-3'>
                 <Form.Group as={Col} xs={6}>
-                    <Form.Label>New Password</Form.Label>
+                    <Form.Label>Mật khẩu mới</Form.Label>
                     <Form.Control
                         type='password'
                         value={newPassword}
@@ -63,7 +63,7 @@ function Password() {
             </Row>
             <Row className='mb-3'>
                 <Form.Group as={Col} xs={6}>
-                    <Form.Label>Confirm Password</Form.Label>
+                    <Form.Label>Xác nhận lại mật khẩu</Form.Label>
                     <Form.Control
                         type='password'
                         value={confirmPassword}
@@ -72,7 +72,7 @@ function Password() {
                 </Form.Group>
             </Row>
             <Button variant='warning' onClick={handleUpdatePassword}>
-                Update password
+                Cập nhật mật khẩu
             </Button>
         </Form>
     );

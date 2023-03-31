@@ -1,7 +1,10 @@
 import CountDown from './CountDown';
-import { useRef, } from 'react';
-
-
+import { useRef, useState } from 'react';
+import { HiOutlineRefresh } from 'react-icons/hi';
+import { RiSendPlaneFill } from 'react-icons/ri';
+import _ from 'lodash';
+import ModalNotiRerefsh from '../ModalNotiRerefsh';
+import ModalNotiSubmit from '../ModalNotiSubmit';
 
 function CheckMark({
     dataQuiz,
@@ -15,6 +18,11 @@ function CheckMark({
     isShowResultQuiz
 }) {
     const refDiv = useRef([]);
+    const [isShowModalRefresh, setIsShowModalRefresh] = useState(false);
+    const [isShowModalSubmit, setIsShowModalSubmit] = useState(false);
+    const [answered, setAnswered] = useState(0);
+    let timer = 60 * 60;
+    const [count, setCount] = useState(timer);
     const questionSelected = (question, index, currentQuestion) => {
         if (!question.answers.length) return '';
         let _class = '';
@@ -37,17 +45,74 @@ function CheckMark({
         const b = arrayIndexPara.findIndex(item => item === Math.max(...a));
         setIndexQuestion(b);
     };
+
+    const handleRefresh = () => {
+        let dataQuizClone = _.cloneDeep(dataQuiz);
+        dataQuizClone.forEach(question => {
+            question.answers.forEach(answer => {
+                answer.isSelected = false;
+            });
+        });
+        setDataQuiz(dataQuizClone);
+        setCurrentQuestion(0);
+        setCount(timer);
+        setIsShowModalRefresh(false);
+        if (+currentPart === 7) {
+            setIndexQuestion(0);
+        }
+    };
+
+    const handleConfirmRefresh = () => {
+        for (const question of dataQuiz) {
+            for (const answer of question.answers) {
+                if (answer.isSelected) {
+                    setIsShowModalRefresh(true);
+                    return;
+                }
+            }
+        }
+    };
+
+    const handleConfirmSubmit = () => {
+        let answered = 0;
+        for (const question of dataQuiz) {
+            for (const answer of question.answers) {
+                if (answer.isSelected) {
+                    answered++;
+                    break;
+                }
+            }
+        }
+        if (answered === dataQuiz.length) {
+            handleFinishQuiz();
+            return;
+        }
+        setAnswered(answered);
+        setIsShowModalSubmit(true);
+    };
+
     return (
         <div className='check-mark'>
             <div className='check-header'>
+                <button className='check' disabled={false}//isShowResultQuiz
+                    style={isShowResultQuiz ? { cursor: "not-allowed", opacity: '0.5' } : {}}
+                    onClick={() => handleConfirmSubmit()} >
+                    <>
+                        <span className='check-icon'><RiSendPlaneFill /></span>
+                        <span className='check-text'>Submit</span>
+                    </>
+                </button>
+                <div className='refresh' disabled={false} onClick={() => handleConfirmRefresh()}
+                    style={isShowResultQuiz ? { cursor: "not-allowed", opacity: '0.5' } : {}}
+                >
+                    <span className='refresh-icon'><HiOutlineRefresh /></span>
+                    <span className='refresh-text'>Refresh</span>
+                </div>
                 <CountDown
-                    isShowResultQuiz={isShowResultQuiz}
                     handleFinishQuiz={handleFinishQuiz}
-                    setCurrentQuestion={setCurrentQuestion}
                     dataQuiz={dataQuiz}
-                    setDataQuiz={setDataQuiz}
-                    setIndexQuestion={setIndexQuestion}
-                    currentPart={currentPart}
+                    count={count}
+                    setCount={setCount}
                 />
             </div>
             <div className='note'>
@@ -73,7 +138,6 @@ function CheckMark({
                                 key={index}
                                 className='mark-answer'
                                 onClick={() => handleClickQuestion(index)}
-
                             >
                                 <span
                                     className={`number-detail ${questionSelected(question, index, currentQuestion)} `}
@@ -86,7 +150,18 @@ function CheckMark({
                     })}
                 </div >
             </div >
-
+            <ModalNotiRerefsh
+                show={isShowModalRefresh}
+                setShow={setIsShowModalRefresh}
+                handleRefresh={handleRefresh}
+            />
+            <ModalNotiSubmit
+                show={isShowModalSubmit}
+                setShow={setIsShowModalSubmit}
+                handleFinishQuiz={handleFinishQuiz}
+                answered={answered}
+                lengthQuiz={dataQuiz.length}
+            />
         </div >
     );
 };

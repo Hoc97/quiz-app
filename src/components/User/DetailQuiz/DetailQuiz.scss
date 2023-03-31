@@ -165,7 +165,7 @@
                     font-weight: 400;
                     padding-left: 10px;
 
-                    input[type=checkbox] {
+                    input[type=radio] {
                         display: none;
                     }
 
@@ -186,9 +186,21 @@
                         cursor: pointer;
                     }
 
-                    input[type=checkbox]:checked + .label-text {
+                    input[type=radio]:checked + .label-text {
                         background: #151515;
                         color: #fff;
+                    }
+
+                    .icon-correct {
+                        height: 30px;
+                        width: 30px;
+                        object-fit: cover;
+                    }
+
+                    .icon-incorrect {
+                        height: 25px;
+                        width: 25px;
+                        object-fit: cover;
                     }
                 }
             }
@@ -268,9 +280,9 @@
                     background-color: #ffbb01;
                     border: none;
                     color: #000;
-                    padding: 0px 12px;
                     border-radius: 10px;
-                    width: 70%;
+
+                    width: 45%;
                     height: 55px;
 
                     .confirm {
@@ -322,6 +334,7 @@
                     color: #000;
                     padding: 0px 12px;
                     border-radius: 10px;
+                    width: 40%;
 
                     .refresh-text {
                         font-size: 20px;
@@ -481,7 +494,7 @@
         .text-user {
             position: fixed;
             top: 30px;
-            left: 200px;
+            left: 100px;
             padding: 5px 5px;
             display: inline-block;
             border-radius: 5px;

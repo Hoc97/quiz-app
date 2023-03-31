@@ -133,13 +133,15 @@ function ManageQuestion() {
     };
 
     const handleAnswerQuestion = (type, questionId, answerId, value) => {
+        console.log(type, questionId, answerId, value);
         let questionsClone = _.cloneDeep(questions);
         let index = questionsClone.findIndex((item) => item.id === questionId);
         if (index > -1) {
             questionsClone[index].answers =
                 questionsClone[index].answers.map(answer => {
+                    answer.isCorrect = false;
                     if (answer.id === answerId) {
-                        if (type === 'CHECKBOX') {
+                        if (type === 'RADIO') {
                             answer.isCorrect = value;
                         }
                         if (type === 'INPUT') {
@@ -210,6 +212,7 @@ function ManageQuestion() {
         setPreviewImage(false);
         setUrlImagePreview(initUrlImagePreview);
     };
+    console.log('question', questions);
     return (
         <div className='question-container' >
             <div className='question-title'>Questions Management</div>
@@ -282,13 +285,13 @@ function ManageQuestion() {
                                     question?.answers?.map((answer, index) => {
                                         return (
                                             <div key={index} className='answers-content'>
-                                                <Form.Check type='checkbox' checked={answer.isCorrect} className='iscorrect'
-                                                    onChange={(e) => handleAnswerQuestion('CHECKBOX', question.id, answer.id, e.target.checked)}
+                                                <Form.Check type='radio' checked={answer.isCorrect} className='iscorrect' name={`${question?.id}`}
+                                                    onChange={(e) => handleAnswerQuestion('RADIO', question.id, answer.id, e.target.checked)}
                                                 />
                                                 <div className='description col-6 col'>
                                                     <FloatingLabel label={`Answer ${index + 1}`} className='mb-1'>
                                                         <Form.Control
-                                                            className={answer.isCorrect && answer.description && 'is-valid'}
+                                                            className={answer.isCorrect && 'is-valid'}
                                                             type='text'
                                                             onChange={(e) => handleAnswerQuestion('INPUT', question.id, answer.id, e.target.value)}
                                                             value={answer.description}

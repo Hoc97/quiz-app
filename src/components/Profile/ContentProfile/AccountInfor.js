@@ -9,12 +9,12 @@ import { useSelector } from 'react-redux';
 import noImage from '../../../assets/img/no image.jpg';
 import { postUpdateProfile } from '../../../services/apiService';
 import { useDispatch } from 'react-redux';
-import { userUpdate } from '../../../redux/action/action';
+
 import { blobToBase64, urltoFile } from '../../../utils/commonFunction';
 
 function AccountInfor() {
     const dispatch = useDispatch();
-    const accountData = useSelector((state) => state.userManage.account);
+    const accountData = useSelector((state) => state.accountManage.account);
 
     const [account, setAccount] = useState({
         email: accountData.email,
@@ -55,7 +55,11 @@ function AccountInfor() {
         const imageFile = await urltoFile(account.previewImage, `${account.username}.png`, 'image/png');
         let data = await postUpdateProfile(account.username, imageFile);
         if (data.EC === 0) {
-            dispatch(userUpdate(data, account.image));
+
+            dispatch({
+                type: 'USER_UPDATE',
+                payload: { data, image: account.image }
+            });
             toast.success(data.EM);
         } else {
             toast.warning(data.EM);
@@ -79,7 +83,7 @@ function AccountInfor() {
 
             <Row className='mb-3'>
                 <Form.Group as={Col}>
-                    <Form.Label>Username</Form.Label>
+                    <Form.Label>Tên</Form.Label>
                     <Form.Control
                         placeholder='Username'
                         name='username'
@@ -89,7 +93,7 @@ function AccountInfor() {
                 </Form.Group>
 
                 <Form.Group as={Col}>
-                    <Form.Label>Role</Form.Label>
+                    <Form.Label>Vai trò</Form.Label>
                     <Form.Select
                         disabled
                         value={account.role}
@@ -104,7 +108,7 @@ function AccountInfor() {
             <Form.Group className='mb-3'>
                 <Form.Label className='label-upload' htmlFor='labelUpload'>
                     <FiUpload color='009688' size={20} />
-                    Upload Image
+                    Cập nhật hình ảnh
                 </Form.Label>
                 <Form.Control type='file' id='labelUpload' hidden onChange={handleUpload} />
             </Form.Group>
@@ -112,11 +116,11 @@ function AccountInfor() {
                 {account.previewImage ? (
                     <img className='image' src={account.previewImage} alt='' />
                 ) : (
-                    <span>Preview Image</span>
+                    <span>Xem trước hình ảnh</span>
                 )}
             </Form.Group>
             <Button variant='warning' onClick={handleUpdateInfo}>
-                Update info
+                Cập nhật thông tin
             </Button>
         </Form>
     );

@@ -18,16 +18,15 @@ function PreLoad() {
                 </div>
                 <div className='load-intro'>
                     <div className='load-intro__1'></div>
-                    <div className='load-intro__3'>Welcome To...</div>
+                    <div className='load-intro__3'>Chào mừng đến...</div>
                     <div className='load-intro__4'>Duolingo</div>
-                    <div className='load-intro__5'>Coded By ReactJS</div>
-                    <div className='load-intro__6'>By Thai Hoc</div>
+                    <div className='load-intro__5'>Code bằng ReactJS</div>
+                    <div className='load-intro__6'>Bởi Thái Học</div>
                     <div className='ball__1' />
                     <div className='ball__2' />
                     <div className='ball__3' />
                 </div>
             </div>
-
         </div>
 
     );

@@ -7,6 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { postSignUp } from '../../services/apiService';
 import { toast } from 'react-toastify';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
+import { FaArrowCircleLeft } from 'react-icons/fa';
 import Images from '../../assets/img/Image';
 function SignUp() {
     const [account, setAccount] = useState({
@@ -56,9 +57,9 @@ function SignUp() {
     return (
         <div className='signup-container'>
             <div className='signup-header'>
-                <span>Alreade have an account?</span>
+                <span>Bạn đã có sẵn tài khoản?</span>
                 <Link to='/login' className='signup-header-signup'>
-                    Log in
+                    <b style={{ color: '#384fa1' }}> Đăng nhập</b>
                 </Link>
             </div>
             <div className='signup-content'>
@@ -66,14 +67,14 @@ function SignUp() {
                     <div className='logo'>
                         <img src={Images.Headers.logo} alt='' height={50} />
                     </div>
-                    <h2 className='welcome'>Start 's your journey ^^</h2>
+                    <h2 className='welcome'>Bắt đầu hành trình của bạn</h2>
                     <div className='content'>
                         <Form>
                             <Form.Group className='mb-3'>
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control
                                     type='email'
-                                    placeholder='Enter email'
+                                    placeholder='Nhập email'
                                     name='email'
                                     onChange={handleInput}
                                 />
@@ -83,7 +84,7 @@ function SignUp() {
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control
                                     type={isShowPassword ? 'text' : 'password'}
-                                    placeholder='Password'
+                                    placeholder='Nhập mật khẩu'
                                     name='password'
                                     onChange={handleInput}
                                 />
@@ -98,7 +99,7 @@ function SignUp() {
                                 )}
                             </Form.Group>
                             <Form.Group className='mb-4'>
-                                <Form.Label>Username</Form.Label>
+                                <Form.Label>Tên</Form.Label>
                                 <Form.Control
                                     type='text'
                                     name='username'
@@ -106,11 +107,11 @@ function SignUp() {
                                 />
                             </Form.Group>
                             <Button variant='primary' type='submit' className='btn-signup' onClick={handleSignUp}>
-                                Create account
+                                Tạo tài khoản
                             </Button>
                         </Form>
                         <div className='text' onClick={() => navigate('/')}>
-                            &lt;&lt;Go to homepage
+                            <FaArrowCircleLeft /> Trở về trang chủ
                         </div>
                     </div>
                 </div>

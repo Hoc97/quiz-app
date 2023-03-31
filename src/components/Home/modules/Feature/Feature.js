@@ -5,6 +5,7 @@ import { FaFileAlt, FaClipboard, FaClipboardList, FaChartLine, FaUsers, } from "
 import { MdOutlineAdminPanelSettings, MdNotifications, MdManageHistory, MdAssignment } from 'react-icons/md';
 import { TbListCheck } from 'react-icons/tb';
 import { BsFillFileEarmarkBarGraphFill } from 'react-icons/bs';
+import { GoAlert } from 'react-icons/go';
 
 const FeatureList = [
     {
@@ -20,8 +21,12 @@ const FeatureList = [
         text: 'Thi online',
     },
     {
+        img: <GoAlert />,
+        text: 'Cảnh báo gian lận',
+    },
+    {
         img: <TbListCheck />,
-        text: 'Xem đáp án',
+        text: 'Xem lời giải chi tiết',
     },
     {
         img: <MdNotifications />,
@@ -49,7 +54,7 @@ const FeatureList = [
     },
     {
         img: <BsFillFileEarmarkBarGraphFill />,
-        text: 'Xem kết quả thi của người dùng',
+        text: 'Xem kết quả thi người dùng',
     },
 
 

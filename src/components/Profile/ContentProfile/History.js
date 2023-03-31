@@ -10,10 +10,8 @@ function History() {
     }, []);
     const fetchHistory = async () => {
         let res = await getQuizHistory();
-
         if (res.EC === 0) {
             let list = res.DT.data;
-
             let newData = list.map(item => {
                 return {
                     total_correct: item.total_correct,
@@ -30,7 +28,6 @@ function History() {
         } else {
             toast.success(res.EC);
         }
-
     };
     return (
         <>
@@ -38,10 +35,9 @@ function History() {
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Quiz Name</th>
-                        <th>Total Question</th>
-                        <th>Total Correct</th>
-                        <th>Date</th>
+                        <th>Tên bài thi</th>
+                        <th>Kết quả</th>
+                        <th>Thời gian thi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -50,8 +46,7 @@ function History() {
                             <tr key={index}>
                                 <td>{index + 1}</td>
                                 <td>{n.quiz_name} </td>
-                                <td>{n.total_questions}</td>
-                                <td className='color'>{n.total_correct}</td>
+                                <td className='color'>{n.total_correct}/{n.total_questions}</td>
                                 <td>{n.date}</td>
                             </tr>
                         );

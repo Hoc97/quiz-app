@@ -6,14 +6,14 @@ import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-ico
 function Content({
     dataQuiz,
     setDataQuiz,
-    handleFinishQuiz,
     currentQuestion,
     setCurrentQuestion,
     indexQuestion,
     setIndexQuestion,
     currentPart,
     arrayIndexPara,
-    isShowResultQuiz
+    isShowResultQuiz,
+    isShowAnswer
 }) {
     // console.log('data', dataQuiz);
     const location = useLocation();
@@ -58,16 +58,13 @@ function Content({
         let question = dataQuizClone.find((item) => +item.questionID === +questionID);
         if (question && question.answers) {
             question.answers.map((item) => {
-                if (+item.id === +answerID) {
-                    item.isSelected = checked;
-                }
+                item.isSelected = false;
+                if (+item.id === +answerID) item.isSelected = checked;
                 return item;
             });
         }
         setDataQuiz(dataQuizClone);
     };
-
-
 
     let dataQuestion = {};
     if (dataQuiz.length > 0) {
@@ -77,7 +74,6 @@ function Content({
         if (+currentPart === 7)
             dataQuestion = dataQuiz.slice(arrayIndexPara[indexQuestion], arrayIndexPara[indexQuestion + 1]);
     }
-    console.log('currentQuestion', currentQuestion);
     return (
         <div className='content'>
             <h2>
@@ -100,6 +96,7 @@ function Content({
                 data={dataQuestion}
                 currentPart={currentPart}
                 isShowResultQuiz={isShowResultQuiz}
+                isShowAnswer={isShowAnswer}
             />
             <hr />
             <div className='move-page'>

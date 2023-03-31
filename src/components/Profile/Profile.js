@@ -11,9 +11,9 @@ function Profile() {
     return (
         <div className='container profile-container'>
             <div className='header'>
-                <span className={color === 1 ? 'active' : ''} onClick={() => handleColor(1)}>Account infomation</span>
-                <span className={color === 2 ? 'active' : ''} onClick={() => handleColor(2)}>Password</span>
-                <span className={color === 3 ? 'active' : ''} onClick={() => handleColor(3)}>History</span>
+                <span className={color === 1 ? 'active' : ''} onClick={() => handleColor(1)}>Thông tin tài khoản</span>
+                <span className={color === 2 ? 'active' : ''} onClick={() => handleColor(2)}>Mật khẩu</span>
+                <span className={color === 3 ? 'active' : ''} onClick={() => handleColor(3)}>Lịch sử bài thi</span>
             </div>
             <div className='content'>
                 {color === 1 && <AccountInfor />}

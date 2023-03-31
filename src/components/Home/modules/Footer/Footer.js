@@ -28,7 +28,7 @@ export default function Footer() {
                 </div>
             </Fade>
             <div className='content-wrap'>
-                <div className='contact'>Contact with us</div>
+                <div className='contact'>Liên hệ với tôi</div>
                 <div className='info-ls'>
                     {InfoList.map((info, index) => (
                         <Fade bottom key={`info_${index}`}>

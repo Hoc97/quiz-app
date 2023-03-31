@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import rdcReducer from './rdcReducer';
+import rdcAccount from './rdcAccount';
+
 
 const rootReducer = combineReducers({
-    userManage: rdcReducer,
+    accountManage: rdcAccount,
+    // quizManage: rdcQuiz
 });
 
 export default rootReducer;

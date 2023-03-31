@@ -1,27 +1,22 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import { getQuizByUser } from '../../services/apiService';
 import './ListQuiz.scss';
-import { useNavigate } from 'react-router-dom';
 import _ from 'lodash';
 
 function ListQuiz({ action, colorBtn }) {
     const navigate = useNavigate();
-
     const [arrQuiz, setArrQuiz] = useState([]);
     useEffect(() => {
         getQuizData();
     }, []);
     const getQuizData = async () => {
         const res = await getQuizByUser();
-        if (res.EC === 0) {
-            // console.log(res.DT);
-            setArrQuiz(res.DT);
-        }
+        if (res.EC === 0) setArrQuiz(res.DT);
     };
     let newArrQuiz = _.cloneDeep(arrQuiz);
-    newArrQuiz = newArrQuiz.map((quiz, index) => {
-        // quiz.order = quiz.description.replace(/\D+/g, '');
+    newArrQuiz = newArrQuiz.map((quiz) => {
         quiz.order = quiz.description.match(/\d+\w*:/g)[0].replace(':', '');
         return quiz;
     });
@@ -34,7 +29,6 @@ function ListQuiz({ action, colorBtn }) {
                         quiz.title = quiz.description.slice(0, quiz.description.indexOf(': '));
                         quiz.description = quiz.description.slice(quiz.title.length + 2);
                     }
-
                     return (
                         <div key={index} className='card'>
                             <div className='image'>
