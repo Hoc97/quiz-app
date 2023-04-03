@@ -1,6 +1,6 @@
 import CountDown from './CountDown';
 import { useRef, useState } from 'react';
-import { HiOutlineRefresh } from 'react-icons/hi';
+import { VscDebugRestart } from 'react-icons/vsc';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import _ from 'lodash';
 import ModalNotiRerefsh from '../ModalNotiRerefsh';
@@ -15,28 +15,36 @@ function CheckMark({
     currentPart,
     arrayIndexPara,
     setIndexQuestion,
-    isShowResultQuiz
+    isShowResultQuiz,
+    isShowAnswer,
+    submissionResult
 }) {
     const refDiv = useRef([]);
     const [isShowModalRefresh, setIsShowModalRefresh] = useState(false);
     const [isShowModalSubmit, setIsShowModalSubmit] = useState(false);
     const [answered, setAnswered] = useState(0);
-    let timer = 60 * 60;
-    const [count, setCount] = useState(timer);
+
+
+    const questionResult = (question) => {
+        for (const answer of question.answers) {
+            if (answer.isSelected) {
+                if (answer.isCorrect) return 'correct';
+                return 'incorrect';
+            }
+        }
+        return 'not-answered';
+
+    };
+
     const questionSelected = (question, index, currentQuestion) => {
         if (!question.answers.length) return '';
         let _class = '';
         let isUnAnswered = question.answers.every(answer => answer.isSelected === false);
-
-        if (index === currentQuestion) {
-            _class += ' clicked';
-        }
-        if (isUnAnswered === false) {
-            _class += ' selected';
-        }
-
+        if (index === currentQuestion) _class += ' clicked';
+        if (isUnAnswered === false) _class += ' selected';
         return _class.trim();
     };
+
 
     const handleClickQuestion = (index) => {
         setCurrentQuestion(index);
@@ -55,7 +63,7 @@ function CheckMark({
         });
         setDataQuiz(dataQuizClone);
         setCurrentQuestion(0);
-        setCount(timer);
+        // setCount(timer);
         setIsShowModalRefresh(false);
         if (+currentPart === 7) {
             setIndexQuestion(0);
@@ -105,30 +113,58 @@ function CheckMark({
                 <div className='refresh' disabled={false} onClick={() => handleConfirmRefresh()}
                     style={isShowResultQuiz ? { cursor: "not-allowed", opacity: '0.5' } : {}}
                 >
-                    <span className='refresh-icon'><HiOutlineRefresh /></span>
-                    <span className='refresh-text'>Refresh</span>
+                    <span className='refresh-icon'><VscDebugRestart /></span>
+                    <span className='refresh-text'>Restart</span>
                 </div>
                 <CountDown
                     handleFinishQuiz={handleFinishQuiz}
                     dataQuiz={dataQuiz}
-                    count={count}
-                    setCount={setCount}
+                // count={count}
+                // setCount={setCount}
                 />
             </div>
             <div className='note'>
-                <h4>Note:</h4>
+                <h4>Chú thích:</h4>
                 <p>
-                    <span className='note-number answered'>1</span>
-                    <span>Answered</span>
+                    {isShowAnswer ?
+                        <>
+                            <span className='note-number correct'></span>
+                            <span>{submissionResult.numberCorrect} câu đúng</span>
+                        </> :
+                        <>
+                            <span className='note-number answered'>1</span>
+                            <span> Đã trả lời</span>
+                        </>
+                    }
                 </p>
                 <p>
-                    <span className='note-number isfocusing '>1</span>
-                    <span>Is Focusing</span>
+                    {isShowAnswer ?
+                        <>
+                            <span className='note-number incorrect'></span>
+                            <span>{submissionResult.numberIncorrect} câu sai</span>
+                        </> :
+                        <>
+                            <span className='note-number isfocusing '>1</span>
+                            <span>Đang chọn </span>
+                        </>
+                    }
                 </p>
                 <p>
-                    <span className='note-number notselected'>1</span>
-                    <span>Not Selected</span>
+                    {isShowAnswer ?
+                        <>
+                            <span className={!!submissionResult.numberNotanswered ? 'note-number not-answered' : ''}></span>
+                            {!!submissionResult.numberNotanswered &&
+                                <span> {submissionResult.numberNotanswered} câu chưa làm</span>}
+
+
+                        </> :
+                        <>
+                            <span className='note-number notselected'>1</span>
+                            <span>Chưa được chọn</span>
+                        </>
+                    }
                 </p>
+                <span className='result'>{submissionResult.numberCorrect} / {dataQuiz.length}</span>
             </div>
             <div className='list-mark'>
                 <div className='list'>
@@ -140,7 +176,9 @@ function CheckMark({
                                 onClick={() => handleClickQuestion(index)}
                             >
                                 <span
-                                    className={`number-detail ${questionSelected(question, index, currentQuestion)} `}
+                                    className={`number-detail 
+                                    ${isShowAnswer ? questionResult(question)
+                                            : questionSelected(question, index, currentQuestion)} `}
                                     ref={element => refDiv.current[index] = element}
                                 >
                                     {index + 1}

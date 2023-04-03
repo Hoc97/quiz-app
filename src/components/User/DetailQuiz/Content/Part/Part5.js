@@ -48,7 +48,9 @@ const Part5 = ({
                 );
             })}
             {isShowAnswer &&
-                <span>{QuestionResult[`Part${currentPart}`][questionID][1]}</span>
+                <div className='group-content-result-question'
+                    dangerouslySetInnerHTML={{ __html: QuestionResult[`Part${currentPart}`][questionID][1] }}
+                />
             }
         </>
     );

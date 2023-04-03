@@ -54,7 +54,7 @@ const Part12 = ({
                                 <>
                                     <span>{QuestionResult[`Part${currentPart}`][questionID][i][0]}</span>
                                     {answer.isSelected ?
-                                        (answer.isSelected === answer.isCorrect ? <CheckCorrect /> : <CheckIncorrect />)
+                                        (answer.isCorrect ? <CheckCorrect /> : <CheckIncorrect />)
                                         : answer.isCorrect && <CheckCorrect />
                                     }
                                 </>

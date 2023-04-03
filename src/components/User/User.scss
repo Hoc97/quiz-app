@@ -1,12 +1,37 @@
 .wrapper {
     .content {
         background-color: #eaefec;
-        padding-top: 20px;
+        min-height: calc(100vh - 60px);
         height: calc(100% - 60px);
 
 
         .user-container {
 
+            .header {
+                text-align: center;
+
+                span {
+                    background: transparent;
+                    display: inline-block;
+                    padding: 5px 20px;
+                    margin-top: 2px;
+                    margin-left: 2px;
+                    margin-bottom: 20px;
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    font-weight: 400;
+                    font-size: 25px;
+                    box-shadow: 0 10px 10px rgba(0, 0, 0, .15);
+                    cursor: pointer;
+
+                    &.active {
+                        background-color: #FFCB09;
+                        font-weight: 600;
+                        border-bottom: 2px solid rgb(187, 48, 254);
+
+                    }
+                }
+            }
 
             .topic {
                 margin-bottom: 30px;

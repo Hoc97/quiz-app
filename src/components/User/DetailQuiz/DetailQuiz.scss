@@ -65,6 +65,44 @@
                 min-height: 550px;
                 position: relative;
 
+                .group-content-result-paragraph {
+                    margin-top: 10px;
+                    padding: 15px 15px 0px 15px;
+                    background-color: #f2fcfe;
+                    border-radius: 5px;
+                }
+
+                .group-content-result-question {
+                    margin-top: 10px;
+                    padding: 10px 15px;
+                    background-color: #f1f1f1;
+                    border-radius: 5px;
+
+
+                    .quote {
+                        font-style: italic;
+                        color: #0478d1;
+                        box-shadow: inset 0 -1px 0 #0478d1;
+                        transition: all .15s ease-in-out;
+                        padding-bottom: 1px;
+                        text-decoration: none;
+                    }
+
+                    .explanation {
+                        margin: 0 !important;
+                        padding-left: 10px;
+                        list-style: none;
+
+                        .arrow-right {
+                            display: inline-block;
+                            margin-right: 10px;
+                            border-top: 5px solid transparent;
+                            border-bottom: 5px solid transparent;
+                            border-left: 10px solid #33abe5;
+                        }
+                    }
+                }
+
                 .group-content-p6 {
                     position: absolute;
                     top: 20px;
@@ -110,6 +148,7 @@
                     width: 460px;
                     overflow-y: scroll;
                     direction: rtl;
+                    margin-left: -13px;
 
                     div {
                         direction: ltr;
@@ -164,6 +203,10 @@
                     margin-bottom: 0;
                     font-weight: 400;
                     padding-left: 10px;
+
+                    .form-check-label {
+                        display: inline;
+                    }
 
                     input[type=radio] {
                         display: none;
@@ -386,6 +429,20 @@
                                 color: red;
                             }
 
+                            &.correct {
+                                background-color: #31a400;
+                                border: none;
+
+                            }
+
+                            &.incorrect {
+                                background-color: #dd3e5e;
+                                border: none;
+
+                            }
+
+                            // &.not-answered {}
+
                         }
 
 
@@ -398,6 +455,7 @@
                 padding: 15px;
                 background-color: #afff99;
                 padding-bottom: 1px;
+                position: relative;
 
                 p {
                     display: flex;
@@ -411,7 +469,8 @@
                         width: 25px;
                         border-radius: 50%;
                         border: 1px solid #999;
-
+                        padding-left: 1px;
+                        padding-top: 1px;
                         text-align: center;
                         margin-right: 10px;
 
@@ -423,6 +482,35 @@
                             background-color: #c6c6c6;
                         }
                     }
+
+                    .correct {
+                        background-color: #31a400;
+                        border: none;
+
+                    }
+
+                    .incorrect {
+                        background-color: #dd3e5e;
+                        border: none;
+
+                    }
+
+                    // .not-answered {}
+                }
+
+                .result {
+                    font-size: 25px;
+                    font-weight: 600;
+                    width: 100px;
+                    height: 100px;
+                    display: block;
+                    background: #fff454;
+                    border-radius: 50%;
+                    text-align: center;
+                    position: absolute;
+                    padding-top: 32px;
+                    top: 30px;
+                    right: 70px;
                 }
             }
         }

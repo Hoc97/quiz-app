@@ -49,13 +49,10 @@ function Login() {
             toast.error('Invalid Email');
             return;
         }
+
         //Call API
-
         setIsLoading(true);
-
         let data = await postLogin(account.email, account.password);
-        console.log(data);
-
         if (data.EC === 0) {
             dispatch({
                 type: 'GET_DATA_LOGIN',
@@ -73,7 +70,6 @@ function Login() {
     const handleQuickLogin = (email, password) => {
         setAccount({ email, password });
     };
-    console.log(account);
     return (
         <div className='login-container'>
             <div className='login-header'>
@@ -145,7 +141,7 @@ function Login() {
                         <hr />
                         <div className='mb-3 title'>Để đăng nhập nhanh bấm vào bên dưới... </div>
                         <Button variant="success me-3" onClick={() => handleQuickLogin('admin@gmail.com', '123456')}>Admin</Button>
-                        <Button variant="info" onClick={() => handleQuickLogin('user@gmail.com', '123456')}>User</Button>
+                        <Button variant="info" onClick={() => handleQuickLogin('user1@gmail.com', '123456')}>User</Button>
                     </div>
                 </div>
             </div>

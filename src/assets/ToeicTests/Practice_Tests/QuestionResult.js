@@ -830,7 +830,7 @@ const QuestionResult = {
         //////////////6-2
         "177": [
             ["will refer", "sẽ chỉ định (thì tương lai đơn)"],
-            ["did refer", "đã chỉ định (trợ động từ \"did\" để nhấn mạnh)"],
+            ["did refer", "đã chỉ định (dùng trợ động từ \"did\" để nhấn mạnh)"],
             ["referred", "đã chỉ định (thì quá khứ đơn)"],
             ["refers", "chỉ định (thì hiện tại đơn)"],
             [
@@ -899,7 +899,7 @@ const QuestionResult = {
         "267": [
             ["now", "bây giờ"],
             ["since", "kể từ đó"],
-            ["yet", "bây giờ (dùng trong câu phủ định hoặc câu hỏi)"],
+            ["yet", "bây giờ (dùng trong câu phủ định, câu hỏi)"],
             ["though", "mặc dù vậy"],
             [
                 "C",
@@ -915,7 +915,7 @@ const QuestionResult = {
         ],
         "269": [
             ["prohibit", "cấm (động từ nguyên mẫu)"],
-            ["prohibits", "cấm (động từ ở thì hiện tại đơn, ngôi số ít)"],
+            ["prohibits", "cấm (động từ thì hiện tại đơn, ngôi số ít)"],
             ["are prohibited", "bị cấm (bị động)"],
             ["are prohibiting", "cấm (thì hiện tại hoàn thành)"],
             [
@@ -1012,7 +1012,7 @@ const QuestionResult = {
         ],
         "258": [
             ["prohibit", "cấm (động từ nguyên mẫu)"],
-            ["prohibits", "cấm (động từ ở thì hiện tại đơn, ngôi số ít)"],
+            ["prohibits", "cấm (động từ thì hiện tại đơn, ngôi số ít)"],
             ["are prohibited", "bị cấm (bị động)"],
             ["are prohibiting", "cấm (thì hiện tại hoàn thành)"],
             [
@@ -1279,7 +1279,7 @@ const QuestionResult = {
         "310": [
             ["Only by telephone", "Chỉ qua điện thoại"],
             ["Only by email", "Chỉ qua email"],
-            ["By email and telephone", "Qua email và điện thoại"],
+            ["By email and telephone", "Qua email và qua điện thoại"],
             ["By telephone and fax", "Qua điện thoại và fax"],
             [
                 "C",
@@ -1549,16 +1549,6 @@ const QuestionResult = {
             ],
         ],
         "298": [
-            ["A signature", "Chữ ký"],
-            ["Permission", "Sự cho phép"],
-            ["Payment information", "Thông tin thanh toán"],
-            ["A class schedule", "Lịch học"],
-            [
-                "A",
-                "Ta thấy ý này trong bước 3: \"<span class=\"quote quote-q70-1\">Present your selections to your supervisor and obtain his or her signature. </span>\""
-            ],
-        ],
-        "299": [
             ["Hong Kong", "Hồng Kông"],
             ["Tokyo", "Tokyo"],
             ["Jakarta", "Jakarta"],
@@ -1568,7 +1558,7 @@ const QuestionResult = {
                 "Ta thấy ý này trong cụm \"<span class=\"quote quote-q310-1\">heavy rain,</span>\" ở \"<span class=\"quote quote-q310-2\">Jakarta</span>\""
             ],
         ],
-        "300": [
+        "299": [
             ["Because it is her hobby", "Vì đó là sở thích của cô ấy"],
             ["Because she is taking a trip", "Vì cô ấy sắp có một chuyến đi"],
             ["Because she wants to buy new clothes", "Vì cô ấy muốn mua quần áo mới"],
@@ -1578,7 +1568,7 @@ const QuestionResult = {
                 "Ta thấy ý này trong câu \"<span class=\"quote quote-q311-1\">Have a good trip,</span>\""
             ],
         ],
-        "301": [
+        "300": [
             ["Low humidity", "Độ ẩm thấp"],
             ["Strong winds", "Gió mạnh"],
             ["High temperatures", "Nhiệt độ cao"],
@@ -1589,7 +1579,7 @@ const QuestionResult = {
                 "Ta thấy ý này trong câu \"<span class=\"quote quote-q88-1\">temperatures are forecasted to be in the high 80's, about five degrees warmer than we might usually expect</span>\""
             ],
         ],
-        "302": [
+        "301": [
             ["March 21st", "Ngày 21 tháng 3"],
             ["March 22nd", "Ngày 22 tháng 3"],
             ["March 23rd", "Ngày 23 tháng 3"],
@@ -1599,7 +1589,7 @@ const QuestionResult = {
                 "Câu đầu tiên trong email cho ta biết ngày ban đầu được chọn để tổ chức dã ngoại là ngày sẽ có mưa \"<span class=\"quote quote-q89-1\">there is a chance of rain on the day we originally chose</span>\".<br/>Đối chiếu với dự báo thời tiết ở trên, ta biết ngày có mưa là ngày thứ Sáu, 22 tháng 3 -> ngày dã ngoại ban đầu được chọn là ngày 22 tháng 3."
             ],
         ],
-        "303": [
+        "302": [
             ["It is closed for renovations.", "Nó được đóng cửa để sửa chữa."],
             ["It must be reserved in advance.", "Nó phải được đặt trước."],
             ["It can't accommodate all employees.", "Nó không thể chứa hết tất cả nhân  viên."],
@@ -1609,7 +1599,7 @@ const QuestionResult = {
                 "Ta thấy ý này trong câu \"<span class=\"quote quote-q90-1\">unfortunately they told us that Plymouth Autos will be holding a special banquet to celebrate their 25th anniversary there</span>\""
             ],
         ],
-        "304": [
+        "303": [
             ["It will host an event on Marh 21st.", "Nó sẽ tổ chức một sự kiện vào ngày 21 tháng 3."],
             ["It is celebrating an employee's achievements.", "Nó ăn mừng thành tựu của một nhân viên."],
             ["It has been in business more than twenty years.", "Nó đã kinh doanh được hơn 20 năm."],
@@ -1619,7 +1609,7 @@ const QuestionResult = {
                 "Ta thấy ý này trong câu \"Plymouth Autos will be holding a special banquet to celebrate their 25th anniversary. \" Kỷ niệm 25 năm -> đã kinh doanh được hơn 20 năm."
             ],
         ],
-        "305": [
+        "304": [
             ["The email addresses of all employees", "Địa chỉ email của tất cả các nhân viên"],
             ["The Employee Preference Form", "Đơn Ý kiến của Nhân viên"],
             ["The list of famous restaurants", "Danh sách những nhà hàng nổi tiếng"],
@@ -1629,7 +1619,7 @@ const QuestionResult = {
                 "Ta thấy ý này trong câu \"<span class=\"quote quote-q92-1\">Attached to this email is an Employee Preference Form. </span>\""
             ],
         ],
-        "306": [
+        "305": [
             ["She wants a job in the canteen.", "Cô ấy muốn một công việc trong căn-tin."],
             [
                 "She wants to find out about degree programs.",
@@ -1645,7 +1635,7 @@ const QuestionResult = {
                 "Xem chủ đề  của email là về những khóa học miễn phí và trong email cô có viết \"<span class=\"quote quote-q66-1\">Please send me further information about these course and the application process. </span>\""
             ],
         ],
-        "307": [
+        "306": [
             ["Sally is eligible for the courses.", "Sally có đủ điều kiện để được học những khóa này."],
             [
                 "Sally is a community college employee.",
@@ -1661,6 +1651,17 @@ const QuestionResult = {
                 "Ta thấy đáp án B trong \"<span class=\"quote quote-q67-1\">I have been working here since the middle of June</span>\" ->Sally là nhân viên của trường.<br/>Ta thấy đáp án C trong \"<span class=\"quote quote-q67-2\">offer free college courses to all of its full-time staff and faculty</span>\".<br/>Ta thấy đáp án D trong \"<span class=\"quote quote-q67-3\">Your confirmation for registration will be sent to your email account</span>\".<br/>Không thấy nhắc đến đáp án A ->chọn A."
             ],
         ],
+        "307": [
+            ["On the telephone", "Trên điện thoại"],
+            ["In the department", "Trong phòng ban"],
+            ["By mail", "Bằng thư"],
+            ["Online", "Trực tuyến"],
+            [
+                "D",
+                "Ta thấy ý này trong \"<span class=\"quote quote-q68-1\">Register for your classes online through the college website.</span>\""
+            ],
+        ],
+
         "308": [
             ["Talk to the supervisor", "Nói chuyện với giám sát"],
             ["Pay for the classes", "Trả tiền học"],

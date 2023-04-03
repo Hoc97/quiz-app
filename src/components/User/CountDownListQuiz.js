@@ -1,19 +1,14 @@
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import { useEffect } from 'react';
-import { FcAlarmClock } from 'react-icons/fc';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
-import { timerQuizToSecs, toHHMMSS } from '../../../../utils/commonFunction';
-function CountDown() {
-    const params = useParams();
+import { timerQuizToSecs, toHHMMSS } from '../../utils/commonFunction';
+function CountDownListQuiz({ index }) {
     const dispatch = useDispatch();
     const [count, setCount] = useState('00 : 00 : 00');
-    const listQuiz = useSelector(state => state.quizManage.listQuiz);
-    const index = listQuiz.findIndex(quiz => quiz.id === +params.id);
     const timerQuiz = useSelector(state => state.quizManage.listTimerQuiz[index]);
-
     useEffect(() => {
         let secs = timerQuizToSecs(timerQuiz);
+        if (secs === 0) return;
         const timer = setInterval(() => {
             let a = toHHMMSS(secs);
             setCount(a);
@@ -32,15 +27,13 @@ function CountDown() {
     }, [timerQuiz]);
     // console.log('count', count);
 
-
     if (index === -1) return <>Error</>;
     return (
         <>
-            <div className='time'>
-                <span className="time-icon"><FcAlarmClock /></span >
+            <span className='countdown-listquiz'>
                 <span className='time-count'>{count}</span>
-            </div>
+            </span>
         </>
     );
 }
-export default CountDown;
+export default memo(CountDownListQuiz);

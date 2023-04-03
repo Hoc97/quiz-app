@@ -1,6 +1,6 @@
 .listquiz-container {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
     margin-top: 10px;
 
     .card {
@@ -11,7 +11,7 @@
         justify-content: space-evenly;
         align-items: center;
         border-radius: 30px;
-        width: 31%;
+        width: 53%;
         position: relative;
 
         &::before {
@@ -20,15 +20,17 @@
             height: 100%;
             content: "";
             top: 0;
-            left: 110px;
+            left: 130px;
             z-index: 999;
             background-color: #ccc;
         }
 
         .image {
-            padding: 10px;
+            padding: 0 10px;
+
 
             img {
+                margin: 10px;
                 height: 80px;
                 width: 80px;
                 object-fit: cover;
@@ -36,21 +38,126 @@
 
         }
 
+
+
         .card-content {
             height: 100%;
-            flex: 1;
+            flex-grow: 1;
             padding-left: 20px;
+            margin-top: 20px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
+
+            .part {
+                margin-bottom: 0;
+            }
 
             .card-description {
                 font-size: 20px;
                 flex: 1;
                 font-weight: 500;
             }
+
         }
+
+        .clock {
+            color: #0849c9;
+            font-family: roboto, sans-serif;
+
+            svg {
+                margin-top: -2px;
+            }
+        }
+
+        .question {
+            color: #e0304e;
+            font-family: roboto, sans-serif;
+
+            svg {
+                margin-top: -3px;
+            }
+        }
+
+
+
+    }
+
+    .item-quiz {
+        background: #fff;
+        display: inline-block;
+        position: relative;
+        margin: 5px 10px;
+        width: 300px;
+        height: 70px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .15);
+        border-radius: 10px;
+
+
+
+        .done {
+            position: absolute;
+            top: 70%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            margin-left: 20px;
+            color: #017437;
+            font-weight: 500;
+
+            .icon {
+                margin-right: 5px;
+            }
+        }
+
+        .doing {
+            position: absolute;
+            top: 70%;
+            left: 44%;
+            transform: translate(-50%, -50%);
+            margin-left: 10px;
+            color: #ff9100;
+            font-weight: 500;
+
+            .icon {
+                margin-right: 5px;
+
+                img {
+                    height: 16px;
+                    width: 16px;
+                    object-fit: cover;
+                    margin-top: -3px;
+                }
+            }
+        }
+
+        .countdown-listquiz {
+            position: absolute;
+            top: 35%;
+            left: 31%;
+            transform: translate(0, -50%);
+            margin-left: 10px;
+            color: #e0304e;
+            font-family: roboto, sans-serif;
+        }
+
+        .btn-enter-exam {
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            transform: translate(0, -50%);
+            margin-right: 10px;
+        }
+
+        .quiz-index {
+            color: #2B82C9;
+            position: absolute;
+            font-weight: 500;
+            top: 50%;
+            transform: translate(0, -50%);
+            margin-left: 10px;
+        }
+
 
     }
 

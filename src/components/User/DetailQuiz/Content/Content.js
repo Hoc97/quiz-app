@@ -1,9 +1,9 @@
 import Question from './Question';
-import { useLocation } from 'react-router-dom';
 import _ from 'lodash';
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs';
 
 function Content({
+    getDetailQuiz,
     dataQuiz,
     setDataQuiz,
     currentQuestion,
@@ -16,7 +16,6 @@ function Content({
     isShowAnswer
 }) {
     // console.log('data', dataQuiz);
-    const location = useLocation();
     const handleDown = () => {
         if (currentQuestion <= 0) return;
         if (+currentPart === 1 || +currentPart === 2 || +currentPart === 5) setCurrentQuestion(currentQuestion - 1);
@@ -77,18 +76,11 @@ function Content({
     return (
         <div className='content'>
             <h2>
-                {location?.state?.quizTitle && `${location?.state?.quizTitle}: ${location?.state?.quizDescription}`}
+                {getDetailQuiz?.title && `${getDetailQuiz?.title}: ${getDetailQuiz?.description}`}
             </h2>
             <hr />
-            {/* <div className='part-group'>
-                <div className='part-detail'>Part 1</div>
-                <div className='part-detail'>Part 2</div>
-                <div className='part-detail'>Part 3</div>
-                <div className='part-detail'>Part 4</div>
-                <div className='part-detail'>Part 5</div>
-            </div> */}
             <p className='description'>
-                Choose the answer that best describes
+                Chọn câu trả lời với mô tả đúng nhất
             </p>
             <Question
                 handleCheckBox={handleCheckBox}

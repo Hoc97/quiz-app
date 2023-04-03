@@ -1,4 +1,4 @@
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './DetailQuiz.scss';
 import ModalResult from './ModalResult';
 import Content from './Content/Content';
@@ -8,13 +8,22 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { TiArrowBack } from 'react-icons/ti';
 import _ from 'lodash';
+import { useDispatch, useSelector } from 'react-redux';
 
 function DetailQuiz() {
+    const dispatch = useDispatch();
     const navigate = useNavigate();
     const params = useParams();
     const quizId = params.id;
-    const location = useLocation();
-    const currentPart = location?.state?.quizOrder;
+    const listQuiz = useSelector(state => state.quizManage.listQuiz);
+    const getDetailQuiz = listQuiz.find(quiz => quiz.id === +quizId);
+    const index = listQuiz.findIndex(quiz => quiz.id === +quizId);
+    const currentPart = getDetailQuiz?.order?.replace(/\D*/g, '');
+    const [submissionResult, setSubmissionResult] = useState({
+        numberCorrect: 0,
+        numberIncorrect: 0,
+        numberNotanswered: 0
+    });
     const [isShowModalResult, setIsShowModalResult] = useState(false);
     const [isShowResultQuiz, setIsShowResultQuiz] = useState(false);
     const [isShowAnswer, setIsShowAnswer] = useState(false);
@@ -99,26 +108,47 @@ function DetailQuiz() {
         payload.answers = answers;
         //submit API
         let res = await postSubmitQuiz(payload);
-        console.log(res);
+        // console.log(res);
         if (res.EC !== 0) {
             alert('something wrong...');
             return;
         }
+        dispatch({ type: 'SET_ISFINISH_QUIZ', payload: index });
         setDataModal(res.DT);
         setIsShowModalResult(true);
         setCurrentQuestion(0);
+        if (+currentPart === 7) setIndexQuestion(0);
+        let numberCorrect = 0;
+        let numberIncorrect = 0;
+        let numberNotanswered = 0;
+        res.DT.quizData.forEach(item => {
+            if (item.userAnswers.length === 0) {
+                numberNotanswered++;
+                return;
+            }
+            if (item.userAnswers[0] === item.systemAnswers[0].id) {
+                numberCorrect++;
+                return;
+            }
+            numberIncorrect++;
+        });
+
+        setSubmissionResult({ numberCorrect, numberIncorrect, numberNotanswered });
         let dataQuizClone = _.cloneDeep(dataQuiz);
         dataQuizClone.forEach(question => {
             let questionSystemId = res.DT.quizData.find(item => item.questionId === +question.questionID);
             let answerSystemId = questionSystemId.systemAnswers[0].id;
             question.answers.forEach(answer => {
-                if (answer.id === answerSystemId) answer.isCorrect = true;
+                if (answer.id === answerSystemId) {
+
+                    answer.isCorrect = true;
+                };
+
             });
         });
         setDataQuiz(dataQuizClone);
     };
-
-    console.log('dataQuiz', dataQuiz);
+    // console.log('dataQuiz', dataQuiz);
 
     const handleShowResult = () => {
         setIsShowResultQuiz(true);
@@ -134,6 +164,7 @@ function DetailQuiz() {
             </div>
             <div className={`detail-quiz`}>
                 <Content
+                    getDetailQuiz={getDetailQuiz}
                     dataQuiz={dataQuiz}
                     setDataQuiz={setDataQuiz}
                     setCurrentQuestion={setCurrentQuestion}
@@ -155,6 +186,8 @@ function DetailQuiz() {
                     arrayIndexPara={arrayIndexPara}
                     setIndexQuestion={setIndexQuestion}
                     isShowResultQuiz={isShowResultQuiz}
+                    isShowAnswer={isShowAnswer}
+                    submissionResult={submissionResult}
                 />
             </div>
             <ModalResult

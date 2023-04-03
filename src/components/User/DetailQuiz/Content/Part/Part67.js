@@ -32,6 +32,12 @@ const Part67 = ({
     return (
         <>
             <div className={+currentPart === 7 ? 'group-content-p7' : 'group-content-p6'}
+                style={isShowAnswer ?
+                    {
+                        marginRight: +currentPart === 6 ? '-93px' : '-10px',
+                        width: '580px', top: +currentPart === 6 ? '100px' : '10px'
+                    }
+                    : {}}
                 dangerouslySetInnerHTML={{ __html: paragraph }} />
             <div
                 className={+currentPart === 7 ? 'group-question-p7' : ''}
@@ -40,7 +46,7 @@ const Part67 = ({
                 {listData.length > 0 &&
                     listData.map((data, i) => {
                         return (
-                            <div key={i} >
+                            <div key={i} style={{ maxWidth: '500px' }} >
                                 <div className='question'>
                                     <span >Question {i + indexData + 1}:</span>
                                     <p className='question-detail'>{data.questionDescription}</p>
@@ -49,7 +55,7 @@ const Part67 = ({
                                     let key = tranferToAlphabet(0, data?.answers.length - 1)[n];
                                     return (
                                         <div key={n} className='answer'>
-                                            <div className="form-check">
+                                            <div className="form-check" style={isShowAnswer ? { paddingLeft: '0' } : {}} >
                                                 <label>
                                                     <input
                                                         disabled={isShowResultQuiz}
@@ -68,7 +74,8 @@ const Part67 = ({
                                                 <label className="form-check-label" >{answer.description}</label>
                                                 {isShowAnswer &&
                                                     <>
-                                                        <span> <AiOutlineArrowRight /> {QuestionResult[`Part${currentPart}`][listData[i].questionID][n][1]}</span>
+                                                        <span> <AiOutlineArrowRight />
+                                                            <span style={{ color: '#0478d1' }}>{QuestionResult[`Part${currentPart}`][listData[i].questionID][n][1]}</span></span>
                                                         {answer.isSelected ?
                                                             (answer.isSelected === answer.isCorrect ? <CheckCorrect /> : <CheckIncorrect />)
                                                             : answer.isCorrect && <CheckCorrect />
@@ -79,8 +86,12 @@ const Part67 = ({
                                         </div >
                                     );
                                 })}
+
                                 {isShowAnswer &&
-                                    <span>{QuestionResult[`Part${currentPart}`][listData[i].questionID][4][1]}</span>}
+                                    <div className='group-content-result-question'
+                                        dangerouslySetInnerHTML={{ __html: QuestionResult[`Part${currentPart}`][listData[i].questionID][4][1] }}
+                                    />
+                                }
                             </div>
                         );
                     })

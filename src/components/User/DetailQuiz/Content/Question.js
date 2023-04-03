@@ -41,14 +41,16 @@ function Question({
                         isShowResultQuiz={isShowResultQuiz}
                         isShowAnswer={isShowAnswer}
                     />}
-                    {(+currentPart === 6 || +currentPart === 7) && <Part67
-                        listData={data}
-                        currentPart={currentPart}
-                        handleCheckBox={handleCheckBox}
-                        index={index}
-                        isShowResultQuiz={isShowResultQuiz}
-                        isShowAnswer={isShowAnswer}
-                    />}
+                    <div>
+                        {(+currentPart === 6 || +currentPart === 7) && <Part67
+                            listData={data}
+                            currentPart={currentPart}
+                            handleCheckBox={handleCheckBox}
+                            index={index}
+                            isShowResultQuiz={isShowResultQuiz}
+                            isShowAnswer={isShowAnswer}
+                        />}
+                    </div>
                 </>
             }
         </div >
@@ -56,3 +58,5 @@ function Question({
 }
 
 export default Question;
+
+

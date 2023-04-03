@@ -10,7 +10,7 @@ import storage from 'redux-persist/lib/storage'; // defaults to localStorage for
 /** Redux persist */
 const persistConfig = {
     key: 'root',
-    whitelist: ["accountManage"],
+    whitelist: ["accountManage", "quizManage"],
     storage,
 };
 

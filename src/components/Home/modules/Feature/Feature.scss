@@ -56,6 +56,7 @@
         height: 100%;
         z-index: -2;
         border-radius: 10px;
+
         transition: 0.5s all ease-in-out;
         background-image: linear-gradient(45deg, #fc01fd 32%, #6b2c94 100%);
       }
@@ -68,7 +69,8 @@
         top: 0;
         left: 0;
         z-index: -1;
-        border-radius: 10px;
+        border-radius: 8px;
+        overflow: hidden;
         background: #ffece4;
       }
 

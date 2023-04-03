@@ -1,5 +1,5 @@
 import './Header.scss';
-import { Link, NavLink, useNavigate, Outlet } from 'react-router-dom';
+import { Link, NavLink, useNavigate, Outlet, useLocation } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -15,6 +15,7 @@ import ClockDate from '../TimeDate/ClockDate';
 
 function Header() {
     const dispatch = useDispatch();
+    const pathname = useLocation().pathname;
     const isAuthenticated = useSelector((state) => state.accountManage.isAuthenticated);
     const account = useSelector((state) => state.accountManage.account);
     const navigate = useNavigate();
@@ -66,18 +67,24 @@ function Header() {
                         <ClockDate />
                         <div className='nav-group'>
                             <Fade bottom>
-                                <span className='pointer intro' onClick={() => scrollTo('feature')}>
-                                    TÍNH NĂNG
-                                </span>
-                                <span className='pointer intro' onClick={() => scrollTo('aboutus')}>
-                                    VỀ CHÚNG TÔI
-                                </span>
-                                <span className=' pointer intro' onClick={() => scrollTo('contact')}>
-                                    LIÊN HỆ
-                                </span>
-                                <span className='pointer intro' onClick={() => scrollTo('')}>
-                                    THI ĐẤU
-                                </span>
+                                {pathname === "/" &&
+                                    <>
+                                        <span className='pointer intro' onClick={() => scrollTo('feature')}>
+                                            TÍNH NĂNG
+                                        </span>
+                                        <span className='pointer intro' onClick={() => scrollTo('aboutus')}>
+                                            VỀ CHÚNG TÔI
+                                        </span>
+                                        <span className=' pointer intro' onClick={() => scrollTo('contact')}>
+                                            LIÊN HỆ
+                                        </span>
+                                        <span className='pointer intro' onClick={() => scrollTo('')}>
+                                            THI ĐẤU
+                                        </span>
+                                    </>
+                                }
+                            </Fade>
+                            <Fade bottom>
                                 <Nav className='settings'>
                                     {isAuthenticated ? (
                                         <NavDropdown

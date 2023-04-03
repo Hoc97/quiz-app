@@ -33,7 +33,9 @@ const Part34 = ({
                 }
             </div>
             {isShowAnswer &&
-                <div>{QuestionResult[`Part${currentPart}`][questionID][0]}</div>
+                <div className='group-content-result-paragraph'
+                    dangerouslySetInnerHTML={{ __html: QuestionResult[`Part${currentPart}`][questionID][0] }}
+                />
             }
             {listData.length > 0 &&
                 listData.map((data, i) => {
@@ -74,7 +76,10 @@ const Part34 = ({
                                 })
                             }
                             {isShowAnswer &&
-                                <span>{QuestionResult[`Part${currentPart}`][listData[i].questionID][2]}</span>}
+                                <div className='group-content-result-question'
+                                    dangerouslySetInnerHTML={{ __html: QuestionResult[`Part${currentPart}`][listData[i].questionID][2] }}
+                                />
+                            }
                         </div>
                     );
                 })

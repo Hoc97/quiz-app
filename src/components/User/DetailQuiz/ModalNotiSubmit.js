@@ -18,19 +18,19 @@ function ModalNotiSubmit({
         <>
             <Modal show={show} onHide={handleClose} size="lg">
                 <Modal.Header closeButton>
-                    <Modal.Title>Please confirm?</Modal.Title>
+                    <Modal.Title>Vui lòng xác nhận lại?</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <div>You haven't finished your quiz yet.</div>
-                    <div>Do you want to submit?</div>
-                    <div>Answered: <b>{answered}/{lengthQuiz}</b> questions</div>
+                    <div>Bạn chưa hoàn thành bài kiểm tra của mình.</div>
+                    <div>Bạn có muốn nộp bài?</div>
+                    <div>Đã trả lời: <b>{answered}/{lengthQuiz}</b> câu hỏi</div>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant='secondary' onClick={handleClose}>
-                        Keep doing
+                        Tiếp tục làm
                     </Button>
                     <Button variant='primary' onClick={handleSubmit} >
-                        Submit
+                        Nộp bài
                     </Button>
                 </Modal.Footer>
             </Modal>

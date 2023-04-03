@@ -41,9 +41,10 @@ const Images = {
         Correct: require('./icon-correct.png'),
         inCorrect: require('./icon-incorrect.png'),
     }
-
-
-
+    ,
+    Doing: {
+        icon: require('./doing/doing.png')
+    }
 };
 
 export default Images;

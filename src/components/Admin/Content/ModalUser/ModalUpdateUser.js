@@ -79,8 +79,6 @@ function ModalUpdateUser({
         if (data.EC === 0) {
             toast.success(data.EM);
             handleClose();
-            // await fetchListUsers();
-            // setCurrentPage(1);
             await fetchListUsersPaginate(currentPage);
         } else {
             toast.warning(data.EM);
@@ -88,10 +86,6 @@ function ModalUpdateUser({
     };
     return (
         <>
-            {/* <Button variant='primary' onClick={handleShow}>
-                Launch demo modal
-            </Button> */}
-
             <Modal show={show} onHide={handleClose} backdrop='static' size='lg'>
                 <Modal.Header closeButton>
                     <Modal.Title>Update user</Modal.Title>
