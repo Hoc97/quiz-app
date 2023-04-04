@@ -1,13 +1,27 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../Header/Header';
 import Title from './DetailQuiz/Title';
 import ListQuiz from './ListQuiz';
 import './User.scss';
+
+
 function User() {
     const [content, setContent] = useState(1);
+    useEffect(() => {
+        if (localStorage.getItem('scrollpos')) {
+            window.scrollTo(0, localStorage.getItem('scrollpos'));
+        }
+        const save = () => {
+            localStorage.setItem('scrollpos', window.pageYOffset);
+        };
+        document.addEventListener('scroll', save);
+        return () => document.removeEventListener('scroll', save);
+    }, []);
+
     const handleContent = (n) => {
         setContent(n);
     };
+
     return (
         <div className='wrapper'>
             <Header />

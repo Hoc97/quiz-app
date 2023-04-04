@@ -114,6 +114,7 @@ function DetailQuiz() {
             return;
         }
         dispatch({ type: 'SET_ISFINISH_QUIZ', payload: index });
+        dispatch({ type: 'SET_TIMER_QUIZ', time: 0, payload: index });
         setDataModal(res.DT);
         setIsShowModalResult(true);
         setCurrentQuestion(0);
@@ -139,16 +140,11 @@ function DetailQuiz() {
             let questionSystemId = res.DT.quizData.find(item => item.questionId === +question.questionID);
             let answerSystemId = questionSystemId.systemAnswers[0].id;
             question.answers.forEach(answer => {
-                if (answer.id === answerSystemId) {
-
-                    answer.isCorrect = true;
-                };
-
+                if (answer.id === answerSystemId) answer.isCorrect = true;
             });
         });
         setDataQuiz(dataQuizClone);
     };
-    // console.log('dataQuiz', dataQuiz);
 
     const handleShowResult = () => {
         setIsShowResultQuiz(true);
@@ -188,6 +184,7 @@ function DetailQuiz() {
                     isShowResultQuiz={isShowResultQuiz}
                     isShowAnswer={isShowAnswer}
                     submissionResult={submissionResult}
+                    index={index}
                 />
             </div>
             <ModalResult

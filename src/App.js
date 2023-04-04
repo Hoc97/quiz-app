@@ -68,7 +68,6 @@ function App() {
                         pauseOnHover
                         theme='light'
                     />
-
                 </BrowserRouter>
                 <ScrollButton />
             </div>

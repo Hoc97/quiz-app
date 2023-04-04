@@ -8,7 +8,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { postLogout } from '../../services/apiService';
 import { toast } from 'react-toastify';
 import Images from '../../assets/img/Image';
-import Languages from '../Languages/Languages';
 import Fade from 'react-reveal/Fade';
 import Clock from '../TimeDate/Clock';
 import ClockDate from '../TimeDate/ClockDate';
@@ -55,7 +54,9 @@ function Header() {
                     <Navbar.Collapse>
                         <Nav >
                             <Fade bottom>
-                                <NavLink to={'/user'} className='nav-link'>
+                                <NavLink to={'/user'}
+                                    onClick={() => localStorage.setItem('scrollpos', 0)}
+                                    className='nav-link'>
                                     USER
                                 </NavLink>
                                 <NavLink to={'/admin'} className='nav-link'>
@@ -118,7 +119,6 @@ function Header() {
                                             </Button>
                                         </>
                                     )}
-                                    <Languages />
                                 </Nav>
                             </Fade>
                         </div>

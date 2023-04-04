@@ -1,28 +1,11 @@
-import { takeLatest, put, delay, call, takeEvery } from 'redux-saga/effects';
+import { put, call, takeEvery } from 'redux-saga/effects';
 import { getQuizByUser } from '../../../services/apiService';
 import { toast } from 'react-toastify';
 import _ from 'lodash';
 
-// async function GetUserApi(key) {
-//     let res = await fetch(
-//         `https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&limit=30&format=json&search=${key}`
-//     );
-//     let dt = await res.json();
-//     return dt;
-// }
-
-// function* GetDataLatest({ type, keydata }) {
-//     yield delay(1000);
-//     let data = yield call(GetUserApi, keydata);
-//     console.log('data', data[1]);
-//     yield put({
-//         type: 'SET_DATA',
-//         payload: data[1],
-//     });
-// }
 
 
-const getListQuizApi = async () => {
+const getListQuizApi = async (key) => {
     const dt = await getQuizByUser();
     return dt;
 };

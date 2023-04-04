@@ -6,18 +6,17 @@ const ScrollButton = () => {
 
     const [visible, setVisible] = useState(false);
 
-    const getID = document.getElementById('root');
     useEffect(() => {
         const toggleVisible = () => {
-            const scrolled = getID.scrollTop;
-            // console.log('scrolled', scrolled);
+            const scrolled = window.pageYOffset;
+            // console.log('scrolled', window.pageYOffset);
             if (scrolled > 500) {
                 setVisible(true);
                 return;
             }
             setVisible(false);
         };
-        getID.addEventListener('scroll', toggleVisible);
+        document.addEventListener('scroll', toggleVisible);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
@@ -30,7 +29,7 @@ const ScrollButton = () => {
                     } : { opacity: '0' }}
                 className='btn-scroll'
                 onClick={() => {
-                    getID.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+                    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
                 }}
             >
                 <span className='rorate-scroll'></span>

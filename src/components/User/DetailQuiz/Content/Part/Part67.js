@@ -14,7 +14,6 @@ const Part67 = ({
 }) => {
     let paragraph;
     let indexData;
-    console.log(listData);
     if (+currentPart === 6) {
         indexData = index - (index % 3);
         paragraph = listData[0].paragraph.replace(/\\"/g, '"').replaceAll('\\n', '');

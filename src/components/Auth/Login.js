@@ -11,8 +11,6 @@ import { useDispatch } from 'react-redux';
 import { ImSpinner10 } from 'react-icons/im';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { FaArrowCircleLeft } from 'react-icons/fa';
-
-import Languages from '../Languages/Languages';
 import Images from '../../assets/img/Image';
 function Login() {
     const dispatch = useDispatch();
@@ -78,7 +76,6 @@ function Login() {
                     <b style={{ color: '#384fa1' }}>Đăng ký</b>
                 </Link>
                 <a href='#a'>Cần giúp đỡ?</a>
-                <Languages />
             </div>
             <div className='login-content'>
                 <div className='form'>

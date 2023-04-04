@@ -5,7 +5,6 @@ import { FaBars } from 'react-icons/fa';
 import SideBar from '../SideBar/SideBar';
 import './Admin.scss';
 import { Outlet } from 'react-router-dom';
-import Languages from '../Languages/Languages';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useDispatch, useSelector } from 'react-redux';
 import { postLogout } from '../../services/apiService';
@@ -37,7 +36,6 @@ function Admin() {
                         <FaBars className='admin-header-left' />
                     </span>
                     <div className='admin-header-right'>
-                        <Languages />
                         <NavDropdown title='Settings' id='basic-nav-dropdown'>
                             <NavDropdown.Item onClick={() => navigate('/profile')}>Profile</NavDropdown.Item>
                             <NavDropdown.Item onClick={() => handleLogout()}>Log out</NavDropdown.Item>

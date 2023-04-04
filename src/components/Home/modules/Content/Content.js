@@ -2,7 +2,6 @@ import './Content.scss';
 import { Button } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-// import { useTranslation } from 'react-i18next';
 import Images from '../../../../assets/img/Image';
 import Rotate from 'react-reveal/Rotate';
 import Fade from 'react-reveal/Fade';
@@ -11,7 +10,6 @@ import { FaArrowRight } from 'react-icons/fa';
 function Content() {
     const isAuthenticated = useSelector((state) => state.accountManage.isAuthenticated);
     const navigate = useNavigate();
-    // const { t } = useTranslation();
     return (
         <div className='home-container'>
             <div className='content'>

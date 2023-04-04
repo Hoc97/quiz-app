@@ -9,6 +9,7 @@ import { FcAlarmClock } from 'react-icons/fc';
 import { timerQuizToSecs } from '../../utils/commonFunction';
 import Images from '../../assets/img/Image';
 import CountDownListQuiz from './CountDownListQuiz';
+import _ from 'lodash';
 
 function ListQuiz({ action, colorBtn }) {
     const navigate = useNavigate();
@@ -16,12 +17,15 @@ function ListQuiz({ action, colorBtn }) {
     const listQuiz = useSelector(state => state.quizManage.listQuiz);
     const isRefreshListQuiz = useSelector(state => state.quizManage.isRefreshListQuiz);
     const listTimerQuiz = useSelector(state => state.quizManage.listTimerQuiz);
-    let a = [...Array(listQuiz.length)].map(n => false);
-    let b = [];
+    const listTimerPart = useSelector(state => state.quizManage.listTimerPart);
+    const listQuestionPart = useSelector(state => state.quizManage.listQuestionPart);
     useEffect(() => {
         const timeMax = Math.max(...listTimerQuiz);
         let secs = timerQuizToSecs(timeMax);
-        if (secs === 0) return;
+        if (secs === 0) {
+            dispatch({ type: 'REFRESH_LISTQUIZ' });
+            return;
+        }
         const timer = setInterval(() => {
             if (secs > 0) {
                 secs--;
@@ -34,6 +38,7 @@ function ListQuiz({ action, colorBtn }) {
         return () => {
             clearInterval(timer);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     useEffect(() => {
         if (isRefreshListQuiz) {
@@ -51,79 +56,80 @@ function ListQuiz({ action, colorBtn }) {
 
     };
 
-    const handleEnterExam = (quiz, index) => {
+    const handleEnterExam = (quiz, index, part) => {
         navigate(`/quiz/${quiz.id}`);
+        const [hours, minutes, seconds] = listTimerPart[`Part${part}`];
         if (!quiz.isInTimerRoom) {
             dispatch({ type: 'SET_TIMER_ROOM', payload: index });
-            handleStart(0, 1, 10, index);
+            handleStart(hours, minutes, seconds, index);
         }
     };
+    let c = listQuiz.map(quiz => listQuiz.findIndex((item) => item.order === quiz.order));
+    let arrayIndexPart = [...new Set(c)];
+    let dataPartQuiz = arrayIndexPart.map((indexPart, i) => {
+        let listQuizClone = _.cloneDeep(listQuiz);
+        listQuizClone[indexPart].dataItem = listQuiz.slice(arrayIndexPart[i], arrayIndexPart[i + 1]);
+        return listQuizClone[indexPart];
+    });
     return (
         <div className='listquiz-container container'>
-            {listQuiz.length > 0 && (
-                listQuiz.map((quiz, index) => {
-                    b.push(quiz.order);
-                    console.log('b', b);
-                    let findIndex = listQuiz.findIndex((item) => item.order === b[index]);
-                    console.log('findIndex', findIndex);
-                    if (index === findIndex) a[index] = true;
+            {dataPartQuiz.length > 0 && (
+                dataPartQuiz.map((quiz, index) => {
                     return (
                         <div key={index} >
-                            {a[index] &&
-                                <div className='card' >
-                                    <div className='image'>
-                                        <img
-                                            src={`data:image/jpeg;base64,${quiz.image}`}
-                                            alt='' />
+                            <div className='card' >
+                                <div className='image'>
+                                    <img
+                                        src={`data:image/jpeg;base64,${quiz.image}`}
+                                        alt='' />
+                                </div>
+                                <div className='card-content'>
+                                    <h3 className='part'> {quiz.title}</h3>
+                                    <p className='card-description'>{quiz.description}</p>
+                                </div>
+                                <span className='clock'><FcAlarmClock />{listTimerPart[`Part${index + 1}`][1]} phút</span>
+                                <span className='question'><AiOutlineQuestionCircle />{listQuestionPart[index]} câu</span>
+                            </div>
+                            {/*  */}
+                            {quiz.dataItem.map((item, i) => {
+                                let indexTemp = i + arrayIndexPart[index];
+                                let part = index + 1;
+                                return (
+                                    <div key={i} className={`item-quiz item-${indexTemp}`}>
+                                        <span className='quiz-index'>Test {indexTemp + 1}</span>
+                                        {item.isInTimerRoom ?
+                                            <span className='doing'>
+                                                <span className='icon'>
+                                                    <img src={Images.Doing.icon} alt='' />
+                                                </span>
+                                                <span>Đang làm </span>
+                                            </span>
+                                            : <>
+                                                {item.ParticipantQuiz.is_finish ?
+                                                    <span className='done'>
+                                                        <span className='icon'><FaFlagCheckered /></span>
+                                                        <span>Đã làm</span>
+                                                    </span>
+                                                    : <></>
+                                                }
+                                            </>
+                                        }
+                                        {item.isInTimerRoom && <CountDownListQuiz index={indexTemp} />}
+                                        <Button
+                                            className={`btn-enter-exam ${indexTemp}`}
+                                            variant={colorBtn}
+                                            onClick={() => handleEnterExam(item, indexTemp, part)}
+                                        >
+                                            {action}
+                                        </Button>
                                     </div>
-                                    <div className='card-content'>
-                                        <h3 className='part'> {quiz.title}</h3>
-                                        <p className='card-description'>{quiz.description}</p>
-                                    </div>
-                                    <span className='clock'><FcAlarmClock />5 phút</span>
-                                    <span className='question'><AiOutlineQuestionCircle />10 câu</span>
-                                </div>}
-                            {b[index] === '1'}
+                                );
+                            })}
+
                         </div>
                     );
                 })
             )}
-            {listQuiz.length > 0 && (
-                listQuiz.map((quiz, index) => {
-                    return (
-                        <div key={index} className={`item-quiz item-${index}`}>
-
-                            <span className='quiz-index'>Test {index + 1}</span>
-
-                            {quiz.isInTimerRoom ?
-                                <span className='doing'>
-                                    <span className='icon'>
-                                        <img src={Images.Doing.icon} alt='' />
-                                    </span>
-                                    <span>Đang làm </span>
-                                </span>
-                                : <>
-                                    {quiz.ParticipantQuiz.is_finish ?
-                                        <span className='done'>
-                                            <span className='icon'><FaFlagCheckered /></span>
-                                            <span>Đã làm</span>
-                                        </span>
-                                        : <></>
-                                    }
-                                </>
-                            }
-                            {/* {quiz.isInTimerRoom && <CountDownListQuiz index={index} />} */}
-                            <CountDownListQuiz index={index} />
-                            <Button
-                                className='btn-enter-exam'
-                                variant={colorBtn}
-                                onClick={() => handleEnterExam(quiz, index)}
-                            >
-                                {action}
-                            </Button>
-                        </div>
-                    );
-                }))}
         </div>
     );
 }

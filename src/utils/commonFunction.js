@@ -1,3 +1,5 @@
+
+
 const validateEmail = (email) => {
     return String(email)
         .toLowerCase()
@@ -40,6 +42,8 @@ const timerQuizToSecs = (timerQuiz) => {
     return time > 0 ? time : 0;
 };
 
+
+
 const tranferToAlphabet = (charA, charZ) => {
     let a = [];
     let i = `${charA}`.charCodeAt(0) + 17;
@@ -48,6 +52,11 @@ const tranferToAlphabet = (charA, charZ) => {
         a.push(String.fromCharCode(i));
     }
     return a;
+};
+
+
+const sleep = (ms) => {
+    return new Promise(resolve => setTimeout(resolve, ms));
 };
 
 // blob is e.target.files[0] => return data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQAB...
@@ -73,5 +82,6 @@ export {
     urltoFile,
     tranferToAlphabet,
     timerQuizToSecs,
-    toHHMMSS
+    toHHMMSS,
+    sleep
 };

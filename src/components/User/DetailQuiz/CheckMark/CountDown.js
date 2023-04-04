@@ -30,8 +30,6 @@ function CountDown() {
         };
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [timerQuiz]);
-    // console.log('count', count);
-
 
     if (index === -1) return <>Error</>;
     return (

@@ -5,6 +5,7 @@ import { RiSendPlaneFill } from 'react-icons/ri';
 import _ from 'lodash';
 import ModalNotiRerefsh from '../ModalNotiRerefsh';
 import ModalNotiSubmit from '../ModalNotiSubmit';
+import { useDispatch, useSelector } from 'react-redux';
 
 function CheckMark({
     dataQuiz,
@@ -17,13 +18,15 @@ function CheckMark({
     setIndexQuestion,
     isShowResultQuiz,
     isShowAnswer,
-    submissionResult
+    submissionResult,
+    index
 }) {
+    const dispatch = useDispatch();
+    const listTimerPart = useSelector(state => state.quizManage.listTimerPart);
     const refDiv = useRef([]);
     const [isShowModalRefresh, setIsShowModalRefresh] = useState(false);
     const [isShowModalSubmit, setIsShowModalSubmit] = useState(false);
     const [answered, setAnswered] = useState(0);
-
 
     const questionResult = (question) => {
         for (const answer of question.answers) {
@@ -33,7 +36,6 @@ function CheckMark({
             }
         }
         return 'not-answered';
-
     };
 
     const questionSelected = (question, index, currentQuestion) => {
@@ -45,7 +47,6 @@ function CheckMark({
         return _class.trim();
     };
 
-
     const handleClickQuestion = (index) => {
         setCurrentQuestion(index);
         if (+currentPart !== 7) return;
@@ -54,7 +55,19 @@ function CheckMark({
         setIndexQuestion(b);
     };
 
+    const handleStart = (hours = 0, minutes = 0, seconds = 0, index) => {
+        const expire = new Date();
+        expire.setHours(expire.getHours() + hours, expire.getMinutes() + minutes, expire.getSeconds() + seconds);
+        const time2 = expire.getTime();
+        dispatch({ type: 'SET_TIMER_QUIZ', time: time2, payload: index });
+
+    };
     const handleRefresh = () => {
+        // reset time
+        const [hours, minutes, seconds] = listTimerPart[`Part${currentPart}`];
+        handleStart(hours, minutes, seconds, index);
+
+        //reset question
         let dataQuizClone = _.cloneDeep(dataQuiz);
         dataQuizClone.forEach(question => {
             question.answers.forEach(answer => {
@@ -63,7 +76,6 @@ function CheckMark({
         });
         setDataQuiz(dataQuizClone);
         setCurrentQuestion(0);
-        // setCount(timer);
         setIsShowModalRefresh(false);
         if (+currentPart === 7) {
             setIndexQuestion(0);
@@ -102,7 +114,7 @@ function CheckMark({
     return (
         <div className='check-mark'>
             <div className='check-header'>
-                <button className='check' disabled={false}//isShowResultQuiz
+                <button className='check' disabled={isShowResultQuiz}//isShowResultQuiz
                     style={isShowResultQuiz ? { cursor: "not-allowed", opacity: '0.5' } : {}}
                     onClick={() => handleConfirmSubmit()} >
                     <>
@@ -110,7 +122,7 @@ function CheckMark({
                         <span className='check-text'>Submit</span>
                     </>
                 </button>
-                <div className='refresh' disabled={false} onClick={() => handleConfirmRefresh()}
+                <div className='refresh' disabled={isShowResultQuiz} onClick={() => handleConfirmRefresh()}
                     style={isShowResultQuiz ? { cursor: "not-allowed", opacity: '0.5' } : {}}
                 >
                     <span className='refresh-icon'><VscDebugRestart /></span>
@@ -119,8 +131,6 @@ function CheckMark({
                 <CountDown
                     handleFinishQuiz={handleFinishQuiz}
                     dataQuiz={dataQuiz}
-                // count={count}
-                // setCount={setCount}
                 />
             </div>
             <div className='note'>
