@@ -14,6 +14,7 @@ function CountDown() {
 
     useEffect(() => {
         let secs = timerQuizToSecs(timerQuiz);
+        if (secs === 0) return;
         const timer = setInterval(() => {
             let a = toHHMMSS(secs);
             setCount(a);

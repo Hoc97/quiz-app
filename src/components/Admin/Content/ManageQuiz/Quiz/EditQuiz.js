@@ -22,8 +22,8 @@ function EditQuiz() {
     //     setType(selectedOption);
     // };
 
+
     const handleUploadFile = (e) => {
-        console.log(e.target.files[0]);
         if (e.target.files[0]) {
             setImage(e.target.files[0]);
         }

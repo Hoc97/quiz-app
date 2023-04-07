@@ -19,7 +19,7 @@ function CheckMark({
     isShowResultQuiz,
     isShowAnswer,
     submissionResult,
-    index
+    indexQ
 }) {
     const dispatch = useDispatch();
     const listTimerPart = useSelector(state => state.quizManage.listTimerPart);
@@ -27,6 +27,9 @@ function CheckMark({
     const [isShowModalRefresh, setIsShowModalRefresh] = useState(false);
     const [isShowModalSubmit, setIsShowModalSubmit] = useState(false);
     const [answered, setAnswered] = useState(0);
+
+
+
 
     const questionResult = (question) => {
         for (const answer of question.answers) {
@@ -55,17 +58,17 @@ function CheckMark({
         setIndexQuestion(b);
     };
 
-    const handleStart = (hours = 0, minutes = 0, seconds = 0, index) => {
+    const handleStart = (hours = 0, minutes = 0, seconds = 0, indexQ) => {
         const expire = new Date();
-        expire.setHours(expire.getHours() + hours, expire.getMinutes() + minutes, expire.getSeconds() + seconds);
+        expire.setHours(expire.getHours() + hours, expire.getMinutes() + minutes, expire.getSeconds() + seconds + 1);
         const time2 = expire.getTime();
-        dispatch({ type: 'SET_TIMER_QUIZ', time: time2, payload: index });
+        dispatch({ type: 'SET_TIMER_QUIZ', time: time2, payload: indexQ });
 
     };
     const handleRefresh = () => {
         // reset time
         const [hours, minutes, seconds] = listTimerPart[`Part${currentPart}`];
-        handleStart(hours, minutes, seconds, index);
+        handleStart(hours, minutes, seconds, indexQ);
 
         //reset question
         let dataQuizClone = _.cloneDeep(dataQuiz);
@@ -122,12 +125,13 @@ function CheckMark({
                         <span className='check-text'>Submit</span>
                     </>
                 </button>
-                <div className='refresh' disabled={isShowResultQuiz} onClick={() => handleConfirmRefresh()}
+                <button className='refresh' disabled={isShowResultQuiz}
                     style={isShowResultQuiz ? { cursor: "not-allowed", opacity: '0.5' } : {}}
+                    onClick={() => handleConfirmRefresh()}
                 >
                     <span className='refresh-icon'><VscDebugRestart /></span>
                     <span className='refresh-text'>Restart</span>
-                </div>
+                </button>
                 <CountDown
                     handleFinishQuiz={handleFinishQuiz}
                     dataQuiz={dataQuiz}

@@ -17,7 +17,6 @@ function Admin() {
     const [collapsed, setCollapsed] = useState(false);
     const handleLogout = async () => {
         let res = await postLogout(account.email, account.refresh_token);
-        console.log(res);
         if (res.EC === 0) {
             dispatch({ type: 'USER_LOGOUT' });
             navigate('/login');

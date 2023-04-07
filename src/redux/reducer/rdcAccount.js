@@ -19,6 +19,15 @@ const rdcAccount = (state = intialState, { type, payload }) => {
                 account: payload.DT,
                 isAuthenticated: true,
             };
+        case 'REFRESH_TOKEN':
+            return {
+                ...state,
+                account: {
+                    ...state.account,
+                    access_token: payload.access_token,
+                    refresh_token: payload.refresh_token,
+                }
+            };
         case 'USER_LOGOUT':
             return {
                 account: {

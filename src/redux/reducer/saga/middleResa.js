@@ -27,7 +27,6 @@ function* getListQuiz({ type, keydata }) {
     });
     newArrQuiz = _.orderBy(newArrQuiz, ['order'], ['asc']);
     let newListTimerQuiz = [...Array(newArrQuiz.length)].map(n => 0);
-    // console.log(newListTimerQuiz);
     yield put({
         type: 'SET_LIST_QUIZ',
         payload: { newArrQuiz, newListTimerQuiz },
@@ -35,10 +34,12 @@ function* getListQuiz({ type, keydata }) {
 }
 
 
+
 /////Receice 'type' from dispatch to run function 
 function* middleReSa() {
     yield takeEvery('GET_LIST_QUIZ', getListQuiz);
-    // yield takeEvery('GET_DETAIL_QUIZ', getDetailQuiz);
+    // yield takeEvery('CREATE_SIGN_UP', createSignUp);
 }
 
 export default middleReSa;
+

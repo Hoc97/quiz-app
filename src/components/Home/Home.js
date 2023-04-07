@@ -8,7 +8,6 @@ import Footer from './modules/Footer/Footer';
 import Feature from './modules/Feature/Feature';
 
 function Home() {
-  // document.location.reload(true);
   return (
     <div className='home-wrapper'>
       <Content />

@@ -12,7 +12,6 @@ function ModalDeleteQuiz({
     const handleClose = () => setShow(false);
     const handleSubmitDeleteUser = async () => {
         let data = await deleteQuiz(userDelete.id);
-        console.log(data);
         if (data.EC === 0) {
             toast.success(data.EM);
             handleClose();

@@ -76,7 +76,6 @@ function UpdateQAQuiz() {
                 }
                 newQA.push(q);
             }
-            // console.log('qa', res.DT.qa);
             setQuestions(res.DT.qa);
         }
     };
@@ -258,13 +257,13 @@ function UpdateQAQuiz() {
             quizId: selectedQuiz.value,
             questions: questionsClone
         });
-        // console.log('questionsClone', res, questionsClone);
         if (res.EC === 0) {
             toast.success(res.EM);
             fetchQuizWithQA();
         }
 
     };
+
 
     return (
         <div className='question-container' >

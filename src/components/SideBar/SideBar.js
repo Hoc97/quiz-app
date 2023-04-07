@@ -12,7 +12,6 @@ import { useEffect } from 'react';
 function SideBar({ collapsed }) {
     const { collapseSidebar } = useProSidebar();
     const navigate = useNavigate();
-    // console.log(collapsed);
     useEffect(() => {
         collapseSidebar(collapsed);
         // eslint-disable-next-line react-hooks/exhaustive-deps

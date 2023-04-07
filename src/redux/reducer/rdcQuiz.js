@@ -53,10 +53,13 @@ const rdcQuiz = (state = intialState, { type, payload, time }) => {
             };
         case 'RESET_TIMER_ROOM':
             let resetListQuizClone = _.cloneDeep(state.listQuiz);
+            let resetListTimerQuiz = _.cloneDeep(state.listTimerQuiz);
             resetListQuizClone[payload].isInTimerRoom = false;
+            resetListTimerQuiz[payload] = 0;
             return {
                 ...state,
-                listQuiz: resetListQuizClone
+                listQuiz: resetListQuizClone,
+                listTimerQuiz: resetListTimerQuiz
             };
         case 'REFRESH_LISTQUIZ':
             return {

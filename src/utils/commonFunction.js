@@ -1,4 +1,6 @@
+import { store } from '../redux/store';
 
+const { dispatch } = store;
 
 const validateEmail = (email) => {
     return String(email)
@@ -13,7 +15,6 @@ const toHHMMSS = (secs) => {
     const hours = Math.floor(sec_num / 3600);
     const minutes = Math.floor(sec_num / 60) % 60;
     const seconds = sec_num % 60;
-    // console.log(hours, minutes, seconds);
     return [hours, minutes, seconds]
         .map(v => v < 10 ? "0" + v : v)
         .join(" : ");
@@ -21,24 +22,8 @@ const toHHMMSS = (secs) => {
 
 const timerQuizToSecs = (timerQuiz) => {
     if (timerQuiz === 0) return 0;
-    let nexttHours = new Date(timerQuiz).getHours();
-    let nextMinutes = new Date(timerQuiz).getMinutes();
-    let nextSeconds = new Date(timerQuiz).getSeconds();
-    let currentHours = new Date().getHours();
-    let currentMinutes = new Date().getMinutes();
-    let currentSeconds = new Date().getSeconds();
-    if (nexttHours > currentHours) {
-        nexttHours = nexttHours - 1;
-        nextMinutes = nextMinutes + 60 - 1;
-        nextSeconds = nextSeconds + 60;
-    } else {
-        nextMinutes = nextMinutes - 1;
-        nextSeconds = nextSeconds + 60;
-    }
-    const time =
-        (nexttHours - currentHours) * 3600
-        + (nextMinutes - currentMinutes) * 60
-        + (nextSeconds - currentSeconds);
+    const time = (new Date(timerQuiz) - new Date()) / 1000;
+    if (time <= 0) dispatch({ type: 'REFRESH_LISTQUIZ' });
     return time > 0 ? time : 0;
 };
 

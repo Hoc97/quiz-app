@@ -15,7 +15,6 @@ function Content({
     isShowResultQuiz,
     isShowAnswer
 }) {
-    // console.log('data', dataQuiz);
     const handleDown = () => {
         if (currentQuestion <= 0) return;
         if (+currentPart === 1 || +currentPart === 2 || +currentPart === 5) setCurrentQuestion(currentQuestion - 1);

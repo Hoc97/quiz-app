@@ -11,6 +11,7 @@ import Images from '../../assets/img/Image';
 import CountDownListQuiz from './CountDownListQuiz';
 import _ from 'lodash';
 
+
 function ListQuiz({ action, colorBtn }) {
     const navigate = useNavigate();
     const dispatch = useDispatch();
@@ -19,13 +20,12 @@ function ListQuiz({ action, colorBtn }) {
     const listTimerQuiz = useSelector(state => state.quizManage.listTimerQuiz);
     const listTimerPart = useSelector(state => state.quizManage.listTimerPart);
     const listQuestionPart = useSelector(state => state.quizManage.listQuestionPart);
+
+
     useEffect(() => {
         const timeMax = Math.max(...listTimerQuiz);
         let secs = timerQuizToSecs(timeMax);
-        if (secs === 0) {
-            dispatch({ type: 'REFRESH_LISTQUIZ' });
-            return;
-        }
+        if (secs === 0) return;
         const timer = setInterval(() => {
             if (secs > 0) {
                 secs--;
@@ -48,21 +48,9 @@ function ListQuiz({ action, colorBtn }) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isRefreshListQuiz]);
 
-    const handleStart = (hours = 0, minutes = 0, seconds = 0, index) => {
-        const expire = new Date();
-        expire.setHours(expire.getHours() + hours, expire.getMinutes() + minutes, expire.getSeconds() + seconds);
-        const time2 = expire.getTime();
-        dispatch({ type: 'SET_TIMER_QUIZ', time: time2, payload: index });
 
-    };
-
-    const handleEnterExam = (quiz, index, part) => {
+    const handleEnterExam = (quiz) => {
         navigate(`/quiz/${quiz.id}`);
-        const [hours, minutes, seconds] = listTimerPart[`Part${part}`];
-        if (!quiz.isInTimerRoom) {
-            dispatch({ type: 'SET_TIMER_ROOM', payload: index });
-            handleStart(hours, minutes, seconds, index);
-        }
     };
     let c = listQuiz.map(quiz => listQuiz.findIndex((item) => item.order === quiz.order));
     let arrayIndexPart = [...new Set(c)];
@@ -71,12 +59,17 @@ function ListQuiz({ action, colorBtn }) {
         listQuizClone[indexPart].dataItem = listQuiz.slice(arrayIndexPart[i], arrayIndexPart[i + 1]);
         return listQuizClone[indexPart];
     });
+
+
+
+
     return (
         <div className='listquiz-container container'>
+
             {dataPartQuiz.length > 0 && (
                 dataPartQuiz.map((quiz, index) => {
                     return (
-                        <div key={index} >
+                        <div className='quiz-part' key={index} >
                             <div className='card' >
                                 <div className='image'>
                                     <img
@@ -96,7 +89,8 @@ function ListQuiz({ action, colorBtn }) {
                                 let part = index + 1;
                                 return (
                                     <div key={i} className={`item-quiz item-${indexTemp}`}>
-                                        <span className='quiz-index'>Test {indexTemp + 1}</span>
+                                        <span className='quiz-test'>Test {indexTemp + 1}</span>
+                                        <span className='quiz-id'>ID: {item.id}</span>
                                         {item.isInTimerRoom ?
                                             <span className='doing'>
                                                 <span className='icon'>

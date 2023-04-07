@@ -14,17 +14,14 @@ import { FaArrowCircleLeft } from 'react-icons/fa';
 import Images from '../../assets/img/Image';
 function Login() {
     const dispatch = useDispatch();
-
     const [account, setAccount] = useState({
         email: '',
         password: '',
 
     });
-
     const [isLoading, setIsLoading] = useState(false);
     const [isShowPassword, setisShowPassword] = useState(false);
     const navigate = useNavigate();
-
     const handleInput = (e) => {
         setAccount({
             ...account,

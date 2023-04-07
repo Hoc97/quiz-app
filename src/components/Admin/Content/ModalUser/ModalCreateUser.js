@@ -40,15 +40,12 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
     };
 
     const handleUpload = (e) => {
-        // console.log(e.target.files[0]);
         if (e.target.files[0]) {
             setAccount({
                 ...account,
                 previewImage: URL.createObjectURL(e.target.files[0]),
                 image: e.target.files[0]
             });
-        } else {
-            // setPreviewImage('');
         }
     };
 
@@ -79,7 +76,6 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
         //call API
         // Bên axiosCustom phần interceptor return response.data rồi nên nó sẽ lấy đc data lun
         let data = await postCreateNewUser(account.email, account.password, account.username, account.role, account.image);
-        console.log(data);
         if (data.EC === 0) {
             toast.success(data.EM);
             handleClose();

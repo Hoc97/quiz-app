@@ -128,6 +128,10 @@ const deleteQuiz = (id) => {
     return instance.delete(`/api/v1/quiz/${id}`);
 };
 
+const refreshAccessToken = (email, refresh_token) => {
+    return instance.post(`/api/v1/refresh-token`, { email, refresh_token });
+};
+
 export {
     postCreateNewUser,
     getAllUsers,
@@ -152,5 +156,6 @@ export {
     postChangePassword,
     getQuizHistory,
     putUpdateQuiz,
-    deleteQuiz
+    deleteQuiz,
+    refreshAccessToken
 };

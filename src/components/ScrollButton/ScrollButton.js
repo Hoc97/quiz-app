@@ -9,7 +9,6 @@ const ScrollButton = () => {
     useEffect(() => {
         const toggleVisible = () => {
             const scrolled = window.pageYOffset;
-            // console.log('scrolled', window.pageYOffset);
             if (scrolled > 500) {
                 setVisible(true);
                 return;

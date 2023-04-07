@@ -12,7 +12,6 @@ function Question({
     isShowResultQuiz,
     isShowAnswer
 }) {
-    // console.log('data', data);
     return (
         <div className='question-quiz-container'>
             {!_.isEmpty(data) &&

@@ -29,7 +29,6 @@ function Password() {
         }
         //call API
         let data = await postChangePassword(currentPassword, newPassword);
-        console.log('data', data);
         if (data.EC === 0) {
             toast.success(data.EM);
             setCurrentPassword('');

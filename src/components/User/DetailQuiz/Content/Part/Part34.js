@@ -14,7 +14,6 @@ const Part34 = ({
 }) => {
     const audio = ToeicTest.Practice_Tests[`Part${currentPart}`]?.audio?.[listData[0].audio];
     const indexData = index - (index % 3);
-    // console.log('indexData', indexData, listData);
     const questionID = listData[0].questionID;
     return (
         <>

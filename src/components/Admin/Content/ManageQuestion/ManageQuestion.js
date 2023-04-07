@@ -133,7 +133,6 @@ function ManageQuestion() {
     };
 
     const handleAnswerQuestion = (type, questionId, answerId, value) => {
-        console.log(type, questionId, answerId, value);
         let questionsClone = _.cloneDeep(questions);
         let index = questionsClone.findIndex((item) => item.id === questionId);
         if (index > -1) {
@@ -212,7 +211,6 @@ function ManageQuestion() {
         setPreviewImage(false);
         setUrlImagePreview(initUrlImagePreview);
     };
-    console.log('question', questions);
     return (
         <div className='question-container' >
             <div className='question-title'>Questions Management</div>

@@ -16,8 +16,10 @@ function DetailQuiz() {
     const params = useParams();
     const quizId = params.id;
     const listQuiz = useSelector(state => state.quizManage.listQuiz);
+    const listTimerPart = useSelector(state => state.quizManage.listTimerPart);
     const getDetailQuiz = listQuiz.find(quiz => quiz.id === +quizId);
     const index = listQuiz.findIndex(quiz => quiz.id === +quizId);
+    const TimerQuiz = useSelector(state => state.quizManage.listTimerQuiz[index]);
     const currentPart = getDetailQuiz?.order?.replace(/\D*/g, '');
     const [submissionResult, setSubmissionResult] = useState({
         numberCorrect: 0,
@@ -35,6 +37,51 @@ function DetailQuiz() {
         const bb = dataQuiz.findIndex(i => i.questionID === n.questionID);
         return bb;
     });
+
+
+    useEffect(() => {
+        if (!dataQuiz.length) return;
+        for (const question of dataQuiz) {
+            for (const answer of question.answers) {
+                if (answer.isSelected) {
+                    window.onbeforeunload = function () {
+                        return "Data will be lost if you leave the page, are you sure?";
+                    };
+                    return;
+                }
+            }
+        }
+        window.onbeforeunload = null;
+        return () => {
+            window.onbeforeunload = null;
+        };
+    }, [dataQuiz]);
+
+    useEffect(() => {
+        if (!TimerQuiz) {
+            handleFinishQuiz();
+            return;
+        }
+        let visibilitychange;
+        Notification.requestPermission().then(function (permission) {
+            let notification;
+            if (permission !== 'granted') return;
+            visibilitychange = () => {
+                if (document.visibilityState === 'hidden') {
+                    notification = new Notification('Vui lòng quay lại phòng thi', {
+                        body: `Bạn đã rời khỏi phòng`,
+                        tag: 'Come back'
+                    });
+                } else {
+                    if (notification) notification.close();
+                }
+            };
+            document.addEventListener('visibilitychange', visibilitychange);
+        });
+
+        return () => document.removeEventListener('visibilitychange', visibilitychange);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [TimerQuiz]);
     useEffect(() => {
         fetchQuestions();
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -85,7 +132,21 @@ function DetailQuiz() {
                 })
                 .value();
             setDataQuiz(data);
+            const [hours, minutes, seconds] = listTimerPart[`Part${currentPart}`];
+            if (!getDetailQuiz.isInTimerRoom) {
+                dispatch({ type: 'SET_TIMER_ROOM', payload: index });
+                handleStart(hours, minutes, seconds, index);
+            }
         }
+    };
+
+
+    const handleStart = (hours = 0, minutes = 0, seconds = 0, index) => {
+        const expire = new Date();
+        expire.setHours(expire.getHours() + hours, expire.getMinutes() + minutes, expire.getSeconds() + seconds + 1);
+        const time2 = expire.getTime();
+        dispatch({ type: 'SET_TIMER_QUIZ', time: time2, payload: index });
+
     };
     const handleFinishQuiz = async () => {
         let payload = {
@@ -108,7 +169,6 @@ function DetailQuiz() {
         payload.answers = answers;
         //submit API
         let res = await postSubmitQuiz(payload);
-        // console.log(res);
         if (res.EC !== 0) {
             alert('something wrong...');
             return;
@@ -151,6 +211,8 @@ function DetailQuiz() {
         setIsShowModalResult(false);
         setIsShowAnswer(true);
     };
+
+
     return (
         <div className={`detail-quiz-container ${+currentPart === 6 || +currentPart === 7 ? 'container-part6-7' : 'container'}`} >
             <div className='text-user' onClick={() => navigate('/user')}>
@@ -184,7 +246,7 @@ function DetailQuiz() {
                     isShowResultQuiz={isShowResultQuiz}
                     isShowAnswer={isShowAnswer}
                     submissionResult={submissionResult}
-                    index={index}
+                    indexQ={index}
                 />
             </div>
             <ModalResult

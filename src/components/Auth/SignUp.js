@@ -44,7 +44,6 @@ function SignUp() {
         //Call API
 
         let data = await postSignUp(account.email, account.password, account.username);
-        console.log(data);
         if (data.EC === 0) {
             toast.success(data.EM);
             setTimeout(() => {
