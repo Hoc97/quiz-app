@@ -1,6 +1,5 @@
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
-// import Select from 'react-select';
 import Button from 'react-bootstrap/Button';
 import TableQuiz from './TableQuiz';
 import { useRef, useState } from 'react';
@@ -11,17 +10,8 @@ function EditQuiz() {
     const tableRef = useRef();
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
-    // const [type, setType] = useState({ value: '', label: 'Select level...' });
     const [image, setImage] = useState('');
-    // const options = [
-    //     { value: 'EASY', label: 'EASY' },
-    //     { value: 'MEDIUM', label: 'MEDIUM' },
-    //     { value: 'HARD', label: 'HARD' },
-    // ];
-    // const handleChange = (selectedOption) => {
-    //     setType(selectedOption);
-    // };
-
+    const [query, setQuery] = useState('');
 
     const handleUploadFile = (e) => {
         if (e.target.files[0]) {
@@ -43,16 +33,12 @@ function EditQuiz() {
             toast.error('Image is required');
             return;
         }
-        // if (!type.value) {
-        //     toast.error('Level is required');
-        //     return;
-        // }
+
         let res = await postCreateNewQuiz(name, description, 'EASY', image);
         if (res.EC === 0) {
             toast.success(res.EM);
             setName('');
             setDescription('');
-            // setType({ value: '', label: 'Select level...' });
             setImage(null);
             handleUpdateTableQuiz();
         } else {
@@ -81,13 +67,7 @@ function EditQuiz() {
                             placeholder='Password'
                         />
                     </FloatingLabel>
-                    {/* <Form.Group className='my-3 more-actions'>
-                        <Form.Label className=''>Level</Form.Label>
-                        <Select
-                            value={type}
-                            onChange={handleChange}
-                            options={options} placeholder='Quiz type' />
-                    </Form.Group> */}
+
                     <div className='d-flex align-items-center'>
                         <Form.Group className='upload-image'>
                             <Form.Label className='btn-upload' htmlFor='UploadImageQuiz'>
@@ -128,7 +108,10 @@ function EditQuiz() {
 
             <div className='quiz-list-detail'>
                 <div className='list-quizzes'>List Quizzes </div>
-                <TableQuiz tableRef={tableRef} />
+                <input type='text' placeholder='Search...' className='search mb-2'
+                    onChange={(e) => setQuery(e.target.value)}
+                />
+                <TableQuiz tableRef={tableRef} query={query} />
             </div>
         </>
     );

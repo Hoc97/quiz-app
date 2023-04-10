@@ -117,7 +117,7 @@ function CheckMark({
     return (
         <div className='check-mark'>
             <div className='check-header'>
-                <button className='check' disabled={isShowResultQuiz}//isShowResultQuiz
+                <button className='check' disabled={isShowResultQuiz}
                     style={isShowResultQuiz ? { cursor: "not-allowed", opacity: '0.5' } : {}}
                     onClick={() => handleConfirmSubmit()} >
                     <>
@@ -168,9 +168,8 @@ function CheckMark({
                         <>
                             <span className={!!submissionResult.numberNotanswered ? 'note-number not-answered' : ''}></span>
                             {!!submissionResult.numberNotanswered &&
-                                <span> {submissionResult.numberNotanswered} câu chưa làm</span>}
-
-
+                                <span> {submissionResult.numberNotanswered} câu chưa làm</span>
+                            }
                         </> :
                         <>
                             <span className='note-number notselected'>1</span>

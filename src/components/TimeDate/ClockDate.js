@@ -1,4 +1,3 @@
-import React from 'react';
 import './TimeDate.scss';
 const ClockDate = () => {
     return (

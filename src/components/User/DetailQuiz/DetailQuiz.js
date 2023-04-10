@@ -38,7 +38,6 @@ function DetailQuiz() {
         return bb;
     });
 
-
     useEffect(() => {
         if (!dataQuiz.length) return;
         for (const question of dataQuiz) {
@@ -47,16 +46,15 @@ function DetailQuiz() {
                     window.onbeforeunload = function () {
                         return "Data will be lost if you leave the page, are you sure?";
                     };
-                    return;
+                    break;
                 }
             }
+            break;
         }
-        window.onbeforeunload = null;
         return () => {
             window.onbeforeunload = null;
         };
     }, [dataQuiz]);
-
     useEffect(() => {
         if (!TimerQuiz) {
             handleFinishQuiz();
@@ -80,11 +78,9 @@ function DetailQuiz() {
         });
 
         return () => document.removeEventListener('visibilitychange', visibilitychange);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [TimerQuiz]);
     useEffect(() => {
         fetchQuestions();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [quizId]);
     const fetchQuestions = async () => {
         let res = await getDataQuestions(quizId);
@@ -139,7 +135,6 @@ function DetailQuiz() {
             }
         }
     };
-
 
     const handleStart = (hours = 0, minutes = 0, seconds = 0, index) => {
         const expire = new Date();
@@ -212,7 +207,6 @@ function DetailQuiz() {
         setIsShowAnswer(true);
     };
 
-
     return (
         <div className={`detail-quiz-container ${+currentPart === 6 || +currentPart === 7 ? 'container-part6-7' : 'container'}`} >
             <div className='text-user' onClick={() => navigate('/user')}>
@@ -220,6 +214,7 @@ function DetailQuiz() {
                 Back
                 {/* to your page */}
             </div>
+
             <div className={`detail-quiz`}>
                 <Content
                     getDetailQuiz={getDetailQuiz}

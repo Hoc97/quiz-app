@@ -1,15 +1,16 @@
 import './Auth.scss';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import React from 'react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { postSignUp } from '../../services/apiService';
 import { toast } from 'react-toastify';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { FaArrowCircleLeft } from 'react-icons/fa';
-import Images from '../../assets/img/Image';
+import { Headers } from '../../assets/img/Image';
+import { validateEmail } from '../../utils/commonFunction';
+import { useDispatch } from 'react-redux';
 function SignUp() {
+    const dispatch = useDispatch();
     const [account, setAccount] = useState({
         email: '',
         password: '',
@@ -18,13 +19,7 @@ function SignUp() {
     const [isShowPassword, setisShowPassword] = useState(false);
     const navigate = useNavigate();
 
-    const validateEmail = (email) => {
-        return String(email)
-            .toLowerCase()
-            .match(
-                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-            );
-    };
+
 
     const handleInput = (e) => {
         setAccount({
@@ -41,17 +36,20 @@ function SignUp() {
             toast.error('Invalid Email');
             return;
         }
-        //Call API
-
-        let data = await postSignUp(account.email, account.password, account.username);
-        if (data.EC === 0) {
-            toast.success(data.EM);
-            setTimeout(() => {
-                navigate('/login');
-            }, 1000);
-        } else {
-            toast.error(data.EM);
+        if (!account.password) {
+            toast.error('Invalid password');
+            return;
         }
+        if (!account.username) {
+            toast.error('Invalid user');
+            return;
+        }
+        //Call API
+        dispatch({
+            type: 'POST_SIGN_UP',
+            data: { email: account.email, password: account.password, username: account.username },
+            navigate
+        });
     };
     return (
         <div className='signup-container'>
@@ -64,7 +62,7 @@ function SignUp() {
             <div className='signup-content'>
                 <div className='form'>
                     <div className='logo'>
-                        <img src={Images.Headers.logo} alt='' height={50} />
+                        <img src={Headers.logo} alt='' height={50} />
                     </div>
                     <h2 className='welcome'>Bắt đầu hành trình của bạn</h2>
                     <div className='content'>

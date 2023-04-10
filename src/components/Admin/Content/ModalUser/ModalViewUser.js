@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-// import logoBg from '../../../assets/img/logo-react.svg';
 import noImage from '../../../../assets/img/no image.jpg';
 import './ModalUser.scss';
 import _ from 'lodash';
@@ -23,7 +22,6 @@ function ModalViewUser({ show, setShow, userView }) {
     });
     useEffect(() => {
         if (!_.isEmpty(userView)) {
-            //update state
             setAccount({
                 email: userView.email,
                 username: userView.username,

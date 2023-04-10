@@ -15,6 +15,8 @@ import Lightbox from "react-awesome-lightbox";
 import {
     getAllQuizForAdmin,
     getQuizWithQA,
+    postCreateNewAnswerForQuestion,
+    postCreateNewQuestionForQuiz,
     postUpsertQA
 } from '../../../../../services/apiService';
 import { urltoFile } from '../../../../../utils/commonFunction';
@@ -62,7 +64,6 @@ function UpdateQAQuiz() {
         if (res.EC === 0) {
             //convert base64 to file object
             let newQA = [];
-
             for (let i = 0; i < res.DT.qa.length; i++) {
                 let q = res.DT.qa[i];
                 if (q.description.indexOf(';audio,') > -1) {
@@ -76,7 +77,24 @@ function UpdateQAQuiz() {
                 }
                 newQA.push(q);
             }
-            setQuestions(res.DT.qa);
+
+            if (res.DT.qa.length === 0) {
+                let newQuestion = {
+                    id: uuidv4(),
+                    description: '',
+                    imageFile: '',
+                    imageName: '',
+                    answers: [
+                        {
+                            id: uuidv4(),
+                            description: '',
+                            isCorrect: false,
+                        },
+                    ],
+                };
+                newQA.push(newQuestion);
+            }
+            setQuestions(newQA);
         }
     };
     const fetchQuiz = async () => {
@@ -223,27 +241,15 @@ function UpdateQAQuiz() {
         }
         for (const question of questions) {
             let indexQ = questions.indexOf(question) + 1;
-            // Đang làm phần audio tạm thời ko validate phần này
-            // if (!question.description) {
-            //     toast.error(`Please fill in the question ${indexQ}`);
-            //     return;
-            // }
-            // for (const answer of question.answers) {
-            //     let indexA = question.answers.indexOf(answer) + 1;
-            //     if (!answer.description) {
-            //         toast.error(`Answer ${indexA} is empty at question ${indexQ}`);
-            //         return;
-            //     }
-            // }
+
             let answerCorrect = question.answers.filter(answer => answer.isCorrect === true);
             if (answerCorrect.length === 0) {
                 toast.error(`Choose the correct answer at question ${indexQ}`);
                 return;
             }
         };
-        // convert file object to base64 javascript
+        //convert file object to base64 javascript
         let questionsClone = _.cloneDeep(questions);
-
         for (const question of questionsClone) {
             if (question.audioName) {
                 question.description = question.description + `;audio,${question.audioName}`;
@@ -253,6 +259,17 @@ function UpdateQAQuiz() {
             }
         }
         //Post update API Quiz QA 
+        for (const question of questions) {
+            const q = await postCreateNewQuestionForQuiz(
+                selectedQuiz.value,
+                question.description,
+                question.imageFile);
+            //submit answer
+            for (const answer of question.answers) {
+                await postCreateNewAnswerForQuestion(
+                    answer.description, answer.isCorrect, q.DT.id);
+            }
+        };
         let res = await postUpsertQA({
             quizId: selectedQuiz.value,
             questions: questionsClone

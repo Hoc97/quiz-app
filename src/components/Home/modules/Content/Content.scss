@@ -123,3 +123,40 @@
         z-index: -1;
     }
 }
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    .home-container .content .text .title {
+        width: 75%;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    .home-container {
+
+        .content {
+
+            .text .title {
+                width: 90%;
+            }
+
+            .image {
+                margin-left: 0px;
+                margin-right: 20px;
+                margin-top: 322.5px;
+
+                img {
+                    transform: scale(1);
+                }
+            }
+
+        }
+    }
+
+
+}

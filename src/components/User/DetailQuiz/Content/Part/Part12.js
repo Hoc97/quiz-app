@@ -1,4 +1,3 @@
-import React from 'react';
 import { tranferToAlphabet } from '../../../../../utils/commonFunction';
 import ToeicTest from '../../../../../assets/ToeicTests/ToeicTest';
 import CheckCorrect from '../IconCheck/CheckCorrect';

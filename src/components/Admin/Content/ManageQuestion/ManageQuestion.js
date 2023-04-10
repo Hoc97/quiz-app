@@ -14,8 +14,10 @@ import Lightbox from "react-awesome-lightbox";
 import {
     getAllQuizForAdmin,
     postCreateNewQuestionForQuiz,
-    postCreateNewAnswerForQuestion
+    postCreateNewAnswerForQuestion,
+    getAllQuestion
 } from '../../../../services/apiService';
+import TableQuestion from './TableQuestion';
 
 function ManageQuestion() {
     const initQuestions = [
@@ -39,13 +41,16 @@ function ManageQuestion() {
     };
     const initSelectedQuiz = { value: '', label: 'Select quiz...' };
     const [listQuiz, setListQuiz] = useState([]);
+    const [listQuestion, setListQuestion] = useState([]);
     const [selectedQuiz, setSelectedQuiz] = useState(initSelectedQuiz);
     const [questions, setQuestions] = useState(initQuestions);
     const [previewImage, setPreviewImage] = useState(false);
     const [urlImagePreview, setUrlImagePreview] = useState(initUrlImagePreview);
+    const [query, setQuery] = useState('');
 
     useEffect(() => {
         fetchQuiz();
+        fetchAllQuestion();
     }, []);
 
     const fetchQuiz = async () => {
@@ -60,6 +65,16 @@ function ManageQuestion() {
             setListQuiz(newQuiz);
         }
     };
+
+
+    const fetchAllQuestion = async () => {
+        let res = await getAllQuestion();
+        console.log('res', res);
+        if (res.EC === 0) {
+            setListQuestion(res.DT);
+        }
+    };
+
 
     const handleAddRemoveQuestion = (type, id) => {
         if (type === 'ADD') {
@@ -331,6 +346,10 @@ function ManageQuestion() {
                     </div>
                 }
             </div>
+            <input type='text' placeholder='Search...' className='search mb-2'
+                onChange={(e) => setQuery(e.target.value)}
+            />
+            <TableQuestion listQuestion={listQuestion} query={query} />
         </div>
     );
 }

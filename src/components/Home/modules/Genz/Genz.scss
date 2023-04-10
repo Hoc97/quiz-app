@@ -110,5 +110,51 @@
 
   }
 
+}
 
+
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+
+  .genz .content .prev span {
+    left: 60px;
+
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+
+
+  .genz {
+
+    .title {
+      margin: 0;
+
+      span {
+        font-size: 36px;
+        line-height: 55px;
+      }
+    }
+
+    .content {
+
+      .phone-list {
+        width: 1000px;
+      }
+
+      .prev span {
+        left: 14px;
+      }
+
+      .next span {
+        left: -30px;
+      }
+
+      .slick-list {
+        margin-left: -43px;
+      }
+    }
+  }
 }

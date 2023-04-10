@@ -1,11 +1,13 @@
 import './Home.scss';
-import Content from './modules/Content/Content';
-import Opinion from './modules/Opinion/Opinion';
-import GenZ from './modules/Genz/Genz';
-import AboutMe from './modules/AboutMe/AboutMe';
-import Feedback from './modules/Feedback/Feedback';
-import Footer from './modules/Footer/Footer';
-import Feature from './modules/Feature/Feature';
+import { lazy } from 'react';
+const Content = lazy(() => import('./modules/Content/Content'));
+const Opinion = lazy(() => import('./modules/Opinion/Opinion'));
+const GenZ = lazy(() => import('./modules/Genz/Genz'));
+const AboutMe = lazy(() => import('./modules/AboutMe/AboutMe'));
+const Feedback = lazy(() => import('./modules/Feedback/Feedback'));
+const Footer = lazy(() => import('./modules/Footer/Footer'));
+const Feature = lazy(() => import('./modules/Feature/Feature'));
+
 
 function Home() {
   return (

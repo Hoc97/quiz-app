@@ -6,24 +6,30 @@ import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import { useRef } from 'react';
 import { GrNext, GrPrevious } from "react-icons/gr";
-import Images from '../../../../assets/img/Image';
+import { Genz } from '../../../../assets/img/Image';
 export default function GenZ() {
     const sliderRef = useRef();
     const genzList = [
         {
-            content: Images.Genz.content2
+            content: Genz.content1
         },
         {
-            content: Images.Genz.content2
+            content: Genz.content2
         },
         {
-            content: Images.Genz.content3
+            content: Genz.content3
         },
         {
-            content: Images.Genz.content4
+            content: Genz.content4
         },
         {
-            content: Images.Genz.content4
+            content: Genz.content5
+        },
+        {
+            content: Genz.content6
+        },
+        {
+            content: Genz.content7
         },
     ];
     return (
@@ -46,8 +52,8 @@ export default function GenZ() {
                             dots={true}
                             infinite
                             speed={1000}
-                            // autoplay={true}
-                            // autoplaySpeed={4000}
+                            autoplay={true}
+                            autoplaySpeed={4000}
                             slidesToShow={1}
                             slidesToScroll={1}
                             arrows={false}

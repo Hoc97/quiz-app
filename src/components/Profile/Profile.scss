@@ -1,7 +1,7 @@
 .profile-container {
 
     .header {
-        margin-top: 30px;
+        margin-top: 90px;
         margin-bottom: 10px;
 
         span {
@@ -27,6 +27,31 @@
     .content {
         margin-top: 30px;
         margin-left: 7px;
+
+
+        .search {
+            outline: none;
+            padding: 0 16px;
+            border-radius: 7px;
+            height: 40px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0px 2px #ccc
+        }
+
+        .img-preview {
+            color: #ccc;
+            border: 1px dashed red;
+            border-radius: 5px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .image {
+                object-fit: cover;
+                height: 100%;
+            }
+        }
 
         .color {
             color: red;

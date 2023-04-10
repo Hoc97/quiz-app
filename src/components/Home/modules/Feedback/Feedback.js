@@ -1,4 +1,4 @@
-import Images from '../../../../assets/img/Image';
+import { FeedbackImg } from '../../../../assets/img/Image';
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import './Feedback.scss';
@@ -24,11 +24,11 @@ export default function Feedback() {
                                 <div className='title'>
                                     <span> Tên người dùng </span>
                                     <div className='star-ls'>
-                                        <img src={Images.Feedback.starActive} alt='' />
-                                        <img src={Images.Feedback.starActive} alt='' />
-                                        <img src={Images.Feedback.starActive} alt='' />
-                                        <img src={Images.Feedback.starActive} alt='' />
-                                        <img src={Images.Feedback.star} alt='' />
+                                        <img src={FeedbackImg.starActive} alt='' />
+                                        <img src={FeedbackImg.starActive} alt='' />
+                                        <img src={FeedbackImg.starActive} alt='' />
+                                        <img src={FeedbackImg.starActive} alt='' />
+                                        <img src={FeedbackImg.star} alt='' />
                                     </div>
                                 </div>
                             </div>

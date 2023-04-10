@@ -7,7 +7,7 @@ import { FaFlagCheckered } from 'react-icons/fa';
 import { AiOutlineQuestionCircle } from 'react-icons/ai';
 import { FcAlarmClock } from 'react-icons/fc';
 import { timerQuizToSecs } from '../../utils/commonFunction';
-import Images from '../../assets/img/Image';
+import { Doing } from '../../assets/img/Image';
 import CountDownListQuiz from './CountDownListQuiz';
 import _ from 'lodash';
 
@@ -20,7 +20,6 @@ function ListQuiz({ action, colorBtn }) {
     const listTimerQuiz = useSelector(state => state.quizManage.listTimerQuiz);
     const listTimerPart = useSelector(state => state.quizManage.listTimerPart);
     const listQuestionPart = useSelector(state => state.quizManage.listQuestionPart);
-
 
     useEffect(() => {
         const timeMax = Math.max(...listTimerQuiz);
@@ -38,20 +37,19 @@ function ListQuiz({ action, colorBtn }) {
         return () => {
             clearInterval(timer);
         };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     useEffect(() => {
         if (isRefreshListQuiz) {
             dispatch({ type: 'RUN_LIST_QUIZ' });
             dispatch({ type: 'GET_LIST_QUIZ' });
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isRefreshListQuiz]);
 
 
     const handleEnterExam = (quiz) => {
         navigate(`/quiz/${quiz.id}`);
     };
+
     let c = listQuiz.map(quiz => listQuiz.findIndex((item) => item.order === quiz.order));
     let arrayIndexPart = [...new Set(c)];
     let dataPartQuiz = arrayIndexPart.map((indexPart, i) => {
@@ -63,6 +61,10 @@ function ListQuiz({ action, colorBtn }) {
 
 
 
+    const handleReload = () => {
+        dispatch({ type: 'GET_LIST_QUIZ_CURRENT' });
+        dispatch({ type: 'RESET_ALL' });
+    };
     return (
         <div className='listquiz-container container'>
 
@@ -94,7 +96,7 @@ function ListQuiz({ action, colorBtn }) {
                                         {item.isInTimerRoom ?
                                             <span className='doing'>
                                                 <span className='icon'>
-                                                    <img src={Images.Doing.icon} alt='' />
+                                                    <img src={Doing.icon} alt='' />
                                                 </span>
                                                 <span>Đang làm </span>
                                             </span>
@@ -124,6 +126,9 @@ function ListQuiz({ action, colorBtn }) {
                     );
                 })
             )}
+            <button className='reload-room'
+                onClick={() => handleReload()}>
+                Reload</button>
         </div>
     );
 }

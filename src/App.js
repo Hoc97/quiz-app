@@ -1,57 +1,60 @@
-import React, { Suspense, useEffect, useState } from 'react';
+import { Suspense, useEffect, useState, lazy } from 'react';
 import './App.scss';
 import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-import { useSelector } from 'react-redux';
-import User from './components/User/User';
-import PreLoad from './assets/css/PreLoad';
+import { setCookie, getCookie } from './utils/commonFunction';
+import TranstionPage from './assets/css/TranstionPage';
 import Home from './components/Home/Home';
-const Admin = React.lazy(() => import('./components/Admin/Admin'));
-const ManageUser = React.lazy(() => import('./components/Admin/Content/ManageUser/ManageUser'));
-const DashBoard = React.lazy(() => import('./components/Admin/Content/DashBoard'));
-const ManageQuiz = React.lazy(() => import('./components/Admin/Content/ManageQuiz/ManageQuiz'));
-const ManageQuestion = React.lazy(() => import('./components/Admin/Content/ManageQuestion/ManageQuestion'));
-const Login = React.lazy(() => import('./components/Auth/Login'));
-const SignUp = React.lazy(() => import('./components/Auth/SignUp'));
-const DetailQuiz = React.lazy(() => import('./components/User/DetailQuiz/DetailQuiz'));
-const NotFound = React.lazy(() => import('./components/NotFound/NotFound'));
-const PrivateRoute = React.lazy(() => import('./routes/PrivateRoute'));
-const ScrollButton = React.lazy(() => import('./components/ScrollButton/ScrollButton'));
-const Profile = React.lazy(() => import('./components/Profile/Profile'));
-const Header = React.lazy(() => import('./components/Header/Header'));
-
-// ****//
+import Header from './components/Header/Header';
+import Preloader from './components/Preloader/Preloader';
+const User = lazy(() => import('./components/User/User'));
+const Admin = lazy(() => import('./components/Admin/Admin'));
+const ManageUser = lazy(() => import('./components/Admin/Content/ManageUser/ManageUser'));
+const DashBoard = lazy(() => import('./components/Admin/Content/DashBoard'));
+const ManageQuiz = lazy(() => import('./components/Admin/Content/ManageQuiz/ManageQuiz'));
+const ManageQuestion = lazy(() => import('./components/Admin/Content/ManageQuestion/ManageQuestion'));
+const Login = lazy(() => import('./components/Auth/Login'));
+const SignUp = lazy(() => import('./components/Auth/SignUp'));
+const DetailQuiz = lazy(() => import('./components/User/DetailQuiz/DetailQuiz'));
+const NotFound = lazy(() => import('./components/NotFound/NotFound'));
+const PrivateRoute = lazy(() => import('./routes/PrivateRoute'));
+const ScrollButton = lazy(() => import('./components/ScrollButton/ScrollButton'));
+const Profile = lazy(() => import('./components/Profile/Profile'));
 
 
 function App() {
-    const [load, setLoad] = useState(true);
+    let timerCookie = getCookie('Load');
+    const [load, setLoad] = useState(!timerCookie);
     useEffect(() => {
-        if (load) {
-            setTimeout(() => {
-                setLoad(false);
-            }, 12000);
-        }
+        const handleOnload = () => {
+            if (!timerCookie) {
+                setTimeout(() => {
+                    setLoad(false);
+                }, 8000);
+                setCookie('Load', 'load', 1);
+            }
+        };
+        handleOnload();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-    const role = useSelector(state => state.accountManage.account.role);
     return (
         <div className='App-container' id="App-container">
             <div className='App-content'>
                 <BrowserRouter>
                     <Routes>
-                        <Route path='/' element={false ? <PreLoad /> : <Header />}>
+                        <Route path='/' element={load ? <TranstionPage /> : <Header />}>
                             <Route index element={<Home />} />
                             <Route path='profile' element={<Profile />} />
                         </Route>
                         <Route path='/user' element={
-                            <PrivateRoute role={role} name='user'>
+                            <PrivateRoute name='user'>
                                 <User />
                             </PrivateRoute>
                         } />
                         <Route path='/quiz/:id' element={<DetailQuiz />} />
                         <Route path='/admin' element={
-                            <PrivateRoute role={role} name='admin'>
+                            <PrivateRoute name='admin'>
                                 <Admin />
                             </PrivateRoute>
                         }>
@@ -85,7 +88,7 @@ function App() {
 
 export default function WrappedApp() {
     return (
-        <Suspense fallback="Loading...">
+        <Suspense fallback={<Preloader />}>
             <App />
         </Suspense>
     );

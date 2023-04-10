@@ -1,29 +1,22 @@
-// import Header from '../Header/Header';
+import './Admin.scss';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import SideBar from '../SideBar/SideBar';
-import './Admin.scss';
+import Nav from 'react-bootstrap/Nav';
 import { Outlet } from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useDispatch, useSelector } from 'react-redux';
-import { postLogout } from '../../services/apiService';
-import { toast } from 'react-toastify';
+import Fade from 'react-reveal/Fade';
+import { handleLogout } from '../common/handleCommon';
 
 function Admin() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const account = useSelector((state) => state.accountManage.account);
+    const isAuthenticated = useSelector((state) => state.accountManage.isAuthenticated);
     const [collapsed, setCollapsed] = useState(false);
-    const handleLogout = async () => {
-        let res = await postLogout(account.email, account.refresh_token);
-        if (res.EC === 0) {
-            dispatch({ type: 'USER_LOGOUT' });
-            navigate('/login');
-        } else {
-            toast.error(res.EM);
-        }
-    };
+
     return (
         <div className='admin-container'>
             <div className='admin-sidebar'>
@@ -35,10 +28,29 @@ function Admin() {
                         <FaBars className='admin-header-left' />
                     </span>
                     <div className='admin-header-right'>
-                        <NavDropdown title='Settings' id='basic-nav-dropdown'>
-                            <NavDropdown.Item onClick={() => navigate('/profile')}>Profile</NavDropdown.Item>
-                            <NavDropdown.Item onClick={() => handleLogout()}>Log out</NavDropdown.Item>
-                        </NavDropdown>
+                        <Fade bottom>
+                            <Nav className='settings'>
+                                {isAuthenticated && (
+                                    <NavDropdown
+                                        title={
+                                            <span className='username-avatar'>
+                                                <img
+                                                    src={`data:image/jpeg;base64,${account.image}`}
+                                                    className='avatar'
+                                                    alt=''
+                                                />
+                                                <span>{account.username}</span>
+                                            </span>
+                                        }
+                                    >
+                                        <NavDropdown.Item onClick={() => navigate('/profile')}>
+                                            Tài khoản
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item onClick={() => handleLogout(account, dispatch, navigate)}>Đăng xuất</NavDropdown.Item>
+                                    </NavDropdown>
+                                )}
+                            </Nav>
+                        </Fade>
 
                     </div>
                 </div>

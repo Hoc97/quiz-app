@@ -14,7 +14,11 @@ function CountDown() {
 
     useEffect(() => {
         let secs = timerQuizToSecs(timerQuiz);
-        if (secs === 0) return;
+        if (secs === 0) {
+            dispatch({ type: 'RESET_TIMER_ROOM', payload: index });
+            setCount('00 : 00 : 00');
+            return;
+        }
         const timer = setInterval(() => {
             let a = toHHMMSS(secs);
             setCount(a);
@@ -29,7 +33,6 @@ function CountDown() {
         return () => {
             clearInterval(timer);
         };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [timerQuiz]);
 
     if (index === -1) return <>Error</>;

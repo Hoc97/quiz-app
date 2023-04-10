@@ -1,118 +1,42 @@
 import './Header.scss';
 import { Link, NavLink, useNavigate, Outlet, useLocation } from 'react-router-dom';
-import { useEffect, useRef, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { postLogout } from '../../services/apiService';
-import { toast } from 'react-toastify';
-import Images from '../../assets/img/Image';
+import { Headers } from '../../assets/img/Image';
 import Fade from 'react-reveal/Fade';
 import Clock from '../TimeDate/Clock';
 import ClockDate from '../TimeDate/ClockDate';
-import { SlBell } from 'react-icons/sl';
-import { child, onValue, ref, update } from 'firebase/database';
-import { database } from '../../firebase/config';
+import Notification from './Notification';
+import { handleLogin, handleLogout } from '../common/handleCommon';
 
 
 
 function Header() {
-
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const pathname = useLocation().pathname;
-    const [showNoti, setShowNoti] = useState(false);
     const isAuthenticated = useSelector((state) => state.accountManage.isAuthenticated);
     const account = useSelector((state) => state.accountManage.account);
     const role = useSelector(state => state.accountManage.account.role);
-    const listNoti = useSelector(state => state.notiManage.listNoti);
-    const listActive = useSelector(state => state.notiManage.listActive);
-    const numNoti = useSelector(state => state.notiManage.numNoti);
 
-
-
-    const handleLogin = () => {
-        navigate('/login');
-    };
-    const handleSignUp = () => {
-        navigate('/signup');
-    };
-
-    const handleLogout = async () => {
-        let res = await postLogout(account.email, account.refresh_token);
-        if (res.EC === 0) {
-            dispatch({ type: 'USER_LOGOUT' });
-            navigate('/login');
-        } else {
-            toast.error(res.EM);
-        }
-    };
 
     const scrollTo = (id) => {
         document.getElementById(id).scrollIntoView({
             behavior: 'smooth',
         });
     };
-    console.log('listNoti', listNoti);
-    useEffect(() => {
-        const dbRef = ref(database);
-        update(child(dbRef, 'user/2'), {
-            userEmail: '',
-            quizID: ''
-        });
-        onValue(child(dbRef, 'user'), (snapshot) => {
-            const data = snapshot.val();
-            if (data) {
-                const dataNoti = Object.values(data).find(item => item.userEmail === account.email);
-                console.log('dataNoti', dataNoti);
-                if (dataNoti) {
-                    dispatch({ type: 'GET_DATA_NOTIFICATION', payload: dataNoti });
-                }
-            }
 
-        });
-    }, []);
-    const btnRef = useRef();
-    useEffect(() => {
-        const closeNoti = (e) => {
-            if (btnRef.current && !btnRef.current.contains(e.target)) {
-                setShowNoti(false);
-                if (showNoti) {
-                    dispatch({ type: 'RESET_ACTIVE' });
-                }
-            }
-        };
-
-        document.addEventListener('mousedown', closeNoti);
-
-        return () => document.removeEventListener('mousedown', closeNoti);
-    }, [showNoti]);
-
-    const handleNoti = () => {
-        setShowNoti(showNoti => !showNoti);
-        if (showNoti) {
-            dispatch({ type: 'RESET_ACTIVE' });
-            return;
-        }
-        dispatch({ type: 'RESET_NUMBER_NOTIFICATION' });
-    };
-    const handleActive = (noti) => {
-        let _class = '';
-        const activeNoti = listActive.some(active => {
-            return active.quizID === noti.quizID;
-        });
-        if (activeNoti) _class = 'active-noti';
-        return _class;
-    };
     return (
         <>
+
             <header className='wrapper-header' style={{ backgroundColor: pathname === "/" ? 'white' : 'bisque' }}>
                 <Navbar expand='lg' className='header'>
                     <Fade bottom>
                         <Link to={'/'} className='navbar-brand'>
-                            <img src={Images.Headers.logo} alt='' height={30} />
+                            <img src={Headers.logo} alt='' height={30} />
                         </Link>
                     </Fade>
                     <Navbar.Toggle />
@@ -148,28 +72,13 @@ function Header() {
                                         <span className=' pointer intro' onClick={() => scrollTo('contact')}>
                                             LIÊN HỆ
                                         </span>
-                                        <span className='pointer intro' onClick={() => scrollTo('')}>
+                                        <span className='pointer intro' >
                                             THI ĐẤU
                                         </span>
                                     </>
                                 }
                             </Fade>
-                            {pathname === "/user" &&
-                                <div className='noti-bell' ref={btnRef} onClick={() => handleNoti()}>
-                                    <Fade bottom>
-                                        <span className='bell' ><SlBell /></span>
-                                    </Fade>
-                                    {numNoti > 0 && <span className='number'>{numNoti}</span>}
-                                    <div className={`noti-text ${showNoti ? 'active' : ''} `} >
-                                        <div className='header-noti'> Notifications</div>
-                                        {listNoti.length > 0 && listNoti.map((noti, index) => {
-                                            return <div className={handleActive(noti)} key={index}> Bạn nhận được bài test ID: {noti.quizID}</div>;
-                                        })}
-                                    </div>
-
-                                </div>
-
-                            }
+                            {pathname === "/user" && <Notification account={account} />}
                             <Fade bottom>
                                 <Nav className='settings'>
                                     {isAuthenticated ? (
@@ -183,23 +92,22 @@ function Header() {
                                                     />
                                                     <span>{account.username}</span>
                                                 </span>
-                                            }
-                                        >
+                                            }>
                                             <NavDropdown.Item onClick={() => navigate('/profile')}>
                                                 Tài khoản
                                             </NavDropdown.Item>
-                                            <NavDropdown.Item onClick={() => handleLogout()}>Đăng xuất</NavDropdown.Item>
+                                            <NavDropdown.Item onClick={() => handleLogout(account, dispatch, navigate)}>Đăng xuất</NavDropdown.Item>
                                         </NavDropdown>
                                     ) : (
                                         <>
                                             <Button
                                                 variant='outline-dark'
                                                 className='me-3 btn-login'
-                                                onClick={() => handleLogin()}
+                                                onClick={() => handleLogin('/login', navigate)}
                                             >
                                                 ĐĂNG NHẬP
                                             </Button>
-                                            <Button variant='dark' className='me-1' onClick={() => handleSignUp()}>
+                                            <Button variant='dark' className='me-1' onClick={() => handleLogin('/signup', navigate)}>
                                                 ĐĂNG KÝ
                                             </Button>
                                         </>

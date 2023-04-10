@@ -2,10 +2,10 @@ import './Content.scss';
 import { Button } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import Images from '../../../../assets/img/Image';
+import { FaArrowRight } from 'react-icons/fa';
+import { Home } from '../../../../assets/img/Image';
 import Rotate from 'react-reveal/Rotate';
 import Fade from 'react-reveal/Fade';
-import { FaArrowRight } from 'react-icons/fa';
 
 function Content() {
     const isAuthenticated = useSelector((state) => state.accountManage.isAuthenticated);
@@ -45,7 +45,7 @@ function Content() {
                 </div>
                 <Rotate top right>
                     <div className='image'>
-                        <img src={Images.Home.content} alt='' />
+                        <img src={Home.content} alt='' />
                     </div>
                 </Rotate>
             </div>

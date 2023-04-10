@@ -1,6 +1,41 @@
 import { store } from '../redux/store';
 
-const { dispatch } = store;
+
+
+function setCookie(cname, cvalue, exhours) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exhours * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+
+function checkCookie() {
+    let user = getCookie("username");
+    if (user !== "") {
+        alert("Welcome again " + user);
+    } else {
+        user = prompt("Please enter your name:", "");
+        if (user !== "" && user != null) {
+            setCookie("username", user, 365);
+        }
+    }
+}
 
 const validateEmail = (email) => {
     return String(email)
@@ -21,6 +56,7 @@ const toHHMMSS = (secs) => {
 };
 
 const timerQuizToSecs = (timerQuiz) => {
+    const { dispatch } = store;
     if (timerQuiz === 0) return 0;
     const time = (new Date(timerQuiz) - new Date()) / 1000;
     if (time <= 0) dispatch({ type: 'REFRESH_LISTQUIZ' });
@@ -61,7 +97,12 @@ const urltoFile = (url, filename, mimeType) => {
     );
 };
 
+
+
 export {
+    setCookie,
+    getCookie,
+    checkCookie,
     validateEmail,
     blobToBase64,
     urltoFile,

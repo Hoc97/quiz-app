@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom';
 import './Auth.scss';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { postLogin } from '../../services/apiService';
 import { toast } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { ImSpinner10 } from 'react-icons/im';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { FaArrowCircleLeft } from 'react-icons/fa';
-import Images from '../../assets/img/Image';
+import { Headers } from '../../assets/img/Image';
+import { validateEmail } from '../../utils/commonFunction';
+import { handleQuickLogin } from '../common/handleCommon';
 function Login() {
     const dispatch = useDispatch();
     const [account, setAccount] = useState({
@@ -28,43 +28,31 @@ function Login() {
             [e.target.name]: e.target.value,
         });
     };
-    const validateEmail = (email) => {
-        return String(email)
-            .toLowerCase()
-            .match(
-                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-            );
-    };
+
     const handleLogin = async (e) => {
         e.preventDefault();
-
         //validate
         const isValidEmail = validateEmail(account.email);
         if (!isValidEmail) {
             toast.error('Invalid Email');
             return;
         }
+        if (!account.password) {
+            toast.error('Invalid password');
+            return;
+        }
 
         //Call API
         setIsLoading(true);
-        let data = await postLogin(account.email, account.password);
-        if (data.EC === 0) {
-            dispatch({
-                type: 'GET_DATA_LOGIN',
-                payload: data,
-            });
-            toast.success(data.EM);
-            setIsLoading(false);
-            navigate('/');
-        } else {
-            toast.error(data.EM);
-            setIsLoading(false);
-        }
+        dispatch({
+            type: 'POST_LOGIN',
+            data: { email: account.email, password: account.password },
+            navigate,
+            setIsLoading
+        });
     };
 
-    const handleQuickLogin = (email, password) => {
-        setAccount({ email, password });
-    };
+
     return (
         <div className='login-container'>
             <div className='login-header'>
@@ -77,7 +65,7 @@ function Login() {
             <div className='login-content'>
                 <div className='form'>
                     <div className='logo'>
-                        <img src={Images.Headers.logo} alt='' height={50} />
+                        <img src={Headers.logo} alt='' height={50} />
                     </div>
 
                     <h2 className='welcome'>Xin chào, ai đây nhỉ?</h2>
@@ -134,8 +122,8 @@ function Login() {
                     <div className='quick-login'>
                         <hr />
                         <div className='mb-3 title'>Để đăng nhập nhanh bấm vào bên dưới... </div>
-                        <Button variant="success me-3" onClick={() => handleQuickLogin('admin@gmail.com', '123456')}>Admin</Button>
-                        <Button variant="info" onClick={() => handleQuickLogin('user1@gmail.com', '123456')}>User</Button>
+                        <Button variant="success me-3" onClick={() => handleQuickLogin('admin@gmail.com', '123456', setAccount)}>Admin</Button>
+                        <Button variant="info" onClick={() => handleQuickLogin('user1@gmail.com', '123456', setAccount)}>User</Button>
                     </div>
                 </div>
             </div>

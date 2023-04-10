@@ -51,7 +51,6 @@ function AccountInfor() {
         }
 
         //call API
-        // Bên axiosCustom phần interceptor return response.data rồi nên nó sẽ lấy đc data lun
         const imageFile = await urltoFile(account.previewImage, `${account.username}.png`, 'image/png');
         let data = await postUpdateProfile(account.username, imageFile);
         if (data.EC === 0) {

@@ -8,7 +8,11 @@ function CountDownListQuiz({ index }) {
     const timerQuiz = useSelector(state => state.quizManage.listTimerQuiz[index]);
     useEffect(() => {
         let secs = timerQuizToSecs(timerQuiz);
-        if (secs === 0) return;
+        if (secs === 0) {
+            dispatch({ type: 'RESET_TIMER_ROOM', payload: index });
+            setCount('00 : 00 : 00');
+            return;
+        }
         const timer = setInterval(() => {
             let a = toHHMMSS(secs);
             setCount(a);
@@ -23,9 +27,8 @@ function CountDownListQuiz({ index }) {
         return () => {
             clearInterval(timer);
         };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [timerQuiz]);
-    // console.log('count', count);
 
     if (index === -1) return <>Error</>;
     return (

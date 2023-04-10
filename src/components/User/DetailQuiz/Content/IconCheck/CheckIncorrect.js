@@ -1,8 +1,7 @@
-import React from 'react';
-import Images from '../../../../../assets/img/Image';
+import { Quiz } from '../../../../../assets/img/Image';
 const CheckIncorrect = () => {
     return (
-        <img className='icon-correct' alt='' src={Images.Quiz.inCorrect} />
+        <img className='icon-correct' alt='' src={Quiz.inCorrect} />
     );
 };
 

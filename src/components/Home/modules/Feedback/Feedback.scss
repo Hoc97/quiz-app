@@ -100,3 +100,33 @@
     }
   }
 }
+
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .feedback .ball {
+    left: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+  .feedback {
+    .content-wrap .title {
+      font-size: 40px;
+      margin: 0 24px;
+
+    }
+
+    .feedback-ls {
+      .item {
+        height: 300px;
+
+        .header .avatar {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,3 @@
-import React from 'react';
 import { tranferToAlphabet } from '../../../../../utils/commonFunction';
 import CheckCorrect from '../IconCheck/CheckCorrect';
 import CheckIncorrect from '../IconCheck/CheckIncorrect';
@@ -30,16 +29,9 @@ const Part67 = ({
     }
     return (
         <>
-            <div className={+currentPart === 7 ? 'group-content-p7' : 'group-content-p6'}
-                style={isShowAnswer ?
-                    {
-                        marginRight: +currentPart === 6 ? '-93px' : '-10px',
-                        width: '580px', top: +currentPart === 6 ? '100px' : '10px'
-                    }
-                    : {}}
-                dangerouslySetInnerHTML={{ __html: paragraph }} />
             <div
-                className={+currentPart === 7 ? 'group-question-p7' : ''}
+
+                className={+currentPart === 7 ? 'group-question-p7' : 'group-question-p6'}
                 id={+currentPart === 7 ? 'group-question-p7' : ''}
             >
                 {listData.length > 0 &&
@@ -96,6 +88,11 @@ const Part67 = ({
                     })
                 }
             </div>
+            <div className=
+                {`${+currentPart === 7 ? 'group-content-p7' : 'group-content-p6'} ${isShowAnswer ? `active ${+currentPart === 6 ? 'position-paragraph1' : 'position-paragraph2'}` : ''}                              `}
+
+                dangerouslySetInnerHTML={{ __html: paragraph }} />
+
         </>
     );
 };

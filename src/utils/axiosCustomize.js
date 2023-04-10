@@ -5,7 +5,6 @@ import { toast } from 'react-toastify';
 import { refreshAccessToken } from '../services/apiService';
 
 
-const { dispatch } = store;
 NProgress.configure({
     showSpinner: false,
     trickleSpeed: 100,
@@ -19,7 +18,7 @@ instance.interceptors.request.use(
     function (config) {
         // Do something before request is sent
         const access_token = store?.getState()?.accountManage?.account?.access_token;
-        config.headers['Authorization'] = 'Bearer ' + access_token;
+        config.headers['Authorization'] = `Bearer ${access_token}`;
         NProgress.start();
         return config;
     },
@@ -39,7 +38,6 @@ instance.interceptors.response.use(
     },
     async function (error) {
         NProgress.done();
-        //token expired: EC === -999
         if (error?.response?.data?.EC === -999) {
             // window.location.href = '/login';  //c1
             toast.error('Token hết hạn');
@@ -47,8 +45,9 @@ instance.interceptors.response.use(
             const refresh_token = store?.getState()?.accountManage?.account?.refresh_token;
             const data = await refreshAccessToken(email, refresh_token);
             console.log('data', data);
+            const { dispatch } = store;
             if (data.EC === 0) {
-                error.config.headers['Authorization'] = 'Bearer ' + data?.DT.access_token;
+                error.config.headers['Authorization'] = `Bearer ${data?.DT.access_token}`;
                 dispatch({ type: 'REFRESH_TOKEN', payload: data?.DT });
             }
             return instance(error?.config);

@@ -12,7 +12,9 @@ function User() {
             window.scrollTo(0, localStorage.getItem('scrollpos'));
         }
         const save = () => {
-            localStorage.setItem('scrollpos', window.pageYOffset);
+            if (window.pageYOffset) {
+                localStorage.setItem('scrollpos', window.pageYOffset);
+            }
         };
         document.addEventListener('scroll', save);
         return () => document.removeEventListener('scroll', save);

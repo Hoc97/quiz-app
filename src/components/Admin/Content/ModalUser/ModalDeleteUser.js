@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { toast } from 'react-toastify';
@@ -7,10 +6,8 @@ function ModalDeleteUser({
     show,
     setShow,
     userDelete,
-    fetchListUsers,
     fetchListUsersPaginate,
     currentPage,
-    setCurrentPage,
 }) {
     const handleClose = () => setShow(false);
     const handleSubmitDeleteUser = async () => {
@@ -18,8 +15,6 @@ function ModalDeleteUser({
         if (data.EC === 0) {
             toast.success(data.EM);
             handleClose();
-            // await fetchListUsers();
-            // setCurrentPage(1);
             await fetchListUsersPaginate(currentPage);
         } else {
             toast.warning(data.EM);

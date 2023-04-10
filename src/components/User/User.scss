@@ -27,7 +27,7 @@
                     cursor: pointer;
 
                     &.active {
-                        background-color: #FFCB09;
+                        background: linear-gradient(45deg, #e39bf7 36%, #fcc1d0 98.49%);
                         font-weight: 600;
                         border-bottom: 2px solid rgb(187, 48, 254);
 
@@ -39,7 +39,7 @@
                 margin-bottom: 30px;
 
                 .topic-title {
-                    background-color: #FFCB09;
+                    background: linear-gradient(45deg, #e39bf7 36%, #fcc1d0 98.49%);
                     width: 100%;
                     padding: 10px;
                     padding-left: 20px;

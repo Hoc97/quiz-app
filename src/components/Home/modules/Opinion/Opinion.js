@@ -2,11 +2,11 @@ import Flip from 'react-reveal/Flip';
 import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
 import './Opinion.scss';
-import Images from '../../../../assets/img/Image';
+import { Opinions } from '../../../../assets/img/Image';
 function Opinion() {
     const OpinionList = [
         {
-            content: Images.Opinion.content1,
+            content: Opinions.content1,
             text: (
                 <span>
                     Ngân hàng đề thi được cập nhật <span className='highlight'>LIÊN TỤC </span> với bộ câu hỏi đa dạng
@@ -15,7 +15,7 @@ function Opinion() {
             ),
         },
         {
-            content: Images.Opinion.content2,
+            content: Opinions.content2,
             text: (
                 <span>
                     Nắm được hình thức thi, format bài thi,<span className='highlight'> CHIẾN THUẬT</span> ẳm điểm cao trong các phần thi,
@@ -24,7 +24,7 @@ function Opinion() {
             ),
         },
         {
-            content: Images.Opinion.content3,
+            content: Opinions.content3,
             text: (
                 <span>
                     Bộ câu hỏi <span className='highlight'> RIÊNG </span> giúp bạn dễ dàng duy trì - ôn luyện - bổ sung -
@@ -33,7 +33,7 @@ function Opinion() {
             ),
         },
         {
-            content: Images.Opinion.content4,
+            content: Opinions.content4,
             text: (
                 <span>
                     <span className='highlight'> CHẮT LỌC </span>kiến thức - xây dựng kho đề khi phong phú
@@ -45,7 +45,7 @@ function Opinion() {
     return (
         <div className='opinion'>
             <Bounce bottom>
-                <img className='logo' src={Images.Opinion.logo} alt='' />
+                <img className='logo' src={Opinions.logo} alt='' />
             </Bounce>
             <Flip bottom>
                 <h1 className='title' >QUAN ĐIỂM ĐỔI VỀ MỚI VỀ HỌC NGÔN NGỮ</h1>

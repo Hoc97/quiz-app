@@ -1,4 +1,3 @@
-import React from 'react';
 import { tranferToAlphabet } from '../../../../../utils/commonFunction';
 import CheckCorrect from '../IconCheck/CheckCorrect';
 import CheckIncorrect from '../IconCheck/CheckIncorrect';

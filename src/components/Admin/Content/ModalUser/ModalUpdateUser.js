@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-// import logoBg from '../../../assets/img/logo-react.svg';
 import noImage from '../../../../assets/img/no image.jpg';
 import './ModalUser.scss';
 import { FiUpload } from 'react-icons/fi';
@@ -15,11 +14,9 @@ import _ from 'lodash';
 function ModalUpdateUser({
     show,
     setShow,
-    fetchListUsers,
     userUpdate,
     fetchListUsersPaginate,
     currentPage,
-    setCurrentPage,
 }) {
     const handleClose = () => {
         setShow(false);
@@ -27,7 +24,6 @@ function ModalUpdateUser({
 
     useEffect(() => {
         if (!_.isEmpty(userUpdate)) {
-            //update state
             setAccount({
                 email: userUpdate.email,
                 username: userUpdate.username,
@@ -60,9 +56,6 @@ function ModalUpdateUser({
                 previewImage: URL.createObjectURL(e.target.files[0]),
                 image: e.target.files[0]
             });
-
-        } else {
-            // setPreviewImage('');
         }
     };
 
@@ -74,7 +67,6 @@ function ModalUpdateUser({
         }
 
         //call API
-        // Bên axiosCustom phần interceptor return response.data rồi nên nó sẽ lấy đc data lun
         let data = await putUpdateUser(userUpdate.id, account.username, account.role, account.image);
         if (data.EC === 0) {
             toast.success(data.EM);

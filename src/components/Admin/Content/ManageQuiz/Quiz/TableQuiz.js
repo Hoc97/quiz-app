@@ -4,9 +4,8 @@ import Table from 'react-bootstrap/Table';
 import { getAllQuizForAdmin } from '../../../../../services/apiService';
 import ModalDeleteQuiz from './ModalQuiz/ModalDeleteQuiz';
 import ModalUpdateQuiz from './ModalQuiz/ModalUpdateQuiz';
-// import { toast } from 'react-toastify';
 
-function TableQuiz({ tableRef }) {
+function TableQuiz({ tableRef, query }) {
     const [listQuiz, setListQuiz] = useState([]);
     const [showModalUpdate, setShowModalUpdate] = useState(false);
     const [showModalDelete, setShowModalDelete] = useState(false);
@@ -40,18 +39,22 @@ function TableQuiz({ tableRef }) {
     });
     return (
         <>
-            <Table striped bordered hover className='mt-2'>
+            <Table striped bordered hover className='mt-2 '>
                 <thead>
                     <tr>
-                        <th>Id</th>
+                        <th>ID</th>
                         <th>Name</th>
                         <th>Description</th>
                         <th>Image</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     {listQuiz.length > 0 &&
-                        listQuiz.map((quiz, i) => {
+                        listQuiz.filter(quiz =>
+                            quiz.description.toLowerCase().includes(query) ||
+                            quiz.name.toLowerCase().includes(query)
+                        ).map((quiz, i) => {
                             return (
                                 <tr key={i}>
                                     <td>{quiz.id}</td>
@@ -61,11 +64,11 @@ function TableQuiz({ tableRef }) {
                                     <td>{quiz.image && (
                                         <img className='image-list-quiz' src={`data:image/jpeg;base64,${quiz.image}`} alt='' />
                                     )}</td>
-                                    <td>
-                                        <Button onClick={() => handleBtnUpdate(quiz)} variant='success' className='mx-3'>
+                                    <td className='action-btn'>
+                                        <Button onClick={() => handleBtnUpdate(quiz)} variant='success' className='mx-3 resize'>
                                             Update
                                         </Button>
-                                        <Button onClick={() => handleBtnDelete(quiz)} variant='danger'>
+                                        <Button onClick={() => handleBtnDelete(quiz)} variant='danger' className='resize'>
                                             Delete
                                         </Button>
                                     </td>

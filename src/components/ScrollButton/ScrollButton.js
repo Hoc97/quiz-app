@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaAngleUp } from 'react-icons/fa';
 import './ScrollButton.scss';
 
@@ -8,19 +8,14 @@ const ScrollButton = () => {
 
     useEffect(() => {
         const toggleVisible = () => {
-            const scrolled = window.pageYOffset;
-            if (scrolled > 500) {
-                setVisible(true);
-                return;
-            }
-            setVisible(false);
+            setVisible(window.pageYOffset > 500);
         };
-        document.addEventListener('scroll', toggleVisible);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+        window.addEventListener('scroll', toggleVisible);
+        return () => window.removeEventListener('scroll', toggleVisible);
     }, []);
     return (
         <div >
-            {/* 👇️ scroll to top on button click */}
+            {/* scroll to top on button click */}
             <button
                 style={visible ?
                     {

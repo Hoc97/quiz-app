@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-// import logoBg from '../../../assets/img/logo-react.svg';
 import './ModalUser.scss';
 import { FiUpload } from 'react-icons/fi';
 import { toast } from 'react-toastify';
 import { postCreateNewUser } from '../../../../services/apiService';
+import { validateEmail } from '../../../../utils/commonFunction';
 
-function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate, currentPage, setCurrentPage }) {
+function ModalCreateUser({ show, setShow, fetchListUsersPaginate, setCurrentPage }) {
     const handleClose = () => {
         setShow(false);
         setAccount({
@@ -49,13 +49,7 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
         }
     };
 
-    const validateEmail = (email) => {
-        return String(email)
-            .toLowerCase()
-            .match(
-                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-            );
-    };
+
 
     const handleCreateUser = async () => {
         //validate
@@ -74,12 +68,10 @@ function ModalCreateUser({ show, setShow, fetchListUsers, fetchListUsersPaginate
         }
 
         //call API
-        // Bên axiosCustom phần interceptor return response.data rồi nên nó sẽ lấy đc data lun
         let data = await postCreateNewUser(account.email, account.password, account.username, account.role, account.image);
         if (data.EC === 0) {
             toast.success(data.EM);
             handleClose();
-            // await fetchListUsers();
             setCurrentPage(1);
             await fetchListUsersPaginate(1);
         } else {

@@ -132,6 +132,11 @@ const refreshAccessToken = (email, refresh_token) => {
     return instance.post(`/api/v1/refresh-token`, { email, refresh_token });
 };
 
+const getAllQuestion = () => {
+    return instance.get('/api/v1/question/all');
+};
+
+
 export {
     postCreateNewUser,
     getAllUsers,
@@ -157,5 +162,6 @@ export {
     getQuizHistory,
     putUpdateQuiz,
     deleteQuiz,
-    refreshAccessToken
+    refreshAccessToken,
+    getAllQuestion
 };

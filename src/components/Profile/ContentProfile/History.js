@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import moment from 'moment';
 function History() {
     const [listHistory, setListHistory] = useState([]);
+    const [query, setQuery] = useState('');
     useEffect(() => {
         fetchHistory();
     }, []);
@@ -21,16 +22,17 @@ function History() {
                     date: moment(item.updatedAt).format('DD/MM/YYYY hh:mm:ss A')
                 };
             });
-            // if (newData.length > 7) {
-            //     newData = newData.slice(newData.length - 7, newData.length);
-            // }
             setListHistory(newData);
         } else {
             toast.success(res.EC);
         }
     };
+
     return (
         <>
+            <input type='text' placeholder='Search...' className='search mb-2'
+                onChange={(e) => setQuery(e.target.value)}
+            />
             <Table bordered hover>
                 <thead>
                     <tr>
@@ -41,7 +43,11 @@ function History() {
                     </tr>
                 </thead>
                 <tbody>
-                    {listHistory.length > 0 && listHistory.map((n, index) => {
+                    {listHistory.length > 0 && listHistory.filter((quizHistory) =>
+                        quizHistory.quiz_name.toLowerCase().includes(query) ||
+                        quizHistory.total_correct === +query ||
+                        quizHistory.date.toLowerCase().includes(query)
+                    ).map((n, index) => {
                         return (
                             <tr key={index}>
                                 <td>{index + 1}</td>

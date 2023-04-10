@@ -25,6 +25,13 @@ const rdcNotification = (state = intialState, { type, payload }) => {
                 ...state,
                 listActive: [],
             };
+
+        case 'RESET_ALL':
+            return {
+                listNoti: [],
+                listActive: [],
+                numNoti: 0
+            };
         default:
             return state;
     }

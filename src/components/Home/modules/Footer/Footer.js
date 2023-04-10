@@ -1,4 +1,4 @@
-import Images from '../../../../assets/img/Image';
+import { Headers } from '../../../../assets/img/Image';
 import Fade from 'react-reveal/Fade';
 import './Footer.scss';
 import { BsFacebook, BsLinkedin, } from "react-icons/bs";
@@ -24,7 +24,7 @@ export default function Footer() {
         <div className='footer' id='contact'>
             <Fade bottom>
                 <div className='logo'>
-                    <img alt='' src={Images.Headers.logo} />
+                    <img alt='' src={Headers.logo} />
                 </div>
             </Fade>
             <div className='content-wrap'>

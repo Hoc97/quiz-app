@@ -93,13 +93,12 @@
 
             }
 
+            &__2,
             &__3,
-            &__4,
-            &__5,
-            &__6 {
+            &__4 {
                 text-align: center;
                 position: absolute;
-                top: -150px;
+                top: -180px;
                 left: 25%;
                 transform: translate(-50%, -50%);
                 font-size: 3rem;
@@ -107,25 +106,22 @@
                 transform-origin: center center;
             }
 
-            &__3 {
+            &__2 {
                 opacity: 0;
                 animation: load2 1.3s 2.2s forwards;
             }
 
-            &__4 {
+            &__3 {
                 opacity: 0;
                 animation: load2 1.3s 3.8s forwards;
             }
 
-            &__5 {
+            &__4 {
                 opacity: 0;
                 animation: load2 1.3s 5.4s forwards;
             }
 
-            &__6 {
-                opacity: 0;
-                animation: load2 2s 7.5s forwards;
-            }
+
 
             .ball__1 {
                 position: absolute;
@@ -197,6 +193,74 @@
 
     100% {
         transform: translate(-50%, -50%) scale(1.3);
-        opacity: 0;
     }
+}
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    .preload-container {
+        .content {
+            .image-content {
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .load-intro__4 {
+                left: 30%;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    .preload-container {
+        .content {
+            .image-content {
+                margin-left: -9px;
+
+                img {
+                    height: 280px;
+                    width: 100%;
+                }
+            }
+
+            .load-intro {
+
+                .ball__1 {
+                    left: -270px;
+                }
+
+                .ball__2 {
+                    right: 40px;
+                    top: -345px;
+
+                }
+            }
+
+            .load-intro__1 {
+                left: -3%;
+            }
+
+            .load-intro__2 {
+                left: 30%;
+            }
+
+            .load-intro__3 {
+                left: 30%;
+            }
+
+            .load-intro__4 {
+                left: 35%;
+            }
+        }
+    }
+
+
+
 }

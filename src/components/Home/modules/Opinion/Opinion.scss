@@ -19,7 +19,6 @@
     }
 
     .title {
-        // height: 120px;
         margin-top: 0px;
         z-index: 10;
     }
@@ -70,4 +69,17 @@
             }
         }
     }
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    .opinion {
+        height: 420px;
+    }
+
 }

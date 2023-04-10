@@ -7,6 +7,7 @@
         margin-bottom: 10px;
     }
 
+
     .question-add {
         .q-main {
             margin-bottom: 15px;
@@ -103,6 +104,42 @@
             }
         }
     }
+
+    .search {
+        float: left;
+        outline: none;
+        padding: 0 16px;
+        border-radius: 7px;
+        height: 40px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0px 2px #ccc
+    }
+
+    .question-table {
+        height: 500px;
+        overflow-y: scroll;
+        width: 100%;
+
+        table {
+            overflow: hidden;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            tbody {
+                tr {
+                    td {
+                        &.question-description {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            max-width: 800px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .Toastify__toast-container {
@@ -124,6 +161,13 @@
         width: 50px;
         border-radius: 50%;
     }
+}
 
+
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    .question-container .question-table table tbody tr td.question-description {
+        max-width: 600px;
+    }
 
 }

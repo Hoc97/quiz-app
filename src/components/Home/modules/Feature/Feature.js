@@ -1,4 +1,3 @@
-
 import Fade from 'react-reveal/Fade';
 import './Feature.scss';
 import { FaFileAlt, FaClipboard, FaClipboardList, FaChartLine, FaUsers, } from "react-icons/fa";
