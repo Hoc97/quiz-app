@@ -45,7 +45,8 @@ function User() {
                                 action='Luyện'
                                 colorBtn={'success'}
                             />
-                        </div>}
+                        </div>
+                    }
                     {content === 2 &&
                         <div className='topic'>
                             <Title
@@ -53,7 +54,8 @@ function User() {
                                 description='~20 phút / đề, với đáp án & giải thích chi tiết, giúp bạn có thể thi thử TOEIC hàng tuần'
                             />
                             <h1>Coming soon...</h1>
-                        </div>}
+                        </div>
+                    }
                     {content === 3 &&
                         <div className='topic'>
                             <Title
@@ -61,7 +63,8 @@ function User() {
                                 description='Thi thử TOEIC với 50+ đề thi thử TOEIC (120 phút / đề) với đáp án và giải thích chi tiết'
                             />
                             <h1>Coming soon...</h1>
-                        </div>}
+                        </div>
+                    }
                 </div>
             </div>
         </div>

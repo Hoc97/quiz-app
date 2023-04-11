@@ -40,6 +40,8 @@ function* postLoginUser({ type, data, navigate, setIsLoading }) {
         payload: res,
     });
     yield put({ type: 'GET_LIST_USER' });
+    yield put({ type: 'GET_LIST_QUIZ' });
+    yield put({ type: 'RESET_ALL' });
     toast.success(res.EM);
     setIsLoading(false);
     navigate('/');

@@ -22,8 +22,10 @@ const Notification = ({ account }) => {
             userEmail: '',
             quizID: ''
         });
+
         onValue(child(dbRef, 'user'), (snapshot) => {
             const data = snapshot.val();
+
             if (data) {
                 const dataNoti = Object.values(data).find(item => item.userEmail === account.email);
                 if (dataNoti) {
@@ -32,6 +34,7 @@ const Notification = ({ account }) => {
             }
         });
     }, []);
+    console.log('listNoti', listNoti);
     const btnRef = useRef();
     useEffect(() => {
         const closeNoti = (e) => {
@@ -52,8 +55,10 @@ const Notification = ({ account }) => {
             dispatch({ type: 'RESET_ACTIVE' });
             return;
         }
+        dispatch({ type: 'GET_LIST_QUIZ_CURRENT' });
         dispatch({ type: 'RESET_NUMBER_NOTIFICATION' });
     };
+
     const handleActive = (noti) => {
         let _class = '';
         const activeNoti = listActive.some(active => {

@@ -79,7 +79,7 @@ function ManageUser() {
                     show={showModalCreate}
                     setShow={setShowModalCreate}
                     fetchListUsersPaginate={fetchListUsersPaginate}
-                    currentPage={currentPage}
+                    setCurrentPage={setCurrentPage}
                 />
 
                 <ModalUpdateUser

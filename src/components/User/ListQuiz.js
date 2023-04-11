@@ -58,11 +58,8 @@ function ListQuiz({ action, colorBtn }) {
         return listQuizClone[indexPart];
     });
 
-
-
-
     const handleReload = () => {
-        dispatch({ type: 'GET_LIST_QUIZ_CURRENT' });
+        dispatch({ type: 'GET_LIST_QUIZ' });
         dispatch({ type: 'RESET_ALL' });
     };
     return (
@@ -126,9 +123,9 @@ function ListQuiz({ action, colorBtn }) {
                     );
                 })
             )}
-            <button className='reload-room'
+            {/* <button className='reload-room'
                 onClick={() => handleReload()}>
-                Reload</button>
+                Reload</button> */}
         </div>
     );
 }

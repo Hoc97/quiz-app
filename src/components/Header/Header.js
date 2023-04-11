@@ -72,9 +72,11 @@ function Header() {
                                         <span className=' pointer intro' onClick={() => scrollTo('contact')}>
                                             LIÊN HỆ
                                         </span>
-                                        <span className='pointer intro' >
-                                            THI ĐẤU
-                                        </span>
+                                        {role === 'USER' &&
+                                            <span className='pointer intro' >
+                                                THI ĐẤU
+                                            </span>
+                                        }
                                     </>
                                 }
                             </Fade>

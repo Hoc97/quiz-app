@@ -6,24 +6,17 @@ const intialState = {
     isRefreshListQuiz: true,
     listQuestionPart: [10, 10, 12, 12, 12, 12, 12, 19],
     listTimerPart: {
-        Part1: [0, 10, 0],
-        Part2: [0, 1, 0],
-        Part3: [0, 1, 0],
-        Part4: [0, 1, 0],
-        Part5: [0, 1, 0],
-        Part6: [0, 1, 0],
-        Part7: [0, 1, 0],
-        Part8: [0, 1, 0],
+        Part1: [0, 1, 0],
+        Part2: [0, 2, 0],
+        Part3: [0, 3, 0],
+        Part4: [0, 4, 0],
+        Part5: [0, 5, 0],
+        Part6: [0, 6, 0],
+        Part7: [0, 7, 0],
+        Part8: [0, 7, 0],
     }
 };
-// [0, 5, 0],
-// [0, 5, 0],
-// [0, 6, 0],
-// [0, 6, 0],
-// [0, 6, 0],
-// [0, 10, 0],
-// [0, 15, 0],
-// [0, 15, 0],
+
 const rdcQuiz = (state = intialState, { type, payload, time }) => {
     switch (type) {
         case 'RUN_LIST_QUIZ':
