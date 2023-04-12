@@ -10,7 +10,7 @@ NProgress.configure({
     trickleSpeed: 100,
 });
 const instance = axios.create({
-    baseURL: 'http://localhost:8081',
+    baseURL: process.env.REACT_APP_BACKEND_URL,
 });
 
 // Add a request interceptor
