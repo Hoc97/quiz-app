@@ -12,7 +12,6 @@ import {
 import { child, ref, set } from 'firebase/database';
 import { database } from '../../../../../firebase/config';
 
-
 function AssignQuiz() {
     const [listQuiz, setListQuiz] = useState([]);
     const [listUsers, setListUsers] = useState([]);
@@ -78,9 +77,8 @@ function AssignQuiz() {
             // setSelectedQuiz({ value: '', label: 'Select quiz...' });
             // setSelectedUser({ value: '', label: 'Select user...', name: '', email: '' });
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [writeFireBase]);
-
-
     return (
         <div className='assign-quiz-container row'>
             <div className='mb-3 col-6'>

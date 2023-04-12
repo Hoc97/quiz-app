@@ -1,5 +1,5 @@
 import './TranstionPage.scss';
-import { PreLoadImg } from '../img/Image';
+import { PreLoadImg } from '../../assets/img/Image';
 function TranstionPage() {
     return (
         <div className='preload-container'>
@@ -27,7 +27,6 @@ function TranstionPage() {
                 </div>
             </div>
         </div>
-
     );
 }
 

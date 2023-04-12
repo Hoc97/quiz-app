@@ -6,6 +6,7 @@ import _ from 'lodash';
 import ModalNotiRerefsh from '../ModalNotiRerefsh';
 import ModalNotiSubmit from '../ModalNotiSubmit';
 import { useDispatch, useSelector } from 'react-redux';
+import { handleStart } from '../../../common/handleCommon';
 
 function CheckMark({
     dataQuiz,
@@ -27,9 +28,6 @@ function CheckMark({
     const [isShowModalRefresh, setIsShowModalRefresh] = useState(false);
     const [isShowModalSubmit, setIsShowModalSubmit] = useState(false);
     const [answered, setAnswered] = useState(0);
-
-
-
 
     const questionResult = (question) => {
         for (const answer of question.answers) {
@@ -58,17 +56,11 @@ function CheckMark({
         setIndexQuestion(b);
     };
 
-    const handleStart = (hours = 0, minutes = 0, seconds = 0, indexQ) => {
-        const expire = new Date();
-        expire.setHours(expire.getHours() + hours, expire.getMinutes() + minutes, expire.getSeconds() + seconds + 1);
-        const time2 = expire.getTime();
-        dispatch({ type: 'SET_TIMER_QUIZ', time: time2, payload: indexQ });
 
-    };
     const handleRefresh = () => {
         // reset time
         const [hours, minutes, seconds] = listTimerPart[`Part${currentPart}`];
-        handleStart(hours, minutes, seconds, indexQ);
+        handleStart(hours, minutes, seconds, indexQ, dispatch);
 
         //reset question
         let dataQuizClone = _.cloneDeep(dataQuiz);

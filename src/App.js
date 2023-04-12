@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { setCookie, getCookie } from './utils/commonFunction';
-import TranstionPage from './assets/css/TranstionPage';
+import TranstionPage from './components/TranstionPage/TranstionPage';
 import Home from './components/Home/Home';
 import Header from './components/Header/Header';
 import Preloader from './components/Preloader/Preloader';
@@ -22,7 +22,6 @@ const PrivateRoute = lazy(() => import('./routes/PrivateRoute'));
 const ScrollButton = lazy(() => import('./components/ScrollButton/ScrollButton'));
 const Profile = lazy(() => import('./components/Profile/Profile'));
 
-
 function App() {
     let timerCookie = getCookie('Load');
     const [load, setLoad] = useState(!timerCookie);
@@ -32,6 +31,7 @@ function App() {
                 setTimeout(() => {
                     setLoad(false);
                 }, 8000);
+                // set every one hour will load one once
                 setCookie('Load', 'load', 1);
             }
         };

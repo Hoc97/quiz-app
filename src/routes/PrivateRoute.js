@@ -12,6 +12,7 @@ function PrivateRoute({ children, name }) {
     useEffect(() => {
         if (role === 'USER' && arrUser.includes(name)) setIsShow(true);
         if (role === 'ADMIN' && arrAdmin.includes(name)) setIsShow(true);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
         <>

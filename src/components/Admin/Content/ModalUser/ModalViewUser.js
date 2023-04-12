@@ -32,7 +32,6 @@ function ModalViewUser({ show, setShow, userView }) {
         }
     }, [userView]);
 
-
     return (
         <>
             <Modal show={show} onHide={handleClose} backdrop='static' size='lg'>
@@ -52,7 +51,6 @@ function ModalViewUser({ show, setShow, userView }) {
                                     value={account.email}
                                 />
                             </Form.Group>
-
                             <Form.Group as={Col}>
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control
@@ -64,7 +62,6 @@ function ModalViewUser({ show, setShow, userView }) {
                                 />
                             </Form.Group>
                         </Row>
-
                         <Row className='mb-3'>
                             <Form.Group as={Col}>
                                 <Form.Label>Username</Form.Label>
@@ -75,7 +72,6 @@ function ModalViewUser({ show, setShow, userView }) {
                                     value={account.username}
                                 />
                             </Form.Group>
-
                             <Form.Group as={Col}>
                                 <Form.Label>Role</Form.Label>
                                 <Form.Select value={account.role} disabled>
@@ -84,7 +80,6 @@ function ModalViewUser({ show, setShow, userView }) {
                                 </Form.Select>
                             </Form.Group>
                         </Row>
-
                         <Form.Group className='mb-3 img-preview'>
                             {account.previewImage ? (
                                 <img className='image' src={account.previewImage} alt='' />

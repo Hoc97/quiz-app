@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import { TiArrowBack } from 'react-icons/ti';
 import _ from 'lodash';
 import { useDispatch, useSelector } from 'react-redux';
+import { handleStart } from '../../common/handleCommon';
 
 function DetailQuiz() {
     const dispatch = useDispatch();
@@ -78,9 +79,11 @@ function DetailQuiz() {
         });
 
         return () => document.removeEventListener('visibilitychange', visibilitychange);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [TimerQuiz]);
     useEffect(() => {
         fetchQuestions();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [quizId]);
     const fetchQuestions = async () => {
         let res = await getDataQuestions(quizId);
@@ -131,18 +134,11 @@ function DetailQuiz() {
             const [hours, minutes, seconds] = listTimerPart[`Part${currentPart}`];
             if (!getDetailQuiz.isInTimerRoom) {
                 dispatch({ type: 'SET_TIMER_ROOM', payload: index });
-                handleStart(hours, minutes, seconds, index);
+                handleStart(hours, minutes, seconds, index, dispatch);
             }
         }
     };
 
-    const handleStart = (hours = 0, minutes = 0, seconds = 0, index) => {
-        const expire = new Date();
-        expire.setHours(expire.getHours() + hours, expire.getMinutes() + minutes, expire.getSeconds() + seconds + 1);
-        const time2 = expire.getTime();
-        dispatch({ type: 'SET_TIMER_QUIZ', time: time2, payload: index });
-
-    };
     const handleFinishQuiz = async () => {
         let payload = {
             'quizId': +quizId,
@@ -212,9 +208,7 @@ function DetailQuiz() {
             <div className='text-user' onClick={() => navigate('/user')}>
                 <TiArrowBack style={{ marginTop: '-4px', marginRight: '5px', scale: '1.3' }} />
                 Back
-                {/* to your page */}
             </div>
-
             <div className={`detail-quiz`}>
                 <Content
                     getDetailQuiz={getDetailQuiz}

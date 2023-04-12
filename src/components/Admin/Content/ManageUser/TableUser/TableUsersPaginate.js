@@ -30,6 +30,7 @@ function TableUsersPaginate({
         } else {
             setSearchResult([]);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [debouncedValue]);
     const handleSeach = (e) => {
         setQuery(e.target.value);
@@ -116,7 +117,6 @@ function TableUsersPaginate({
                                 }
                             </>
                         }
-
                     </tbody>
                 </Table>
             </div>
@@ -143,7 +143,6 @@ function TableUsersPaginate({
                     forcePage={currentPage - 1}
                 />
             }
-
         </>
     );
 }

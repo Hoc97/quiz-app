@@ -66,7 +66,6 @@ function ManageQuestion() {
         }
     };
 
-
     const fetchAllQuestion = async () => {
         let res = await getAllQuestion();
         console.log('res', res);
@@ -74,7 +73,6 @@ function ManageQuestion() {
             setListQuestion(res.DT);
         }
     };
-
 
     const handleAddRemoveQuestion = (type, id) => {
         if (type === 'ADD') {
@@ -329,7 +327,6 @@ function ManageQuestion() {
                                             </div>
                                         );
                                     })}
-
                             </div>
                         );
                     })}

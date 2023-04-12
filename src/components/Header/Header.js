@@ -12,8 +12,6 @@ import ClockDate from '../TimeDate/ClockDate';
 import Notification from './Notification';
 import { handleLogin, handleLogout } from '../common/handleCommon';
 
-
-
 function Header() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -22,16 +20,13 @@ function Header() {
     const account = useSelector((state) => state.accountManage.account);
     const role = useSelector(state => state.accountManage.account.role);
 
-
     const scrollTo = (id) => {
         document.getElementById(id).scrollIntoView({
             behavior: 'smooth',
         });
     };
-
     return (
         <>
-
             <header className='wrapper-header' style={{ backgroundColor: pathname === "/" ? 'white' : 'bisque' }}>
                 <Navbar expand='lg' className='header'>
                     <Fade bottom>
@@ -41,7 +36,7 @@ function Header() {
                     </Fade>
                     <Navbar.Toggle />
                     <Navbar.Collapse>
-                        <Nav >
+                        <Nav>
                             <Fade bottom>
                                 <NavLink to={'/user'}
                                     onClick={() => localStorage.setItem('scrollpos', 0)}

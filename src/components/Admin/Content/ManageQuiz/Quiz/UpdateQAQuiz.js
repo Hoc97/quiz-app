@@ -77,7 +77,6 @@ function UpdateQAQuiz() {
                 }
                 newQA.push(q);
             }
-
             if (res.DT.qa.length === 0) {
                 let newQuestion = {
                     id: uuidv4(),
@@ -278,10 +277,7 @@ function UpdateQAQuiz() {
             toast.success(res.EM);
             fetchQuizWithQA();
         }
-
     };
-
-
     return (
         <div className='question-container' >
             <div className='question-add'>
@@ -332,12 +328,12 @@ function UpdateQAQuiz() {
                                             <Form.Label className='btn-upload' htmlFor={`${question.id}`}>
                                                 <RiImageAddFill />
                                             </Form.Label>
-
                                             <div className='file-upload'>
                                                 {question.imageName ?
                                                     <span className='preview-image'
                                                         onClick={() =>
-                                                            handlePreviewImage(question.id)}>{question.imageName}
+                                                            handlePreviewImage(question.id)}>
+                                                        {question.imageName}
                                                     </span>
                                                     :
                                                     '0 image is uploaded'}
@@ -350,12 +346,11 @@ function UpdateQAQuiz() {
                                             {showImage ? (
                                                 <img className='image' src={previewImage} alt='' />
                                             ) : previewImage ? (
-                                                <span className='previewImage' onClick={() => setShowImage(true)}>
+                                                <span className='previewImage'
+                                                    onClick={() => setShowImage(true)}>
                                                     Preview Image
                                                 </span>
-                                            ) : (
-                                                ''
-                                            )}
+                                            ) : ('')}
                                         </Form.Group>
                                         <div className='btn-add'>
                                             <span onClick={() => handleAddRemoveQuestion('ADD', '')}>
@@ -405,7 +400,6 @@ function UpdateQAQuiz() {
                                             </div>
                                         );
                                     })}
-
                             </div>
                         );
                     })}

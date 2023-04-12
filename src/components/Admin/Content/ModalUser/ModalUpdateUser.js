@@ -96,7 +96,6 @@ function ModalUpdateUser({
                                     onChange={handleInput}
                                 />
                             </Form.Group>
-
                             <Form.Group as={Col}>
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control
@@ -109,7 +108,6 @@ function ModalUpdateUser({
                                 />
                             </Form.Group>
                         </Row>
-
                         <Row className='mb-3'>
                             <Form.Group as={Col}>
                                 <Form.Label>Username</Form.Label>
@@ -120,7 +118,6 @@ function ModalUpdateUser({
                                     onChange={handleInput}
                                 />
                             </Form.Group>
-
                             <Form.Group as={Col}>
                                 <Form.Label>Role</Form.Label>
                                 <Form.Select value={account.role} onChange={handleInput} name='role'>

@@ -49,8 +49,6 @@ function ModalCreateUser({ show, setShow, fetchListUsersPaginate, setCurrentPage
         }
     };
 
-
-
     const handleCreateUser = async () => {
         //validate
         const isValidEmail = validateEmail(account.email);
@@ -109,7 +107,6 @@ function ModalCreateUser({ show, setShow, fetchListUsersPaginate, setCurrentPage
                                 />
                             </Form.Group>
                         </Row>
-
                         <Row className='mb-3'>
                             <Form.Group as={Col}>
                                 <Form.Label>Username</Form.Label>

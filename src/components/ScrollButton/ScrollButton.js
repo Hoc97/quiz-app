@@ -3,7 +3,6 @@ import { FaAngleUp } from 'react-icons/fa';
 import './ScrollButton.scss';
 
 const ScrollButton = () => {
-
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
@@ -30,7 +29,6 @@ const ScrollButton = () => {
                 <FaAngleUp />
             </button>
         </div>
-
     );
 };
 

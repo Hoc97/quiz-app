@@ -9,8 +9,6 @@ import ModalViewUser from '../ModalUser/ModalViewUser';
 import ModalDeleteUser from '../ModalUser/ModalDeleteUser';
 import './ManageUser.scss';
 
-
-
 function ManageUser() {
     const limitUser = 7;
     const [showModalCreate, setShowModalCreate] = useState(false);
@@ -81,7 +79,6 @@ function ManageUser() {
                     fetchListUsersPaginate={fetchListUsersPaginate}
                     setCurrentPage={setCurrentPage}
                 />
-
                 <ModalUpdateUser
                     show={showModalUpdate}
                     setShow={setShowModalUpdate}

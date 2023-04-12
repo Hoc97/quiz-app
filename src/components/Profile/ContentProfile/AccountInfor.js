@@ -15,7 +15,6 @@ import { blobToBase64, urltoFile } from '../../../utils/commonFunction';
 function AccountInfor() {
     const dispatch = useDispatch();
     const accountData = useSelector((state) => state.accountManage.account);
-
     const [account, setAccount] = useState({
         email: accountData.email,
         username: accountData.username,
@@ -79,9 +78,8 @@ function AccountInfor() {
                     />
                 </Form.Group>
             </Row>
-
             <Row className='mb-3'>
-                <Form.Group as={Col}>
+                <Form.Group as={Col} xs={6}>
                     <Form.Label>Tên</Form.Label>
                     <Form.Control
                         placeholder='Username'
@@ -89,19 +87,6 @@ function AccountInfor() {
                         value={account.username}
                         onChange={handleInput}
                     />
-                </Form.Group>
-
-                <Form.Group as={Col}>
-                    <Form.Label>Vai trò</Form.Label>
-                    <Form.Select
-                        disabled
-                        value={account.role}
-                        name='role'
-                        onChange={handleInput}
-                    >
-                        <option value='USER'>USER</option>
-                        <option value='ADMIN'>ADMIN</option>
-                    </Form.Select>
                 </Form.Group>
             </Row>
             <Form.Group className='mb-3'>

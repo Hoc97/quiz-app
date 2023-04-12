@@ -1,6 +1,10 @@
 import { put, call, takeLatest, delay } from 'redux-saga/effects';
 import {
-    getAllUsers, getQuizByUser, postSignUp, postLogin, postLogout,
+    getAllUsers,
+    getQuizByUser,
+    postSignUp,
+    postLogin,
+    postLogout,
 } from '../../../services/apiService';
 import { toast } from 'react-toastify';
 import _ from 'lodash';

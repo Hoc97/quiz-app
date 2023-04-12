@@ -77,7 +77,6 @@ function TableQuiz({ tableRef, query }) {
                         })}
                 </tbody>
             </Table>
-
             <ModalUpdateQuiz
                 show={showModalUpdate}
                 setShow={setShowModalUpdate}

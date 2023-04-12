@@ -105,7 +105,6 @@ function EditQuiz() {
             <div className='seperate'>
                 <hr />
             </div>
-
             <div className='quiz-list-detail'>
                 <div className='list-quizzes'>List Quizzes </div>
                 <input type='text' placeholder='Search...' className='search mb-2'

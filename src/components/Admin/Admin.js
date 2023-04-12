@@ -16,7 +16,6 @@ function Admin() {
     const account = useSelector((state) => state.accountManage.account);
     const isAuthenticated = useSelector((state) => state.accountManage.isAuthenticated);
     const [collapsed, setCollapsed] = useState(false);
-
     return (
         <div className='admin-container'>
             <div className='admin-sidebar'>
@@ -51,7 +50,6 @@ function Admin() {
                                 )}
                             </Nav>
                         </Fade>
-
                     </div>
                 </div>
                 <div className='admin-main'>

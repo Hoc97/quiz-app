@@ -9,6 +9,7 @@ import { FaArrowCircleLeft } from 'react-icons/fa';
 import { Headers } from '../../assets/img/Image';
 import { validateEmail } from '../../utils/commonFunction';
 import { useDispatch } from 'react-redux';
+
 function SignUp() {
     const dispatch = useDispatch();
     const [account, setAccount] = useState({
@@ -19,8 +20,6 @@ function SignUp() {
     const [isShowPassword, setisShowPassword] = useState(false);
     const navigate = useNavigate();
 
-
-
     const handleInput = (e) => {
         setAccount({
             ...account,
@@ -29,7 +28,6 @@ function SignUp() {
     };
     const handleSignUp = async (e) => {
         e.preventDefault();
-
         //validate
         const isValidEmail = validateEmail(account.email);
         if (!isValidEmail) {
@@ -44,6 +42,7 @@ function SignUp() {
             toast.error('Invalid user');
             return;
         }
+
         //Call API
         dispatch({
             type: 'POST_SIGN_UP',

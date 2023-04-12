@@ -12,6 +12,7 @@ import { FaArrowCircleLeft } from 'react-icons/fa';
 import { Headers } from '../../assets/img/Image';
 import { validateEmail } from '../../utils/commonFunction';
 import { handleQuickLogin } from '../common/handleCommon';
+
 function Login() {
     const dispatch = useDispatch();
     const [account, setAccount] = useState({
@@ -52,8 +53,6 @@ function Login() {
         });
 
     };
-
-
     return (
         <div className='login-container'>
             <div className='login-header'>
@@ -82,7 +81,6 @@ function Login() {
                                     onChange={handleInput}
                                 />
                             </Form.Group>
-
                             <Form.Group className='mb-4 password'>
                                 <Form.Label>Mật khẩu</Form.Label>
                                 <Form.Control
@@ -128,7 +126,6 @@ function Login() {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }
