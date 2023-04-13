@@ -7,19 +7,19 @@
 # **Page**
 
 -   Home.
-    ![Dark mode](/src/assets/img//Image%20Readme/1.PNG)
+    ![Dark mode](https://res.cloudinary.com/dqon3qgym/image/upload/v1681400824/Image%20github/1_tosjrr.png)
 
 -   User.
-    ![Dark mode](/src/assets/img//Image%20Readme/2.PNG)
+    ![Dark mode](https://res.cloudinary.com/dqon3qgym/image/upload/v1681400823/Image%20github/2_npia4z.png)
 
 -   Quiz.
-    ![Dark mode](/src/assets/img//Image%20Readme/3.PNG)
+    ![Dark mode](https://res.cloudinary.com/dqon3qgym/image/upload/v1681400819/Image%20github/3_xmu2iu.png)
 
 -   Manage User(Only with admin's accounts).
-    ![Dark mode](/src/assets/img//Image%20Readme/4.PNG)
+    ![Dark mode](https://res.cloudinary.com/dqon3qgym/image/upload/v1681400819/Image%20github/4_b8uouz.png)
 
 -   Update Q/A Quizzes (Only with admin's accounts).
-    ![Dark mode](/src/assets/img//Image%20Readme/5.PNG)
+    ![Dark mode](https://res.cloudinary.com/dqon3qgym/image/upload/v1681400819/Image%20github/5_bwhgvb.png)
 
 # **Features**
 
