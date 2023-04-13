@@ -2,24 +2,24 @@
 
 -   This is a project about Quiz App English
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/VZIQpNqYQJA/0.jpg)](https://www.youtube.com/watch?v=VZIQpNqYQJA)
+[![IMAGE ALT TEXT HERE](VIEW DEMO)](https://www.youtube.com/watch?v=VZIQpNqYQJA)
 
 # **Page**
 
 -   Home.
-    ![CHEESE!](/src/assets/img//Image%20Readme/1.PNG)
+    ![Dark mode](/src/assets/img//Image%20Readme/1.PNG)
 
 -   User.
-    ![CHEESE!](/src/assets/img//Image%20Readme/2.PNG)
+    ![Dark mode](/src/assets/img//Image%20Readme/2.PNG)
 
 -   Quiz.
-    ![CHEESE!](/src/assets/img//Image%20Readme/3.PNG)
+    ![Dark mode](/src/assets/img//Image%20Readme/3.PNG)
 
 -   Manage User(Only with admin's accounts).
-    ![CHEESE!](/src/assets/img//Image%20Readme/4.PNG)
+    ![Dark mode](/src/assets/img//Image%20Readme/4.PNG)
 
 -   Update Q/A Quizzes (Only with admin's accounts).
-    ![CHEESE!](/src/assets/img//Image%20Readme/5.PNG)
+    ![Dark mode](/src/assets/img//Image%20Readme/5.PNG)
 
 # **Features**
 
