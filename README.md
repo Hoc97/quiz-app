@@ -7,7 +7,7 @@
 # **Page**
 
 -   Home.
-    ![Dark mode](/src/assets/img//Image%20Readme/1.PNG)
+    ![Dark mode](/src/assets/img//Image%20Readme/1v2.PNG)
 
 -   User.
     ![Dark mode](/src/assets/img//Image%20Readme/2.PNG)
