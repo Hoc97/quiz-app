@@ -33,8 +33,8 @@ const Notification = ({ account }) => {
                 }
             }
         });
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-    console.log('listNoti', listNoti);
     const btnRef = useRef();
     useEffect(() => {
         const closeNoti = (e) => {
@@ -47,6 +47,7 @@ const Notification = ({ account }) => {
         };
         document.addEventListener('click', closeNoti);
         return () => document.removeEventListener('click', closeNoti);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [showNoti]);
 
     const handleNoti = () => {
