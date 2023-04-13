@@ -2,7 +2,7 @@
 
 -   This is a project about Quiz App English
 
-[![IMAGE ALT TEXT HERE](VIEW DEMO)](https://www.youtube.com/watch?v=VZIQpNqYQJA)
+[VIEW DEMO](https://www.youtube.com/watch?v=VZIQpNqYQJA)
 
 # **Page**
 
